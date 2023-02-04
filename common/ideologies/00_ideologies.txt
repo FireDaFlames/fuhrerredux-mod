@@ -21,7 +21,7 @@ ideologies = {
 			"FACTION_NAME_VANGUARDIST_5"
 			"FACTION_NAME_VANGUARDIST_6"
 		}
-		color = { 155 0 0 }
+		color = { 107 4 4 }
 		rules = {
 			can_force_government = no
 			can_puppet = no
@@ -54,7 +54,7 @@ ideologies = {
 			"FACTION_NAME_collectivist_5"
 			"FACTION_NAME_collectivist_6"
 		}
-		color = { 225 0 0 } #205 0 0 works good as an alternative, too similar to Vanguardist though.
+		color = { 182 29 29 } #205 0 0 works good as an alternative, too similar to Vanguardist though.
 		rules = {
 			can_force_government = no
 			can_puppet = no
@@ -219,7 +219,7 @@ ideologies = {
 			"FACTION_NAME_SOCIAL_CONSERVATIVE_5"
 			"FACTION_NAME_SOCIAL_CONSERVATIVE_6"
 		}
-		color = { 0 60 180 } #0 0 255 is the original one
+		color = { 11 54 172 } #0 0 255 is the original one
 		rules = {
 			can_force_government = no
 			can_puppet = no
@@ -320,7 +320,7 @@ ideologies = {
 			"FACTION_NAME_NATIONAL_POPULIST_5"
 			"FACTION_NAME_NATIONAL_POPULIST_6"
 		}
-		color = { 112 53 0 } #142 57 0 is original
+		color = { 94 50 11 } #142 57 0 is original
 		rules = {
 			can_force_government = no
 			can_puppet = no
@@ -354,7 +354,7 @@ ideologies = {
 			"FACTION_NAME_VALKIST_5"
 			"FACTION_NAME_VALKIST_6"
 		}
-		color = { 18 53 36 }
+		color = { 11 46 29 }
 		rules = {
 			can_force_government = no
 			can_puppet = no

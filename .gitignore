@@ -2,5 +2,6 @@
 
 descriptor.mod
 *.mod
-*.mod
+*.md
 readme.md
+.gitattributes
