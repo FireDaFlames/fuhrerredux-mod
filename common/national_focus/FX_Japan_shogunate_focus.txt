@@ -25,7 +25,7 @@ shared_focus = {
 	x = 16
 	y = 9
 	allow_branch = {
-		has_country_flag = JAP_Iesato_Death
+		#has_country_flag = JAP_Iesato_Death
 		always = yes 
 	}
 	cost = 5
@@ -33,7 +33,7 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus JAP_grand_triumvirate"
 		country_event = {
 			id = jap_shogun.11
-			days = 7 
+			days = 3 
 		}
 	}
 }
@@ -44,7 +44,7 @@ shared_focus = {
 	x = 0
 	y = 1
 	prerequisite = { focus = JAP_grand_triumvirate }
-	cost = 5
+	cost = 6
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus JAP_meeting_of_three_officials"
 		country_event = {
@@ -62,13 +62,18 @@ shared_focus = {
 	allow_branch = {
 		custom_trigger_tooltip = {
 			tooltip = "The Kingmaker has assumed the power of Daijo-Daijin"
-			has_country_flag = JAP_kuniyuki_reign
+			#has_country_flag = JAP_kuniyuki_reign
 		}
 	}
 	prerequisite = { focus = JAP_meeting_of_three_officials }
 	cost = 2
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus JAP_the_kingmaker_assumed_shogunate"
+		add_popularity = {
+			ideology = var:current_party_ideology_group
+			popularity = 0.2
+		}
+		add_ideas = JAP_tokugawa_authority_0
 	}
 }
 shared_focus = {
@@ -78,6 +83,11 @@ shared_focus = {
 	x = -2
 	y = 1
 	prerequisite = { focus = JAP_the_kingmaker_assumed_shogunate }
+	cost = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_integrate_ancient_laws"
+		modify_tokugawa_authority = yes 
+	}
 }
 shared_focus = {
 	id = JAP_extend_navy_budget
@@ -86,6 +96,16 @@ shared_focus = {
 	x = 0
 	y = 1
 	prerequisite = { focus = JAP_the_kingmaker_assumed_shogunate }
+	cost = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_extend_navy_budget"
+		add_political_power = -50
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.2
+			uses = 1
+			category = naval_doctrine
+		} 
+	}
 }
 shared_focus = {
 	id = JAP_rebuild_the_commissions
@@ -94,6 +114,11 @@ shared_focus = {
 	x = 2
 	y = 1
 	prerequisite = { focus = JAP_the_kingmaker_assumed_shogunate }
+	cost = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_rebuild_the_commissions"
+		modify_tokugawa_authority = yes 
+	}
 }
 shared_focus = {
 	id = JAP_embrace_neo_confucianism
@@ -103,6 +128,11 @@ shared_focus = {
 	y = 1
 	prerequisite = { focus = JAP_integrate_ancient_laws }
 	prerequisite = { focus = JAP_extend_navy_budget }
+	cost = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_embrace_neo_confucianism"
+		add_stability = 0.02
+	}
 }
 shared_focus = {
 	id = JAP_shin_fukoku_kyohei
@@ -112,6 +142,33 @@ shared_focus = {
 	y = 1
 	prerequisite = { focus = JAP_rebuild_the_commissions }
 	prerequisite = { focus = JAP_extend_navy_budget }
+	cost = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_shin_fukoku_kyohei"
+		add_political_power = 100
+		add_timed_idea = {
+			idea = JAP_quickening_military_production
+			days = 720
+		}
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.7
+			uses = 3
+			category = land_doctrine
+		}
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.7
+			uses = 3
+			category = naval_doctrine
+		}
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.7
+			uses = 3
+			category = air_doctrine
+		}
+		army_experience = 50
+		navy_experience = 50
+		air_experience = 50
+	}
 }
 shared_focus = {
 	id = JAP_subordinate_democracy
@@ -120,6 +177,12 @@ shared_focus = {
 	x = 0
 	y = 2
 	prerequisite = { focus = JAP_embrace_neo_confucianism }
+	cost = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_subordinate_democracy"
+		add_stability = -0.1
+		modify_tokugawa_authority = yes 
+	}
 }
 shared_focus = {
 	id = JAP_make_parliament_our_rubberstamp
@@ -131,6 +194,15 @@ shared_focus = {
 	mutually_exclusive = {
 		focus = JAP_send_parliament_to_hell
 	}
+	cost = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_make_parliament_our_rubberstamp"
+		add_political_power = 25
+		add_popularity = {
+			ideology = authoritarian_democrat 
+			popularity = -0.05
+		} 
+	}
 }
 shared_focus = {
 	id = JAP_samurai_code_of_law
@@ -139,6 +211,11 @@ shared_focus = {
 	x = -1
 	y = 1
 	prerequisite = { focus = JAP_make_parliament_our_rubberstamp }
+	cost = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_samurai_code_of_law"
+		add_political_power = 50
+	}
 }
 shared_focus = {
 	id = JAP_send_parliament_to_hell
@@ -150,6 +227,14 @@ shared_focus = {
 	mutually_exclusive = {
 		focus = JAP_make_parliament_our_rubberstamp
 	}
+	cost = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_send_parliament_to_hell"
+		add_popularity = {
+			ideology = paternal_autocrat 
+			popularity = 0.1
+		} 
+	}
 }
 shared_focus = {
 	id = JAP_purge_the_old_politicians
@@ -158,6 +243,11 @@ shared_focus = {
 	x = -1
 	y = 1
 	prerequisite = { focus = JAP_send_parliament_to_hell }
+	cost = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_purge_the_old_politicians"
+		add_manpower = -1100
+	}
 }
 shared_focus = {
 	id = JAP_taiheiyo_circuit_development
@@ -166,6 +256,11 @@ shared_focus = {
 	x = 0
 	y = 2
 	prerequisite = { focus = JAP_shin_fukoku_kyohei }
+	cost = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_taiheiyo_circuit_development"
+		custom_effect_tooltip = "Unlock the Taiheiyo Development Project"
+	}
 }
 shared_focus = {
 	id = JAP_under_supervision_of_government
@@ -177,6 +272,11 @@ shared_focus = {
 	mutually_exclusive = {
 		focus = JAP_privatize_the_public_company
 	}
+	cost = 2.5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_under_supervision_of_government"
+		custom_effect_tooltip = "The development right will be single-handed controlled by government"
+	}
 }
 shared_focus = {
 	id = JAP_shogunate_industry
@@ -185,6 +285,11 @@ shared_focus = {
 	x = 1
 	y = 1
 	prerequisite = { focus = JAP_under_supervision_of_government }
+	cost = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_shogunate_industry"
+		add_ideas = JAP_tanegashima_league
+	}
 }
 shared_focus = {
 	id = JAP_privatize_the_public_company
@@ -196,6 +301,11 @@ shared_focus = {
 	mutually_exclusive = {
 		focus = JAP_under_supervision_of_government
 	}
+	cost = 2.5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_privatize_the_public_company"
+		custom_effect_tooltip = "The development right will be cooperated by Zaibatsu and Government-seized Companies"
+	}
 }
 shared_focus = {
 	id = JAP_samurai_zaibatsu_megacollab
@@ -204,6 +314,11 @@ shared_focus = {
 	x = 1
 	y = 1
 	prerequisite = { focus = JAP_privatize_the_public_company }
+	cost = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_samurai_zaibatsu_megacollab"
+		add_ideas = JAP_izumo_industrial_league
+	}
 }
 shared_focus = {
 	id = JAP_increase_navy_size
@@ -212,6 +327,11 @@ shared_focus = {
 	x = 0
 	y = 2
 	prerequisite = { focus = JAP_extend_navy_budget }
+	cost = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_increase_navy_size"
+		add_ideas = JAP_naval_force_expand
+	}
 }
 shared_focus = {
 	id = JAP_absolute_naval_power_state
@@ -220,6 +340,11 @@ shared_focus = {
 	x = 0
 	y = 4
 	prerequisite = { focus = JAP_increase_navy_size }
+	cost = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_absolute_naval_power_state"
+		add_ideas = JAP_thalassocratic_shogunate
+	}
 }
 shared_focus = {
 	id = JAP_extend_military_technology_budget
@@ -233,6 +358,11 @@ shared_focus = {
 	}
 	prerequisite = {
 		focus = JAP_absolute_naval_power_state
+	}
+	cost = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_extend_military_technology_budget"
+		add_ideas = JAP_mil_tech_boost
 	}
 }
 shared_focus = {
@@ -248,6 +378,11 @@ shared_focus = {
 	prerequisite = {
 		focus = JAP_absolute_naval_power_state
 	}
+	cost = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_even_military_can_run_business"
+		add_political_power = 100
+	}
 }
 shared_focus = {
 	id = JAP_long_live_true_justice
@@ -257,6 +392,13 @@ shared_focus = {
 	y = 2
 	prerequisite = { focus = JAP_even_military_can_run_business }
 	prerequisite = { focus = JAP_extend_military_technology_budget }
+	cost = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_long_live_true_justice"
+		add_stability = 0.1
+		add_political_power = 50
+		modify_tokugawa_authority = yes
+	}
 }
 ####Shikkenate
 shared_focus = {
@@ -270,7 +412,7 @@ shared_focus = {
 		y = 0
 		trigger = {
 			ROOT = {
-				#has_country_flag = JAP_nakano_reign
+				has_country_flag = JAP_nakano_reign
 				NOT = {
 					OR = {
 						has_country_flag = JAP_kuniyuki_reign
@@ -283,7 +425,7 @@ shared_focus = {
 	allow_branch = {
 		custom_trigger_tooltip = {
 			tooltip = "The Manager has assumed the power of Daijo-Daijin"
-			#has_country_flag = JAP_nakano_reign
+			has_country_flag = JAP_nakano_reign
 		}
 	}
 	prerequisite = { focus = JAP_meeting_of_three_officials }

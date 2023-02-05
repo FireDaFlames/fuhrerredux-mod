@@ -132,8 +132,9 @@ country_event = { #Korean Righteous Army / Taiwanese Anarchy / Recalling Governo
 	option = {
 		name = jap_shogun.5.a 
 		add_political_power = -300
-		add_stability = -0.3
+		add_stability = -0.5
 		custom_effect_tooltip = "The empire will no longer be the empire we'd ever known"
+		add_ideas = JAP_fallen_god
 		hidden_effect = {
 			every_controlled_state = {
 				limit = {
@@ -200,6 +201,18 @@ country_event = { #Political Turmoil
 			ruling_party = authoritarian_democrat
 			elections_allowed = no
 		}
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = valkist
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.1
+		}
 		set_temp_variable = { coalition_partner_var = token:national_populist }
 		add_to_coalition = yes 
 		set_temp_variable = { coalition_partner_var = token:valkist }
@@ -217,6 +230,7 @@ country_event = { #Political Turmoil
 		activate_advisor = JAP_Nakano_Seigo_eco_npo
 		activate_advisor = JAP_Naotake_Sato_for_sco
 		hidden_effect = {
+			remove_ideas = JAP_fallen_god
 			every_controlled_state = {
 				limit = {
 					is_controlled_by = JAP 
@@ -281,6 +295,7 @@ country_event = { #Political Turmoil
 				is_controlled_by = JAP 
 			}
 			set_demilitarized_zone = no 
+			remove_ideas = JAP_fallen_god
 		}
 	}
 }
@@ -297,8 +312,8 @@ country_event = { #Kuniyuki visits USA
 			target = USA 
 			modifier = JAP_kuniyuki_visits_usa 
 		}
-		add_opinion_modifier = {
-			target = JAP   
+		reverse_add_opinion_modifier = {
+			target = USA   
 			modifier = JAP_kuniyuki_visits_usa 
 		}
 	}
@@ -1212,7 +1227,7 @@ country_event = {
 }
 country_event = {
 	id = jap_rep.7
-	title = "1st People's Congress General Election"
+	title = "Election of 1st People's Congress"
 	desc = jap_rep.7.d
 
 	immediate = {
@@ -1254,7 +1269,7 @@ country_event = {
 		set_cosmetic_tag = JAP_MATSUMOTO 
 	}
 	option = {
-		name = "Fighter of Feminism, Yamakawa Kikue"
+		name = "The Feminist Fighter, Yamakawa Kikue"
 		trigger = {
 			OR = {
 				has_completed_focus = JAP_stabilize_socialist_empire
@@ -1305,7 +1320,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "Old Officer, Hachimoto Kingoro"
+		name = "The Old Officer, Hachimoto Kingoro"
 		trigger = {
 			has_completed_focus = JAP_stabilize_socialist_empire
 		}
@@ -1341,7 +1356,7 @@ country_event = {
 		set_cosmetic_tag = JAP_KINGORO
 	}
 	option = {
-		name = "Founding Father of JCP, Sanzo Nosaka"
+		name = "The Progenitor, Sanzo Nosaka"
 		trigger = {
 			has_completed_focus = JAP_stabilize_socialist_empire
 		}
@@ -1604,7 +1619,7 @@ country_event = {
 				add = 10
 				RUS = {
 					OR = {
-						has_dictatorial_government = yes
+						has_dictatorship_government = yes
 						has_democratic_right_government = yes
 					} 
 				}
@@ -1626,7 +1641,7 @@ country_event = {
 				RUS = {
 					NOT = {
 						OR = {
-							has_dictatorial_government = yes
+							has_dictatorship_government = yes
 							has_democratic_right_government = yes 
 						} 
 					} 

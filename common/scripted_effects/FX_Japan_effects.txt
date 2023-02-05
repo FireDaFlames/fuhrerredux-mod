@@ -206,4 +206,32 @@ JAP_nagasaki_tribunal_court_idea = {
 		add_ideas = JAP_nagasaki_tribunal_a2b2c2
 	}
 }
-
+modify_tokugawa_authority = {
+	if = {
+		limit = {
+			has_idea = JAP_tokugawa_authority_2
+		}
+		swap_ideas = {
+			remove_idea = JAP_tokugawa_authority_2
+			add_idea = JAP_tokugawa_authority_3
+		}
+	}
+	if = {
+		limit = {
+			has_idea = JAP_tokugawa_authority_1
+		}
+		swap_ideas = {
+			remove_idea = JAP_tokugawa_authority_1
+			add_idea = JAP_tokugawa_authority_2
+		}
+	}
+	if = {
+		limit = {
+			has_idea = JAP_tokugawa_authority_0
+		}
+		swap_ideas = {
+			remove_idea = JAP_tokugawa_authority_0
+			add_idea = JAP_tokugawa_authority_1
+		}
+	}
+}

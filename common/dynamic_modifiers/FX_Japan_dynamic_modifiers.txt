@@ -5,3 +5,42 @@ JAP_daijo_kan_modifier = {
 		}
 	}
 }
+JAP_TCP_Tokyo = {
+	remove_trigger = {
+		JAP = {
+			NOT = {
+				owns_state = 282
+			}
+		}
+	}
+	#local manpower
+	#building rate
+	#building slot rate
+	#repair
+}
+JAP_TCP_Kansai = {
+	remove_trigger = {
+		JAP = {
+			NOT = {
+				owns_state = 531
+			}
+		}
+	}
+	#local manpower
+	#building rate
+	#building slot rate
+	#repair
+}
+JAP_TCP_Tokai = {
+	remove_trigger = {
+		JAP = {
+			NOT = {
+				owns_state = 532
+			}
+		}
+	}
+	#local manpower
+	#building rate
+	#building slot rate
+	#repair
+}

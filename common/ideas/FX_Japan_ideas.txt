@@ -28,7 +28,6 @@ ideas = {
 			modifier = {
 				research_speed_factor = 0.06
 				political_power_factor = 0.07
-				stability_weekly = 0.03
 			}
 		}
 		JAP_shinjidai_idea_2 = {
@@ -38,7 +37,7 @@ ideas = {
 			modifier = {
 				research_speed_factor = 0.1
 				political_power_factor = 0.1
-				stability_weekly = 0.05
+				stability_weekly = 0.01
 				army_core_defence_factor = 0.15
 				opinion_gain_monthly_factor = 0.1
 			}
@@ -50,7 +49,7 @@ ideas = {
 			modifier = {
 				research_speed_factor = 0.15
 				political_power_factor = 0.15
-				stability_weekly = 0.07
+				stability_weekly = 0.02
 				army_core_defence_factor = 0.2
 				opinion_gain_monthly_factor = 0.1
 				resistance_damage_to_garrison = -0.05
@@ -354,6 +353,125 @@ ideas = {
 				mobilization_speed = -0.05
 				production_lack_of_resource_penalty_factor = -0.1
 				production_speed_buildings_factor = 0.1
+			}
+		}
+		JAP_fallen_god = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_fallen_god"}
+			#picture = generic_manpower_bonus
+			allowed = { original_tag = JAP }
+			modifier = {
+				political_power_factor = -0.2
+				stability_factor = -0.15
+			}
+		}
+		JAP_tokugawa_authority_0 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_tokugawa_authority_0"}
+			#picture = generic_manpower_bonus
+			allowed = { original_tag = JAP }
+			modifier = {
+				political_power_cost = -0.02
+			}
+		}
+		JAP_tokugawa_authority_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_tokugawa_authority_1"}
+			#picture = generic_manpower_bonus
+			allowed = { original_tag = JAP }
+			modifier = {
+				political_power_cost = -0.04
+				weekly_manpower = 100
+				stability_weekly = 0.01
+			}
+		}
+		JAP_tokugawa_authority_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_tokugawa_authority_2"}
+			#picture = generic_manpower_bonus
+			allowed = { original_tag = JAP }
+			modifier = {
+				political_power_cost = -0.06
+				weekly_manpower = 500
+				stability_weekly = 0.02
+			}
+		}
+		JAP_tokugawa_authority_3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_tokugawa_authority_3"}
+			#picture = generic_manpower_bonus
+			allowed = { original_tag = JAP }
+			modifier = {
+				political_power_cost = -0.1
+				weekly_manpower = 1000
+				stability_weekly = 0.03
+			}
+		}
+		JAP_quickening_military_production = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_quickening_military_production"}
+			#picture = generic_manpower_bonus
+			allowed = { original_tag = JAP }
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.2
+				production_speed_arms_factory_factor = 0.1
+				conversion_cost_civ_to_mil_factor = -0.25
+				industrial_capacity_factory = 0.2
+			}
+		}
+		JAP_tanegashima_league = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_tanegashima_league"}
+			#picture = generic_manpower_bonus
+			allowed = { original_tag = JAP }
+			modifier = {
+				command_power_gain_mult = 0.3
+				light_tank_chassis_design_cost_factor = -0.1
+				production_speed_arms_factory_factor = 0.1
+				repair_speed_arms_factory_factor = 0.3
+				civilian_factory_use = 5
+			}
+		}
+		JAP_izumo_industrial_league = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_izumo_industrial_league"}
+			#picture = generic_manpower_bonus
+			allowed = { original_tag = JAP }
+			modifier = {
+				global_building_slots_factor = 0.5
+				line_change_production_efficiency_factor = 0.2
+				civilian_factory_use = -3
+				production_oil_factor = 0.2
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		JAP_naval_force_expand = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_naval_force_expand"}
+			#picture = generic_manpower_bonus
+			allowed = { original_tag = JAP }
+			research_bonus = {
+				naval_doctrine = 0.1
+			}
+			modifier = {
+				naval_speed_factor = 0.1
+			}
+		}
+		JAP_thalassocratic_shogunate = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_thalassocratic_shogunate"}
+			#picture = generic_manpower_bonus
+			allowed = { original_tag = JAP }
+			modifier = {
+				spotting_chance = 0.5
+				naval_torpedo_enemy_critical_chance_factor = -0.2
+				naval_torpedo_screen_penetration_factor = 0.2
+				naval_torpedo_hit_chance_factor = 0.2
+				naval_damage_factor = 0.2
+				naval_hit_chance = 0.2
+				naval_retreat_speed = 0.5
+			}
+		}
+		JAP_mil_tech_boost = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_mil_tech_boost"}
+			#picture = generic_manpower_bonus
+			allowed = { original_tag = JAP }
+			research_bonus = {
+				land_doctrine = 0.1
+			}
+			modifier = {
+				political_power_gain = -0.05
 			}
 		}
 		#####Original

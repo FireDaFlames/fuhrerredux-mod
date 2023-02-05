@@ -20,12 +20,12 @@ scripted_gui = {
 				}
 			}
 		}
-		effect = {
+		effects = {
 			JAP_Tokyo_prov_button_click = {
 				ROOT = {
+					set_country_flag = Tokyo_prov_selected
 					clr_country_flag = Tokai_prov_selected
 					clr_country_flag = Kansai_prov_selected
-					set_country_flag = Tokyo_prov_selected
 				}
 			}
 			JAP_Tokai_prov_button_click = {
@@ -37,16 +37,10 @@ scripted_gui = {
 			}
 			JAP_Kansai_prov_button_click = {
 				ROOT = {
-					clr_country_flag = Tokai_prov_selected
 					set_country_flag = Kansai_prov_selected
+					clr_country_flag = Tokai_prov_selected
 					clr_country_flag = Tokyo_prov_selected
 				}
-			}
-		}
-
-		properties = {
-			tokaido_map_frame_icon = {
-				image = "Tokaido_map"
 			}
 		}
 	}

@@ -1087,3 +1087,10 @@ maizuru_naval_arsenal: "Maizuru Naval Arsenal"
 
 #Fleet Name
 FLEET_NAME_JAP: "Kaigun Kantai $NUMBER$"
+
+#Gui
+Tokyo_Province: "Tokyo Province"
+Tokai_Province: "Tokai Province"
+Kansai_Province: "Kansai Province"
+selected_province_status: "Selected Province: "
+selected_province_name: "[Japan_TKDProvince]"
