@@ -52,8 +52,6 @@ scripted_gui = {
 		
 		properties = {
 		}
-		
-	
 			
 		visible = {
 			OR = {
