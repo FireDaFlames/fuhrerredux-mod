@@ -37,3 +37,24 @@ defined_text = {
 		localization_key = Kansai_Province
 	}
 }
+defined_text = {
+	name = TKD_modifier
+	text = {
+		trigger = {
+			state = 282
+		}
+		localization_key = JAP_TCP_Tokyo
+	}
+	text = {
+		trigger = {
+			state = 531
+		}
+		localization_key = JAP_TCP_Kansai
+	}
+	text = {
+		trigger = {
+			state = 532
+		}
+		localization_key = JAP_TCP_Tokai
+	}
+}

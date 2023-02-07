@@ -1120,7 +1120,9 @@ JAP_tokaido_circuit_project = {
 			tag = JAP
 			282 = {
 				NOT = {
-					has_dynamic_modifier = JAP_TCP_Tokyo
+					has_dynamic_modifier = {
+						modifier = JAP_TCP_Tokyo
+					}
 				}
 			}
 		}
@@ -1148,7 +1150,12 @@ JAP_tokaido_circuit_project = {
 
 		remove_effect = {
 			282 = {
-				add_dynamic_modifier = JAP_TCP_Tokyo
+				add_dynamic_modifier = {
+					modifier = JAP_TCP_Tokyo
+				}
+				add_to_array = {
+					array = ROOT.TKD_province
+				}
 			}
 		}
 	}
@@ -1158,7 +1165,9 @@ JAP_tokaido_circuit_project = {
 			tag = JAP
 			531 = {
 				NOT = {
-					has_dynamic_modifier = JAP_TCP_Kansai
+					has_dynamic_modifier = {
+						modifier = JAP_TCP_Kansai
+					}
 				}
 			}
 		}
@@ -1175,7 +1184,7 @@ JAP_tokaido_circuit_project = {
 
 		fire_only_once = yes
 		cost = 75
-		days_remove = 90
+		days_remove = 1 #90
 		ai_will_do = {
 			base = 100
 			modifier = {
@@ -1186,7 +1195,12 @@ JAP_tokaido_circuit_project = {
 
 		remove_effect = {
 			531 = {
-				add_dynamic_modifier = JAP_TCP_Kansai
+				add_dynamic_modifier = {
+					modifier = JAP_TCP_Kansai
+				}
+				add_to_array = {
+					array = ROOT.TKD_province
+				}
 			}
 		}
 	}
@@ -1196,7 +1210,9 @@ JAP_tokaido_circuit_project = {
 			tag = JAP
 			282 = {
 				NOT = {
-					has_dynamic_modifier = JAP_TCP_Tokai
+					has_dynamic_modifier = {
+						modifier = JAP_TCP_Tokai
+					}
 				}
 			}
 		}
@@ -1213,7 +1229,7 @@ JAP_tokaido_circuit_project = {
 
 		fire_only_once = yes
 		cost = 75
-		days_remove = 90
+		days_remove = 1
 		ai_will_do = {
 			base = 100
 			modifier = {
@@ -1224,7 +1240,12 @@ JAP_tokaido_circuit_project = {
 
 		remove_effect = {
 			532 = {
-				add_dynamic_modifier = JAP_TCP_Tokai
+				add_dynamic_modifier = {
+					modifier = JAP_TCP_Tokai
+				}
+				add_to_array = {
+					array = ROOT.TKD_province
+				}
 			}
 		}
 	}
