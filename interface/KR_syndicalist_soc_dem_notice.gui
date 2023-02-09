@@ -1,5 +1,4 @@
 guiTypes = {
-
 	containerWindowType = {
 		name = "syndicalist_soc_dem_notice_container"
 		position = { x = 88 y = 305 }
@@ -20,19 +19,37 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "subideology_container"
-		position = { x = 88 y = 305 }
+		position = { x = 177 y = 237 }
 		
 		instantTextboxType = {
 			name = "subideology_name"
-			position = { x = 9 y = 23 }
+			position = { x = 9 y = 25 }
 			font = "hoi_16mbs"
-			text = "[GetRulingIdeologySubtype]"
+			text = "RulingIdeologySubtype_Text"
 			pdx_tooltip = "[GetRulingIdeologySubtype]"
-			maxWidth = 155
+			maxWidth = 140
 			maxHeight = 20
-			fixedsize = yes
 			format = left
-			alwaystransparent = yes
+			alwaystransparent = no
+			clipping = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "subideology_container_diplo"
+		position = { x = 263 y = 143 }
+		
+		instantTextboxType = {
+			name = "subideology_name_diplo"
+			position = { x = 0 y = 2 }
+			font = "hoi_16mbs"
+			text = "[GetDiploRulingPartySubtype]"
+			pdx_tooltip = "RulingIdeologySubtype_diplo_tt"
+			maxWidth = 200
+			maxHeight = 20
+			format = left
+			alwaystransparent = no
+			clipping = yes
 		}
 	}
 }
