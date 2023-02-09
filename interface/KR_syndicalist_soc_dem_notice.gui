@@ -20,7 +20,6 @@ guiTypes = {
 	containerWindowType = {
 		name = "subideology_container"
 		position = { x = 177 y = 237 }
-		
 		instantTextboxType = {
 			name = "subideology_name"
 			position = { x = 9 y = 25 }
@@ -31,14 +30,12 @@ guiTypes = {
 			maxHeight = 20
 			format = left
 			alwaystransparent = no
-			clipping = yes
 		}
 	}
 
 	containerWindowType = {
 		name = "subideology_container_diplo"
 		position = { x = 263 y = 143 }
-		
 		instantTextboxType = {
 			name = "subideology_name_diplo"
 			position = { x = 0 y = 2 }
@@ -49,7 +46,6 @@ guiTypes = {
 			maxHeight = 20
 			format = left
 			alwaystransparent = no
-			clipping = yes
 		}
 	}
 }
