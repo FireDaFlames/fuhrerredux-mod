@@ -2076,4 +2076,37 @@ spriteTypes = {
 		name = "GFX_goal_Red_Star_Torch_White"
 		texturefile = "gfx/interface/goals/Red_Star_Torch_White.png"
 	}
+	##FINLAND WINTER WAR BRANCH
+	spriteType = {
+		name = "GFX_integrate_karelia"
+		textureFile = "gfx/interface/goals/Integrate_Karelia.png"
+	}
+	spriteType = {
+		name = "GFX_army_training"
+		textureFile = "gfx/interface/goals/Army_Training.png"
+	}
+	spriteType = {
+		name = "GFX_economy_hand"
+		textureFile = "gfx/interface/goals/FIN_economy_hand.png"
+	}
+	spriteType = {
+		name = "GFX_aviation_training"
+		textureFile = "gfx/interface/goals/aviation_training.png"
+	}
+	spriteType = {
+		name = "GFX_winter_war"
+		textureFile = "gfx/interface/goals/winter_war.png"
+	}
+	spriteType = {
+		name = "GFX_bold_opportunity"
+		textureFile = "gfx/interface/goals/bold_opportunity.png"
+	}
+	spriteType = {
+		name = "GFX_preparation_for_war"
+		textureFile = "gfx/interface/goals/preparation_for_war.png"
+	}
+	spriteType = {
+		name = "GFX_mils-pdn"
+		textureFile = "gfx/interface/goals/mils-pdn.png"
+	}
 }
