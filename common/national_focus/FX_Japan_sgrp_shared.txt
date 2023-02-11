@@ -1568,8 +1568,7 @@ shared_focus = {
 		RUS = {
 			or = {
 				exists = no 
-				is_puppet_of = ROOT 
-				is_in_faction_with = ROOT 
+				is_puppet_of = ROOT  
 			}
 		}
 	}

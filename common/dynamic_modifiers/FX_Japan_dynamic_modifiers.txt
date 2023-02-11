@@ -13,10 +13,12 @@ JAP_TCP_Tokyo = {
 			}
 		}
 	}
-	#local manpower
-	#building rate
-	#building slot rate
-	#repair
+	local_manpower = JAP_TCP_tokyo_lm
+	state_production_speed_industrial_complex_factor = JAP_TCP_tokyo_bso
+	state_repair_speed_industrial_complex_factor = JAP_TCP_tokyo_rso
+	state_production_speed_arms_factory_factor = JAP_TCP_tokyo_bsg
+	recruitable_population = JAP_TCP_tokyo_rp
+	local_building_slots_factor = JAP_TCP_tokyo_bsf
 }
 JAP_TCP_Kansai = {
 	remove_trigger = {
@@ -26,10 +28,12 @@ JAP_TCP_Kansai = {
 			}
 		}
 	}
-	#local manpower
-	#building rate
-	#building slot rate
-	#repair
+	local_manpower = JAP_TCP_kansai_lm
+	state_production_speed_industrial_complex_factor = JAP_TCP_kansai_bso
+	state_repair_speed_industrial_complex_factor = JAP_TCP_kansai_rso
+	state_production_speed_arms_factory_factor = JAP_TCP_kansai_bsg
+	recruitable_population = JAP_TCP_kansai_rp
+	local_building_slots_factor = JAP_TCP_kansai_bsf
 }
 JAP_TCP_Tokai = {
 	remove_trigger = {
@@ -39,8 +43,10 @@ JAP_TCP_Tokai = {
 			}
 		}
 	}
-	#local manpower
-	#building rate
-	#building slot rate
-	#repair
+	local_manpower = JAP_TCP_tokai_lm
+	state_production_speed_industrial_complex_factor = JAP_TCP_tokai_bso
+	state_repair_speed_industrial_complex_factor = JAP_TCP_tokai_rso
+	state_production_speed_arms_factory_factor = JAP_TCP_tokai_bsg
+	recruitable_population = JAP_TCP_tokai_rp
+	local_building_slots_factor = JAP_TCP_tokai_bsf
 }

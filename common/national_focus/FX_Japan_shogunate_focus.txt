@@ -62,7 +62,7 @@ shared_focus = {
 	allow_branch = {
 		custom_trigger_tooltip = {
 			tooltip = "The Kingmaker has assumed the power of Daijo-Daijin"
-			#has_country_flag = JAP_kuniyuki_reign
+			has_country_flag = JAP_kuniyuki_reign
 		}
 	}
 	prerequisite = { focus = JAP_meeting_of_three_officials }
