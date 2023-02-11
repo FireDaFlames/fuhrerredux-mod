@@ -13,7 +13,7 @@ focus_tree = {
 }
 shared_focus = {
 	id = JAP_republic_proclaim
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	x = 19
 	y = 0
 	allow_branch = {
@@ -31,7 +31,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_people_congress_preparatory_committee
-	#icon = GFX_goal_JAP_taisho_lesson
+	icon = GFX_
 	relative_position_id = JAP_republic_proclaim 
 	x = 0
 	y = 1
@@ -46,7 +46,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_popular_front_give_the_address
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_people_congress_preparatory_committee
 	x = -1
 	y = 1
@@ -61,7 +61,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_vanguard_front_give_the_address
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_people_congress_preparatory_committee
 	x = 1
 	y = 1
@@ -76,7 +76,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_family_but_only_in_name
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_people_congress_preparatory_committee
 	x = 0
 	y = 2
@@ -94,7 +94,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_the_sustainer_of_state_principle
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_family_but_only_in_name
 	x = 0
 	y = 1
@@ -116,7 +116,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_endeavor_of_burakumin
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_family_but_only_in_name
 	x = -4
 	y = 1
@@ -138,7 +138,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_shining_will_of_the_exiled
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_family_but_only_in_name
 	x = 4
 	y = 1
@@ -160,7 +160,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_maintain_tennoism
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_the_sustainer_of_state_principle
 	x = -2
 	y = 1
@@ -180,7 +180,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_fate_of_monarchy
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_the_sustainer_of_state_principle
 	x = 2
 	y = 1
@@ -199,7 +199,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_dissolve_national_diet
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_the_sustainer_of_state_principle
 	x = 0
 	y = 2
@@ -219,7 +219,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_de_sinicization_program
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_endeavor_of_burakumin
 	x = 0
 	y = 1
@@ -235,7 +235,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_burakumin_manifesto
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_endeavor_of_burakumin
 	x = 0
 	y = 2
@@ -250,7 +250,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_fate_of_peerage
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_shining_will_of_the_exiled
 	x = 0
 	y = 1
@@ -265,7 +265,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_purge_the_corrupted_bureaucracy
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_shining_will_of_the_exiled
 	x = 0
 	y = 2
@@ -282,7 +282,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_stabilize_socialist_empire
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_dissolve_national_diet
 	x = -2
 	y = 1
@@ -315,7 +315,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_secure_the_people_revolution
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_dissolve_national_diet
 	x = 2
 	y = 1
@@ -348,7 +348,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_first_people_congress
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_dissolve_national_diet
 	x = 0
 	y = 2
@@ -368,7 +368,7 @@ shared_focus = {
 
 shared_focus = {
 	id = JAP_sustainers_secure_presidency
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_first_people_congress
 	x = -2
 	y = 1
@@ -385,7 +385,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_revolutionary_secure_presidency
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_first_people_congress
 	x = 2
 	y = 1
@@ -402,7 +402,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_hisashi_presidency
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_first_people_congress
 	x = 13
 	y = 2
@@ -419,7 +419,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_neutralize_conservative_activist
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_hisashi_presidency
 	x = 0
 	y = 1
@@ -433,7 +433,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_on_the_intersection_of_revolutionary_school
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_neutralize_conservative_activist
 	x = -1
 	y = 1
@@ -447,7 +447,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_develop_agricultural_center
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_neutralize_conservative_activist
 	x = 1
 	y = 1
@@ -461,7 +461,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_support_native_farmer
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_neutralize_conservative_activist
 	x = 0
 	y = 2
@@ -475,7 +475,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_put_emperor_under_house_arrest
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_hisashi_presidency
 	x = 3
 	y = 1
@@ -489,7 +489,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_compromise_zaibatsu
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_put_emperor_under_house_arrest
 	x = 0
 	y = 1
@@ -503,7 +503,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_unite_all_instruments
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_put_emperor_under_house_arrest
 	x = 0
 	y = 2
@@ -517,7 +517,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_kanson_presidency
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_first_people_congress
 	x = 7
 	y = 2
@@ -534,7 +534,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_nation_without_state
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_kanson_presidency
 	x = 0
 	y = 1
@@ -548,7 +548,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_empty_crown
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_kanson_presidency
 	x = -1
 	y = 2
@@ -565,7 +565,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_bird_in_golden_cage
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_kanson_presidency
 	x = 1
 	y = 2
@@ -582,7 +582,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_nationalize_private_conglomerates
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_kanson_presidency
 	x = 0
 	y = 3
@@ -597,7 +597,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_invite_foreign_scientist_scholars
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_kanson_presidency
 	x = 3
 	y = 1
@@ -612,7 +612,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_technology_research_union
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_invite_foreign_scientist_scholars
 	x = 0
 	y = 1
@@ -626,7 +626,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_scientific_autarky
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_invite_foreign_scientist_scholars
 	x = 0
 	y = 2
@@ -640,7 +640,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_kikue_presidency
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_first_people_congress
 	x = 2
 	y = 2
@@ -658,7 +658,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_woman_stands_strong
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_kikue_presidency
 	x = 0
 	y = 1
@@ -672,7 +672,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_woman_welfare_commission
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_kikue_presidency
 	x = 0
 	y = 2
@@ -686,7 +686,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_encourage_human_rights_education
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_kikue_presidency
 	x = 0
 	y = 3
@@ -700,7 +700,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_unban_trade_union
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_kikue_presidency
 	x = 2
 	y = 1
@@ -715,7 +715,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_expand_people_militia
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_unban_trade_union
 	x = 0
 	y = 1
@@ -729,7 +729,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_expand_government_patronage_school
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_unban_trade_union
 	x = 0
 	y = 2
@@ -744,7 +744,7 @@ shared_focus = {
 
 shared_focus = {
 	id = JAP_matsumoto_presidency
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_first_people_congress
 	x = -2
 	y = 2
@@ -761,7 +761,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_revise_the_constitution
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_matsumoto_presidency
 	x = 0
 	y = 1
@@ -775,7 +775,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_civil_rights_act
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_revise_the_constitution
 	x = 0
 	y = 1
@@ -789,7 +789,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_because_no_one_must_left_behind
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_revise_the_constitution
 	x = 0
 	y = 2
@@ -846,7 +846,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_nosaka_presidency
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_first_people_congress
 	x = -7
 	y = 2
@@ -961,7 +961,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_kingoro_presidency
-	#icon = GFX_goal_JAP_taisho_lesson 
+	icon = GFX_ 
 	relative_position_id = JAP_first_people_congress
 	x = -12
 	y = 2
