@@ -2099,7 +2099,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_bold_opportunity"
-		textureFile = "gfx/interface/goals/bold_opportunity.png"
+		textureFile = "gfx/interface/goals/FIN_attack_soviets.png"
 	}
 	spriteType = {
 		name = "GFX_preparation_for_war"
