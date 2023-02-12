@@ -10,7 +10,7 @@ ideas = {
 				original_tag = FIN
 			}
 			removal_cost = -1
-			picture = finland_flag
+			picture = anti_soviet_pact
 			modifier = {
 				winter_attrition_factor = -0.25
 				army_core_attack_factor = 0.15

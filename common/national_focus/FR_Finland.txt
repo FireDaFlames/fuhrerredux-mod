@@ -17,7 +17,7 @@ focus_tree = {
 ###########################
 
 #original made by Detailed Bread, 
-#modified by thanasislanaras because of focus errors
+#modified by thanasislanaras
 	focus = {
 		id = FIN_finlands_bold_opportunity
 		icon = GFX_integrate_karelia
@@ -27,13 +27,30 @@ focus_tree = {
 		available = {
 			AND = {
 				is_puppet = no
-				has_vanguardist_government = no
-				has_collectivist_government = no
-				has_libertarian_socialist_government = no
+				doesnt_have_socialist_party = yes
 				GER = {
 				has_war_with = SOV
 				}
 			}
+		}
+		bypass = {
+			AND = {
+				GER = {
+					has_war_with = SOV
+				}
+				FIN = {
+					OR = {
+						is_puppet_of = GER
+						is_puppet = no
+						any_allied_country = {
+							FIN = {
+								is_puppet_of = root
+							}
+						}
+					}
+				}
+			}
+			
 		}
 		ai_will_do = {
 			factor = 10
@@ -54,9 +71,7 @@ focus_tree = {
 		y = 1
 		available = {
 			is_puppet = no
-			has_vanguardist_government = no
-			has_collectivist_government = no
-			has_libertarian_socialist_government = no
+			doesnt_have_socialist_party = yes
 			owns_state = 146
 		}
 		ai_will_do = {
@@ -89,9 +104,7 @@ focus_tree = {
 		relative_position_id = FIN_finlands_bold_opportunity
 		available = {
 			is_puppet = no
-			has_vanguardist_government = no
-			has_collectivist_government = no
-			has_libertarian_socialist_government = no
+			doesnt_have_socialist_party = yes
 		}
 		ai_will_do = {
 			factor = 10
@@ -173,9 +186,7 @@ focus_tree = {
 		relative_position_id = FIN_finlands_bold_opportunity
 		available = {
 			is_puppet = no
-			has_vanguardist_government = no
-			has_collectivist_government = no
-			has_libertarian_socialist_government = no
+			doesnt_have_socialist_party = yes
 		}
 		ai_will_do = {
 			factor = 10
@@ -196,9 +207,7 @@ focus_tree = {
 		relative_position_id = FIN_strengthening_the_mannerheim_line
 		available = {
 			is_puppet = no
-			has_vanguardist_government = no
-			has_collectivist_government = no
-			has_libertarian_socialist_government = no
+			doesnt_have_socialist_party = yes
 		}
 		ai_will_do = {
 			factor = 10
@@ -243,9 +252,7 @@ focus_tree = {
 		relative_position_id = FIN_preparing_the_economy
 		available = {
 			is_puppet = no
-			has_vanguardist_government = no
-			has_collectivist_government = no
-			has_libertarian_socialist_government = no
+			doesnt_have_socialist_party = yes
 		}
 		ai_will_do = {
 			factor = 10
@@ -383,9 +390,7 @@ focus_tree = {
 		relative_position_id = FIN_expanding_the_army
 		available = {
 			is_puppet = no
-			has_vanguardist_government = no
-			has_collectivist_government = no
-			has_libertarian_socialist_government = no
+			doesnt_have_socialist_party = yes
 		}
 		ai_will_do = {
 			factor = 10
@@ -411,9 +416,7 @@ focus_tree = {
 		y = 1
 		available = {
 			is_puppet = no
-			has_vanguardist_government = no
-			has_collectivist_government = no
-			has_libertarian_socialist_government = no
+			doesnt_have_socialist_party = yes
 		}
 		ai_will_do = {
 			factor = 10
@@ -436,9 +439,7 @@ focus_tree = {
 		relative_position_id = FIN_declare_our_claims 
 		available = {
 			is_puppet = no
-			has_vanguardist_government = no	
-			has_collectivist_government = no	
-			has_libertarian_socialist_government = no
+			doesnt_have_socialist_party = yes
 			country_exists = SOV
 		}
 		ai_will_do = {
