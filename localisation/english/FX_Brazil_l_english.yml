@@ -38,7 +38,7 @@ BRA_valkist_DEF: "Republic of Brazil"
 BRA_vanguardist_party: "PCB"
 BRA_vanguardist_party_long: "Partido Coletivista Brasileiro"
 BRA_collectivist_party: "PCB"
-BRA_collectivist_party_long: "Partido Coletivista Brasileiro                                                  The Partido Coletivista Brasileiro is the main opposition party and the most vocal about their dislike of the current state of Brazil. This party is the greatest of a Socialist coalition that wishes for revolution, and the coalition is just a bigger version of it some people say. This collection of collectivists is very needy in their demands for Brazil, nothing will satisfy them until power is taken. And another factor that makes them a real thorn in the Liberal side is that they have hold of most of the workers, and they tend to strike. So until power is taken, the Partido Coletivista Brasileiro will remain a strong force in Brazilian politics, and with the Brazilian Lenin in charge, they will be a big part of the upcoming Brazilian future."
+BRA_collectivist_party_long: "Partido Coletivista Brasileiro \nThe Partido Coletivista Brasileiro is the main opposition party and the most vocal about their dislike of the current state of Brazil. This party is the greatest of a Socialist coalition that wishes for revolution, and the coalition is just a bigger version of it some people say. This collection of collectivists is very needy in their demands for Brazil, nothing will satisfy them until power is taken. And another factor that makes them a real thorn in the Liberal side is that they have hold of most of the workers, and they tend to strike. So until power is taken, the Partido Coletivista Brasileiro will remain a strong force in Brazilian politics, and with the Brazilian Lenin in charge, they will be a big part of the upcoming Brazilian future."
 BRA_libertarian_socialist_party: "COB"
 BRA_libertarian_socialist_party_long: "Confederação Operária Brasileira"
 BRA_social_democrat_party: "PSD"
@@ -46,13 +46,13 @@ BRA_social_democrat_party_long: "Partido Social Democrata"
 BRA_social_liberal_party: "Partido Libertador"
 BRA_social_liberal_party_long: "Partido Libertador"
 BRA_market_liberal_party: "Partido Democrático"
-BRA_market_liberal_party_long: "Partido Democrático                                                  The Partido Democrático is the main party of Brazilian democratic politics, hosting a wide array of moderate liberalism and social liberalism. It is the main attractor of opposition as it among the Brazilian people has outlived its expiration date as it is still relying on the old ways that used to work rather than future policies. This party mainly concerns the political stability of Brazil these days and due to this, they have left much of the country paused in outdated industrialization plans, and the military remains largely underfunded. But maybe, the Liberals can one day bring stability back to the nation and restore Brazil back to its former state, or better yet, up to its full potential and beyond. The people still have trust that the party will do this, but as the country deteriorates these promises seem harder and harder to fufill."
+BRA_market_liberal_party_long: "Partido Democrático \n The Partido Democrático is the main party of Brazilian democratic politics, hosting a wide array of moderate liberalism and social liberalism. It is the main attractor of opposition as it among the Brazilian people has outlived its expiration date as it is still relying on the old ways that used to work rather than future policies. This party mainly concerns the political stability of Brazil these days and due to this, they have left much of the country paused in outdated industrialization plans, and the military remains largely underfunded. But maybe, the Liberals can one day bring stability back to the nation and restore Brazil back to its former state, or better yet, up to its full potential and beyond. The people still have trust that the party will do this, but as the country deteriorates these promises seem harder and harder to fufill."
 BRA_social_conservative_party: "Partido Republicano"
 BRA_social_conservative_party_long: "Partido Republicano"
 BRA_authoritarian_democrat_party: "Junta Militar"
 BRA_authoritarian_democrat_party_long: "Junta Militar do Governo"
 BRA_paternal_autocrat_party: "LEC"
-BRA_paternal_autocrat_party_long: "Liga Eleitoral Catolica                                                  The Liga Eleitoral Catolica is a catholic and right wing political party who houses a holds a wide range of white wing politicans and supporters across Brazil. The party has turned from a simple conservative party into a coalition of sorts between these politicians and parties in the aftermath of the Great War, and the parties that merged to form are the Integralists, the Monarchists, the original Liga Eleitoral Catolica, who has been dominated by politicans like Arthur Bernardes, Plínio Salgado, Getúlio Vargas, and many others. While they get along together fine now, the coalition is delicate. But if it means keeping communism out of Brazil or even better, taking the country, the party will stay together."
+BRA_paternal_autocrat_party_long: "Liga Eleitoral Catolica \n The Liga Eleitoral Catolica is a catholic and right wing political party who houses a holds a wide range of white wing politicans and supporters across Brazil. The party has turned from a simple conservative party into a coalition of sorts between these politicians and parties in the aftermath of the Great War, and the parties that merged to form are the Integralists, the Monarchists, the original Liga Eleitoral Catolica, who has been dominated by politicans like Arthur Bernardes, Plínio Salgado, Getúlio Vargas, and many others. While they get along together fine now, the coalition is delicate. But if it means keeping communism out of Brazil or even better, taking the country, the party will stay together."
 BRA_national_populist_party: "Ação Verde-Amarela"
 BRA_national_populist_party_long: "Ação Verde-Amarela"
 BRA_valkist_party: "UVB"
@@ -97,8 +97,8 @@ BRA_upholding_legitimacy: "Upholding Legitimacy"
 BRA_upholding_legitimacy_desc: "To propel our government further we must out legitimize the already fake governments that attempted an uprising to destroy our great nation and put it  under their shackles. So let us criminalize any sort of sympathy and attempts at a government people would create  to try to revive the spririt of a broken and penal Brazil."
 BRA_support_from_all_sides: "Support from all Sides"
 BRA_support_from_all_sides_desc: "Now that our liberal reformation is almost finished, we should close it all off by reopening imports from across the world and prepel our economy forward."
-BRA_companhia_siderúrgica_nacional: "Integrate the Companhia Siderúrgica Nacional"
-BRA_companhia_siderúrgica_nacional_desc: "The Companhia Siderúrgica Nacional is a steel mill company that the government had recently created, now, we should integrate it fully within the state of Brazil as a state led company to help propel our economy and steel production forward."
+BRA_companhia_siderurgica_nacional: "Integrate the Companhia Siderúrgica Nacional"
+BRA_companhia_siderurgica_nacional_desc: "The Companhia Siderúrgica Nacional is a steel mill company that the government had recently created, now, we should integrate it fully within the state of Brazil as a state led company to help propel our economy and steel production forward."
 BRA_the_shogunate_consolidated: "The Shogunate Consolidated"
 BRA_the_shogunate_consolidated_desc: "The Brazilian nation has just done the unthinkable! It just has flipped into a Japanese style Shogunate and might live to tell the tale! Now, lets begin working towards an alliance with Japan before those grubby Americans and other western powers move to dismantle us."
 BRA_open_the_japanese_embassy: "Open the Japanese Embassy"
@@ -132,7 +132,7 @@ BRA_back_in_time_desc: "Brazil is stuck in the past, that means its industrial p
 #Brazil Events
 bra.1.t: "Brazil in 1936"
 bra.1.d: "Since the Great War, Brazil has been able to show itself as succesful on the world stage. With a constantly growing economy, a great population, full of resources and filled with potential, everything seems to be going good for Brazil.\n\nThat's what the international observers see. But inside Brazil the feeling is very different. The ruling government, widely regarded as oligarchic and disinterested in the people, has continued for decades with the tradition of Cafe-com-leite politics, where the "democratic" government has been controlled by the influential states of São Paulo and Minas Gerais, and their oligarchic coronel patrons, that have not cared for the deep social and economical disparities in our society.\n\nA marxist insurrection in 1931 didn't help either, and the violence of it has spread a sense of anti-red sentiment amongst some of the population, who in disapproval of the decadent republic and in hate of marxism has turned to alternative populist groups spreading a message against the government.\n\nLuckily for the government, the gambit of intervening in the Chaco War to the south, preventing the growth of Argentina's influence in our vicinities has given some legitimacy to the government, that has succesfully shown Brazil as strong. Nonetheless, their support is a fraction of our nation, and it seems the seams of our republic are showing, as political polarization mantains."
-bra.1.a: "We have to get through this""
+bra.1.a: "We have to get through this"
 bra.2.t: "Minor strikes all over"
 bra.2.d: "Different workers' aggrupations have declared being on strike, looking for further rights and laws to their benefit. This show of chaos has been supported directly by the PCB, that has shown an agenda of mobilizing the workers of Brazil in their support. A worrying trend."
 bra.2.a: "We don't need this."
@@ -237,15 +237,13 @@ bra.29.d: "The minorities and natives of Brazil have been not neglected but surl
 bra.29.a: "They could help us in the longrun."
 bra.29.b: "It not their time."
 bra.30.t: "Brazil Paths"
-bra.30.d: "Hello there from the coder/dev of Brazil! I would have made this like the paths trigger in KX but I do not know how to code that, so we will stick here. Now! We have quite the amount of paths to choose from here so lets get to them!                      Liberals: Play as the Feds, win the civil war and choose the Liberals in the election.
-Conservatives: Play as the Feds, win the civil war and choose the Conservatives in the election.
-Socialists: Play as the Feds, win the civil war and choose the Socialists in the election.
-Military (Feds): Play as the Feds, win the civil war and choose the military option in the elections event.
-
-Empire: Play as the BPS, win the civil war, and when the Gunshots in Sao Paulo event appears, click the They Have Spoken option and continue down the tree and complete The Empire focus.
-Dictatorship: Play as the BPS, win the civil war, and when the Gunshots in Sao Paulo event appears, click the Declare Martial Law option and continue down the tree and complete The State focus.
-Military (BPS): Play as the BPS, win the civil war, and when the Gunshots in Sao Paulo event appears, click the Military Steals the Show.. And the Government option and start down the military tree.
-
+bra.30.d: "Hello there from the coder/dev of Brazil! I would have made this like the paths trigger in KX but I do not know how to code that, so we will stick here. Now! We have quite the amount of paths to choose from here so lets get to them! \n Liberals: Play as the Feds, win the civil war and choose the Liberals in the election.
+Conservatives: Play as the Feds, win the civil war and choose the Conservatives in the election. \n
+Socialists: Play as the Feds, win the civil war and choose the Socialists in the election. \n
+Military (Feds): Play as the Feds, win the civil war and choose the military option in the elections event. \n
+Empire: Play as the BPS, win the civil war, and when the Gunshots in Sao Paulo event appears, click the They Have Spoken option and continue down the tree and complete The Empire focus. \n
+Dictatorship: Play as the BPS, win the civil war, and when the Gunshots in Sao Paulo event appears, click the Declare Martial Law option and continue down the tree and complete The State focus. \n
+Military (BPS): Play as the BPS, win the civil war, and when the Gunshots in Sao Paulo event appears, click the Military Steals the Show.. And the Government option and start down the military tree. \n
 Other paths not here yet because not finished if you see this text report it in bug reports and ill fix because i would have forgot."
 bra.30.a: "Cool"
 bra.31.t: "Welfare Systems"
