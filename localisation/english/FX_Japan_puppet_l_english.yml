@@ -98,3 +98,9 @@ MON_JAP_paternal_autocrat: "Mongol United Banners"
 MON_JAP_paternal_autocrat_DEF: "The Mongol United Banners"
 MON_JAP_valkist: "Reihoku-jichisho"
 MON_JAP_valkist_DEF: "The Lingbei Autonomous Province" 
+####India
+IND_JAP: "Indian National State"
+IND_JAP_DEF: "The Indian National State"
+IND_JAP_ADJ: "Indian"
+IND_JAP_valkist: "Shinsei Minami-Ajia Hogo-ryo" #神聖南アジア保護領
+IND_JAP_valkist_DEF: "The Holy South Asia Protectorate"

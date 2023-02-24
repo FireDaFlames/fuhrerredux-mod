@@ -710,9 +710,9 @@ shared_focus = {
 		every_unit_leader = {
 			limit = {
 				OR = {
-					character = JAP_Shimazu_Tadashige
-					character = JAP_Toshinari_Maeda
-					character = JAP_Kacho_Hironobu
+					is_character = JAP_Shimazu_Tadashige
+					is_character = JAP_Toshinari_Maeda
+					is_character = JAP_Kacho_Hironobu
 				}
 			}
 			set_character_flag = JAP_leader
@@ -809,7 +809,7 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: JAP_and_constitution"
 		add_popularity = {
 			ideology = var:current_party_ideology_group 
-			popularity = 0.13
+			popularity = 0.05
 		}
 	}
 }
@@ -1021,11 +1021,10 @@ shared_focus = {
 				has_government = national_populist
 				has_government = paternal_autocrat
 				NOT = {
-					OR = {
-						has_government = vanguardist
-						has_government = collectivist
-						has_government = libertarian_socialist
-					}
+					count_triggers = 1
+					has_government = vanguardist
+					has_government = collectivist
+					has_government = libertarian_socialist
 				}
 			}
 		}
@@ -1065,7 +1064,6 @@ shared_focus = {
 	cost = 4
 	completion_reward = {
 		custom_effect_tooltip = "Bring our revolution to the whole new level"
-		#unlock establish puppet state decision
 	}
 }
 shared_focus = {
@@ -1349,7 +1347,7 @@ shared_focus = {
 		random_country = {
 			limit = {
 				AND = {
-					tag = SOV 
+					has_socialist_government = yes
 					is_in_faction_with = JAP 
 					is_faction_leader = yes
 				} 
@@ -1647,20 +1645,19 @@ shared_focus = {
 		focus = JAP_toward_mongolia
 	}
 	bypass = {
-		AND = {
-			SIK = {
-				or = {
-					exists = no 
-					is_puppet_of = JAP 
-					is_in_faction_with = JAP 
-				}
+		count_triggers = 2
+		SIK = {
+			or = {
+				exists = no 
+				is_puppet_of = JAP 
+				is_in_faction_with = JAP 
 			}
-			TIB = {
-				or = {
-					exists = no 
-					is_puppet_of = JAP 
-					is_in_faction_with = JAP 
-				}
+		}
+		TIB = {
+			or = {
+				exists = no 
+				is_puppet_of = JAP 
+				is_in_faction_with = JAP 
 			}
 		}
 	}

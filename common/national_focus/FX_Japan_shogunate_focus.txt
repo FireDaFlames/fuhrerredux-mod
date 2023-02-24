@@ -432,6 +432,10 @@ shared_focus = {
 	cost = 2
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus JAP_the_manager_assumed_shogunate"
+		add_popularity = {
+			ideology = var:current_party_ideology_group
+			popularity = 0.15
+		}
 	}
 }
 shared_focus = {
@@ -444,6 +448,7 @@ shared_focus = {
 	cost = 5
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus JAP_restoration_of_shikkenate"
+		add_ideas = one_party_dictatorship
 	}
 }
 shared_focus = {
@@ -453,6 +458,12 @@ shared_focus = {
 	x = -6
 	y = 1
 	prerequisite = { focus = JAP_restoration_of_shikkenate }
+	cost = 5 
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_land_reform_program"
+		add_stability = 0.05
+		JAP_land_reform_progress_effect = yes 
+	}
 }
 shared_focus = {
 	id = JAP_deal_with_landowners
@@ -461,6 +472,11 @@ shared_focus = {
 	x = 1
 	y = 1
 	prerequisite = { focus = JAP_land_reform_program }
+	cost = 5 
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_land_reform_program"
+		add_political_power = 50
+	}
 }
 shared_focus = {
 	id = JAP_fund_local_factory
@@ -469,6 +485,37 @@ shared_focus = {
 	x = 1
 	y = 1
 	prerequisite = { focus = JAP_deal_with_landowners }
+	cost = 5 
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_fund_local_factory"
+		add_political_power = -50
+		random_owned_state = {
+			limit = {
+				is_core_of = JAP 
+				is_controlled_by = JAP 
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			random_owned_state = {
+				limit = {
+					count_triggers = 3
+					NOT = {
+						state = PREV 
+					}
+					is_controlled_by = JAP 
+					is_core_of = JAP 
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		} 
+	}
 }
 shared_focus = {
 	id = JAP_agricultural_reserve_area
@@ -477,6 +524,46 @@ shared_focus = {
 	x = -2
 	y = 1
 	prerequisite = { focus = JAP_land_reform_program }
+	cost = 5 
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_agricultural_reserve_area"
+		random_owned_state = {
+			limit = {
+				is_core_of = JAP 
+				is_controlled_by = JAP 
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = -1
+				instant_build = yes
+			}
+			random_owned_state = {
+				limit = {
+					count_triggers = 3
+					NOT = {
+						state = PREV 
+					}
+					is_controlled_by = JAP 
+					is_core_of = JAP 
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = -1
+					instant_build = yes
+				}
+			}
+		}  
+	}
 }
 shared_focus = {
 	id = JAP_decrease_agricultural_area_tax
@@ -485,6 +572,12 @@ shared_focus = {
 	x = 0
 	y = 1
 	prerequisite = { focus = JAP_agricultural_reserve_area }
+	cost = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_decrease_agricultural_area_tax"
+		add_political_power = -50
+		add_ideas = JAP_agricultural_area_tax_decreased
+	}
 }
 shared_focus = {
 	id = JAP_local_cooperative_center
@@ -494,6 +587,14 @@ shared_focus = {
 	y = 2
 	prerequisite = { focus = JAP_deal_with_landowners }
 	prerequisite = { focus = JAP_agricultural_reserve_area }
+	cost = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_decrease_agricultural_area_tax"
+		add_dynamic_modifier = {
+			modifier = JAP_local_cooperative_center_idea
+			scope = JAP 
+		}
+	}
 }
 shared_focus = {
 	id = JAP_appoint_lcc_reg_overseer
@@ -502,6 +603,11 @@ shared_focus = {
 	x = 1
 	y = 1
 	prerequisite = { focus = JAP_local_cooperative_center }
+	cost = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_decrease_agricultural_area_tax"
+		#country event about lcc overseer appointment method
+	}
 }
 shared_focus = {
 	id = JAP_farmer_bureaucracy
@@ -511,6 +617,11 @@ shared_focus = {
 	y = 1
 	prerequisite = { focus = JAP_decrease_agricultural_area_tax }
 	prerequisite = { focus = JAP_local_cooperative_center }
+	cost = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_farmer_bureaucracy"
+		JAP_land_reform_progress_effect = yes 
+	}
 }
 shared_focus = {
 	id = JAP_yamato_land_for_yamato_man
@@ -520,6 +631,15 @@ shared_focus = {
 	y = 2
 	prerequisite = { focus = JAP_farmer_bureaucracy }
 	prerequisite = { focus = JAP_appoint_lcc_reg_overseer }
+	cost = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_yamato_land_for_yamato_man"
+		add_popularity = {
+			ideology = var:current_party_ideology_group
+			popularity = 0.2
+		}
+		JAP_land_reform_progress_effect = yes 
+	}
 }
 shared_focus = {
 	id = JAP_open_new_arsenal
@@ -528,6 +648,21 @@ shared_focus = {
 	x = 0
 	y = 1
 	prerequisite = { focus = JAP_restoration_of_shikkenate }
+	cost = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_open_new_arsenal"
+		random_owned_state = {
+			limit = {
+				is_controlled_by = JAP 
+				is_core_of = JAP 
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
 }
 shared_focus = {
 	id = JAP_draft_new_labour_act
@@ -536,6 +671,11 @@ shared_focus = {
 	x = -1
 	y = 1
 	prerequisite = { focus = JAP_open_new_arsenal }
+	cost = 5 
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_draft_new_labour_act"
+		add_ideas = JAP_shikkenate_labour_act
+	}
 }
 shared_focus = {
 	id = JAP_increase_max_work_hour
@@ -544,6 +684,14 @@ shared_focus = {
 	x = -1
 	y = 1
 	prerequisite = { focus = JAP_draft_new_labour_act }
+	cost = 5 
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_increase_max_work_hour"
+		swap_ideas = {
+			remove_idea = JAP_shikkenate_labour_act
+			add_ideas = JAP_shikkenate_labour_act_1
+		}
+	}
 }
 shared_focus = {
 	id = JAP_legalize_bonded_labour
@@ -553,6 +701,14 @@ shared_focus = {
 	y = 1
 	prerequisite = { focus = JAP_increase_max_work_hour }
 	prerequisite = { focus = JAP_fund_local_factory } 
+	cost = 5 
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_legalize_bonded_labour"
+		swap_ideas = {
+			remove_idea = JAP_shikkenate_labour_act_1
+			add_ideas = JAP_shikkenate_labour_act_2
+		}
+	}
 }
 shared_focus = {
 	id = JAP_maximize_industrial_expansion
@@ -562,6 +718,11 @@ shared_focus = {
 	y = 2
 	prerequisite = { focus = JAP_draft_new_labour_act }
 	prerequisite = { focus = JAP_increase_max_work_hour }
+	cost = 5 
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_legalize_bonded_labour"
+		add_ideas = JAP_maximum_industrial_capacity_activated
+	}
 }
 shared_focus = {
 	id = JAP_deal_with_conglomerate
@@ -570,6 +731,12 @@ shared_focus = {
 	x = 2
 	y = 1
 	prerequisite = { focus = JAP_open_new_arsenal }
+	cost = 5 
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_deal_with_conglomerate"
+		add_stability = -0.05
+		add_political_power = -50
+	}
 }
 shared_focus = {
 	id = JAP_regulated_market_policy
@@ -579,6 +746,11 @@ shared_focus = {
 	y = 1
 	prerequisite = { focus = JAP_deal_with_conglomerate }
 	mutually_exclusive = { focus = JAP_infiltrate_zaibatsu } 
+	cost = 5 
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_regulated_market_policy"
+		add_ideas = JAP_regulated_market_policy_idea_0
+	}
 }
 shared_focus = {
 	id = JAP_rice_for_we_eat
@@ -587,6 +759,14 @@ shared_focus = {
 	x = 0
 	y = 1
 	prerequisite = { focus = JAP_regulated_market_policy }
+	cost = 5 
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_rice_for_we_eat"
+		swap_ideas = {
+			remove_idea = JAP_regulated_market_policy_idea_0
+			add_ideas = JAP_regulated_market_policy_idea_1
+		}
+	}
 }
 shared_focus = {
 	id = JAP_infiltrate_zaibatsu
@@ -596,6 +776,11 @@ shared_focus = {
 	y = 1
 	prerequisite = { focus = JAP_deal_with_conglomerate }
 	mutually_exclusive = { focus = JAP_regulated_market_policy } 
+	cost = 5 
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_infiltrate_zaibatsu"
+		add_ideas = JAP_teardown_the_zaibatsu_0
+	}
 }
 shared_focus = {
 	id = JAP_squeeze_their_neck
@@ -604,6 +789,14 @@ shared_focus = {
 	x = 0
 	y = 1
 	prerequisite = { focus = JAP_infiltrate_zaibatsu }
+	cost = 5 
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_squeeze_their_neck"
+		swap_ideas = {
+			remove_idea = JAP_teardown_the_zaibatsu_0
+			add_ideas = JAP_teardown_the_zaibatsu_1
+		}
+	}
 }
 shared_focus = {
 	id = JAP_full_economic_manipulation
@@ -614,6 +807,11 @@ shared_focus = {
 	prerequisite = {
 		focus = JAP_rice_for_we_eat
 		focus = JAP_squeeze_their_neck
+	}
+	cost = 5 
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_full_economic_manipulation"
+		add_ideas = JAP_manipulator_of_trade
 	}
 }
 shared_focus = {
@@ -626,6 +824,11 @@ shared_focus = {
 	available = {
 		has_completed_focus = JAP_full_economic_manipulation
 	}
+	cost = 5 
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_no_place_for_lazybones"
+		add_ideas = JAP_jakuniku_kyoushoku
+	}
 }
 shared_focus = {
 	id = JAP_reform_hierarchical_command
@@ -634,6 +837,11 @@ shared_focus = {
 	x = 7
 	y = 1
 	prerequisite = { focus = JAP_restoration_of_shikkenate }
+	cost = 5 
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_no_place_for_lazybones"
+		add_political_power = 100 
+	}
 }
 shared_focus = {
 	id = JAP_control_nation_from_shadow
@@ -642,6 +850,11 @@ shared_focus = {
 	x = -2
 	y = 1
 	prerequisite = { focus = JAP_reform_hierarchical_command }
+	cost = 5 
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_no_place_for_lazybones"
+		add_country_leader_trait = JAP_demon_lord_in_disguise
+	}
 }
 shared_focus = {
 	id = JAP_even_shogun_is_our_pet
@@ -650,6 +863,11 @@ shared_focus = {
 	x = -2
 	y = 2
 	prerequisite = { focus = JAP_control_nation_from_shadow }
+	cost = 5 
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_even_shogun_is_our_pet"
+		add_country_leader_trait = JAP_yamato_ogosho
+	}
 }
 shared_focus = {
 	id = JAP_education_reform
@@ -658,6 +876,11 @@ shared_focus = {
 	x = 2
 	y = 1
 	prerequisite = { focus = JAP_reform_hierarchical_command } 
+	cost = 5 
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_education_reform"
+		add_research_slot = 1
+	}
 }
 shared_focus = {
 	id = JAP_teach_with_patriotism
@@ -666,6 +889,11 @@ shared_focus = {
 	x = -1
 	y = 1
 	prerequisite = { focus = JAP_education_reform }
+	cost = 5 
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_teach_with_patriotism"
+		add_ideas = JAP_patriotic_education
+	}
 }
 shared_focus = {
 	id = JAP_install_new_daijo_kan
@@ -675,6 +903,11 @@ shared_focus = {
 	y = 1
 	prerequisite = { focus = JAP_teach_with_patriotism }
 	prerequisite = { focus = JAP_even_shogun_is_our_pet }
+	cost = 5 
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_install_new_daijo_kan"
+		add_country_leader_trait = JAP_chancellor_of_state
+	}
 }
 shared_focus = {
 	id = JAP_full_manipulation_by_shikkenate
@@ -683,6 +916,16 @@ shared_focus = {
 	x = 1
 	y = 1
 	prerequisite = { focus = JAP_install_new_daijo_kan }
+	cost = 5 
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_full_manipulation_by_shikkenate"
+		add_political_power = 100
+		add_stability = 0.2
+		add_popularity = {
+			ideology = var:current_party_ideology_group
+			popularity = 0.2
+		}
+	}
 }
 shared_focus = {
 	id = JAP_academic_monetary_fund_act
@@ -691,6 +934,11 @@ shared_focus = {
 	x = 1
 	y = 1
 	prerequisite = { focus = JAP_education_reform }
+	cost = 5 
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_academic_monetary_fund_act"
+		add_ideas = JAP_amfa_0
+	}
 }
 shared_focus = {
 	id = JAP_universal_research_institute
@@ -699,6 +947,14 @@ shared_focus = {
 	x = 0
 	y = 1
 	prerequisite = { focus = JAP_academic_monetary_fund_act } 
+	cost = 5 
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_universal_research_institute"
+		swap_ideas = {
+			remove_idea = JAP_amfa_0
+			add_idea = JAP_amfa_1
+		}
+	}
 }
 shared_focus = {
 	id = JAP_philosophy_of_new_panasianism
@@ -708,6 +964,11 @@ shared_focus = {
 	y = 1
 	prerequisite = { focus = JAP_universal_research_institute }
 	prerequisite = { focus = JAP_teach_with_patriotism }
+	cost = 5 
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_philosophy_of_new_panasianism"
+		add_war_support = 0.2
+	}
 }
 shared_focus = {
 	id = JAP_establish_supreme_council_of_professions
@@ -716,6 +977,11 @@ shared_focus = {
 	x = 1
 	y = 1
 	prerequisite = { focus = JAP_universal_research_institute }
+	cost = 5 
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_establish_supreme_council_of_professions"
+		add_stability = 0.2
+	}
 }
 shared_focus = {
 	id = JAP_now_we_are_big_guy
@@ -726,6 +992,12 @@ shared_focus = {
 	prerequisite = { focus = JAP_philosophy_of_new_panasianism }
 	prerequisite = { focus = JAP_establish_supreme_council_of_professions }
 	prerequisite = { focus = JAP_full_manipulation_by_shikkenate } 
+	cost = 5 
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_now_we_are_big_guy"
+		add_stability = 0.2
+		add_ideas = JAP_raise_the_rising_sun_flag
+	}
 }
 ###########National Purificationist###########
 shared_focus = {

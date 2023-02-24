@@ -824,6 +824,7 @@ JAP_expansionism_decision = {
 			}
 			else_if = {
 				limit = {
+					count_triggers = 2
 					TIB = {
 						exists = no  
 					}
@@ -950,6 +951,9 @@ JAP_expansionism_decision = {
 					add_state_core = PREV 
 					transfer_state = PREV 
 				}
+				FIC = {
+					remove_state_core = PREV
+				}
 			}
 			set_autonomy = {
 				target = ICR
@@ -1061,52 +1065,6 @@ JAP_expansionism_decision = {
 			}
 			IND = {
 				set_cosmetic_tag = IND_JAP
-			}
-			set_country_flag = JAP_india_puppet_done
-		}	
-	}
-	JAP_India_Balkanized = {
-		visible = {
-			tag = JAP
-			NOT = {
-				has_country_flag = JAP_india_puppet_done
-			}
-		}
-		available = {
-			AND = {
-				has_completed_focus = JAP_demand_delhi_subjugation
-				RAJ = {
-					exists = no 
-				}
-				JAP = {
-					any_state = {
-						is_core_of = IND
-						is_fully_controlled_by = JAP
-					}
-					any_state = {
-						is_core_of = PAK
-						is_fully_controlled_by = JAP
-					}
-				}
-			}
-		}
-		fire_only_once = yes 
-		complete_effect = {
-			release_autonomy = {
-				target = IND 
-				autonomy_state = autonomy_puppet
-				freedom_level = 0.5
-			}
-			release_autonomy = {
-				target = PAK 
-				autonomy_state = autonomy_puppet
-				freedom_level = 0.5
-			}
-			IND = {
-				set_cosmetic_tag = IND_JAP
-			}
-			PAK = {
-				set_cosmetic_tag = PAK_JAP
 			}
 			set_country_flag = JAP_india_puppet_done
 		}	
