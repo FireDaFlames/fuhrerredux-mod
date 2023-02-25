@@ -824,7 +824,6 @@ JAP_expansionism_decision = {
 			}
 			else_if = {
 				limit = {
-					count_triggers = 2
 					TIB = {
 						exists = no  
 					}
