@@ -108,7 +108,7 @@ on_actions = {
 		effect = {
 			#Begin on_weekly event cycle
 			every_country = {
-		#SP_NS_coalition_pop_eval = yes
+		SP_NS_coalition_pop_eval = yes
 				country_event = { id = fr.political.2 }
 			}
 		}
