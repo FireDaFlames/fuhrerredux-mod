@@ -185,7 +185,7 @@ country_event = {
 	}
     immediate = {
         ### Scripted effects	
-        SP_NS_coalition_pop_eval = yes			
+        #SP_NS_coalition_pop_eval = yes			
 
         ### Events
 
