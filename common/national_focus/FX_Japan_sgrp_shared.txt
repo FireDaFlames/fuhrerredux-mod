@@ -1021,6 +1021,7 @@ shared_focus = {
 				has_government = national_populist
 				has_government = paternal_autocrat
 				NOT = {
+					count_triggers = 1
 					has_government = vanguardist
 					has_government = collectivist
 					has_government = libertarian_socialist
@@ -1644,20 +1645,19 @@ shared_focus = {
 		focus = JAP_toward_mongolia
 	}
 	bypass = {
-		AND = {
-			SIK = {
-				or = {
-					exists = no 
-					is_puppet_of = JAP 
-					is_in_faction_with = JAP 
-				}
+		count_triggers = 2
+		SIK = {
+			or = {
+				exists = no 
+				is_puppet_of = JAP 
+				is_in_faction_with = JAP 
 			}
-			TIB = {
-				or = {
-					exists = no 
-					is_puppet_of = JAP 
-					is_in_faction_with = JAP 
-				}
+		}
+		TIB = {
+			or = {
+				exists = no 
+				is_puppet_of = JAP 
+				is_in_faction_with = JAP 
 			}
 		}
 	}

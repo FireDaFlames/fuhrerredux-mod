@@ -489,7 +489,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus JAP_fund_local_factory"
 		add_political_power = -50
-		random_state = {
+		random_owned_state = {
 			limit = {
 				is_core_of = JAP 
 				is_controlled_by = JAP 
@@ -499,8 +499,9 @@ shared_focus = {
 				level = 1
 				instant_build = yes
 			}
-			random_state = {
+			random_owned_state = {
 				limit = {
+					count_triggers = 3
 					NOT = {
 						state = PREV 
 					}
@@ -526,7 +527,7 @@ shared_focus = {
 	cost = 5 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus JAP_agricultural_reserve_area"
-		random_state = {
+		random_owned_state = {
 			limit = {
 				is_core_of = JAP 
 				is_controlled_by = JAP 
@@ -541,8 +542,9 @@ shared_focus = {
 				level = -1
 				instant_build = yes
 			}
-			random_state = {
+			random_owned_state = {
 				limit = {
+					count_triggers = 3
 					NOT = {
 						state = PREV 
 					}
@@ -649,7 +651,7 @@ shared_focus = {
 	cost = 5
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus JAP_open_new_arsenal"
-		random_state = {
+		random_owned_state = {
 			limit = {
 				is_controlled_by = JAP 
 				is_core_of = JAP 
@@ -687,7 +689,7 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus JAP_increase_max_work_hour"
 		swap_ideas = {
 			remove_idea = JAP_shikkenate_labour_act
-			add_idea = JAP_shikkenate_labour_act_1
+			add_ideas = JAP_shikkenate_labour_act_1
 		}
 	}
 }
@@ -704,7 +706,7 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus JAP_legalize_bonded_labour"
 		swap_ideas = {
 			remove_idea = JAP_shikkenate_labour_act_1
-			add_idea = JAP_shikkenate_labour_act_2
+			add_ideas = JAP_shikkenate_labour_act_2
 		}
 	}
 }
@@ -762,7 +764,7 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus JAP_rice_for_we_eat"
 		swap_ideas = {
 			remove_idea = JAP_regulated_market_policy_idea_0
-			add_idea = JAP_regulated_market_policy_idea_1
+			add_ideas = JAP_regulated_market_policy_idea_1
 		}
 	}
 }
@@ -792,7 +794,7 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus JAP_squeeze_their_neck"
 		swap_ideas = {
 			remove_idea = JAP_teardown_the_zaibatsu_0
-			add_idea = JAP_teardown_the_zaibatsu_1
+			add_ideas = JAP_teardown_the_zaibatsu_1
 		}
 	}
 }
