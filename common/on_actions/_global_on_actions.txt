@@ -3,6 +3,31 @@
 ### DON'T EDIT THIS FILE WITHOUT CHECKING IN THE CODING CHANNEL FIRST ###
 
 on_actions = {
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					owner = {
+						is_chinese_tag = yes 
+						NOT = {
+							tag = ZHI
+						}
+					}
+				}
+				every_country = {
+					limit = {
+						or = {
+							tag = CHI
+							tag = MAN 
+						}
+					}
+					add_state_core = PREV 
+					remove_state_claim = PREV
+				} 
+				add_claim_by = ZHI 
+			}
+		}
+	}
   on_annex = {
     effect = {
       recheck_annexations = yes

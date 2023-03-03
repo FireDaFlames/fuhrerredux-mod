@@ -587,7 +587,9 @@ is_brz_portuguese = {
 }
 is_chinese_tag = {
 	OR = {
+		tag = MAN 
 		tag = CHI
+		tag = ZHI
 		tag = YUN
 		tag = GXC
 		tag = SHX

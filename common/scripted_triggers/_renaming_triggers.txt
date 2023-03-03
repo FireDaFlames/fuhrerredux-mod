@@ -39,14 +39,16 @@ is_brazillian_tag = {
 
 is_chinese_tag = {
   OR = {
+    tag = SIK
     tag = CHI
     tag = MAN
     tag = ZHI
     tag = SHX
-    tag = XBM
+    tag = XSM
     tag = YUN
     tag = SCH
     tag = KMT
+    tag = PRC
   }
 }
 

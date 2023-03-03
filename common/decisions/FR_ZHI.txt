@@ -555,6 +555,12 @@ ZHI_china = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision zhi_form_china"
 			set_cosmetic_tag = ZHI_CHI
+			every_state = {
+				limit = {
+					is_claimed_by = ZHI 
+				}
+				add_core_of = ZHI 
+			}
 		}
 	}
 }
