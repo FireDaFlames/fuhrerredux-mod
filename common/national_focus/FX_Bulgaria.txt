@@ -774,17 +774,146 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BUL_the_bulgarian_nation
-		icon = none 
+		id = BUL_empire_balkan
+		icon = GFX_goal_BUL_balkan_empire
+		cost = 0
+		relative_position_id = BUL_realise_balkan_ideals
+		prerequisite = {
+			focus = BUL_realise_balkan_ideals
+		}
+		mutually_exclusive = {
+			focus = BUL_empire_romania_bulgaria
+		}
+		x = -2
+		y = 1
+		available = {
+			has_government = vanguardist
+			has_government = collectivist
+			has_government = libertarian_socialist
+		}
+		completion_reward = {
+			#none
+		}
+	}
+	focus = {
+		id = BUL_subjucate_balkans
+		icon = GFX_goal_BUL_balkan_subjucate_balkans
+		relative_position_id = BUL_empire_balkan
+		prerequisite = {
+			focus = BUL_empire_balkan
+		}
 		cost = 5
 		x = 0
 		y = 1
-		relative_position_id = BUL_empire_proclaim_greater_empire
+		available = {
+			has_government = vanguardist
+			has_government = collectivist
+			has_government = libertarian_socialist
+		}
+		completion_reward = {
+			BUL = {
+				create_wargoal = {
+					target = GRE
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = ROM
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = SER
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = ALB
+					type = annex_everything
+				}
+			}
+		}
+	}
+	focus = {
+		id = BUL_integrate_balkans
+		icon = GFX_goal_BUL_balkan_integrate_balkans
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_subjucate_balkans
 		prerequisite = {
 			focus = BUL_empire_proclaim_greater_empire
 		}
 		available = {
-			has_government = valkist
+			any_owned_state = {
+				is_balkan_state = yes
+			}
+			has_government = vanguardist
+			has_government = collectivist
+			has_government = libertarian_socialist
+		}
+		completion_reward = {
+			custom_effect_tooltip = 3_bul_tt
+			every_owned_state = {
+				limit = {
+					is_balkan_state = yes
+					controller = {
+						original_tag = BUL
+					}
+				}
+				add_core_of = BUL
+			}
+		}
+	}
+	focus = {
+		id = BUL_the_balkan_empire
+		icon = GFX_goal_BUL_the_balkan_empire
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = BUL_integrate_balkans
+		prerequisite = {
+			focus = BUL_integrate_balkans
+		}
+		available = {
+			has_government = vanguardist
+			has_government = collectivist
+			has_government = libertarian_socialist
+		}
+		completion_reward = {
+			set_cosmetic_tag = BUL_balkan_union_UNIFIED
+		}
+	}
+	focus = {
+		id = BUL_the_balkan_spirit
+		icon = GFX_goal_BUL_balkan_the_balkan_spirit
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_the_balkan_empire
+		prerequisite = {
+			focus = BUL_the_balkan_empire
+		}
+		available = {
+			has_government = vanguardist
+			has_government = collectivist
+			has_government = libertarian_socialist
+		}
+		completion_reward = {
+			add_ideas = BUL_balkan_spirit
+		}
+	}
+	focus = {
+		id = BUL_balkan_decisions
+		icon = GFX_goal_BUL_balkan_decisions
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_the_balkan_spirit
+		prerequisite = {
+			focus = BUL_the_balkan_spirit
+		}
+		available = {
+			has_government = vanguardist
+			has_government = collectivist
+			has_government = libertarian_socialist
 		}
 		completion_reward = {
 			

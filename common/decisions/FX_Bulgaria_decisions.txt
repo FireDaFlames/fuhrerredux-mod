@@ -1165,25 +1165,45 @@ BUL_roman_expand_category_puppets_category = {
 				AND = {
 					has_global_flag = BUL_formed_roman_empire
 					# OR = {
-						# 	SPF = { exists = no } 
-						# 	SPM = { exists = no } 
-						# 	SPR = { exists = no } 
-						# 	SPA = { exists = no } 
-						# }
-						controls_state = 171
-						controls_state = 174
-						controls_state = 176
-						controls_state = 1006
-						controls_state = 172
-						controls_state = 166
-						controls_state = 1005
-						controls_state = 165
-						controls_state = 854
-						controls_state = 167
-						controls_state = 175
-						controls_state = 41
-						controls_state = 170
-						controls_state = 833
+					# 	SPF = { exists = no } 
+					# 	SPM = { exists = no } 
+					# 	SPR = { exists = no } 
+					# 	SPA = { exists = no } 
+					# }
+					controls_state = 171
+					controls_state = 174
+					controls_state = 176
+					controls_state = 1006
+					controls_state = 172
+					controls_state = 166
+					controls_state = 1005
+					controls_state = 165
+					controls_state = 854
+					controls_state = 167
+					controls_state = 175
+					controls_state = 41
+					controls_state = 170
+					controls_state = 833
+				}
+			}
+		}
+		remove_effect = {
+			BUL = {
+				every_owned_state = {
+					limit = {
+						OR = {
+							is_core_of = SPR
+							state = 833
+						}
+						
+						NOT = { 
+							state = 169
+							state = 834
+							state = 173
+							state = 118
+							state = 177
+							state = 168
+						}
 					}
 				}
 			}
@@ -1842,3 +1862,135 @@ BUL_roman_expand_category_puppets_category = {
 			}
 		}
 	}
+	BUL_roman_puppet_iberia = {
+		fire_only_once = yes
+		allowed = {
+			original_tag = BUL
+		}
+		visible = {
+			has_completed_focus = BUL_conquer_iberia
+		}
+		available = {
+			BUL = {
+				AND = {
+					has_global_flag = BUL_formed_roman_empire
+					SPF = { exists = no } 
+					SPM = { exists = no } 
+					SPR = { exists = no } 
+					SPA = { exists = no }
+					POR = { exists = no}
+					controls_state = 112
+					controls_state = 833
+					controls_state = 999
+					controls_state = 1001
+					controls_state = 181
+					controls_state = 1000
+					controls_state = 180
+					controls_state = 697
+					controls_state = 171
+					controls_state = 174
+					controls_state = 176
+					controls_state = 1006
+					controls_state = 172
+					controls_state = 166
+					controls_state = 1005
+					controls_state = 165
+					controls_state = 854
+					controls_state = 167
+					controls_state = 175
+					controls_state = 41
+					controls_state = 170
+					controls_state = 169
+					controls_state = 834
+					controls_state = 173
+					controls_state = 168
+					controls_state = 998
+					controls_state = 179
+
+				}
+			}
+		}
+		remove_effect = {
+			BUL = {
+				every_owned_state = {
+					limit = {
+						OR = {
+							is_core_of = SPR
+							is_core_of = POR
+							state = 169
+							state = 834
+							state = 173
+							state = 168
+							state = 998
+							state = 179
+							state = 833
+						}
+					}
+					transfer_state_to = SPR
+					add_core_of = SPR
+					remove_claim_by = BUL
+				}
+				set_autonomy = {
+					target = SPR
+					autonomy_state = autonomy_syntrofos
+				}
+			}
+			SPR = {
+				load_focus_tree = generic_focus
+				set_cosmetic_tag = SPR_iberia_syntrofos
+			}
+		}
+	}
+	BUL_roman_create_faction = {
+		allowed = {
+			original_tag = BUL
+		}
+		available = {
+			AND = {
+				EGY = {
+					is_puppet_of = BUL
+				}
+				IRQ = {
+					is_puppet_of = BUL
+				}
+				BUL = {
+					NOT = {
+						is_in_faction = yes
+					}
+				}
+			}
+		}
+		remove_effect = {
+			BUL = {
+				create_faction = "Roman Imperial Alliance"
+			}
+		}
+	}
+}
+BUL_roman_expand_panorth_expand_category = {
+	BUL_panorth_help_armenia_kurdistan = {
+		fire_only_once = yes
+		allowed = {
+			original_tag = BUL
+		}
+		visible = {
+			ARM = {
+				is_in_faction_with = BUL
+			}
+		}
+		available = {
+			ARM = {
+				any_neighbor_country = {
+					tag = KUR
+				}
+			}
+			BUL = {has_completed_focus = BUL_pan_orthodoxism}
+		}
+		remove_effect = {
+			KUR = {
+				country_event = kur.1
+			}
+		}
+	}
+
+}
