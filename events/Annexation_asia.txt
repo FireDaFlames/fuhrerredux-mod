@@ -965,16 +965,6 @@ country_event = { # Fate of Sinkiang
 
   immediate = {
     hidden_effect = {
-      add_to_temp_array = { core_removal_array = SIK }
-      remove_all_cores_and_claims_of_tags = yes
-      SIK = {
-        add_state_core = 287
-        add_state_core = 617
-        add_state_core = 618
-        add_state_core = 619
-        add_state_core = 975
-        drop_cosmetic_tag = yes
-      }
       determine_ally_china = yes 
     }
   }

@@ -948,6 +948,8 @@ is_han_chinese_region = {
 		state = 932
 		state = 874
 		state = 614
+		state = 1046
+		state = 1045
 		#Shanxi
 		state = 983
 		state = 615
@@ -1006,6 +1008,8 @@ is_han_chinese_region = {
 		state = 603
 		#Sichuan
 		state = 605
+		state = 1044
+		state = 1043
 		#Xikang
 		state = 601
 		#Ningxia
@@ -1015,6 +1019,7 @@ is_han_chinese_region = {
 		state = 283
 		#Qinghai
 		state = 604
+		state = 1040
 		#Chahar
 		state = 612
 		state = 611
@@ -1044,5 +1049,8 @@ is_xinjiang = {
 		state = 975
 		state = 287
 		state = 619
+		state = 1042
+		state = 1041
+		state = 1019
 	}
 }
