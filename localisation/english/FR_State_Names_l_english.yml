@@ -78,7 +78,7 @@
  STATE_77: "South Dobruja"
  STATE_78: "Bessarabia"
  STATE_79: "Moldova"
- STATE_80: "Bucovina"
+ STATE_80: "South Bucovina"
  STATE_81: "Oltenia"
  STATE_82: "Banat"
  STATE_83: "Crisana"
@@ -1042,3 +1042,5 @@
  STATE_1039: "Slavonia"
  #STATE_1040: "Stereá Elláda" NOT EDIT 
  #STATE_1041: "Eptánisa" NOT EDIT
+ STATE_1040: "Maramaros"
+ STATE_1041: "North Bucovina"
