@@ -1,8 +1,0 @@
-/.vscode/*
-/.vscode/
-descriptor.mod
-*.mod
-*.md
-readme.md
-.gitattributes
-.vscode/settings.json

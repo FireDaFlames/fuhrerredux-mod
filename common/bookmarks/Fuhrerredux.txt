@@ -185,12 +185,10 @@ bookmarks = {
     }
     "BUL" = {
       history = "BUL_FUHRERREDUX_DESC"
-      ideology = paternal_autocrat
+      ideology = national_populist
       minor = yes
       ideas = {
-        BUL_spirit_unpopular_rule
-	      BUL_spirit_greek_influence
-	      BUL_spirit_imminent_communist_uprising
+        
       }
       focuses = {
         BUL_pan_orthodoxism
