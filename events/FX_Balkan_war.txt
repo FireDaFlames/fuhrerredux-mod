@@ -1,0 +1,233 @@
+add_namespace = balkanwar
+##MADE BY THANASIS LANARAS
+##EVENTS FOR BALKAN WAR
+add_namespace = tripartitebalkwanwar
+add_namespace = yugrombalkwanwar
+country_event = { #IMRO cells uncovered in Greece and Yugoslavia
+	id = balkanwar.1
+	title = balkanwar.1.t
+	desc = balwanwar.1.d
+	is_triggered_only = yes
+	timeout_days = 10
+	option = { #damn
+		name = balkanwar.1.a
+		ROOT = {
+			country_event = { 
+				id = balkanwar.2
+				days = 10
+			}
+		}
+	}
+}
+country_event = { #IMRO terrorist arrested
+	id = balkanwar.2
+	title = balkanwar.2.t
+	desc = balwanwar.2.d
+	is_triggered_only = yes
+	timeout_days = 10
+	option = { #we refuse involvement in such action
+		name = balkanwar.2.a
+		ROOT = {
+			country_event = {
+				id = balkanwar.3
+				days = 10
+			}
+		}
+	}
+}
+country_event = { #Hungarian self protection militias form
+	id = balkanwar.3
+	title = balkanwar.3.t
+	desc = balkawnwar.3.d
+	is_triggered_only = yes
+	timeout_days = 10
+	option = {
+		name = balkanwar.3.a
+		ROOT = {
+			country_event = {
+				id = balkanwar.4
+				days = 15
+			}
+		}
+		custom_effect_tooltip = 1_balkawnwar_tt
+	}
+}
+country_event = { #The Transilvanian Uprising
+	id = balkanwar.4
+	title = balkanwar.4.t
+	desc = balkawnwar.4.d
+	is_triggered_only = yes
+	timeout_days = 10
+	option = {
+		name = balkanwar.4.a
+		ROOT = {
+			country_event = {
+				id = balkanwar.5
+				days = 15
+			}
+		}
+	}
+}
+country_event = { #The Transilvanian Uprising
+	id = balkanwar.5
+	title = balkanwar.5.t
+	desc = balkawnwar.5.d
+	is_triggered_only = yes
+	timeout_days = 10
+	option = {
+		name = balkanwar.4.a
+		ROOT = {
+			country_event = {
+				id = balkanwar.6
+				days = 15
+			}
+		}
+		ROM = {
+			add_ideas = ROM_transylvanian_uprising
+			country_event = { id = yugrombalkwanwar.1 days = 1 }
+		}
+	}
+}
+country_event = { #hungary condemns romania
+	id = balkanwar.6
+	title = balkanwar.6.t
+	desc = balkawnwar.6.d
+	is_triggered_only = yes
+	timeout_days = 10
+	option = { #shit
+		name = balkwanwar.6.a
+		country_event = {
+			id = balkanwar.7
+			days = 15
+		}
+	}
+}
+country_event = { #Yugoslavia accuses Bulgaria of funding terrorism in the Balkans
+	id = balkanwar.7
+	title = balkanwar.7.t
+	desc = balkawnwar.7.d
+	is_triggered_only = yes
+	timeout_days = 10
+	option = { #
+		name = balkwanwar.7.a
+		if = {
+			limit = {
+				has_dlc_bba = yes
+			}
+			SER = {
+				send_embargo = BUL
+			}
+			ROM = {
+				send_embargo = BUL
+			}
+			GRE = {
+				send_embargo = BUL
+			}
+			else = {
+				BUL = {
+					add_ideas = BUL_balkanwar_embargoed 
+				}
+			}
+		}
+		BUL = {
+			add_opinion_modifier = {
+				target = ROM
+				modifier = BUL_terrorism_inbalkans
+			}
+			add_opinion_modifier = {
+				target = SER
+				modifier = BUL_terrorism_inbalkans
+			}
+			reverse_add_opinion_modifier = {
+				target = ROM
+				modifier = BUL_terrorism_inbalkans
+			}
+			reverse_add_opinion_modifier = {
+				target = SER
+				modifier = BUL_terrorism_inbalkans
+			}
+		}
+		ROOT = {
+			country_event = {
+				id = balkanwar.8 days = 15
+			}
+		}
+	}
+}
+country_event = { #Romania accuses Hungary of collaborating with Bulgarian Terrorists
+	id = balkanwar.8
+	title = balkanwar.8.t
+	desc = balkawnwar.8.d
+	is_triggered_only = yes
+	timeout_days = 10
+	option = { #
+		name = balkwanwar.8.a
+	}
+}
+
+#Yugo-Rom events
+country_event = {
+	id = yugrombalkwanwar.1
+	title = yugrombalkwanwar.1.t
+	desc = yugrombalkwanwar.1.d
+	fire_only_once = yes
+	option = { #arrest
+		name = yugrombalkwanwar.1.a 
+		add_political_power = -150
+		add_war_support = 0.02
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = { #kill
+		name = yugrombalkwanwar.1.b
+		add_political_power = -75
+		add_war_support = 0.07
+		HUN = {
+			add_opinion_modifier = {
+				target = ROM
+				modifier = HUN_rom_killed_people
+			}
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				add = 10
+				tag = ROM
+			}
+		}
+	}
+}
+country_event = { #A meeting in Bucharest
+	id = yugrombalkwanwar.2
+	title = yugrombalkwanwar.2.t
+	desc = yugrombalkwanwar.2.d
+	fire_only_once = yes
+	option = { #lets ally
+		ROM = {
+			create_faction = "Little Entente"
+			add_to_faction = YUG
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+#tripartitebalkwanwar
+country_event = { #A meeting in Budapest
+	id = tripartitebalkwanwar.1
+	title = tripartitebalkwanwar.1
+	desc = tripartitebalkwanwar.1
+	fire_only_once = yes
+	option = { #lets ally
+		HUN = {
+			create_faction = "Tripartite"
+			add_to_faction = UKR
+			add_to_faction = BUL
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}

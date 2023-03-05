@@ -85,6 +85,20 @@ ideas = {
 				consumer_goods_factor = 0.05
 			}
 		}
+		BUL_balkanwar_embargoed = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BUL_balkanwar_embargoed"
+			}
+			allowed = {
+				original_tag = BUL
+			}
+			removal_cost = -1
+			modifier = {
+				trade_laws_cost_factor = 0.1
+				trade_opinion_factor = 0.1
+				trade_cost_for_target_factor = 0.1
+			}
+		}
 		BUL_political_struggle_2 = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BUL_political_struggle"}
 			allowed = {

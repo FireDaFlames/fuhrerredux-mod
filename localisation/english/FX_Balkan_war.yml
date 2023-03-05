@@ -1,0 +1,14 @@
+﻿l_english:
+  #balkan war stuff
+##created by thanasislanaras
+  #
+#
+#
+  #events
+
+
+  #tooltips
+  1_balkawnwar_tt: "When the war starts, [HUN.GetName] will get some units in the Transylvanian region and in Yugoslavia"
+
+#opinion modifiers
+  HUN_rom_killed_people: "Opressor of Hungarians"

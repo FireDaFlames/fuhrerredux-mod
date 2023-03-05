@@ -8,6 +8,9 @@ opinion_modifiers = {
 	BUL_yugoslavism = { value = -25 }
 	BUL_yugoslavism_ser = { value = 10 }
 	
+  #balkan war stuff
+  HUN_rom_killed_people = { value = -50 }
+  BUL_terrorism_inbalkans = { value = -75 }
 	###Serbia###
 	SER_vanguardism = { value = 40 }
 	SER_montenegro_annexation_rejected = { value = -40 }
