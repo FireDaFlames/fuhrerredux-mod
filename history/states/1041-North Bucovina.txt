@@ -1,6 +1,6 @@
 state={
 	id=1041
-	name="North Bucovina"
+	name="STATE_1041"
 	history = {
 		owner = ROM
 		add_core_of = ROM
