@@ -1,6 +1,6 @@
 state={
 	id=1040
-	name="Maramaros"
+	name="STATE_1040"
 	provinces={
 		727 13210 9704 746
 	}
