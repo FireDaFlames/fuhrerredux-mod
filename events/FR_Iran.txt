@@ -390,10 +390,9 @@ country_event = {
 		add_popularity = { ideology = paternal_autocrat popularity = -0.10 }
 		set_country_flag = PER_republic_flag
 		
-		set_country_flag = coalition_collectivist
-		set_country_flag = coalition_libertarian_socialist
-		set_country_flag = coalition_social_liberal
-		
+		add_coalition_collectivist = yes 
+		add_coalition_libertarian_socialist = yes 
+		add_coalition_social_liberal = yes 		
 		hidden_effect = {
 			add_ideas = parliamentary_republic
 			load_focus_tree = FR_Persia_republican
@@ -641,7 +640,7 @@ country_event = {
 		add_popularity = { ideology = paternal_autocrat popularity = -0.15 }
 		set_country_flag = PER_nationalist_flag
 		
-		set_country_flag = coalition_valkist
+		add_coalition_valkist = yes 
 		
 		hidden_effect = {
 			load_focus_tree = FR_Persia_nationalist
@@ -1394,8 +1393,8 @@ country_event = {
 		add_popularity = { ideology = social_democrat popularity = 0.06 }
 		add_popularity = { ideology = paternal_autocrat popularity = -0.25 }
 		
-		set_country_flag = coalition_libertarian_socialist
-		set_country_flag = coalition_paternal_autocrat
+		add_coalition_libertarian_socialist = yes
+		add_coalition_paternal_autocrat = yes 
 		
 		hidden_effect = {
       add_country_leader_role = {
@@ -1419,8 +1418,8 @@ country_event = {
 		add_popularity = { ideology = social_liberal popularity = 0.10 }
 		add_popularity = { ideology = paternal_autocrat popularity = -0.25 }
 		
-		set_country_flag = coalition_social_democrat
-		set_country_flag = coalition_paternal_autocrat
+		add_coalition_social_democrat = yes 
+		add_coalition_paternal_autocrat = yes 
 		
 		hidden_effect = {
 			add_country_leader_role = {
@@ -1456,8 +1455,8 @@ country_event = {
 		add_popularity = { ideology = market_liberal popularity = 0.10 }
 		add_popularity = { ideology = paternal_autocrat popularity = -0.25 }
 		
-		set_country_flag = coalition_social_conservative
-		set_country_flag = coalition_paternal_autocrat
+		add_coalition_social_conservative = yes 
+		add_coalition_paternal_autocrat = yes 
 		
 		hidden_effect = {
 			add_country_leader_role = {
@@ -1482,8 +1481,8 @@ country_event = {
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.04 }
 		add_popularity = { ideology = paternal_autocrat popularity = -0.25 }
 		
-		set_country_flag = coalition_authoritarian_democrat
-		set_country_flag = coalition_paternal_autocrat
+		add_coalition_authoritarian_democrat = yes 
+		add_coalition_paternal_autocrat = yes 
 		
 		hidden_effect = {
 			add_country_leader_role = {
@@ -1522,9 +1521,9 @@ country_event = {
 		add_popularity = { ideology = libertarian_socialist popularity = 0.02 }
 		set_country_flag = PER_REP_tudeh_flag
 		
-		clr_country_flag = coalition_social_liberal
-		set_country_flag = coalition_vanguardist
-		set_country_flag = coalition_libertarian_socialist
+		remove_coalition_social_liberal = yes 
+		add_coalition_vanguardist = yes 
+		add_coalition_libertarian_socialist = yes 
 		
 		hidden_effect = {
 		}
@@ -1541,8 +1540,8 @@ country_event = {
 		add_popularity = { ideology = social_liberal popularity = 0.02 }
 		set_country_flag = PER_REP_centrist_flag
 		
-		clr_country_flag = coalition_collectivist
-		clr_country_flag = coalition_libertarian_socialist
+		remove_coalition_vanguardist = yes 
+		remove_coalition_libertarian_socialist = yes 
 		
 		hidden_effect = {
 		}
@@ -1572,7 +1571,7 @@ country_event = {
 		add_popularity = { ideology = valkist popularity = -0.10 }
 		set_country_flag = PER_NAT_shia_flag
 		
-		clr_country_flag = coalition_valkist
+		remove_coalition_valkist = yes 
 		
 		hidden_effect = {
 			add_ideas = theocratic_republic

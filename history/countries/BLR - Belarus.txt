@@ -71,7 +71,7 @@ set_politics = {
 	elections_allowed = no
 }
 
-set_country_flag = coalition_paternal_autocrat
+add_coalition_paternal_autocrat = yes 
 
 country_event = { id = belarus.0 days = 2 }
 country_event = { id = belarus.1 days = 14 }

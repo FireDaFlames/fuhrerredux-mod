@@ -28,8 +28,8 @@ country_event = {
 			country_event = {
 				id = insulindia.1 days = 25
 			}
-			set_country_flag = coalition_collectivist
-			set_country_flag = coalition_social_conservative
+			add_coalition_collectivist = yes 
+			add_coalition_social_conservative = yes 
 		}
 	}
 }

@@ -36,7 +36,7 @@ POLITICS_NOELECTIONS: "No Elections"
 
 ### Ideologies
 vanguardist: "National Collectivist"
-collectivist: "Socialist"
+collectivist: "Collectivist"
 libertarian_socialist: "Libertarian Socialist"
 social_democrat: "Social Democrat"
 social_liberal: "Social Liberal"
@@ -49,7 +49,7 @@ valkist: "Valkist"
 
 ### Ideology Nouns
 vanguardist_noun: "National Collectivism"
-collectivist_noun: "Socialism"
+collectivist_noun: "Collectivism"
 libertarian_socialist_noun: "Libertarianism"
 social_democrat_noun: "Social Democracy"
 social_liberal_noun: "Social Liberalism"

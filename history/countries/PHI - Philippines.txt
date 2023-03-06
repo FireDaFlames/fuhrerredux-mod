@@ -107,8 +107,8 @@ set_popularities = {
 	valkist = 12
 }
 
-set_country_flag = coalition_market_liberal
-set_country_flag = coalition_social_liberal
+add_coalition_social_liberal = yes
+add_coalition_market_liberal = yes 
 
 recruit_character = PHI_Armed_Forces_Command
 recruit_character = PHI_Luis_Taruc

@@ -205,7 +205,7 @@ country_event = { # Fate of the PPI
 			ITA_Giovanni_Uberti_sec_sco
 		}
 		set_country_flag = ITA_con_ppi
-		set_country_flag = coalition_social_democrat
+		add_coalition_social_democrat = yes 
 		remove_ideas = ITA_ppi_stagnation
 	}
 	
@@ -239,7 +239,7 @@ country_event = { # Social democrats leave PPI
 	option = {
 		name = ita.5.a
 		add_political_power = -50
-		clr_country_flag = coalition_social_democrat
+		remove_coalition_social_democrat = yes 
 	}
 }
 
@@ -382,7 +382,7 @@ country_event = { # Market Liberals leave the coalition
 	option = {
 		name = ita.11.a
 		add_political_power = -50
-		clr_country_flag = coalition_market_liberal
+		remove_coalition_market_liberal = yes 
 		set_country_flag = ITA_liberals_right
 	}
 }
@@ -399,7 +399,7 @@ country_event = { # Libertarians join the coalition
 	option = {
 		name = ita.12.a
 		add_political_power = 50
-		set_country_flag = coalition_libertarian_socialist
+		add_coalition_libertarian_socialist = yes 
 	}
 }
 
@@ -1135,13 +1135,9 @@ country_event = { # Commies win
 			ruling_party = collectivist
 		}
 		add_political_power = 50
-		set_country_flag = coalition_libertarian_socialist
-		set_country_flag = coalition_vangaurdist
-		clr_country_flag = coalition_collectivist
-		clr_country_flag = coalition_national_populist
-		clr_country_flag = coalition_valkist
-		clr_country_flag = coalition_social_conservative
-		clr_country_flag = coalition_market_liberal
+		end_coalition = yes 
+		add_coalition_libertarian_socialist = yes 
+		add_coalition_vanguardist = yes 
 		hidden_effect = {
       add_corps_commander_role = {
         character = ITA_Pompeo_Colajanni
@@ -1185,13 +1181,9 @@ country_event = { # Commies win
 			ruling_party = libertarian_socialist
 		}
 		add_political_power = 50
-		set_country_flag = coalition_collectivist
-		set_country_flag = coalition_vangaurdist
-		clr_country_flag = coalition_libertarian_socialist
-		clr_country_flag = coalition_national_populist
-		clr_country_flag = coalition_valkist
-		clr_country_flag = coalition_social_conservative
-		clr_country_flag = coalition_market_liberal
+		end_coalition = yes 
+		add_coalition_collectivist = yes 
+		add_coalition_vanguardist = yes 
 		hidden_effect = {
 			add_corps_commander_role = {
         character = ITA_Pompeo_Colajanni
@@ -1274,9 +1266,9 @@ country_event = { # Soc Dem win
 			ruling_party = social_democrat
 		}
 		add_political_power = 50
-		clr_country_flag = coalition_social_democrat
-		clr_country_flag = coalition_national_populist
-		clr_country_flag = coalition_valkist
+		remove_coalition_social_democrat = yes 
+		remove_coalition_valkist = yes
+		remove_coalition_national_populist = yes 
 		every_country = {
 			limit = {
 				is_ai = no
@@ -1343,14 +1335,14 @@ country_event = { # liberal win
 			ruling_party = market_liberal
 		}
 		add_political_power = 50
-		clr_country_flag = coalition_market_liberal
-		clr_country_flag = coalition_libertarian_socialist
-		clr_country_flag = coalition_social_democrat
+		remove_coalition_market_liberal = yes
+		remove_coalition_libertarian_socialist = yes 
+		remove_coalition_social_democrat = yes 
 		if = {
 			limit = {
 				has_country_flag = ITA_right_coalition
 			}
-			set_country_flag = coalition_social_conservative
+			add_coalition_social_conservative = yes 
 		}
 			every_country = {
 				limit = {
@@ -1411,21 +1403,21 @@ country_event = { # conservative win
 		set_politics = {
 			ruling_party = social_conservative
 		}
-		clr_country_flag = coalition_social_conservative
-		clr_country_flag = coalition_libertarian_socialist
-		clr_country_flag = coalition_social_democrat
+		remove_coalition_social_conservative = yes 
+		remove_coalition_libertarian_socialist = yes 
+		remove_coalition_social_democrat = yes 
 		if = {
 			limit = {
 				has_country_flag = ITA_right_coalition
 			}
-			set_country_flag = coalition_national_populist
-			set_country_flag = coalition_valkist
+			add_coalition_valkist = yes 
+			add_coalition_national_populist = yes 
 		}
 		if = {
 			limit = {
 				has_country_flag = ITA_liberals_right
 			}
-			set_country_flag = coalition_market_liberal
+			add_coalition_market_liberal = yes 
 		}
 		add_political_power = 50
 		hidden_effect = {
@@ -1488,7 +1480,7 @@ country_event = { # nationalist win
 	option = {
 		trigger = {
 			check_variable = { 
-				party_popularity@valkist > party_popularity@national_populist 
+				ROOT.party_popularity@valkist > ROOT.party_popularity@national_populist 
 			}
 		}
 		name = ita.24.a 
@@ -1496,17 +1488,13 @@ country_event = { # nationalist win
 		set_politics = {
 			ruling_party = valkist
 		}
-		clr_country_flag = coalition_valkist
-		set_country_flag = coalition_national_populist
-		clr_country_flag = coalition_libertarian_socialist
-		clr_country_flag = coalition_social_democrat
-		clr_country_flag = coalition_social_liberal
-		clr_country_flag = coalition_market_liberal
+		end_coalition = yes 
+		add_coalition_national_populist = yes 
 		if = {
 			limit = {
 				has_country_flag = ITA_right_coalition
 			}
-			set_country_flag = coalition_social_conservative
+			add_coalition_social_conservative = yes 
 		}
 		
 		add_political_power = 50
@@ -1529,7 +1517,7 @@ country_event = { # nationalist win
 	option = {
 		trigger = {
 			check_variable = { 
-				party_popularity@national_populist > party_popularity@valkist 
+				ROOT.party_popularity@national_populist > ROOT.party_popularity@valkist 
 			}
 		}
 		name = ita.20.a 
@@ -1538,17 +1526,13 @@ country_event = { # nationalist win
 			ruling_party = national_populist
 		}
 		add_political_power = 50
-		clr_country_flag = coalition_national_populist
-		set_country_flag = coalition_valkist
-		clr_country_flag = coalition_libertarian_socialist
-		clr_country_flag = coalition_social_democrat
-		clr_country_flag = coalition_social_liberal
-		clr_country_flag = coalition_market_liberal
+		end_coalition = yes 
+		add_coalition_valkist = yes 
 		if = {
 			limit = {
 				has_country_flag = ITA_right_coalition
 			}
-			set_country_flag = coalition_social_conservative
+			add_coalition_social_conservative = yes 
 		}
 		hidden_effect = {
 			every_country = {
@@ -14937,15 +14921,15 @@ country_event = { # Fate of the Left
 		set_country_flag = ITA_commies_picked
 		drop_cosmetic_tag = yes
 		add_country_leader_role = {
-      character = ITA_Palmiro_Togliatti
-      promote_leader = yes
-      country_leader = {
-        ideology = vanguardist_subtype
-        traits = {}
-      }
-    }
-		clr_country_flag = coalition_social_democrat
-		clr_country_flag = coalition_libertarian_socialist
+			character = ITA_Palmiro_Togliatti
+			promote_leader = yes
+			country_leader = {
+				ideology = vanguardist_subtype
+				traits = {}
+			}
+   		}
+		remove_coalition_social_democrat = yes 
+		remove_coalition_libertarian_socialist = yes 
 		add_popularity = {
 			ideology = vanguardist
 			popularity = 0.05
@@ -14988,16 +14972,16 @@ country_event = { # Fate of the Left
 		name = itasoc.2.b
 		set_country_flag = ITA_commies_picked
 		drop_cosmetic_tag = yes
-    add_country_leader_role = {
-      character = ITA_Amadeo_Bordiga
-      promote_leader = yes
-      country_leader = {
-        ideology = collectivist_subtype
-        traits = {}
-      }
-    }
-		clr_country_flag = coalition_social_democrat
-		clr_country_flag = coalition_libertarian_socialist
+		add_country_leader_role = {
+			character = ITA_Amadeo_Bordiga
+			promote_leader = yes
+			country_leader = {
+				ideology = collectivist_subtype
+				traits = {}
+			}
+		}
+		remove_coalition_social_democrat = yes 
+		remove_coalition_libertarian_socialist = yes 
 		add_popularity = {
 			ideology = collectivist
 			popularity = 0.05
@@ -15041,14 +15025,14 @@ country_event = { # Fate of the Left
 		set_country_flag = ITA_commies_picked
 		drop_cosmetic_tag = yes
 		add_country_leader_role = {
-      character = ITA_Antonio_Gramsci
-      promote_leader = yes
-      country_leader = {
-        ideology = collectivist_subtype
-        traits = {}
-      }
-    }
-		clr_country_flag = coalition_social_democrat
+			character = ITA_Antonio_Gramsci
+			promote_leader = yes
+			country_leader = {
+				ideology = collectivist_subtype
+				traits = {}
+			}
+		}
+		remove_coalition_social_democrat = yes 
 		add_popularity = {
 			ideology = collectivist
 			popularity = 0.05
@@ -15089,8 +15073,8 @@ country_event = { # Fate of the Left
 	option = { # Matteotti wins
 		name = itasoc.2.e
 		set_country_flag = ITA_socialist_picked	
-		clr_country_flag = coalition_vangaurdist
-		clr_country_flag = coalition_collectivist
+		remove_coalition_vanguardist = yes 
+		remove_coalition_libertarian_socialist = yes 
 		add_popularity = {
 			ideology = libertarian_socialist
 			popularity = 0.05
@@ -15624,10 +15608,10 @@ country_event = { #Italy - Pick Nat Pops or Valkists
 		if = {
 			limit = {
 				NOT = {
-					has_country_flag = coalition_valkist
+					is_in_array = { ROOT.coalition_partners = token:valkist }
 				}
 			}
-			set_country_flag = coalition_valkist
+			add_coalition_valkist = yes 
 		}
 		add_popularity = {
 			ideology = national_populist
@@ -15653,10 +15637,10 @@ country_event = { #Italy - Pick Nat Pops or Valkists
 		if = {
 			limit = {
 				NOT = {
-					has_country_flag = coalition_national_populist
+					is_in_array = { ROOT.coalition_partners = token:national_populist }
 				}
 			}
-			set_country_flag = coalition_national_populist
+			add_coalition_national_populist = yes 
 		}		
 		add_popularity = {
 			ideology = valkist

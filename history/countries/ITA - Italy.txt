@@ -17,9 +17,8 @@ add_ideas = {
 	constitutional_monarchy
 }
 
-set_country_flag = coalition_social_liberal
-set_country_flag = coalition_market_liberal
-
+add_coalition_social_liberal = yes 
+add_coalition_market_liberal = yes 
 
 # Starting tech
 set_technology = {
