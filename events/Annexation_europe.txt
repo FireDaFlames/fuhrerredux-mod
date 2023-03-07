@@ -1089,7 +1089,6 @@ country_event = { # Fate of France
         add_state_core = 747
         add_state_core = 748
         add_state_core = 749
-        add_state_core = 868
         add_state_core = 989
         add_state_core = 990
         add_state_core = 1004
@@ -1278,7 +1277,6 @@ country_event = { # Fate of Germany
         add_state_core = 55
         add_state_core = 56
         add_state_core = 57
-        add_state_core = 58
         add_state_core = 59
         add_state_core = 60
         add_state_core = 61
@@ -5190,6 +5188,7 @@ country_event = { # Fate of Alsace
     }
     set_temp_variable = { tag_to_release = FRA }
     28 = { transfer_state_and_add_core = yes }
+    868 = { transfer_state_and_add_core = yes }
   }
 
   option = { # Give it to our French Puppet
@@ -5209,6 +5208,7 @@ country_event = { # Fate of Alsace
     }
     set_temp_variable = { tag_to_release = FRP }
     28 = { transfer_state_and_add_core = yes }
+    868 = { transfer_state_and_add_core = yes }
   }
 
   option = { # Give it to the Germans
@@ -5228,6 +5228,7 @@ country_event = { # Fate of Alsace
     }
     set_temp_variable = { tag_to_release = GER }
     28 = { transfer_state_and_add_core = yes }
+    868 = { transfer_state_and_add_core = yes }
   }
 
   option = { # Give it to the Germans
@@ -5247,6 +5248,7 @@ country_event = { # Fate of Alsace
     }
     set_temp_variable = { tag_to_release = GRP }
     28 = { transfer_state_and_add_core = yes }
+    868 = { transfer_state_and_add_core = yes }
   }
 
   option = { # Occupy

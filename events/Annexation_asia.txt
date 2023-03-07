@@ -13,6 +13,7 @@ country_event = { # Fate of Burma
       remove_all_cores_and_claims_of_tags = yes
       BRM = {
         add_state_core = 288
+        add_state_core = 1048
         add_state_core = 640
         add_state_core = 805
         add_state_core = 812
@@ -166,7 +167,6 @@ country_event = { # Fate of Insulindia
         add_state_core = 333
         add_state_core = 334
         add_state_core = 335
-        add_state_core = 340
         add_state_core = 667
         add_state_core = 672
         add_state_core = 790 
@@ -490,8 +490,14 @@ country_event = { # Fate of Manchuria
 
   immediate = {
     hidden_effect = {
-      # add_to_temp_array = { core_removal_array = MAN }
-      # remove_all_cores_and_claims_of_tags = yes
+      add_to_temp_array = { core_removal_array = MAN }
+      remove_all_cores_and_claims_of_tags = yes
+      every_state = {
+        limit = {
+          is_manchuria = yes 
+        }
+        add_core_of = MAN
+      }
     }
   }
 
@@ -506,7 +512,10 @@ country_event = { # Fate of Manchuria
     set_temp_variable = { tag_to_release = MAN }
     every_owned_state = {
       limit = {
-        is_han_chinese_region = yes
+        or = {
+          is_han_chinese_region = yes
+          is_xinjiang = yes
+        } 
       }
       var:tag_to_release = {
         remove_state_claim = PREV 
