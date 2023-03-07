@@ -529,7 +529,7 @@ spriteTypes = {
 	}
 	### SubIdeologies ###
 	spriteType = {
-		name = "GFX_ideology_ultranat_nichirenist_subtype"
+		name = "GFX_ideology_panasian_nichirenist_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/valk_ultranational_nichirenism.png"
 	}
 	spriteType = {

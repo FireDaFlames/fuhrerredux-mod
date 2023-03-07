@@ -442,7 +442,7 @@ country_event = {
 			remove_coalition_market_liberal = yes 
 			remove_coalition_social_conservative = yes 
 			add_coalition_vanguardist = yes 
-			add_coalition_collectivist
+			add_coalition_collectivist = yes 
 			add_ideas = workers_republic
 		}
     }
@@ -618,7 +618,7 @@ country_event = {
 			add_popularity = { ideology = national_populist popularity = -0.05 }
 			remove_coalition_national_populist = yes 
 			add_coalition_vanguardist = yes 
-			add_coalition_libertarian_socialist
+			add_coalition_libertarian_socialist = yes 
 			add_ideas = workers_republic
 			set_cosmetic_tag = FIN_socialist
 		}

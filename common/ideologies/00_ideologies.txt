@@ -343,7 +343,7 @@ ideologies = {
 	valkist = {
 		types = {
 			valkist_subtype = {}
-			ultranat_nichirenist_subtype = { can_be_randomly_selected=no }
+			panasian_nichirenist_subtype = { can_be_randomly_selected=no }
 		}
 
 		dynamic_faction_names = {

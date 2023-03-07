@@ -1,7 +1,7 @@
 ### Ruling Party Popularity Effects
 ### Written by ~mw~
 ### Retooled by Alpinia
-### Additional Tool Added by Kaiczeer
+### Additional Tool Added by Kaiczer
 #
 # How to use:
 #

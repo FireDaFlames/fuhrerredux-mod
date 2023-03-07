@@ -655,7 +655,7 @@ country_event = { #Unbelievable Situation - Fate of Daijo-Kan
 			character = JAP_Inoue_Nissho
 			promote_leader = yes
 			country_leader = {
-				ideology = ultranat_nichirenist_subtype
+				ideology = panasian_nichirenist_subtype
 				expire = "1965.1.1"
 				traits = { 
 					#retainer_of_heavenly_principle 
