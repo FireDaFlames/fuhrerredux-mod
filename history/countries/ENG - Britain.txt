@@ -234,6 +234,7 @@ set_popularities = {
 
 
 create_faction = imperial_protection_alliance
+add_to_faction = RAJ 
 add_to_faction = ENG
 add_to_faction = CAN
 add_to_faction = AST

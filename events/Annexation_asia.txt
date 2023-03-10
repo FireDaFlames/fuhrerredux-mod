@@ -1121,7 +1121,7 @@ country_event = { # Fate of Tibet
   }
 }
 
-country_event = { # Fate of Turkmenistan
+country_event = { # Fate of Turkestan
   id = annex.4019
   title = annexation_TRK_CONQ
   desc = annexation_TRK_CONQ_DESC
@@ -1137,6 +1137,7 @@ country_event = { # Fate of Turkmenistan
         add_state_core = 584
         add_state_core = 585
         add_state_core = 742
+        add_state_core = 1049
         drop_cosmetic_tag = yes
       }
     }
