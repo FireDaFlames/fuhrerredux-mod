@@ -278,7 +278,7 @@ country_event = { #1936 election
 	#	set_politics = {
 	#		ruling_party = market_liberal
 	#	}
-	#	set_country_flag = coalition_social_liberal
+	#	add_coalition_social_liberal = yes 
 	#	set_country_flag = fra_triple_win_flag
 	#	trigger = {
 	#		original_tag = FRA

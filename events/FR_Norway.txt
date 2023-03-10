@@ -420,8 +420,8 @@ country_event = {
 		set_country_flag = NOR_democracy_survives_flag
 		set_country_flag = NOR_venstre_victory_flag
 		
-		clr_country_flag = coalition_collectivist
-		set_country_flag = coalition_social_democrat
+		remove_coalition_collectivist = yes 
+		add_coalition_social_democrat = yes 
 		hidden_effect = {
 			add_stability = 0.03
 			add_country_leader_role = {
@@ -465,8 +465,8 @@ country_event = {
 		set_country_flag = NOR_democracy_survives_flag
 		set_country_flag = NOR_hoyre_victory_flag
 		
-		clr_country_flag = coalition_collectivist
-		set_country_flag = coalition_social_conservative
+		remove_coalition_collectivist = yes 
+		add_coalition_social_conservative = yes 
 		hidden_effect = {
 			add_stability = 0.03
 			add_country_leader_role = {
@@ -536,8 +536,8 @@ country_event = {
 		}
 
 		hidden_effect = {
-			clr_country_flag = coalition_collectivist
-			set_country_flag = coalition_libertarian_socialist
+			remove_coalition_collectivist = yes 
+			add_coalition_libertarian_socialist = yes 
 			country_event = { id = nor.109 days = 4 }
 		}
 	}
@@ -736,10 +736,10 @@ country_event = {
 		add_ideas = NOR_samfundsvernets_rule_idea
 		set_country_flag = NOR_samfundsvernet_couped_norway_flag
 		
-		clr_country_flag = coalition_collectivist
-		set_country_flag = coalition_social_conservative
-		set_country_flag = coalition_paternal_autocrat
-		set_country_flag = coalition_valkist
+		remove_coalition_collectivist = yes 
+		add_coalition_social_conservative = yes 
+		add_coalition_valkist = yes 
+		add_coalition_paternal_autocrat = yes 
 		
 		custom_effect_tooltip  = NOR_allow_nationalist_generals_tooltip
 		hidden_effect = {
@@ -799,8 +799,8 @@ country_event = {
 		}
 		set_country_flag = NOR_hoyre_victory_flag
 		
-		clr_country_flag = coalition_paternal_autocrat
-		clr_country_flag = coalition_valkist
+		remove_coalition_paternal_autocrat = yes 
+		remove_coalition_valkist = yes
 		hidden_effect = {
 			set_country_flag = NOR_democracy_survives_flag
 		}
@@ -826,9 +826,7 @@ country_event = {
 		set_cosmetic_tag = NOR_KING
 		remove_ideas = NOR_monarchist_right_idea
 		
-		clr_country_flag = coalition_social_conservative
-		clr_country_flag = coalition_paternal_autocrat
-		clr_country_flag = coalition_valkist
+		end_coalition = yes 
 		hidden_effect = {
 			add_country_leader_role = {
         character = NOR_Ragnvald_Hvoslef
@@ -858,8 +856,8 @@ country_event = {
 		add_ideas = NOR_Gulbrand_Lunde_sec_val
 		set_country_flag = NOR_ns_victory_flag
 		
-		clr_country_flag = coalition_social_conservative
-		clr_country_flag = coalition_paternal_autocrat
+		end_coalition = yes 
+		add_coalition_valkist = yes 
 		hidden_effect = {
 			add_country_leader_role = {
         character = NOR_Vidkun_Quisling
@@ -1164,7 +1162,7 @@ country_event = {
 		remove_ideas_with_trait = security_minister
 		add_ideas = NOR_Albert_Viljam_Hagelin_for_pau
 		add_ideas = NOR_Sverre_Riisnaes_sec_pau
-		set_country_flag = coalition_national_populist
+		add_coalition_national_populist = yes 
 		hidden_effect = {
 			add_country_leader_role = {
         character = NOR_HM_King_Haakon_VII
@@ -1266,8 +1264,8 @@ country_event = {
 			NOR_Axel_Aubert_eco_ade
 			NOR_Per_von_Hirsch_sec_pau
 		}
-		set_country_flag = coalition_paternal_autocrat
-		set_country_flag = coalition_market_liberal
+		add_coalition_paternal_autocrat = yes 
+		add_coalition_market_liberal = yes 
 		hidden_effect = {
 			add_country_leader_role = {
         character = NOR_HM_King_Haakon_VII
@@ -1297,7 +1295,7 @@ country_event = {
 			NOR_Eivind_Blehr_eco_pau
 			NOR_Ragnar_Skancke_sec_ade
 		}
-		set_country_flag = coalition_paternal_autocrat
+		add_coalition_paternal_autocrat = yes 
 		hidden_effect = {
 			add_country_leader_role = {
         character = NOR_Olav_V
@@ -5149,9 +5147,9 @@ country_event = {
 			NOR_Axel_Aubert_eco_ade
 			NOR_Per_von_Hirsch_sec_pau
 		}
-		clr_country_flag = coalition_social_conservative
-		set_country_flag = coalition_paternal_autocrat
-		set_country_flag = coalition_market_liberal
+		remove_coalition_social_conservative = yes 
+		add_coalition_paternal_autocrat = yes
+		add_coalition_market_liberal = yes 
 		hidden_effect = {
       add_country_leader_role = {
         character = NOR_Olav_V
@@ -5182,9 +5180,9 @@ country_event = {
 			NOR_Nicolai_Rygg_eco_sco
 			NOR_Ivar_Kirkeby_Garstad_sec_sco
 		}
-		clr_country_flag = coalition_market_liberal
-		set_country_flag = coalition_paternal_autocrat
-		set_country_flag = coalition_social_conservative
+		remove_coalition_market_liberal = yes 
+		add_coalition_paternal_autocrat = yes 
+		add_coalition_social_conservative = yes 
 		hidden_effect = {
 			add_country_leader_role = {
         character = NOR_Olav_V
@@ -5214,18 +5212,18 @@ country_event = {
 			NOR_Nicolai_Rygg_eco_sco
 			NOR_Ragnar_Skancke_sec_ade
 		}
-		clr_country_flag = coalition_market_liberal
-		clr_country_flag = coalition_social_conservative
-		set_country_flag = coalition_paternal_autocrat
+		remove_coalition_market_liberal = yes 
+		remove_coalition_social_conservative = yes 
+		add_coalition_paternal_autocrat = yes 
 		hidden_effect = {
 			add_country_leader_role = {
-        character = NOR_Olav_V
-        promote_leader = yes
-        country_leader = {
-          ideology = authoritarian_democrat_subtype
-          traits = {}
-        }
-      }
+				character = NOR_Olav_V
+				promote_leader = yes
+				country_leader = {
+					ideology = authoritarian_democrat_subtype
+					traits = {}
+				}
+			}
 		}
 	}
 	
@@ -5245,8 +5243,8 @@ country_event = {
 			NOR_Axel_Aubert_eco_ade
 			NOR_Arnvid_Vasbotten_sec_npo
 		}
-		clr_country_flag = coalition_paternal_autocrat
-		set_country_flag = coalition_authoritarian_democrat
+		remove_coalition_paternal_autocrat = yes 
+		add_coalition_authoritarian_democrat = yess 
 		hidden_effect = {
 			add_country_leader_role = {
         character = NOR_Olav_V
