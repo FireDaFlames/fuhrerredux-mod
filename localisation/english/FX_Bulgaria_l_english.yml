@@ -326,7 +326,8 @@ kaproni_bulgarski: "Kaproni Bulgarski"
 	BUL_authoritarian_democrat_support: "Authoritarian Democrat Support"
 
 #FLAGS
-	BUL_formed_roman_empire: "Has Formed the Roman Empire of Greeks and Bulgarians"
+	BUL_formed_roman_empire: "[ROOT.GetFlag][ROOT.GetName] Has Formed the Roman Empire of Greeks and Bulgarians"
+	BUL_formed_slavic_empire: "[ROOT.GetFlag][ROOT.GetName] Has Formed The Slavic Empire"
 
 # IDEAS
 #EXPANSION PATHS

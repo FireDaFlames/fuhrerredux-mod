@@ -895,3 +895,134 @@ country_event = {
 # 		}
 # 	}
 # }
+news_event = {
+	id = bulnewsexp.1
+	title = bulnewsexp.1.t
+	desc = bulnewsexp.1.d
+	is_triggered_only = yes
+	major = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	picture = GFX_news_event_slavic_union
+	option = {
+		name = bulnewsexp.1.a
+		trigger = {
+			tag = BUL
+		}
+	}
+	option = {
+		name = bulnewsexp.1.b
+		trigger = {
+			NOT = { tag = BUL } 
+		}
+	}
+	option = {
+		name = bulnewsexp.1.c
+		trigger = {
+			NOT = { tag = BUL } 
+		}
+	}
+}
+news_event = {
+	id = bulnewsexp.2
+	title = bulnewsexp.2.t
+	desc = bulnewsexp.2.d
+	is_triggered_only = yes
+	major = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	picture = GFX_news_event_assassination
+	trigger = {
+		BUL = {
+			has_global_flag = BUL_formed_balkan_union
+		}
+	}
+	option = {
+		name = bulnewsexp.2.a
+		trigger = {
+			tag = BUL
+		}
+	}
+	option = {
+		name = bulnewsexp.2.b
+		trigger = {
+			NOT = { tag = BUL } 
+		}
+	}
+	option = {
+		name = bulnewsexp.2.c
+		trigger = {
+			NOT = { tag = BUL } 
+		}
+	}
+}
+news_event = {
+	id = bulnewsexp.3
+	title = bulnewsexp.3.t
+	desc = bulnewsexp.3.d
+	is_triggered_only = yes
+	major = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	picture = GFX_news_event_assassination
+	trigger = {
+		BUL = {
+			has_global_flag = BUL_formed_romania_bulgarian_union
+		}
+	}
+	option = {
+		name = bulnewsexp.3.a
+		trigger = {
+			tag = BUL
+		}
+	}
+	option = {
+		name = bulnewsexp.3.b
+		trigger = {
+			NOT = { tag = BUL } 
+		}
+	}
+	option = {
+		name = bulnewsexp.3.c
+		trigger = {
+			NOT = { tag = BUL } 
+		}
+	}
+}
+news_event = {
+	id = bulnewsexp.4
+	title = bulnewsexp.4.t
+	desc = bulnewsexp.4.d
+	is_triggered_only = yes
+	major = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	picture = GFX_news_event_assassination
+	trigger = {
+		BUL = {
+			has_global_flag = BUL_formed_romania_bulgarian_union
+		}
+	}
+	option = {
+		name = bulnewsexp.4.a
+		trigger = {
+			tag = BUL
+		}
+	}
+	option = {
+		name = bulnewsexp.4.b
+		trigger = {
+			NOT = { tag = BUL } 
+		}
+	}
+	option = {
+		name = bulnewsexp.4.c
+		trigger = {
+			NOT = { tag = BUL } 
+		}
+	}
+}
