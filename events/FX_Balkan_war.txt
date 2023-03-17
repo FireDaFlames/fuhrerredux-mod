@@ -3,6 +3,7 @@ add_namespace = balkanwar
 ##EVENTS FOR BALKAN WAR
 add_namespace = tripartitebalkwanwar
 add_namespace = yugrombalkwanwar
+add_namespace = balkanwarpeace
 country_event = { #IMRO cells uncovered in Greece and Yugoslavia
 	id = balkanwar.1
 	title = balkanwar.1.t
@@ -229,5 +230,42 @@ country_event = { #A meeting in Budapest
 		ai_chance = {
 			factor = 10
 		}
+	}
+}
+
+country_event = { # rom using, peace with tripartite
+	id = balkanwarpeace.1
+	title = balkanwarpeace.1.t
+	desc = balkanwarpeace.1.d
+
+	trigger = {
+		original_tag = ROM
+		ROM = {
+			AND = {
+				has_war_with = BUL
+				has_war_with = UKR
+				has_war_with = HUN 
+				853 = {
+					is_owned_by = ROM
+					OR = {
+						is_controlled_by = UKR
+						is_controlled_by = BUL
+						is_controlled_by = HUN
+					}
+				}
+				78 = {
+					is_owned_by = ROM
+					OR = {
+						is_controlled_by = UKR
+						is_controlled_by = BUL
+						is_controlled_by = HUN
+					}
+				}
+			}
+
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
 	}
 }
