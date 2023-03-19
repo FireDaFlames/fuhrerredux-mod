@@ -245,7 +245,7 @@ country_event = { # rom using, peace with tripartite
 				has_war_with = BUL
 				has_war_with = UKR
 				has_war_with = HUN 
-				853 = {
+				853 = { #south moldova
 					is_owned_by = ROM
 					OR = {
 						is_controlled_by = UKR
@@ -253,7 +253,55 @@ country_event = { # rom using, peace with tripartite
 						is_controlled_by = HUN
 					}
 				}
-				78 = {
+				78 = { #moldova
+					is_owned_by = ROM
+					OR = {
+						is_controlled_by = UKR
+						is_controlled_by = BUL
+						is_controlled_by = HUN
+					}
+				}
+				154 = { #hungarian part that is owned by rom
+					is_owned_by = ROM
+					OR = {
+						is_controlled_by = UKR
+						is_controlled_by = BUL
+						is_controlled_by = HUN
+					}
+				}
+				83 = { #
+					is_owned_by = ROM
+					OR = {
+						is_controlled_by = UKR
+						is_controlled_by = BUL
+						is_controlled_by = HUN
+					}
+				}
+				762 = { #
+					is_owned_by = ROM
+					OR = {
+						is_controlled_by = UKR
+						is_controlled_by = BUL
+						is_controlled_by = HUN
+					}
+				}
+				76 = { #
+					is_owned_by = ROM
+					OR = {
+						is_controlled_by = UKR
+						is_controlled_by = BUL
+						is_controlled_by = HUN
+					}
+				}
+				84 = { #
+					is_owned_by = ROM
+					OR = {
+						is_controlled_by = UKR
+						is_controlled_by = BUL
+						is_controlled_by = HUN
+					}
+				}
+				77 = { #
 					is_owned_by = ROM
 					OR = {
 						is_controlled_by = UKR

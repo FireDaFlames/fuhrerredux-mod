@@ -1,0 +1,37 @@
+on_actions = {
+	on_state_control_changed = { 
+		# ROOT is new controller, FROM is old controller, FROM.FROM is state ID.
+		effect = {
+			if = { #peace with rom and ser only
+				limit = {
+					ROOT = {
+						has_war_with = FROM
+						FROM.FROM = {
+							is_owned_by = FROM
+						}
+						# OR = {
+						# 	controls_state = 78
+						# 	controls_state = 853
+						# 	controls_state = 77
+						# 	controls_state = 76
+						# 	controls_state = 84
+						# 	controls_state = 83
+						# 	controls_state = 762
+						# 	controls_state = 154
+						# }
+						# AND = {
+						# 	has_global_flag = balkan_war_started
+						# 	has_global_flag = balkan_war_member
+						# }
+						# OR = {
+						# 	original_tag = BUL
+						# 	original_tag = UKR
+						# 	original_tag = HUN
+						# }
+					}
+				}
+				
+			}
+		}
+	}
+}
