@@ -474,17 +474,8 @@ BUL_roman_expand_category_puppets_category = {
 			original_tag = BUL
 		}
 		available = {
-			AND = {
-				original_tag = BUL
-				has_global_flag = BUL_formed_roman_empire
-				BUL = {
-					AND = {
-						controls_state = 675
-						controls_state = 291
-						controls_state = 676
-					}
-				}
-				has_completed_focus = BUL_egypt_and_levant
+			FROM = {
+				has_socialist_government = no
 			}
 		}
 		visible = {
@@ -2010,280 +2001,66 @@ BUL_roman_expand_category_puppets_category = {
 		}
 		remove_effect = {
 			ROM = {
-				transfer_state = 81
-				transfer_state = 46
-				transfer_state = 79
-				transfer_state = 80
-				transfer_state = 78
-				transfer_state = 853
-				add_state_core = 81
-				add_state_core = 46
-				add_state_core = 79
-				add_state_core = 80
-				add_state_core = 78
-				add_state_core = 853
-				load_focus_tree = generic_focus
-				set_cosmetic_tag = ROM_roman_thema
-			}
-			BUL = {
-				set_autonomy = {
-					target = ROM
-					autonomy_state = autonomy_thema
-				}
-			}
-			if = {
-				limit = {
-					BUL = {
-						AND = {
-							controls_state = 861
-							861 = {
-								NOT = {
-									is_core_of = BUL
-								}
-							}
-						}
-					}
-				}
-				861 = {
-					add_core_of = BUL
-					transfer_state_to = BUL
+				NOT = {
+					owns_state = 853
+					owns_state = 78
 				}
 			}
 		}
-	}
-	BUL_roman_puppet_serbia = {
-		allowed = {
-			original_tag = BUL
-		}
-		available = {
-			has_completed_focus = BUL_remaining_balkans
-			BUL = {
-				AND = {
-					controls_state = 102
-					controls_state = 103
-					controls_state = 788
-					controls_state = 789
-					controls_state = 1036
-					controls_state = 1035
-					controls_state = 1034
-					controls_state = 104
-					controls_state = 1039
-					controls_state = 45
-					controls_state = 985
-					controls_state = 750
-					controls_state = 1037
-					controls_state = 109
-					controls_state = 767
-					controls_state = 107
-				}
+		target_trigger = {
+			FROM = {
+				tag = GER
 			}
 		}
+		cost = 50
+		icon = GFX_decision_eng_trade_unions_support
 		fire_only_once = yes
-		visible = {
-			has_completed_focus = BUL_remaining_balkans
+		ai_will_do = {
+			factor = 800
 		}
-		remove_effect = {
-			SER = {
-				transfer_state = 102
-				transfer_state = 103
-				transfer_state = 788
-				transfer_state = 789
-				transfer_state = 1036
-				transfer_state = 1035
-				transfer_state = 1034
-				transfer_state = 104
-				transfer_state = 1039
-				transfer_state = 45
-				transfer_state = 985
-				transfer_state = 750
-				transfer_state = 1037
-				transfer_state = 109
-				transfer_state = 767
-				transfer_state = 107
-				add_state_core = 102
-				add_state_core = 103
-				add_state_core = 788
-				add_state_core = 789
-				add_state_core = 1036
-				add_state_core = 1035
-				add_state_core = 1034
-				add_state_core = 104
-				add_state_core = 1039
-				add_state_core = 45
-				add_state_core = 985
-				add_state_core = 750
-				add_state_core = 1037
-				add_state_core = 109
-				add_state_core = 767
-				add_state_core = 107
-				load_focus_tree = generic_focus
-				set_cosmetic_tag = SER_roman_thema
+		complete_effect = {
+			FROM = {
+				country_event = { id = bulgaria.100 days = 2 }
 			}
-			BUL = {
-				set_autonomy = {
-					target = SER
-					autonomy_state = autonomy_thema
-				}
-				if = {
-					limit = {
-						OR = {
-							AND = {
-								controls_state = 942
-								NOT = {
-									942 = {
-										is_core_of = BUL
-									}
-								}
-							}
-							AND = {
-								controls_state = 106
-								NOT = {
-									106 = {
-										is_core_of = BUL
-									}
-								}
-							}
-							AND = {
-								controls_state = 787
-								NOT = {
-									787 = {
-										is_core_of = BUL
-									}
-								}
-							}
-						}
-					}
-					add_state_core = 787
-					add_state_core = 106
-					add_state_core = 942
-				}
-			}
-		}
-	}
-	BUL_roman_give_serbia_italian_balkan_lands = {
-		allowed = {
-			original_tag = BUL
-		}
-		fire_only_once = yes
-		visible = {
-			has_completed_focus = BUL_italy_france
-		}
-		available = {
-			has_completed_focus = BUL_italy_france
-			BUL = {
-				AND = {
-					controls_state = 917
-					controls_state = 736
-					controls_state = 770
-					controls_state = 163
-				}
-			}
-		}
-		remove_effect = {
-			SER = {
-				transfer_state = 917
-				transfer_state = 736
-				transfer_state = 770
-				transfer_state = 163
-				add_state_core = 917
-				add_state_core = 736
-				add_state_core = 770
-				add_state_core = 163
-			}
-		}
-	}
-	BUL_roman_create_faction = {
-		allowed = {
-			original_tag = BUL
-		}
-		available = {
-			AND = {
-				EGY = {
-					is_puppet_of = BUL
-				}
-				IRQ = {
-					is_puppet_of = BUL
-				}
-				BUL = {
-					NOT = {
-						is_in_faction = yes
-					}
-				}
-			}
-		}
-		remove_effect = {
-			BUL = {
-				create_faction = "Roman Imperial Alliance"
-			}
-		}
-	}
-	BUL_roman_ask_for_crimea = {
-		allowed = {
-			original_tag = BUL
-		}
-		available = {
-			UKR = {
-				is_subject = no
-			}
-		}
-		visible = {
-			has_completed_focus = BUL_italy_france
-		}
-		remove_effect = {
-			UKR = {
-				country_event = ukraine.10002
-			}
-		}
-	}
-	BUL_roman_ask_for_crimea = {
-		allowed = {
-			original_tag = BUL
-		}
-		available = {
-			BUL = {
-				AND = {
-					controls_state = 72
-					controls_state = 137
-					controls_state = 196
-				}
-			}
-		}
-		visible = {
-			BUL = {
-				AND = {
-					controls_state = 72
-					controls_state = 137
-					controls_state = 196
-				}
-			}
-		}
-		remove_effect = {
-			
 		}
 	}
 }
-BUL_roman_expand_panorth_expand_category = {
-	BUL_panorth_help_armenia_kurdistan = {
-		fire_only_once = yes
-		allowed = {
-			original_tag = BUL
-		}
+BUL_align_bulgaria_category = {
+	BUL_join_entente = {
 		visible = {
-			ARM = {
-				is_in_faction_with = BUL
-			}
+			has_completed_focus = BUL_our_allies
 		}
 		available = {
-			ARM = {
-				any_neighbor_country = {
-					tag = KUR
+			has_completed_focus = BUL_our_allies
+			OR = {
+				has_opinion = {
+					target = FRA
+					value > 79
+				}
+				has_opinion = {
+					target = ITA
+					value > 79
 				}
 			}
-			BUL = {has_completed_focus = BUL_pan_orthodoxism}
 		}
+		allowed = {
+			BUL = {
+				OR = {
+					has_government = social_democrat
+					has_government = paternal_autocrat
+					has_government = authoritarian_democrat
+				
+				}
+			}
+		}
+		cost = 50
+		fire_only_once = yes
 		remove_effect = {
-			KUR = {
-				country_event = kur.1
+			FRA = {
+				country_event = {
+					id = fra.5006
+					days = 1
+				}
 			}
 		}
 	}

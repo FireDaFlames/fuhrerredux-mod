@@ -227,6 +227,86 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = BUL_with_balkans_brothers
+		icon = GFX_goal_BUL_free_balkan_states
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = BUL_reclaim_peacefully
+		prerequisite = {
+			focus = BUL_reclaim_peacefully
+		}
+		mutually_exclusive = {
+			focus = BUL_on_our_own
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = BUL_found_the_balkan_alliance
+		icon = none
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_with_balkans_brothers
+		prerequisite = {
+			focus = BUL_with_balkans_brothers
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = BUL_request_lands_balkan
+		icon = none 
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_found_the_balkan_alliance
+		prerequisite = {
+			focus = BUL_found_the_balkan_alliance
+		}
+		completion_reward = {
+			#
+		}
+	}
+	focus = {
+		id = BUL_balkan_hegemony
+		icon = GFX_goal_BUL_balkan_hegemony
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_request_lands_balkan
+		prerequisite = {
+			focus = BUL_request_lands_balkan
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = BUL_the_hungarian_problem
+		icon = GFX_goal_generic_attack_hungary
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_balkan_hegemony
+		prerequisite = {
+			focus = BUL_balkan_hegemony
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = BUL_diplomatic_decisions
+		icon = GFX_goal_generic_balkan_diplomacy
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_the_hungarian_problem
+		prerequisite = {
+			focus = BUL_the_hungarian_problem
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
 		id = BUL_territorial_ambitions_fulfilled
 		icon = GFX_goal_refugee_management
 		cost = 2
