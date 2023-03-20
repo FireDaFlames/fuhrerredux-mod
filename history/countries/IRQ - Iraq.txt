@@ -97,3 +97,4 @@ set_popularities = {
 recruit_character = IRQ_Faisal_I
 recruit_character = IRQ_Yusuf_Salman_Yusuf
 recruit_character = IRQ_Rashid_Ali_al_Gaylani
+recruit_character = IRQ_Al_Chaderchi

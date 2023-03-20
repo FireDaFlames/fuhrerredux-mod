@@ -50,3 +50,9 @@ irq.11.a: "They can do this?"
 
 IRQ_divided_nation: "Divided Nation"
 IRQ_divided_nation_desc: "The Mashriq is a vast region, containing many tribes, ethnicities and religions within it. Ruling over them and trying to unite them under Pan-Arabism has been difficult, and they don't share the same enthusiasm as the Syrians in opposing the Phoenicians. Our nation suffers deeply as a result."
+
+
+
+#FLAGS
+#flag for changing between Faisal and Al Chaderchil
+IRQ_AL_CHADERCHIL: "Al Chaderchil is the current leader"

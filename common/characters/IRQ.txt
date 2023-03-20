@@ -71,4 +71,12 @@ characters = {
 			traits = { }
 		}
 	}
+	# IRQ_Al_Chaderchi = {
+	# 	name = "Al Chaderchi"
+	# 	portraits = {
+	# 		civilian = {
+	# 			large = "gfx/leaders/IRQ/Portrait_IRQ_Al_Chaderchi.png"
+	# 		}
+	# 	}
+	# }
 }
