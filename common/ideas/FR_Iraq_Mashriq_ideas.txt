@@ -1,11 +1,51 @@
 ideas = {
 		country = {
-		IRQ_divided_nation = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IRQ_divided_nation"}
+			IRQ_divided_nation = {
+				on_add = { 
+					log = "[GetDateText]: [Root.GetName]: add idea IRQ_divided_nation"
+				}
 				picture = generic_neutrality_drift_bonus
 				modifier = {
 					conscription_factor = -0.3
 					stability_factor = -0.1
+				}
+			}
+			IRQ_hashemite_dynasty = {
+				targeted_modifier = {
+					tag = ARB
+					opinion_gain_monthly_factor = -0.01
+				}
+				targeted_modifier = {
+					tag = TUR
+					opinion_gain_monthly_factor = -0.02
+				}
+				modifier = {
+					stability_factor = 0.15
+				}
+			}
+			IRQ_semi_democratic_state = {
+				modifier = {
+					stability_factor = 0.1
+					political_power_gain = 0.1
+				}
+			}
+			IRQ_british_protection = {
+				modifier = {
+					war_support_factor = -0.1
+					recruitable_population_factor = -0.05
+				}
+			}
+			IRQ_nationalist_unrest = {
+				modifier = {
+					stability_factor = -0.05
+					political_power_gain = -0.05
+					war_support_factor = 0.5
+				}
+			}
+			IRQ_coalition_fraternal_communique = {
+				modifier = {
+					social_democrat_drift = 0.01
+					social_conservative_drift = 0.01
 				}
 			}
 		}
