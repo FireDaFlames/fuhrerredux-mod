@@ -1,10 +1,10 @@
 # Japanese Shogunate Events
 # Contributed by Kaiczer
 
-add_namespace = jap_shogun
-add_namespace = jap_shogundom
-add_namespace = jap_rep 
-add_namespace = jap_foreign
+add_namespace = jap_shogun #Politics
+add_namespace = jap_shogundom #Domestic
+add_namespace = jap_rep #Republic
+add_namespace = jap_foreign #Foreign
 
 country_event = { #Response the Japanese Martial Law
 	id = jap_shogun.1
@@ -271,9 +271,14 @@ country_event = { #Political Turmoil
 					traits = {  }
 				}
 			}
-			promote_character = {
+			add_country_leader_role = {
 				character = JAP_Nakano_Seigo
-				ideology = organnat_showaist_subtype
+				promote_leader = yes
+				country_leader = {
+					ideology = statist_showaist_subtype
+					expire = "1965.1.1"
+					traits = {  }
+				}
 			}
 			set_party_name = {
 				ideology = national_populist
@@ -405,7 +410,7 @@ country_event = { #Assassination Investigation
 		hidden_effect = {
 			country_event = {
 				id = jap_shogun.12
-				days = 14
+				days = 18
 			}
 		}
 	}
@@ -589,7 +594,7 @@ country_event = { #Unbelievable Situation - Fate of Daijo-Kan
 				ideology = samurai_dictatorship_subtype
 				expire = "1965.1.1"
 				traits = { 
-					#the_justice_beloved
+					#the_just_shogun
 					#chancellor_of_state 
 				}
 			}
@@ -620,7 +625,7 @@ country_event = { #Unbelievable Situation - Fate of Daijo-Kan
 			character = JAP_Nakano_Seigo
 			promote_leader = yes
 			country_leader = {
-				ideology = organnat_showaist_subtype
+				ideology = statist_showaist_subtype
 				expire = "1965.1.1"
 				traits = { 
 					#faithful_of_neo_feudalism
@@ -766,7 +771,7 @@ country_event = { #Unbelievable Situation - Burakumin - Socialist Revolution / D
 			character = JAP_Jiichiro_Matsumoto
 			promote_leader = yes
 			country_leader = {
-				ideology = utopian_libsoc_subtype 
+				ideology = libsoc_utopian_socialism_subtype 
 				expire = "1965.1.1"
 				traits = { 
 					#the_liberator 
@@ -1045,6 +1050,134 @@ country_event = {
 		add_political_power = 35
 	}
 }
+country_event = {
+	id = jap_shogundom.12
+	title = jap_shogundom.12.t 
+	desc = jap_shogundom.12.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = "Appoint by Imperial Diet"
+	}
+	option = {
+		name = "Appoint by Shikken's Corporative Directory"
+	}
+}
+country_event = {
+	id = jap_shogundom.13
+	title = jap_shogundom.13.t 
+	desc = jap_shogundom.13.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = "It's what we have decided"
+		add_relation_modifier = {
+			target = ENG 
+			modifier = cut_diplomatic_ties
+		}
+	}
+}
+country_event = {
+	id = jap_shogundom.14
+	title = jap_shogundom.14.t 
+	desc = jap_shogundom.14.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = "I've decided your fate"
+	}
+}
+country_event = {
+	id = jap_shogundom.15
+	title = jap_shogundom.15.t 
+	desc = jap_shogundom.15.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = "Do everything we can done"
+	}
+}
+country_event = {
+	id = jap_shogundom.16
+	title = jap_shogundom.14.t 
+	desc = jap_shogundom.14.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = "We salute you"
+	}
+}
+country_event = {
+	id = jap_shogundom.17
+	title = jap_shogundom.14.t 
+	desc = jap_shogundom.14.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = "That's good"
+	}
+}
+country_event = {
+	id = jap_shogundom.18
+	title = jap_shogundom.14.t 
+	desc = jap_shogundom.14.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = "United We Stand"
+	}
+}
+country_event = {
+	id = jap_shogundom.19
+	title = jap_shogundom.14.t 
+	desc = jap_shogundom.14.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = "Because true faith is guiding us"
+	}
+}
+country_event = {
+	id = jap_shogundom.20
+	title = jap_shogundom.14.t 
+	desc = jap_shogundom.14.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = "We need to build the discipline for our people"
+	}
+}
+country_event = {
+	id = jap_shogundom.21
+	title = jap_shogundom.14.t 
+	desc = jap_shogundom.14.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = "For the Nation of Buddha"
+	}
+}
+country_event = {
+	id = jap_shogundom.22
+	title = jap_shogundom.14.t 
+	desc = jap_shogundom.14.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = "This is a next step of Buddhism"
+	}
+}
 #########################
 ##  Republic of Japan  ##
 #########################
@@ -1097,7 +1230,7 @@ country_event = {
 			character = JAP_Jiichiro_Matsumoto
 			promote_leader = yes
 			country_leader = {
-				ideology = utopian_libsoc_subtype 
+				ideology = libsoc_utopian_socialism_subtype 
 				expire = "1965.1.1"
 			}
 		}
@@ -1223,6 +1356,7 @@ country_event = {
 	is_triggered_only = yes 
 	option = {
 		name = "Abolish all titles immediately"
+		add_political_power = -75
 	}
 }
 country_event = {
@@ -1262,7 +1396,7 @@ country_event = {
 			character = JAP_Jiichiro_Matsumoto
 			promote_leader = yes
 			country_leader = {
-				ideology = utopian_libsoc_subtype 
+				ideology = libsoc_utopian_socialism_subtype 
 				expire = "1965.1.1"
 			}
 		}
@@ -1309,7 +1443,7 @@ country_event = {
 			character = JAP_Yamakawa_Kikue
 			promote_leader = yes
 			country_leader = {
-				ideology = feminist_socialist_subtype 
+				ideology = socialist_feminist_subtype 
 				expire = "1965.1.1"
 			}
 		}
@@ -1380,7 +1514,7 @@ country_event = {
 			character = JAP_Sanzo_Nosaka
 			promote_leader = yes
 			country_leader = {
-				ideology = monarchist_socialism_subtype 
+				ideology = monsoc_subtype 
 				expire = "1965.1.1"
 			}
 		}
@@ -1463,9 +1597,9 @@ country_event = {
 	}
 }
 
-#########
-#Foreign#
-#########
+###########
+# Foreign #
+###########
 country_event = {
 	id = jap_foreign.1
 	title = "Japanese Government seeks the diplomatic alliance with Germany"
@@ -1654,5 +1788,253 @@ country_event = {
 				target = RUS 
 			}
 		}
+	}
+}
+country_event = {
+	id = jap_foreign.8
+	title = jap_foreign.8.t 
+	desc = jap_foreign.8.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = "It's what you have decided, isn't it?"
+		add_relation_modifier = {
+			target = JAP 
+			modifier = cut_diplomatic_ties
+		}
+	}
+}
+country_event = {
+	id = jap_foreign.9
+	title = jap_foreign.9.t 
+	desc = jap_foreign.9.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = "Send the invitation"
+		add_to_array = {
+			array = global.harbin_conference_joined
+			var = JAP.id 
+		}
+		set_variable = { harbin_topic = 3 }
+		set_variable = { harbin_railroad = 0 }
+		set_variable = { harbin_trade = 0 }
+		set_variable = { harbin_currency = 0 }
+		every_country = {
+			limit = {
+				OR = {
+					AND = {
+						exists = yes
+						tag = RUS 
+					}
+					AND = {
+						exists = yes 
+						tag = MAN  
+					}
+				}
+			}
+			country_event = {
+				id = jap_foreign.10
+				days = 7 
+			}
+		}
+	}
+}
+country_event = { #Meeting in Harbin - Telegram Invitation
+	id = jap_foreign.10
+	title = jap_foreign.10.t 
+	desc = jap_foreign.10.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = "Ok"
+		ai_chance = {
+			base = 50 
+		}
+		add_to_array = {
+			array = harbin_conference_joined
+			var = ROOT.id 
+		}
+		country_event = {
+			id = jap_foreign.11
+			days = 3 
+		}
+		add_stability = 0.01
+		add_political_power = 10
+	}
+	option = {
+		name = "Nay"
+		ai_chance = {
+			base = 50 
+		}
+		add_stability = -0.01
+		add_political_power = -10
+	}
+}
+country_event = { #Harbin Conference - Railroad Income Tax
+	id = jap_foreign.11
+	title = "Harbin Conference - Day 1"
+	desc = jap_foreign.11.d 
+
+	is_triggered_only = yes 
+	option = {
+		name = "Set up the joint taxation department"
+		ai_chance = {
+			base = 50 
+		}
+		country_event = {
+			id = jap_foreign.12
+			days = 3 
+		}
+		add_stability = 0.01
+		add_political_power = 10
+		JAP = {
+			add_to_variable = {
+				var = harbin_railroad
+				value = 1 
+			}
+		}
+	}
+	option = {
+		name = "Set up the separately taxation department"
+		ai_chance = {
+			base = 50 
+		}
+		add_stability = 0.01
+		add_political_power = 10
+		country_event = {
+			id = jap_foreign.12
+			days = 3 
+		}
+	}
+}
+country_event = { #Harbin Conference - Currency Support
+	id = jap_foreign.12
+	title = "Harbin Conference - Day 2"
+	desc = jap_foreign.12.d 
+
+	is_triggered_only = yes 
+	option = {
+		name = "Use the Yen Currency"
+		JAP = {
+			add_to_variable = {
+				var = harbin_currency
+				value = 1 
+			}
+		}
+		country_event = {
+			id = jap_foreign.13
+			days = 3 
+		}
+		add_stability = 0.01
+		add_political_power = 10
+	}
+	option = {
+		name = "Set up the joint currency"
+		country_event = {
+			id = jap_foreign.13
+			days = 3 
+		}
+		add_stability = 0.01
+		add_political_power = 10
+	}
+}
+country_event = { #Harbin Conference - Resource and Trading
+	id = jap_foreign.13
+	title = "Harbin Conference - Day 3"
+	desc = jap_foreign.13.d 
+
+	is_triggered_only = yes 
+	option = {
+		name = "10% discount for all trades"
+		JAP = {
+			add_to_variable = {
+				var = harbin_trade
+				value = 1 
+			}
+		}
+		country_event = {
+			id = jap_foreign.14
+			days = 3 
+		}
+		add_stability = 0.01
+		add_political_power = 10
+	}
+	option = {
+		name = "10% discount for surplus resources"
+		country_event = {
+			id = jap_foreign.14
+			days = 3 
+		}
+		add_stability = 0.01
+		add_political_power = 10
+	}
+}
+country_event = { #Harbin Conference - Conclusion
+	id = jap_foreign.14
+	title = "Harbin Conference - Final Day"
+	desc = jap_foreign.14.d 
+
+	is_triggered_only = yes 
+
+	immediate = {
+		hidden_effect = {
+			JAP = {
+				set_temp_variable = { temp = harbin_railroad }
+				add_to_temp_variable = { temp = harbin_currency }
+				add_to_temp_variable = { temp = harbin_trade }
+				multiply_temp_variable = { temp = harbin_topic }
+
+				set_variable = { harbin_vote = temp }
+				
+				set_variable = { harbin_quorum = harbin_topic }
+				multiply_variable = { harbin_quorum = 0.6 }
+
+				divide_variable = { harbin_vote = var:global.harbin_conference_joined }
+
+				clear_variable = harbin_railroad 
+				clear_variable = harbin_currency
+				clear_variable = harbin_trade 
+				clear_variable = harbin_topic 
+				if = {
+					limit = {
+						check_variable = {
+							var = harbin_vote 
+							value = harbin_quorum 
+							compare = greater_than_or_equals
+						}
+					}
+					set_country_flag = JAP_harbin_conference_ended
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							var = harbin_vote 
+							value = harbin_quorum 
+							compare = less_than
+						}
+					}
+					set_country_flag = JAP_harbin_conference_failed
+				}
+				else_if = {
+					limit = {
+						check_variable = { harbin_conference = 1 }
+					}
+					set_country_flag = JAP_harbin_conference_failed
+				}
+				clear_variable = harbin_conference
+				clear_variable = harbin_vote
+				clear_variable = harbin_quorum 
+			}
+		}
+	}
+
+	option = {
+		name = "For the unity and friendship"
+		add_stability = 0.01
+		add_political_power = 10
 	}
 }

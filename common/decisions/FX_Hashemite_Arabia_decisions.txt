@@ -398,7 +398,9 @@ ARB_war_of_arabian_reunification = {
       clr_country_flag = ARB_raising_division
       FROM = {
         create_unit = {
-          division = "name = \"Banu Thaqif Militia\" division_template = \"Qasam Milishia\" start_experience_factor = 0.5"
+          division = "name = \"Banu Thaqif Militia\" 
+          division_template = \"Qasam Milishia\" 
+          start_experience_factor = 0.5"
           owner = ARB
         }
       }

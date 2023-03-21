@@ -69,18 +69,4 @@ guiTypes = {
 			}
 		}
 	}
-	containerWindowType = {
-		name = "tokaido_icon_main_windows"
-		position = { x = 300 y = 10 }
-		size = { width = 100% height= 100 }
-
-		iconType = {
-			name = "tokaido_province_icon"
-			position = { x = 0 y = 0 }
-			orientation = "UPPER_LEFT"
-			spriteType = "GFX_tokaido_development_project_icon"
-			pdx_tooltip = "TKD_modifier_text"
-			#pdx_tooltip_delayed = "TKD_modifier_text"
-		}
-	}
 }

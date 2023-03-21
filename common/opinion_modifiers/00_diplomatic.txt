@@ -1,5 +1,8 @@
 opinion_modifiers = {
-	
+	cut_diplomatic_ties = {
+		value = -100
+	}
+
 	faction_traitor = {
 		value = -75
 	}

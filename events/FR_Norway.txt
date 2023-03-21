@@ -5244,7 +5244,7 @@ country_event = {
 			NOR_Arnvid_Vasbotten_sec_npo
 		}
 		remove_coalition_paternal_autocrat = yes 
-		add_coalition_authoritarian_democrat = yess 
+		add_coalition_authoritarian_democrat = yes
 		hidden_effect = {
 			add_country_leader_role = {
         character = NOR_Olav_V

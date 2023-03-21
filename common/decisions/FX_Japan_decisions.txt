@@ -1033,7 +1033,7 @@ JAP_expansionism_decision = {
 		}
 		available = {
 			AND = {
-				has_completed_focus = JAP_demand_delhi_subjugation
+				has_completed_focus = JAP_toward_indian_subcontinent
 				RAJ = {
 					exists = no 
 				}
@@ -1106,14 +1106,14 @@ JAP_taiheiyo_circuit_project = {
 			}
 		}
 
+		modifier = {
+			political_power_factor = 0.05
+		}
+
 		remove_effect = {
-			282 = {
-				add_dynamic_modifier = {
-					modifier = JAP_TCP_Tokyo
-				}
-				add_to_array = {
-					array = ROOT.TKD_province
-				}
+			activate_mission = JAP_tokyo_clockwork
+			add_to_array = {
+				array = ROOT.TKD_province
 			}
 		}
 	}
@@ -1128,11 +1128,67 @@ JAP_taiheiyo_circuit_project = {
 			always = no 
 		}
 	}
+	JAP_tokyo_clockwork = {
+		visible = {
+			is_in_array = {
+				array = ROOT.TKD_province
+				value = 282.id
+			}
+		}
+		allowed = { always = no } #manually activated
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		selectable_mission = no
+		is_good = yes 
+		fire_only_once = yes
+		days_mission_timeout = 720
+
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout JAP_tokyo_clockwork"
+			if = {
+				limit = {
+					has_completed_focus = JAP_under_supervision_of_government
+				}
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = JAP_privatize_the_public_company
+				}
+			}
+		}
+	}
 	JAP_tokyo_hire_worker = {
 		visible = {
 			is_in_array = {
 				array = ROOT.TKD_province
 				value = 282.id
+			}
+		}
+
+		fire_only_once = yes
+		cost = 10
+		days_re_enable = 7
+		days_remove = 7
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_political_power < 200
+			}
+		}
+
+		modifier = {
+            consumer_goods_factor = 0.05
+        }
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove JAP_tokyo_hire_worker"
+			add_days_mission_timeout = {
+				mission = JAP_tokyo_clockwork
+				days = -15
 			}
 		}
 	}
@@ -1143,12 +1199,63 @@ JAP_taiheiyo_circuit_project = {
 				value = 282.id
 			}
 		}
+		
+		fire_only_once = yes
+		cost = 33
+		days_re_enable = 15
+		days_remove = 15
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_political_power < 200
+			}
+		}
+		
+		modifier = {
+            consumer_goods_factor = 0.05
+			industrial_capacity_factory = -0.03
+        }
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove JAP_tokyo_speed_up_construction"
+			add_days_mission_timeout = {
+				mission = JAP_tokyo_clockwork
+				days = -30
+			}
+		}
 	}
 	JAP_tokyo_delay_the_deadline = {
 		visible = {
 			is_in_array = {
 				array = ROOT.TKD_province
 				value = 282.id
+			}
+		}
+
+		fire_only_once = yes
+		cost = 0
+		days_re_enable = 30
+		days_remove = 15
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_political_power < 200
+			}
+		}
+		
+		modifier = {
+            consumer_goods_factor = -0.05
+			industrial_capacity_factory = 0.03
+        }
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove JAP_tokyo_delay_the_deadline"
+			add_political_power = 50
+			add_days_mission_timeout = {
+				mission = JAP_tokyo_clockwork
+				days = 30
 			}
 		}
 	}
@@ -1158,6 +1265,34 @@ JAP_taiheiyo_circuit_project = {
 				array = ROOT.TKD_province
 				value = 282.id
 			}
+			has_completed_focus = JAP_privatize_the_public_company
+		}
+
+		fire_only_once = yes
+		cost = 75
+		days_re_enable = 30
+		days_remove = 20
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_political_power < 200
+			}
+		}
+		
+		modifier = {
+			stability_factor = -0.05
+            consumer_goods_factor = 0.05
+			industrial_capacity_factory = -0.1
+        }
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove JAP_tokyo_get_zaibatsu_budget"
+			add_political_power = 50
+			add_days_mission_timeout = {
+				mission = JAP_tokyo_clockwork
+				days = -7
+			}
 		}
 	}
 	JAP_tokyo_hire_skilled_worker = {
@@ -1165,6 +1300,31 @@ JAP_taiheiyo_circuit_project = {
 			is_in_array = {
 				array = ROOT.TKD_province
 				value = 282.id
+			}
+		}
+
+		fire_only_once = yes
+		cost = 55
+		days_re_enable = 15
+		days_remove = 15
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_political_power < 200
+			}
+		}
+		
+		modifier = {
+            consumer_goods_factor = 0.07
+			industrial_capacity_factory = -0.08
+        }
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove JAP_tokyo_hire_skilled_worker"
+			add_days_mission_timeout = {
+				mission = JAP_tokyo_clockwork
+				days = -25
 			}
 		}
 	}
@@ -1203,14 +1363,14 @@ JAP_taiheiyo_circuit_project = {
 			}
 		}
 
+		modifier = {
+			political_power_factor = 0.05
+		}
+		
 		remove_effect = {
-			531 = {
-				add_dynamic_modifier = {
-					modifier = JAP_TCP_Kansai
-				}
-				add_to_array = {
-					array = ROOT.TKD_province
-				}
+			activate_mission = JAP_kansai_clockwork
+			add_to_array = {
+				array = ROOT.TKD_province
 			}
 		}
 	}
@@ -1225,11 +1385,64 @@ JAP_taiheiyo_circuit_project = {
 			always = no 
 		}
 	}
+	JAP_kansai_clockwork = {
+		allowed = { always = no } #manually activated
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		selectable_mission = no
+		is_good = no
+		fire_only_once = yes
+		days_mission_timeout = 720
+
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout JAP_kansai_clockwork"
+			custom_effect_tooltip = JAP_kansai_clockwork_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_focus = JAP_under_supervision_of_government
+					}
+				}
+				else_if = {
+					limit = {
+						has_completed_focus = JAP_privatize_the_public_company
+					}
+				}	
+			}
+		}
+	}
 	JAP_kansai_hire_worker = {
 		visible = {
 			is_in_array = {
 				array = ROOT.TKD_province
 				value = 531.id
+			}
+		}
+
+		fire_only_once = yes
+		cost = 10
+		days_re_enable = 7
+		days_remove = 7
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_political_power < 200
+			}
+		}
+
+		modifier = {
+            consumer_goods_factor = 0.05
+        }
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove JAP_kansai_hire_worker"
+			add_days_mission_timeout = {
+				mission = JAP_kansai_clockwork
+				days = -15
 			}
 		}
 	}
@@ -1240,6 +1453,31 @@ JAP_taiheiyo_circuit_project = {
 				value = 531.id
 			}
 		}
+
+		fire_only_once = yes
+		cost = 33
+		days_re_enable = 15
+		days_remove = 15
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_political_power < 200
+			}
+		}
+		
+		modifier = {
+            consumer_goods_factor = 0.05
+			industrial_capacity_factory = -0.03
+        }
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove JAP_kansai_speed_up_construction"
+			add_days_mission_timeout = {
+				mission = JAP_kansai_clockwork
+				days = -30
+			}
+		}
 	}
 	JAP_kansai_delay_the_deadline = {
 		visible = {
@@ -1248,12 +1486,66 @@ JAP_taiheiyo_circuit_project = {
 				value = 531.id
 			}
 		}
+
+		fire_only_once = yes
+		cost = 0
+		days_re_enable = 30
+		days_remove = 15
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_political_power < 200
+			}
+		}
+		
+		modifier = {
+            consumer_goods_factor = -0.05
+			industrial_capacity_factory = 0.03
+        }
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove JAP_kansai_delay_the_deadline"
+			add_political_power = 50
+			add_days_mission_timeout = {
+				mission = JAP_kansai_clockwork
+				days = 30
+			}
+		}
 	}
 	JAP_kansai_get_zaibatsu_budget = {
 		visible = {
 			is_in_array = {
 				array = ROOT.TKD_province
 				value = 531.id
+			}
+			has_completed_focus = JAP_privatize_the_public_company
+		}
+
+		fire_only_once = yes
+		cost = 75
+		days_re_enable = 30
+		days_remove = 20
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_political_power < 200
+			}
+		}
+		
+		modifier = {
+			stability_factor = -0.05
+            consumer_goods_factor = 0.05
+			industrial_capacity_factory = -0.1
+        }
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove JAP_kansai_get_zaibatsu_budget"
+			add_political_power = 50
+			add_days_mission_timeout = {
+				mission = JAP_kansai_clockwork
+				days = -7
 			}
 		}
 	}
@@ -1264,8 +1556,33 @@ JAP_taiheiyo_circuit_project = {
 				value = 531.id
 			}
 		}
+
+		fire_only_once = yes
+		cost = 55
+		days_re_enable = 15
+		days_remove = 15
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_political_power < 200
+			}
+		}
+		
+		modifier = {
+            consumer_goods_factor = 0.07
+			industrial_capacity_factory = -0.08
+        }
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove JAP_kansai_hire_skilled_worker"
+			add_days_mission_timeout = {
+				mission = JAP_kansai_clockwork
+				days = -25
+			}
+		}
 	}
-	#Tokai  Naval Port / Dockyard Development 532
+	#Tokai Naval Port / Dockyard Development 532
 	JAP_Tokai_Industrial_Expansion_Initiative = {
 		visible = {
 			tag = JAP
@@ -1300,14 +1617,14 @@ JAP_taiheiyo_circuit_project = {
 			}
 		}
 
+		modifier = {
+			political_power_factor = 0.05
+		}
+
 		remove_effect = {
-			532 = {
-				add_dynamic_modifier = {
-					modifier = JAP_TCP_Tokai
-				}
-				add_to_array = {
-					array = ROOT.TKD_province
-				}
+			activate_mission = JAP_tokai_clockwork
+			add_to_array = {
+				array = ROOT.TKD_province
 			}
 		}
 	}
@@ -1322,11 +1639,64 @@ JAP_taiheiyo_circuit_project = {
 			always = no 
 		}
 	}
+	JAP_tokai_clockwork = {
+		allowed = { always = no } #manually activated
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		selectable_mission = no
+		is_good = no
+		fire_only_once = yes
+		days_mission_timeout = 720
+
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout JAP_tokai"
+			custom_effect_tooltip = JAP_tokai_clockwork_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_focus = JAP_under_supervision_of_government
+					}
+				}
+				else_if = {
+					limit = {
+						has_completed_focus = JAP_privatize_the_public_company
+					}
+				}
+			}
+		}
+	}
 	JAP_tokai_hire_worker = {
 		visible = {
 			is_in_array = {
 				array = ROOT.TKD_province
 				value = 532.id
+			}
+		}
+
+		fire_only_once = yes
+		cost = 10
+		days_re_enable = 7
+		days_remove = 7
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_political_power < 200
+			}
+		}
+
+		modifier = {
+            consumer_goods_factor = 0.05
+        }
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove JAP_tokai_hire_worker"
+			add_days_mission_timeout = {
+				mission = JAP_tokai_clockwork
+				days = -15
 			}
 		}
 	}
@@ -1337,12 +1707,63 @@ JAP_taiheiyo_circuit_project = {
 				value = 532.id
 			}
 		}
+
+		fire_only_once = yes
+		cost = 33
+		days_re_enable = 15
+		days_remove = 15
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_political_power < 200
+			}
+		}
+		
+		modifier = {
+            consumer_goods_factor = 0.05
+			industrial_capacity_factory = -0.03
+        }
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove JAP_tokai_speed_up_construction"
+			add_days_mission_timeout = {
+				mission = JAP_tokai_clockwork
+				days = -30
+			}
+		}
 	}
 	JAP_tokai_delay_the_deadline = {
 		visible = {
 			is_in_array = {
 				array = ROOT.TKD_province
 				value = 532.id
+			}
+		}
+
+		fire_only_once = yes
+		cost = 0
+		days_re_enable = 30
+		days_remove = 15
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_political_power < 200
+			}
+		}
+		
+		modifier = {
+            consumer_goods_factor = -0.05
+			industrial_capacity_factory = 0.03
+        }
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove JAP_tokai_delay_the_deadline"
+			add_political_power = 50
+			add_days_mission_timeout = {
+				mission = JAP_tokai_clockwork
+				days = 30
 			}
 		}
 	}
@@ -1352,6 +1773,34 @@ JAP_taiheiyo_circuit_project = {
 				array = ROOT.TKD_province
 				value = 532.id
 			}
+			has_completed_focus = JAP_privatize_the_public_company
+		}
+
+		fire_only_once = yes
+		cost = 75
+		days_re_enable = 30
+		days_remove = 20
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_political_power < 200
+			}
+		}
+		
+		modifier = {
+			stability_factor = -0.05
+            consumer_goods_factor = 0.05
+			industrial_capacity_factory = -0.1
+        }
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove JAP_tokai_get_zaibatsu_budget"
+			add_political_power = 50
+			add_days_mission_timeout = {
+				mission = JAP_tokai_clockwork
+				days = -7
+			}
 		}
 	}
 	JAP_tokai_hire_skilled_worker = {
@@ -1359,6 +1808,31 @@ JAP_taiheiyo_circuit_project = {
 			is_in_array = {
 				array = ROOT.TKD_province
 				value = 532.id
+			}
+		}
+
+		fire_only_once = yes
+		cost = 55
+		days_re_enable = 15
+		days_remove = 15
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_political_power < 200
+			}
+		}
+		
+		modifier = {
+            consumer_goods_factor = 0.07
+			industrial_capacity_factory = -0.08
+        }
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove JAP_tokai_hire_skilled_worker"
+			add_days_mission_timeout = {
+				mission = JAP_tokai_clockwork
+				days = -25
 			}
 		}
 	}

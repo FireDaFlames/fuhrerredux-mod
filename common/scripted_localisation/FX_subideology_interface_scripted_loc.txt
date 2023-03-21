@@ -14,15 +14,15 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = feminist_socialist_subtype
+			has_country_leader_ideology = socialist_feminist_subtype
 		}
-		localization_key = feminist_socialist_subtype
+		localization_key = socialist_feminist_subtype
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = organnat_showaist_subtype
+			has_country_leader_ideology = statist_showaist_subtype
 		}
-		localization_key = organnat_showaist_subtype
+		localization_key = statist_showaist_subtype
 	}
 	text = {
 		trigger = {
@@ -56,15 +56,15 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = utopian_libsoc_subtype
+			has_country_leader_ideology = libsoc_utopian_socialism_subtype
 		}
-		localization_key = utopian_libsoc_subtype
+		localization_key = libsoc_utopian_socialism_subtype
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = monarchist_socialism_subtype
+			has_country_leader_ideology = monsoc_subtype
 		}
-		localization_key = monarchist_socialism_subtype
+		localization_key = monsoc_subtype
 	}
 }
 defined_text = {
@@ -149,15 +149,15 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = feminist_socialist_subtype
+			has_country_leader_ideology = socialist_feminist_subtype
 		}
-		localization_key = feminist_socialist_subtype
+		localization_key = socialist_feminist_subtype
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = organnat_showaist_subtype
+			has_country_leader_ideology = statist_showaist_subtype
 		}
-		localization_key = organnat_showaist_subtype
+		localization_key = statist_showaist_subtype
 	}
 	text = {
 		trigger = {
@@ -191,15 +191,15 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = utopian_libsoc_subtype
+			has_country_leader_ideology = libsoc_utopian_socialism_subtype
 		}
-		localization_key = utopian_libsoc_subtype
+		localization_key = libsoc_utopian_socialism_subtype
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = monarchist_socialism_subtype
+			has_country_leader_ideology = monsoc_subtype
 		}
-		localization_key = monarchist_socialism_subtype
+		localization_key = monsoc_subtype
 	}
 }
 defined_text = {
@@ -284,15 +284,15 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = feminist_socialist_subtype
+			has_country_leader_ideology = socialist_feminist_subtype
 		}
-		localization_key = feminist_socialist_subtype_desc
+		localization_key = socialist_feminist_subtype_desc
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = organnat_showaist_subtype
+			has_country_leader_ideology = statist_showaist_subtype
 		}
-		localization_key = organnat_showaist_subtype_desc
+		localization_key = statist_showaist_subtype_desc
 	}
 	text = {
 		trigger = {
@@ -326,14 +326,14 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = utopian_libsoc_subtype
+			has_country_leader_ideology = libsoc_utopian_socialism_subtype
 		}
-		localization_key = utopian_libsoc_subtype_desc
+		localization_key = libsoc_utopian_socialism_subtype_desc
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = monarchist_socialism_subtype
+			has_country_leader_ideology = monsoc_subtype
 		}
-		localization_key = monarchist_socialism_subtype_desc
+		localization_key = monsoc_subtype_desc
 	}
 }

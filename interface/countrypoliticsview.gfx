@@ -533,7 +533,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/subideologies/valk_ultranational_nichirenism.png"
 	}
 	spriteType = {
-		name = "GFX_ideology_feminist_socialist_subtype"
+		name = "GFX_ideology_socialist_feminist_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/libsoc_Feminist_socialism.png"
 	}
 	spriteType = {
@@ -541,7 +541,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/subideologies/pataut_absolute_monarchy_group.png"
 	}
 	spriteType = {
-		name = "GFX_ideology_organnat_showaist_subtype"
+		name = "GFX_ideology_statist_showaist_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/natpop_organnat_state_showaism.png"
 	}
 	spriteType = {
@@ -561,11 +561,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/subideologies/pataut_samurai_militarism.png"
 	}
 	spriteType = {
-		name = "GFX_ideology_monarchist_socialism_subtype"
+		name = "GFX_ideology_monsoc_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/monsoc_group.png"
 	}
 	spriteType = {
-		name = "GFX_ideology_utopian_libsoc_subtype"
+		name = "GFX_ideology_libsoc_utopian_socialism_subtype"
 		texturefile = "gfx/interface/ideologies/subideologies/libsoc_utopian.png"
 	}
 	spriteType = {

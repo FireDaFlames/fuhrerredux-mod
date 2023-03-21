@@ -15,8 +15,4 @@ spriteTypes = {
 		name = "Kansai_prov_icon"
 		texturefile = "gfx/interface/Tokaido_map/Kansai_prov.dds"
 	}
-	spriteType = {
-		name = "GFX_tokaido_development_project_icon"
-		texturefile = "gfx/interface/Tokaido_map/TKD_project_area_icon.png"
-	}
 }

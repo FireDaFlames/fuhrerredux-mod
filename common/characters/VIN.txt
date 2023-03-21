@@ -8,7 +8,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = valkist_subtype
-			traits = {}
+			traits = { }
 		}
 	}
 }

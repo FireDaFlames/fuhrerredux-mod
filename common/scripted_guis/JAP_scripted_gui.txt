@@ -44,18 +44,4 @@ scripted_gui = {
 			}
 		}
 	}
-	Tokaido_icon_gui = {
-		context_type = selected_state_context
-		window_name = "tokaido_icon_main_windows" 
-		parent_window_token = selected_state_view
-		dirty = Tokaido_icon_gui_variables
-
-		visible = {
-			owner = { tag = JAP }
-			is_in_array = {
-				array = ROOT.TKD_province
-				value = THIS.id
-			}
-		}
-	}
 }

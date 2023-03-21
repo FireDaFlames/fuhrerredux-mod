@@ -536,7 +536,7 @@ on_actions = {
 				}
 			}
 
-			92 = {
+			90 = {
 				add_province_modifier = {
 					static_modifiers = { terrain_lublin }
 					province = { id = 3559 }
@@ -2321,14 +2321,14 @@ on_actions = {
 				}
 			}
 
-			812 = {
+			288 = {
 				add_province_modifier = {
 					static_modifiers = { terrain_mandalay }
 					province = { id = 1492 }
 				}
 			}
 
-			605 = {
+			1044 = {
 				add_province_modifier = {
 					static_modifiers = { terrain_chongqing }
 					province = { id = 6999 }
@@ -3027,7 +3027,7 @@ on_actions = {
 				}
 			}
 
-			617 = {
+			1041 = {
 				add_province_modifier = {
 					static_modifiers = { terrain_kumul }
 					province = { id = 4704 }

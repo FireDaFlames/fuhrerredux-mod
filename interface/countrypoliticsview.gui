@@ -404,7 +404,7 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "national_spirit_container"
-				position = { x = -68 y = 170 }
+				position = { x = -70 y = 170 }
 				size = { width = 300 height = 80 }
 				
 				horizontalScrollbar = "bottom_horizontal_slider"
@@ -419,14 +419,14 @@ guiTypes = {
 					position = { x = 0 y = -5 }
 					size = { width = 310 height = 100%% }
 					slotsize = { width = 60 height = 68 }
-					max_slots = { x = 6 y = 1 }
+					max_slots = { x = 10 y = 1 }
 					format = "UPPER_LEFT"
 				}
 				gridboxtype = {
 					name = "spirit_grid_over_defined"
 					position = { x = 0 y = -5 }
 					size = { width = 310 height = 100%% }
-					slotsize = { width = 35 height = 80 }
+					slotsize = { width = 40 height = 80 }
 					max_slots_horizontal = 100
 					format = "UPPER_LEFT"
 				}

@@ -8,16 +8,15 @@ focus_tree = {
 		}
 	}
 	default = no 
-	shared_focus = JAP_alliance_triumphant
-	shared_focus = JAP_iesato_government
 	shared_focus = JAP_southern_court
+	continuous_focus_position = { x = 900 y = 300 }
 }
-#############Southern Court#################
+############# Southern Court #################
 shared_focus = {
 	id = JAP_southern_court
 	icon = GFX_ 
 	x = 30
-	y = 10
+	y = 0
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = "The Claimant has intervened the Shogunal conference"
@@ -163,7 +162,9 @@ shared_focus = {
 	relative_position_id = JAP_southern_court_supremacy
 	x = 0
 	y = 1
-	prerequisite = { focus = JAP_southern_court_supremacy }
+	available = {
+		has_completed_focus = JAP_southern_court_supremacy
+	}
 	cost = 5
 	completion_reward = {
 	

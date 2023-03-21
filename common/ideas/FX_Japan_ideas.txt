@@ -486,13 +486,13 @@ ideas = {
 				country_exists = JAP
 			}
 			modifier = {
-				vanguardist_acceptance = -0.1
-				collectivist_acceptance = -0.1
-				libertarian_socialist_acceptance = -0.1
-				national_populist_acceptance = -0.1
-				valkist_acceptance = -0.1
+				vanguardist_acceptance = -50
+				collectivist_acceptance = -50
+				libertarian_socialist_acceptance = -50
+				national_populist_acceptance = -50
+				valkist_acceptance = -50
 				send_volunteer_size = 2
-				army_org = 0.1
+				army_org_factor = 0.1
 			}
 		}
 		JAP_comintern_far_east_office = { #Acceptance of Socialism-based highly increase + more volunteer can be sent off
@@ -504,11 +504,11 @@ ideas = {
 				country_exists = JAP
 			}
 			modifier = {
-				vanguardist_acceptance = 0.1
-				collectivist_acceptance = 0.1
-				libertarian_socialist_acceptance = 0.1
+				vanguardist_acceptance = 50
+				collectivist_acceptance = 50
+				libertarian_socialist_acceptance = 50
 				send_volunteer_size = 2
-				army_org = 0.1
+				army_org_factor = 0.1
 			}
 		}
 		JAP_overseas_affairs_office_idea = { #Send volunteer world tension decrease + more volunteer can be sent off 
@@ -516,7 +516,7 @@ ideas = {
 			#picture = generic_manpower_bonus
 			allowed = { original_tag = JAP }
 			modifier = {
-				army_org = 0.2
+				army_org_factor = 0.2
 				send_volunteer_size = 2
 				send_volunteers_tension = -0.1
 			}
@@ -526,7 +526,7 @@ ideas = {
 			#picture = generic_manpower_bonus
 			allowed = { original_tag = JAP }
 			modifier = {
-				army_org = 0.2
+				army_org_factor = 0.2
 				max_planning = 0.05
 				planning_speed = 0.05
 				breakthrough_factor = 0.3
@@ -535,58 +535,88 @@ ideas = {
 			}
 		}
 		JAP_land_reform_plan_0 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_beating_the_war_drum"}
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_land_reform_plan_0"}
 		}
 		JAP_land_reform_plan_1 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_beating_the_war_drum"}
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_land_reform_plan_1"}
 		}
 		JAP_land_reform_plan_2 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_beating_the_war_drum"}
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_land_reform_plan_2"}
 		}
 		JAP_land_reform_plan_3 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_beating_the_war_drum"}
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_land_reform_plan_3"}
 		}
 		JAP_shikkenate_labour_act = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_beating_the_war_drum"}
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_shikkenate_labour_act"}
 		}
 		JAP_shikkenate_labour_act_1 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_beating_the_war_drum"}
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_shikkenate_labour_act_1"}
 		}
 		JAP_shikkenate_labour_act_2 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_beating_the_war_drum"}
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_shikkenate_labour_act_2"}
 		}
 		JAP_maximum_industrial_capacity_activated = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_beating_the_war_drum"}
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_maximum_industrial_capacity_activated"}
 		}
 		JAP_regulated_market_policy_idea_0 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_beating_the_war_drum"}
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_regulated_market_policy_idea_0"}
 		}
 		JAP_regulated_market_policy_idea_1 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_beating_the_war_drum"}
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_regulated_market_policy_idea_1"}
 		}
 		JAP_teardown_the_zaibatsu_0 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_beating_the_war_drum"}
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_teardown_the_zaibatsu_0"}
 		}
 		JAP_teardown_the_zaibatsu_1 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_beating_the_war_drum"}
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_teardown_the_zaibatsu_1"}
 		}
 		JAP_manipulator_of_trade = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_beating_the_war_drum"}
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_manipulator_of_trade"}
 		}
 		JAP_jakuniku_kyoushoku = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_beating_the_war_drum"}
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_jakuniku_kyoushoku"}
 		}
 		JAP_patriotic_education = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_beating_the_war_drum"}
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_patriotic_education"}
 		}
 		JAP_amfa_0 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_beating_the_war_drum"}
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_amfa_0"}
 		}
 		JAP_amfa_1 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_beating_the_war_drum"}
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_amfa_1"}
 		}
 		JAP_raise_the_rising_sun_flag = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_beating_the_war_drum"}
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea JAP_raise_the_rising_sun_flag"}
+		}
+		JAP_shinkansen_project = {
+
+		}
+		MCC_member = {
+
+		}
+		JAP_reformed_mantetsu = {
+
+		}
+		JAP_nana_dai_keikaku = {
+
+		}
+		JAP_holy_workers_policy_act = {
+
+		}
+		JAP_holy_voice_radio = {
+
+		}
+		JAP_ministry_true_faith = {
+
+		}
+		JAP_bureau_ftip = {
+
+		}
+		JAP_tuned_to_the_blessing_sounds = {
+
+		}
+		JAP_spirit_of_bodhisatva_idea = {
+
 		}
 		#####Original
 		jap_war_propaganda = {
