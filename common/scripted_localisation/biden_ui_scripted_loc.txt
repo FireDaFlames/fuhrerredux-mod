@@ -17,44 +17,53 @@
 	}
 }
 
-# defined_text = {
-# 	name = GUIHOGNAME
-# 	text = {
-# 		trigger = {
-# 			NOT = {
-# 				has_idea = JAP_great_council_of_state_idea
-# 			}
-# 		}
-# 		localization_key = GUIHOGNAME
-# 	}
-# 	text = {
-# 		trigger = {
-# 			OR = {
-# 				has_idea = JAP_great_council_of_state_idea
-# 			}
-# 		}
-# 		localization_key = GUIHOGNAMETRAIT
-# 	}
-# }
+defined_text = {
+	name = GUIHOGNAME
+	# text = {
+	# 	trigger = {
+	# 		NOT = {
+	# 			has_idea = JAP_great_council_of_state_idea
+	# 		}
+	# 	}
+	# 	localization_key = GUIHOGNAME
+	# }
+	# text = {
+	# 	trigger = {
+	# 		OR = {
+	# 			has_idea = JAP_great_council_of_state_idea
+	# 		}
+	# 	}
+	# 	localization_key = GUIHOGNAMETRAIT
+	# }
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = HOG_veiw
+				has_country_flag = IRQ_Al_Chaderchi
+			}
+		}
+		localization_key = GUIHOSNAME
+	}
+}
 
-# defined_text = {
-# 	name = GetLeaderTrait
-# 	text = {
-# 		trigger = {
-# 			has_idea = JAP_great_council_of_state_idea
-# 		}
-# 		localization_key = DAIJO_DAIJIN_TRAIT
-# 	}
-# }
+defined_text = {
+	name = GetLeaderTrait
+	# text = {
+	# 	trigger = {
+	# 		has_idea = JAP_great_council_of_state_idea
+	# 	}
+	# 	localization_key = DAIJO_DAIJIN_TRAIT
+	# }
+}
 
-# defined_text = {
-# 	name = GetHOGTrait
-# 	text = {
-# 		trigger = {
-# 			has_idea = JAP_great_council_of_state_idea
-# 		}
-# 		localization_key = DAIJO_DAIJIN_TRAIT
-# 	}
+defined_text = {
+	name = GetHOGTrait
+	# text = {
+	# 	trigger = {
+	# 		has_idea = JAP_great_council_of_state_idea
+	# 	}
+	# 	localization_key = DAIJO_DAIJIN_TRAIT
+	# }
 	# text = {
 	# 	trigger = {
 	# 		has_idea = NFA_Louis_Marin_hog_sco
@@ -91,11 +100,17 @@
 	# 	}
 	# 	localization_key = NFA_Bull_TRAITS
 	# }
-# }
+}
 
 
-# defined_text = {
-# 	name = GetHOGTitle
+defined_text = {
+	name = GetHOGTitle
+	text = {
+		trigger = {
+			tag = IRQ
+		}
+		localization_key = PM_OR_LEADER
+	}
 	# text = {
 	# 	trigger = {
 	# 		tag = CAN
@@ -311,56 +326,63 @@
 	# 	}
 	# 	localization_key = LEADER_OR_CMS
 	# }
-# 	text = {
-# 		trigger = {
-# 			AND = {
-# 				tag = JAP
-# 				has_country_leader = {
-# 					name = "Nakano Seigo"
-# 					ruling_only = yes 
-# 				}
-# 				OR = {
-# 					has_country_flag = JAP_Hirohito_hos
-# 					has_country_flag = JAP_Yasuhito_hos
-# 				}
-# 			}
-# 		}
-# 		localization_key = LEADER_OR_SHK
-# 	}
-# 	text = {
-# 		trigger = {
-# 			AND = {
-# 				tag = JAP
-# 				has_country_leader = {
-# 					name = "Inoue Nissho"
-# 					ruling_only = yes
-# 				}
-# 				OR = {
-# 					has_country_flag = JAP_Hirohito_hos
-# 					has_country_flag = JAP_Yasuhito_hos
-# 				}
-# 			}
-# 		}
-# 		localization_key = LEADER_OR_LSM
-# 	}
-# }
+	# text = {
+	# 	trigger = {
+	# 		AND = {
+	# 			tag = JAP
+	# 			has_country_leader = {
+	# 				name = "Nakano Seigo"
+	# 				ruling_only = yes 
+	# 			}
+	# 			OR = {
+	# 				has_country_flag = JAP_Hirohito_hos
+	# 				has_country_flag = JAP_Yasuhito_hos
+	# 			}
+	# 		}
+	# 	}
+	# 	localization_key = LEADER_OR_SHK
+	# }
+	# text = {
+	# 	trigger = {
+	# 		AND = {
+	# 			tag = JAP
+	# 			has_country_leader = {
+	# 				name = "Inoue Nissho"
+	# 				ruling_only = yes
+	# 			}
+	# 			OR = {
+	# 				has_country_flag = JAP_Hirohito_hos
+	# 				has_country_flag = JAP_Yasuhito_hos
+	# 			}
+	# 		}
+	# 	}
+	# 	localization_key = LEADER_OR_LSM
+	# }
+}
 
-# defined_text = {
-# 	name = GetHOGTrait
+defined_text = {
+	name = GetHOGTrait
 
-# 	text = { #Not by Minister Ideas
-# 		trigger = {
-# 			AND = {
-# 				or = {
-# 					has_government = authoritarian_democrat
-# 					has_government = paternal_autocrat
-# 				}
-# 				has_idea = JAP_great_council_of_state_idea
-# 			}
-# 		}
-# 		localization_key = DAIJO_DAIJIN_TRAIT
-# 	}
-# }
+	# text = { #Not by Minister Ideas
+	# 	trigger = {
+	# 		AND = {
+	# 			or = {
+	# 				has_government = authoritarian_democrat
+	# 				has_government = paternal_autocrat
+	# 			}
+	# 			has_idea = JAP_great_council_of_state_idea
+	# 		}
+	# 	}
+	# 	localization_key = DAIJO_DAIJIN_TRAIT
+	# }
+	text = {
+		trigger = {
+			has_country_flag = IRQ_AL_CHADERCHI_hos
+		}
+		localization_key = "Al Chaderchi"
+	}
+
+}
 defined_text = {
 	name = GetPrimeMinister
 	# text = {
@@ -387,12 +409,12 @@ defined_text = {
 	# 	}
 	# 	localization_key = "Hirohito"
 	# }
-	text = {
-		trigger = {
-			has_country_flag = IRQ_AL_CHADERCHIL
-		}
-		localization_key = "Al Chaderchil"
-	}
+	# text = {
+	# 	trigger = {
+	# 		has_country_flag = IRQ_AL_CHADERCHI_hos
+	# 	}
+	# 	localization_key = "Al Chaderchi"
+	# }
 	#so on and so forth
 }
 

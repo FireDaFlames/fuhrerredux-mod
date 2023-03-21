@@ -12,8 +12,8 @@ scripted_gui = {
 		triggers = {
 			pm_frame_visible = {
 				has_country_flag = HOG_veiw
-				NOT = {
-				}
+				# NOT = {
+				# }
 			}
 			leader_button_visible = {
 				OR = {
@@ -47,7 +47,13 @@ scripted_gui = {
 			Al_Chaderchil_visible = {
 				AND = {
 					has_country_flag = HOG_veiw
-					has_country_flag = IRQ_AL_CHADERCHIL
+					has_country_flag = IRQ_AL_CHADERCHI
+				}
+			}
+			Faisal_visible = {
+				NOT = {
+					has_country_flag = HOG_veiw
+					has_country_flag = IRQ_AL_CHADERCHI
 				}
 			}
 			pm_name_visible = {

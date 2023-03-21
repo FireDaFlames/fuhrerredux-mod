@@ -1,0 +1,22 @@
+SpriteTypes = {
+	spriteType = {
+		name = "GFX_idea_IRQ_british_protection"
+		textureFile = "gfx/interface/ideas/ideas/IRQ_british_protection.png"
+	}
+	spriteType = {
+		name = "GFX_idea_IRQ_semi_democratic"
+		textureFile = "gfx/interface/ideas/ideas/IRQ_semi_democratic_state.png"
+	}
+	spriteType = {
+		name = "GFX_idea_IRQ_nationalist_unrest"
+		textureFile = "gfx/interface/ideas/ideas/IRQ_nationalist_unrest.png"
+	}
+	spriteType = {
+		name = "GFX_idea_IRQ_hasmite_dynasty"
+		textureFile = "gfx/interface/ideas/ideas/IRQ_hasmite_dynasty.png"
+	}
+	spriteType = {
+		name = "GFX_idea_IRQ_coalition_fraternal_communique"
+		textureFile = "gfx/interface/ideas/ideas/IRQ_coalition_fraternal_communique.png"
+	}
+}

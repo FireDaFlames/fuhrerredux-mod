@@ -7,7 +7,7 @@ GUILEADERNAMETRAIT: "§Y[ROOT.GetLeader]§!\n\n[THIS.GetLeaderTrait]\n ---------
 GUIHOGNAMETRAIT: "§Y[ROOT.GetPrimeMinister]§!\n\n[THIS.GetHOGTrait]\n --------------\n [THIS.GetHeadDescription]"
 GUIHOGNAME: "§Y[ROOT.GetPrimeMinister]§!\n--------------\n [THIS.GetHeadDescription]"
 GUIHEADNAME: "[GUIHOGNAME]"
-
+  
 PM_OR_LEADER: "Click to switch between §GKing§! and §CPrime Minister§! view"
 KZ_OR_LEADER: "Click to switch between §GKaiser§! and §CKanzler§! view"
 VZ_OR_LEADER: "Click to switch between §GTsar§! and §CVozhd§! view"

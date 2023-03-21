@@ -30,7 +30,7 @@ guiTypes = {
 		# 	spriteType = "GFX_Portrait_Japan_Yasuhito"
 		# }
 		iconType = {
-			name = "Al Chaderchil"
+			name = "Al Chaderchi"
 			position = {
 				x = 8
 				y = 10

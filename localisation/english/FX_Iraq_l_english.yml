@@ -56,3 +56,17 @@ IRQ_divided_nation_desc: "The Mashriq is a vast region, containing many tribes, 
 #FLAGS
 #flag for changing between Faisal and Al Chaderchil
 IRQ_AL_CHADERCHIL: "Al Chaderchil is the current leader"
+
+
+## ideas
+### national spirits
+IRQ_hashmite_dynasty: "The Hasmite Dynasty"
+IRQ_hashmite_dynasty_desc: "The Dynasty that descends from prophet Muhammad, that ruled Mecca and Medina since the beginning of Islam and the Dynasty that liberated Arabia from the Ottoman Empire, so it's normal for certain figures who fought and succeeded to be loved by the common man, Faisal for example who marched through Syria, Baghdad and Jazira expelling all the Turks is pretty popular among Mashriqis."
+IRQ_semi_democratic_state: "Semi-Democratic State"
+IRQ_semi_democratic_state_desc: "Our Kingdom is run by the principles of Prussian Constitutionalism where the King owns and rules with of course restrictions and an elected body but the prime minister is appointed by the King and he can also dismiss the prime minister so it's easy for Faisal proposed laws to pass quickly."
+IRQ_british_protection: "British Protection"
+IRQ_british_protection_desc: "Like most places on this planet, Mashriq is under British "protection". That's when Britain gets the right to exploit and extract your resources and build bases for the shake of protection."
+IRQ_nationalist_unrest: "Nationalist Unrest"
+IRQ_nationalist_unrest_desc: "The Mashriq is an occupied state even with a loved national figurehead, democratic elections and construction projects, there are people who hate the occupation even with these privileges they hate that the British control most of the oil and have bases on Mashriqi soil, so they make it their duty to liberate the nation."
+IRQ_coalition_fraternal_communique: "Coalition Fraternal Communiqué"
+IRQ_coalition_fraternal_communique_desc: "In the last parliamentary elections held in August of 1935, the Social Democrat, People's party and Social Conservative National Brotherhood Party allied to form a majority government led by social democrat Kamel Al Chaderchi"
