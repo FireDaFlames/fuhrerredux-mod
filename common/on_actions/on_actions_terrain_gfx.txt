@@ -284,7 +284,10 @@ on_actions = {
 				}
 			}
 
-			47 = {
+			#47 = {
+			#}
+			##new states
+			1045 = {
 				add_province_modifier = {
 					static_modifiers = { terrain_lamia }
 					province = { id = 976 }
