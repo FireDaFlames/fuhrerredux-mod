@@ -12,6 +12,10 @@ state={
 			9452 = {
 				bunker = 1
 			}
+			6580 = {
+				bunker = 1
+
+			}
 		}
 	}
 	manpower=799960
