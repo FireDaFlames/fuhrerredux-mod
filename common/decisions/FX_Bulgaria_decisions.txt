@@ -72,6 +72,7 @@ BUL_align_bulgaria_category = {
 			}
 		}
 	}
+
 }
 #Expansion Paths Decisions
 BUL_expansion_paths_balkan_category = {
@@ -474,8 +475,17 @@ BUL_roman_expand_category_puppets_category = {
 			original_tag = BUL
 		}
 		available = {
-			FROM = {
-				has_socialist_government = no
+			AND = {
+				original_tag = BUL
+				has_global_flag = BUL_formed_roman_empire
+				BUL = {
+					AND = {
+						controls_state = 675
+						controls_state = 291
+						controls_state = 676
+					}
+				}
+				has_completed_focus = BUL_egypt_and_levant
 			}
 		}
 		visible = {
@@ -1156,45 +1166,25 @@ BUL_roman_expand_category_puppets_category = {
 				AND = {
 					has_global_flag = BUL_formed_roman_empire
 					# OR = {
-					# 	SPF = { exists = no } 
-					# 	SPM = { exists = no } 
-					# 	SPR = { exists = no } 
-					# 	SPA = { exists = no } 
-					# }
-					controls_state = 171
-					controls_state = 174
-					controls_state = 176
-					controls_state = 1006
-					controls_state = 172
-					controls_state = 166
-					controls_state = 1005
-					controls_state = 165
-					controls_state = 854
-					controls_state = 167
-					controls_state = 175
-					controls_state = 41
-					controls_state = 170
-					controls_state = 833
-				}
-			}
-		}
-		remove_effect = {
-			BUL = {
-				every_owned_state = {
-					limit = {
-						OR = {
-							is_core_of = SPR
-							state = 833
-						}
-						
-						NOT = { 
-							state = 169
-							state = 834
-							state = 173
-							state = 118
-							state = 177
-							state = 168
-						}
+						# 	SPF = { exists = no } 
+						# 	SPM = { exists = no } 
+						# 	SPR = { exists = no } 
+						# 	SPA = { exists = no } 
+						# }
+						controls_state = 171
+						controls_state = 174
+						controls_state = 176
+						controls_state = 1006
+						controls_state = 172
+						controls_state = 166
+						controls_state = 1005
+						controls_state = 165
+						controls_state = 854
+						controls_state = 167
+						controls_state = 175
+						controls_state = 41
+						controls_state = 170
+						controls_state = 833
 					}
 				}
 			}
@@ -1853,216 +1843,3 @@ BUL_roman_expand_category_puppets_category = {
 			}
 		}
 	}
-	BUL_roman_puppet_iberia = {
-		fire_only_once = yes
-		allowed = {
-			original_tag = BUL
-		}
-		visible = {
-			has_completed_focus = BUL_conquer_iberia
-		}
-		available = {
-			BUL = {
-				AND = {
-					has_global_flag = BUL_formed_roman_empire
-					SPF = { exists = no } 
-					SPM = { exists = no } 
-					SPR = { exists = no } 
-					SPA = { exists = no }
-					POR = { exists = no}
-					controls_state = 112 #
-					controls_state = 833 #
-					controls_state = 999 #
-					controls_state = 1001 #
-					controls_state = 181 #
-					controls_state = 1000 #
-					controls_state = 180 #
-					controls_state = 697 #
-					controls_state = 171 #
-					controls_state = 174 #
-					controls_state = 176 #
-					controls_state = 1006 #
-					controls_state = 172 #
-					controls_state = 166 #
-					controls_state = 1005 # 
-					controls_state = 165 #
-					controls_state = 854 #
-					controls_state = 167 #
-					controls_state = 175 #
-					controls_state = 41 #
-					controls_state = 170 #
-					controls_state = 169 #
-					controls_state = 834 #
-					controls_state = 173 #
-					controls_state = 168 #
-					controls_state = 998 #
-					controls_state = 179 #
-					controls_state = 167 #
-
-				}
-			}
-		}
-		remove_effect = {
-			BUL = {
-				every_owned_state = {
-					limit = {
-						OR = {
-							is_core_of = SPR
-							is_core_of = POR
-							is_core_of = SPA
-							is_core_of = SPM
-							is_core_of = SPF
-							state = 169
-							state = 834
-							state = 173
-							state = 168
-							state = 998
-							state = 179
-							state = 833
-						}
-					}
-					transfer_state_to = SPR
-					add_core_of = SPR
-					remove_claim_by = BUL
-				}
-				set_autonomy = {
-					target = SPR
-					autonomy_state = autonomy_syntrofos
-				}
-			}
-			SPR = {
-				load_focus_tree = generic_focus
-				set_cosmetic_tag = SPR_iberia_syntrofos
-			}
-		}
-	}
-	BUL_roman_puppet_transylvania = {
-		allowed = {
-			original_tag = BUL
-		}
-		available = {
-			AND = {
-				controls_state = 84
-				controls_state = 76
-				controls_state = 82
-				controls_state = 83
-				controls_state = 762
-				controls_state = 154
-			}
-		}
-		visible = {
-			has_completed_focus = BUL_remaining_balkans
-		}
-		fire_only_once = yes
-		remove_effect = {
-			TRA = {
-				transfer_state = 84
-				transfer_state = 76
-				transfer_state = 83
-				transfer_state = 762
-				transfer_state = 82
-				transfer_state = 154
-				add_state_core = 84
-				add_state_core = 76
-				add_state_core = 83
-				add_state_core = 762
-				add_state_core = 82
-				add_state_core = 154
-				set_cosmetic_tag = TRA_roman_thema
-			}
-			BUL = {
-				set_autonomy = {
-					target = TRA
-					autonomy_state = autonomy_thema
-				}
-			}
-		}
-	}
-	BUL_roman_puppet_romania = {
-		allowed = {
-			original_tag = BUL
-		}
-		available = {
-			has_completed_focus = BUL_remaining_balkans
-			BUL = {
-				AND = {
-					controls_state = 81
-					controls_state = 46
-					controls_state = 79
-					controls_state = 80
-					controls_state = 78
-					controls_state = 853
-				}
-			}
-		}
-		fire_only_once = yes
-		visible = {
-			has_completed_focus = BUL_remaining_balkans
-		}
-		remove_effect = {
-			ROM = {
-				NOT = {
-					owns_state = 853
-					owns_state = 78
-				}
-			}
-		}
-		target_trigger = {
-			FROM = {
-				tag = GER
-			}
-		}
-		cost = 50
-		icon = GFX_decision_eng_trade_unions_support
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 800
-		}
-		complete_effect = {
-			FROM = {
-				country_event = { id = bulgaria.100 days = 2 }
-			}
-		}
-	}
-}
-BUL_align_bulgaria_category = {
-	BUL_join_entente = {
-		visible = {
-			has_completed_focus = BUL_our_allies
-		}
-		available = {
-			has_completed_focus = BUL_our_allies
-			OR = {
-				has_opinion = {
-					target = FRA
-					value > 79
-				}
-				has_opinion = {
-					target = ITA
-					value > 79
-				}
-			}
-		}
-		allowed = {
-			BUL = {
-				OR = {
-					has_government = social_democrat
-					has_government = paternal_autocrat
-					has_government = authoritarian_democrat
-				
-				}
-			}
-		}
-		cost = 50
-		fire_only_once = yes
-		remove_effect = {
-			FRA = {
-				country_event = {
-					id = fra.5006
-					days = 1
-				}
-			}
-		}
-	}
-
-}
