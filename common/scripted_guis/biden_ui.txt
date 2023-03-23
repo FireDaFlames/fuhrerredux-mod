@@ -44,7 +44,7 @@ scripted_gui = {
 			# 		has_country_flag = JAP_Yasuhito_hos
 			# 	}
 			# }
-			Al_Chaderchil_visible = {
+			Al_Chaderchi_visible = {
 				AND = {
 					has_country_flag = HOG_veiw
 					has_country_flag = IRQ_AL_CHADERCHI
