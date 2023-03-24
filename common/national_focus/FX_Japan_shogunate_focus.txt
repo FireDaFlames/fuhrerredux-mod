@@ -2244,7 +2244,7 @@ shared_focus = {
 	prerequisite = { focus = JAP_holy_voice_to_yamato }
 	cost = 5
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus JAP_holy_voice_to_yamato"
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_nationalize_soka_gakkai"
 		country_event = jap_shogundom.18
 		#event about sgk nationalization    
 	}
@@ -2258,7 +2258,7 @@ shared_focus = {
 	prerequisite = { focus = JAP_nationalize_soka_gakkai }
 	cost = 5
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus JAP_holy_voice_to_yamato"
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_ministry_of_true_faith"
 		country_event = jap_shogundom.19
 		#event about establish ministry of true faith + idea   
 	}
@@ -2272,7 +2272,7 @@ shared_focus = {
 	prerequisite = { focus = JAP_ministry_of_true_faith }
 	cost = 5
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus JAP_holy_voice_to_yamato"
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_bureau_of_faith_inquest_and_purify"
 		country_event = jap_shogundom.20
 		#event about establish bureau of faith inquest + idea     
 	}
@@ -2286,7 +2286,7 @@ shared_focus = {
 	prerequisite = { focus = JAP_holy_voice_to_yamato }
 	cost = 5
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus JAP_holy_voice_to_yamato"
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_bless_of_great_heaven"
 		add_ideas = JAP_tuned_to_the_blessing_sounds
 		#idea about military morale boost    
 	}
@@ -2300,7 +2300,7 @@ shared_focus = {
 	prerequisite = { focus = JAP_bless_of_great_heaven }
 	cost = 5
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus JAP_holy_voice_to_yamato"
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_absorb_the_heretics"
 		add_popularity = {
 			ideology = valkist 
 			popularity = 0.1
@@ -2318,7 +2318,7 @@ shared_focus = {
 	prerequisite = { focus = JAP_ministry_of_true_faith }
 	cost = 5
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus JAP_holy_voice_to_yamato"
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_spirit_of_bodhisatva"
 		add_ideas = JAP_spirit_of_bodhisatva_idea
 		#idea about gain stablity, mobilization, local people gain    
 	}
@@ -2332,7 +2332,7 @@ shared_focus = {
 	prerequisite = { focus = JAP_bless_of_great_heaven }
 	cost = 5
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus JAP_holy_voice_to_yamato"
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_meet_zen_monks"
 		country_event = jap_shogundom.21
 		#event about address to the monk  
 	}
@@ -2346,7 +2346,7 @@ shared_focus = {
 	prerequisite = { focus = JAP_meet_zen_monks }
 	cost = 5
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus JAP_holy_voice_to_yamato"
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_materialize_pure_land_theory"
 		country_event = jap_shogundom.22
 		#event about pure land in buddhism + idea    
 	}
