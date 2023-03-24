@@ -1387,7 +1387,7 @@ shared_focus = {
 ####Shikkenate
 shared_focus = {
 	id = JAP_the_manager_assumed_shogunate
-	icon = GFX_ 
+	icon = GFX_goal_JAP_the_manager
 	relative_position_id = JAP_meeting_of_three_officials
 	x = -10
 	y = 1
@@ -1424,7 +1424,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_restoration_of_shikkenate
-	icon = GFX_
+	icon = GFX_goal_JAP_restore_shikkenate
 	relative_position_id = JAP_the_manager_assumed_shogunate
 	x = 0
 	y = 1
@@ -1437,7 +1437,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_land_reform_program
-	icon = GFX_ 
+	icon = GFX_goal_land_reform 
 	relative_position_id = JAP_restoration_of_shikkenate
 	x = -6
 	y = 1
@@ -1451,7 +1451,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = JAP_deal_with_landowners
-	icon = GFX_ 
+	icon = GFX_goal_deal_with_landowner 
 	relative_position_id = JAP_land_reform_program
 	x = 1
 	y = 1
