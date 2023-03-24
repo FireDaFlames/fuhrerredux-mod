@@ -11,7 +11,7 @@ ideas = {
 				}
 			}
 			IRQ_hashmite_dynasty = {
-				picture = "GFX_idea_IRQ_hasmite_dynasty"
+				picture = GFX_idea_IRQ_hasmite_dynasty
 				targeted_modifier = {
 					tag = ARB
 					opinion_gain_monthly_factor = -0.01
@@ -25,7 +25,7 @@ ideas = {
 				}
 			}
 			IRQ_semi_democratic_state = {
-				picture = "GFX_idea_IRQ_semi_democratic"
+				picture = GFX_idea_IRQ_semi_democratic
 				modifier = {
 					stability_factor = 0.1
 					political_power_gain = 0.1
@@ -36,7 +36,7 @@ ideas = {
 					war_support_factor = -0.1
 					recruitable_population_factor = -0.05
 				}
-				picture = "GFX_idea_IRQ_british_protection"
+				picture = GFX_idea_IRQ_british_protection
 			}
 			IRQ_nationalist_unrest = {
 				modifier = {
@@ -44,14 +44,14 @@ ideas = {
 					political_power_gain = -0.05
 					war_support_factor = 0.5
 				}
-				picture = "GFX_idea_IRQ_nationalist_unrest"
+				picture = GFX_idea_IRQ_nationalist_unrest
 			}
 			IRQ_coalition_fraternal_communique = {
 				modifier = {
 					social_democrat_drift = 0.01
 					social_conservative_drift = 0.01
 				}
-				picture = "GFX_idea_IRQ_coalition_fraternal_communique"
+				picture = GFX_idea_IRQ_coalition_fraternal_communique
 			}
 			# IRQ_Faisal_hog_ade = {
 			# 	on_add = {
