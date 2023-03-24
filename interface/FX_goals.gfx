@@ -1885,7 +1885,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/goal_JAP_ultranat_question.png"
 	}
 	spriteType = {
-		name = "GFX_goal_JAP_ultranat_question"
+		name = "GFX_goal_JAP_admiralty_question"
 		texturefile = "gfx/interface/goals/goal_JAP_admiralty_question.png"
 	}
 	spriteType = {
@@ -1925,6 +1925,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/goal_JAP_report_to_emperor.png"
 	}
 	spriteType = {
+		name = "GFX_goal_JAP_long_live_shogun"
+		texturefile = "gfx/interface/goals/goal_JAP_long_live_shogun.png"
+	}
+	spriteType = {
 		name = "GFX_goal_JAP_iesato_government"
 		texturefile = "gfx/interface/goals/goal_JAP_iesato_government.png"
 	}
@@ -1961,7 +1965,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/goal_JAP_deconfuciusization.png"
 	}
 	spriteType = {
-		name = "GFX_goal_JAP_deconfuciusization"
+		name = "GFX_goal_JAP_seigaku"
 		texturefile = "gfx/interface/goals/goal_JAP_seigaku.png"
 	}
 	spriteType = {

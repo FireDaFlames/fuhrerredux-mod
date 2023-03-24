@@ -432,6 +432,9 @@ country_event = { #Rumor of lost claimant
 	option = {
 		name = "Just ignore him"
 		add_stability = -0.05
+		trigger = {
+			has_country_flag = JAP_unlock_unexpected_situation
+		}
 		set_country_flag = {
 			flag = JAP_southern_claim_prevent
 			value = 0 
@@ -454,6 +457,9 @@ country_event = { #Socialist League
 	}
 	option = {
 		name = "We don't think they were doing this stuff"
+		trigger = {
+			has_country_flag = JAP_unlock_unexpected_situation
+		}
 		add_stability = -0.05
 		set_country_flag = {
 			flag = JAP_socialist_coup_prevent
