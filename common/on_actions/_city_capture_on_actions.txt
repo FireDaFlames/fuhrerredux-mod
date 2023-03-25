@@ -82,7 +82,7 @@ on_actions = {
         # Constantinople
         if = {
           limit = {
-            FROM.FROM = { state = 314 }
+            FROM.FROM = { state = 341 }
             ROOT = { controls_province = 9833 }
           }
           news_event = capture.9
@@ -90,18 +90,16 @@ on_actions = {
         #change name to constantinople if greece captures it
         if = {
           	limit = {
-            	FROM.FROM = {
-              		state = 314
-            	}
             	ROOT = {
-                	original_tag = GRE
-                	controls_province = 9833
+              		controls_state = 341
+                  controls_province = 9833
+                  original_tag = GRE
             	}
-        	}
-			set_province_name = {
-				id = FROM.FROM
-				name = "VICTORY_POINT_9833:1"
-			}
+        	  }
+          set_province_name = {
+            id = FROM.FROM
+            name = "VICTORY_POINT_9833:1"
+          }
         }
         # Dublin
         if = {
