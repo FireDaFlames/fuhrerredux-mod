@@ -1,0 +1,35 @@
+### Brazillian Peoples State events ###
+#by the Detailed Bread FX#
+
+add_namespace = bps
+
+country_event = { #Foreign Recognition 
+	id = bps.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bcw.1"}
+	title = bps.1.t
+	desc = bps.1.d
+	picture = 
+	fire_only_once = yes
+	trigger = {
+		tag = BPS
+		BRA = {
+			exists = no
+			}
+		BRA = {
+			exists = no
+			}
+				
+			
+	
+	}	
+	mean_time_to_happen = {
+		days = 7
+	}
+	immediate = {
+		
+	}
+	option = {
+		name = bps.1.a #Finally!
+		remove_idea = BPS_the_world_doesnt_see_the_truth
+		}
+}

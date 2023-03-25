@@ -13,13 +13,9 @@ country_event = { #Collies Rise up
 	trigger = {
 		tag = BRA
 		OR = {
-			882 = { is_owned_and_controlled_by = BRA } #Acre
-			495 = { is_owned_and_controlled_by = BRA } #Amazonas
-			280 = { is_owned_and_controlled_by = BRA } #Mato Grosso
-			505 = { is_owned_and_controlled_by = BRA } #Goias
 			497 = { is_owned_and_controlled_by = BRA } #Maranhao
 			498 = { is_owned_and_controlled_by = BRA } #Rio Grande
-			901 = { is_owned_and_controlled_by = BRA } #Manaus
+			499 = { is_owned_and_controlled_by = BRA } #Bahia
 		}
 		has_country_flag = BCW_begins
 		NOT = { has_country_flag = BCW_collies_risen }
@@ -47,13 +43,9 @@ country_event = { #Collies Rise up
 			limit = {
 				is_controlled_by = ROOT
 				OR = {
-					state = 882 #Acre
-					state = 495 #Amazonas
-					state = 280 #Mato Grosso
-					state = 505 #Goias
 					state = 497 #Maranhao
 					state = 498 #Rio Grande
-					state = 901 #Manaus
+					state = 499 #Bahia
 				}
 			}
 			remove_claim_by = UBR
@@ -156,6 +148,7 @@ country_event = { #Staters Rise up
 			503 = { is_owned_and_controlled_by = BRA } #Santa Catarina
 			501 = { is_owned_and_controlled_by = BRA } #Sao Paolo
 			504 = { is_owned_and_controlled_by = BRA } #Iguacu
+			896 = { is_owned_and_controlled_by = BRA } #Minas Gerais
 		}
 		has_country_flag = BCW_begins
 		NOT = { has_country_flag = BCW_state_risen }
@@ -183,10 +176,11 @@ country_event = { #Staters Rise up
 			limit = {
 				is_controlled_by = ROOT
 				OR = {
-					state = 501 #Sao Paolo
-					state = 502 #Rio Grande do Sul
-					state = 503 #Santa Catarina
-					state = 504 #Iguaco
+					502 = { is_owned_and_controlled_by = BRA } #Sul
+			503 = { is_owned_and_controlled_by = BRA } #Santa Catarina
+			501 = { is_owned_and_controlled_by = BRA } #Sao Paolo
+			504 = { is_owned_and_controlled_by = BRA } #Iguacu
+			896 = { is_owned_and_controlled_by = BRA } #Minas Gerais
 				}
 			}
 			remove_claim_by = BPS
@@ -208,7 +202,7 @@ country_event = { #Staters Rise up
 		}
 	}
 	option = {
-		name = bcw.4.b #Fight for the nation (Play as the State)
+		name = bcw.3.b #Fight for the nation (Play as the State)
 		trigger = { is_ai = no }
 		load_oob = BCW_BRA2
 		BPS = {
