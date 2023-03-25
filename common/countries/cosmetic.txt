@@ -578,3 +578,7 @@ BLR_LITVINISM = {
 	color = rgb { 154 69 116 }
 	color_ui = rgb { 154 69 116 }
 }
+BRA_BRS = {
+	color = rgb { 32 221 61}
+	color_ui = rgb { 32 221 61}
+}

@@ -11,6 +11,19 @@ characters = {
 			traits = { }
 		}
 	}
+		BRA_Mitsuyo_Maeda = {
+			name = "Mitsuyo Maeda"
+			portraits = {
+				civilian = {
+					large = "gfx/leaders/BRA/Portrait_BRA_Mitsuyo_Maeda.png"
+				}
+			}
+		}
+		country_leader = {
+			ideology = paternal_autocrat_subtype
+			traits = { }
+		}
+	}
 	BRA_Julio_Prestes = {
 		name = "Júlio Prestes"
 		portraits = {
