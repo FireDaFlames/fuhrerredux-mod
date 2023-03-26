@@ -73,7 +73,7 @@ focus_tree = {
 		y = 1
 		
 		available = {
-			has_country_flag = coalition_social_liberal
+			is_in_array = { ROOT.coalition_partners = token:social_liberal }
 		}
 		
 		completion_reward = {
@@ -241,7 +241,7 @@ focus_tree = {
 		y = 1
 		
 		available = {
-			has_country_flag = coalition_libertarian_socialist
+			is_in_array = { ROOT.coalition_partners = token:libertarian_socialist }
 		}
 		
 		ai_will_do = {

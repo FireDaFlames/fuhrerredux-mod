@@ -148,9 +148,8 @@ set_popularities = {
 	valkist = 0
 }
 
-set_country_flag = coalition_social_conservative
-set_country_flag = coalition_paternal_autocrat
-
+add_coalition_social_conservative = yes 
+add_coalition_paternal_autocrat = yes 
 set_convoys = 150
 set_stability = 0.55
 set_war_support = 0.75

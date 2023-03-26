@@ -1,0 +1,14 @@
+JAP_daijo_kan_modifier = {
+	remove_trigger = {
+		JAP = {
+			has_country_flag = JAP_shogunate_abolision
+		}
+	}
+}
+JAP_local_cooperative_center_modifier = {
+	remove_trigger = {
+		JAP = {
+			has_country_flag = JAP_shogunate_abolision
+		}
+	}
+}

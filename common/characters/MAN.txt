@@ -204,14 +204,14 @@ characters = {
 			cost = 150
 			slot = security_minister
 			available = { 
-				hidden_trigger = { has_country_flag = MAN_Ma_Zhanshan_sec_hired }
+				hidden_trigger = { has_country_flag = MAN_Ma_Zhanshan_sec_pau_hired }
 			}
-			idea_token = MAN_Ma_Zhanshan_sec
+			idea_token = MAN_Ma_Zhanshan_sec_pau
 			on_add = {
-				ROOT = { set_country_flag = MAN_Ma_Zhanshan_sec_hired }
+				ROOT = { set_country_flag = MAN_Ma_Zhanshan_sec_pau_hired }
 			}
 			on_remove = {
-				ROOT = { clr_country_flag = MAN_Ma_Zhanshan_sec_hired }
+				ROOT = { clr_country_flag = MAN_Ma_Zhanshan_sec_pau_hired }
 			}
 			traits = {
 				sec_prince_of_terror
@@ -294,14 +294,14 @@ characters = {
 			cost = 150
 			slot = head_of_government
 			available = { 
-				hidden_trigger = { has_country_flag = MAN_Zhang_Xueliang_hog_hired }
+				hidden_trigger = { has_country_flag = MAN_Zhang_Xueliang_hog_pau_hired }
 			}
-			idea_token = MAN_Zhang_Xueliang_hog
+			idea_token = MAN_Zhang_Xueliang_hog_pau
 			on_add = {
-				ROOT = { set_country_flag = MAN_Zhang_Xueliang_hog_hired }
+				ROOT = { set_country_flag = MAN_Zhang_Xueliang_hog_pau_hired }
 			}
 			on_remove = {
-				ROOT = { clr_country_flag = MAN_Zhang_Xueliang_hog_hired }
+				ROOT = { clr_country_flag = MAN_Zhang_Xueliang_hog_pau_hired }
 			}
 			traits = {
 				hog_political_protege
@@ -311,14 +311,14 @@ characters = {
 			cost = 150
 			slot = economy_minister
 			available = { 
-				hidden_trigger = { has_country_flag = MAN_Zhang_Xueliang_eco_hired }
+				hidden_trigger = { has_country_flag = MAN_Zhang_Xueliang_eco_pau_hired }
 			}
-			idea_token = MAN_Zhang_Xueliang_eco
+			idea_token = MAN_Zhang_Xueliang_eco_pau
 			on_add = {
-				ROOT = { set_country_flag = MAN_Zhang_Xueliang_eco_hired }
+				ROOT = { set_country_flag = MAN_Zhang_Xueliang_eco_pau_hired }
 			}
 			on_remove = {
-				ROOT = { clr_country_flag = MAN_Zhang_Xueliang_eco_hired }
+				ROOT = { clr_country_flag = MAN_Zhang_Xueliang_eco_pau_hired }
 			}
 			traits = {
 				eco_reformer

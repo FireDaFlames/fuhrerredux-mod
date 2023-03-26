@@ -59,8 +59,8 @@ add_ideas = {
 	constitutional_monarchy
 }
 
-set_country_flag = coalition_social_democrat
-set_country_flag = coalition_market_liberal
+add_coalition_social_democrat = yes 
+add_coalition_market_liberal = yes 
 set_politics = {	
 	ruling_party = social_conservative
 	last_election = "1933.3.5"

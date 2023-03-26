@@ -271,8 +271,7 @@ country_event = { # Proclamation of the Liberal Party
 
   option = { # Dude... uncool...
     name = philippines.13.a
-    clr_country_flag = coalition_market_liberal
-    clr_country_flag = coalition_social_liberal
+    end_coalition = yes 
     hidden_effect = {
       if = {
         limit = {

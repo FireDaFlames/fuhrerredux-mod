@@ -614,6 +614,7 @@ core_spain_for_faction = {
 core_india_for_faction = {
   var:indian_tag_for_release = {
     add_state_core = 423
+	add_state_core = 1047
     add_state_core = 424
     add_state_core = 425
     add_state_core = 426

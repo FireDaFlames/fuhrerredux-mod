@@ -1851,4 +1851,281 @@ spriteTypes = {
 		name = "GFX_goal_SPA_Chairwoman_Ibarruri"
 		texturefile = "gfx/interface/goals/SPA_Chairwoman_Ibarruri.png"
 	}
+	### Japan
+	spriteType = {
+		name = "GFX_goal_JAP_victory_of_alliance"
+		texturefile = "gfx/interface/goals/goal_JAP_victory_of_alliance.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_combined_government"
+		texturefile = "gfx/interface/goals/goal_JAP_combined_government.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_ritsuryo_code"
+		texturefile = "gfx/interface/goals/goal_JAP_ritsuryo_code.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_the_two_tokugawas"
+		texturefile = "gfx/interface/goals/goal_JAP_the_two_tokugawas.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_kyujidai"
+		texturefile = "gfx/interface/goals/goal_JAP_kyujidai.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_shinjidai"
+		texturefile = "gfx/interface/goals/goal_JAP_shinjidai.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_special_tribunal_nagasaki"
+		texturefile = "gfx/interface/goals/goal_JAP_special_tribunal_nagasaki.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_ultranat_question"
+		texturefile = "gfx/interface/goals/goal_JAP_ultranat_question.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_admiralty_question"
+		texturefile = "gfx/interface/goals/goal_JAP_admiralty_question.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_ultraroyal_question"
+		texturefile = "gfx/interface/goals/goal_JAP_ultraroyal_question.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_last_answer"
+		texturefile = "gfx/interface/goals/goal_JAP_last_answer.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_feudal_domain_return"
+		texturefile = "gfx/interface/goals/goal_JAP_feudal_domain_return.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_feudalism_returns"
+		texturefile = "gfx/interface/goals/goal_JAP_feudal_returns.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_sin_of_lastshogun"
+		texturefile = "gfx/interface/goals/goal_JAP_sin_of_lastshogun.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_kazoku_election"
+		texturefile = "gfx/interface/goals/goal_JAP_kazoku_election.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_shogunal_democracy"
+		texturefile = "gfx/interface/goals/goal_JAP_shogunal_democracy.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_new_legacy_of_tokugawa"
+		texturefile = "gfx/interface/goals/goal_JAP_new_legacy_of_tokugawa.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_report_to_emperor"
+		texturefile = "gfx/interface/goals/goal_JAP_report_to_emperor.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_long_live_shogun"
+		texturefile = "gfx/interface/goals/goal_JAP_long_live_shogun.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_iesato_government"
+		texturefile = "gfx/interface/goals/goal_JAP_iesato_government.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_mikawahan"
+		texturefile = "gfx/interface/goals/goal_JAP_mikawahan.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_left_learning_doctrine"
+		texturefile = "gfx/interface/goals/goal_JAP_left_learning_doctrine.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_rural_urbanization"
+		texturefile = "gfx/interface/goals/goal_JAP_rural_urbanization.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_municipality_promote_act"
+		texturefile = "gfx/interface/goals/goal_JAP_municipality_promote_act.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_local_election"
+		texturefile = "gfx/interface/goals/goal_JAP_local_election.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_prusso_american_abolish"
+		texturefile = "gfx/interface/goals/goal_JAP_prusso_american_abolish.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_peoples_power"
+		texturefile = "gfx/interface/goals/goal_JAP_peoples_power.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_deconfuciusization"
+		texturefile = "gfx/interface/goals/goal_JAP_deconfuciusization.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_seigaku"
+		texturefile = "gfx/interface/goals/goal_JAP_seigaku.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_electoral_reform"
+		texturefile = "gfx/interface/goals/goal_JAP_electoral_reform.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_universal_suffrage"
+		texturefile = "gfx/interface/goals/goal_JAP_universal_suffrage.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_to_golden_age"
+		texturefile = "gfx/interface/goals/goal_JAP_to_golden_age.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_oniwahan"
+		texturefile = "gfx/interface/goals/goal_JAP_oniwahan.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_the_kingmaker"
+		texturefile = "gfx/interface/goals/goal_JAP_the_kingmaker.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_reinstall_daimyo"
+		texturefile = "gfx/interface/goals/goal_JAP_reinstall_daimyo.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_military_disintegrate"
+		texturefile = "gfx/interface/goals/goal_JAP_military_disintegrate.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_regional_imperium"
+		texturefile = "gfx/interface/goals/goal_JAP_regional_imperium.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_constitution"
+		texturefile = "gfx/interface/goals/goal_JAP_constitution.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_kuniyuki_blueprint"
+		texturefile = "gfx/interface/goals/goal_JAP_kuniyuki_blueprint.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_bureaucrat_reform"
+		texturefile = "gfx/interface/goals/goal_JAP_bureaucrat_reform.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_toza_fudai"
+		texturefile = "gfx/interface/goals/goal_JAP_toza_fudai.png"
+	}
+	spriteType = {
+		name = "goal_JAP_progressive_backsliding"
+		texturefile = "gfx/interface/goals/goal_JAP_progressive_backsliding.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_suffrage_chosen_one"
+		texturefile = "gfx/interface/goals/goal_JAP_suffrage_chosen_one.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_rising_of_sun"
+		texturefile = "gfx/interface/goals/goal_JAP_rising_of_sun.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_imperial_power_question"
+		texturefile = "gfx/interface/goals/goal_JAP_imperial_power_q.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_taisho_lesson"
+		texturefile = "gfx/interface/goals/goal_JAP_taisho_lesson.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_kokutai_minshu"
+		texturefile = "gfx/interface/goals/goal_JAP_kokutai_minshu.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_grand_triumvirate"
+		texturefile = "gfx/interface/goals/goal_JAP_grand_triumvirate.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_meeting_of_officials"
+		texturefile = "gfx/interface/goals/goal_JAP_meeting_of_officials.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_bugyo_guide"
+		texturefile = "gfx/interface/goals/JAP_bugyo_guide.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_increase_navy_budget"
+		texturefile = "gfx/interface/goals/JAP_increase_navy_budget.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_public_address"
+		texturefile = "gfx/interface/goals/JAP_public_address.png"
+	}
+	spriteType = {
+		name = "GFX_goal_confucius"
+		texturefile = "gfx/interface/goals/confucius.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_fukoku_kyohei"
+		texturefile = "gfx/interface/goals/JAP_fukoku_kyohei.png"
+	}
+	spriteType = {
+		name = "GFX_goal_subordinate_parliament"
+		texturefile = "gfx/interface/goals/subordinate_parliament.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_rubberstamp_parliament"
+		texturefile = "gfx/interface/goals/JAP_rubberstamp_parl.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_samurai_law"
+		texturefile = "gfx/interface/goals/JAP_samurai_law.png"
+	}
+	spriteType = {
+		name = "GFX_goal_absolute_destroy_parliament"
+		texturefile = "gfx/interface/goals/absolute_destroy_parliament.png"
+	}
+	spriteType = {
+		name = "GFX_goal_purge_of_death_angel"
+		texturefile = "gfx/interface/goals/purge_of_angel_of_death.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_tokaido_dev"
+		texturefile = "gfx/interface/goals/JAP_tokaido_dev.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_government_supervised_complex"
+		texturefile = "gfx/interface/goals/JAP_government_supervised_complex.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_shogunate_industry"
+		texturefile = "gfx/interface/goals/JAP_shogunate_industry.png"
+	}
+	spriteType = {
+		name = "GFX_goal_privatization"
+		texturefile = "gfx/interface/goals/privatization.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_megacollab"
+		texturefile = "gfx/interface/goals/JAP_megacollab.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_increase_navy_size"
+		texturefile = "gfx/interface/goals/JAP_increase_navy_size.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_maritime_superpower"
+		texturefile = "gfx/interface/goals/JAP_maritime_superpower.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_tokugawa_eternal_reign"
+		texturefile = "gfx/interface/goals/goal_JAP_tokugawa_eternal_reign.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_the_protector"
+		texturefile = "gfx/interface/goals/goal_JAP_the_protector.png"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_the_manager"
+		texturefile = "gfx/interface/goals/goal_JAP_the_manager.png"
+	}
 }

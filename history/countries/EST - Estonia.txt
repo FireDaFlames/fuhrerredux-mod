@@ -31,8 +31,8 @@ if = {
 	}
 }
 
-set_country_flag = coalition_social_conservative
-set_country_flag = coalition_market_liberal
+add_coalition_social_conservative = yes 
+add_coalition_market_liberal = yes 
 
 set_politics = {	
 	ruling_party = authoritarian_democrat

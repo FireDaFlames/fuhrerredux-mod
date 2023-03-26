@@ -1,3 +1,4 @@
+
 state={
 	id=914
 	name="STATE_914"
@@ -14,12 +15,14 @@ state={
 		}
 		add_core_of = SOV
 		add_core_of = LAT
+
 	}
 
 	provinces={
-		222 310 319 341 415 6459 7482 9275 
+		222 310 319 341 6459 7482 9275 
 	}
 	manpower=256150
 	buildings_max_level_factor=1.000
 	state_category=rural
+	local_supplies=0.000
 }

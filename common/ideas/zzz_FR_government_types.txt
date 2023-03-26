@@ -4,7 +4,6 @@ ideas = {
 	
 		direct_democracy = { # Catch all for any directly democratic states
 			#desc = direct_democracy_#desc
-			cost = 500
 			
 			available = {
 				always = no
@@ -26,7 +25,6 @@ ideas = {
 		
 		presidential_republic = {
 			#desc = presidential_republic_#desc
-			cost = 500
 			
 			available = {
 				always = no
@@ -48,7 +46,6 @@ ideas = {
 		
 		semi_presidential_republic = {
 			#desc = semi_presidential_republic_#desc
-			cost = 500
 			
 			available = {
 				always = no
@@ -70,8 +67,7 @@ ideas = {
 		
 		parliamentary_republic = {
 			#desc = parliamentary_republic_#desc
-			cost = 500
-			
+
 			available = {
 				always = no
 			}
@@ -93,7 +89,6 @@ ideas = {
 		
 		republican_dictatorship = {
 			#desc = republican_dictatorship_#desc
-			cost = 500
 			
 			available = {
 				always = no
@@ -116,8 +111,7 @@ ideas = {
 
 		theocratic_republic = {
 			#desc = theocratic_republic_#desc
-			cost = 500
-			
+
 			available = {
 				always = no
 			}
@@ -139,8 +133,7 @@ ideas = {
 		
 		theocratic_dictatorship = {
 			#desc = theocratic_dictatorship_#desc
-			cost = 500
-			
+	
 			available = {
 				always = no
 			}
@@ -162,8 +155,7 @@ ideas = {
 		
 		one_party_dictatorship = {
 			#desc = one_party_dictatorship_#desc
-			cost = 500
-			
+		
 			available = {
 				always = no
 			}
@@ -186,8 +178,7 @@ ideas = {
 		
 		workers_republic = { # Centralized representative governments based around Socialism
 			#desc = workers_republic_#desc
-			cost = 500
-			
+
 			available = {
 				always = no
 			}
@@ -209,8 +200,7 @@ ideas = {
 		
 		communist_state = { # Anarchist governments ranging from Syndicalist Federations to decentralized worker communes
 			#desc = communist_state_#desc
-			cost = 500
-			
+				
 			available = {
 				always = no
 			}
@@ -233,8 +223,7 @@ ideas = {
 		
 		colonial_government = { # Governments created by an outside power to extract as much wealth from a nation as possible, ie Banana Republics, Protectorate, Puppets
 			#desc = colonial_government_#desc
-			cost = 500
-			
+	
 			available = {
 				always = no
 			}
@@ -256,7 +245,6 @@ ideas = {
 		
 		absolute_monarchy = {
 			#desc = absolute_monarchy_#desc
-			cost = 500
 			
 			available = {
 				always = no
@@ -278,7 +266,6 @@ ideas = {
 
 		constitutional_monarchy = {
 			#desc = constitutional_monarchy_#desc
-			cost = 500
 			
 			available = {
 				always = no
@@ -299,7 +286,6 @@ ideas = {
 		
 		elective_monarchy = {
 			#desc = elective_monarchy_#desc
-			cost = 500
 			
 			available = {
 				always = no
@@ -321,7 +307,6 @@ ideas = {
 		
 		military_junta = {
 			#desc = military_junta_#desc
-			cost = 500
 			
 			available = {
 				always = no
@@ -344,7 +329,6 @@ ideas = {
 		}
 		
 		revolutionary_movement = { # catch all for any decentralized mass movement with a specific goal
-			cost = 500
 			
 			available = {
 				always = no
@@ -367,7 +351,6 @@ ideas = {
 		}		
 
 		failed_state = { # failed state. Only happens when stability is lower than 10%
-			cost = 500
 			
 			available = {
 				always = no
@@ -395,7 +378,6 @@ ideas = {
 		}
 		
 		generic_government = { # Fail safe if no other government is set
-			cost = 500
 			
 			allowed = {
 				always = no

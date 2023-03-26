@@ -39,17 +39,19 @@ idea_categories = {
 		character_slot = economy_minister
 		character_slot = security_minister
 		
-		cost = 150
+		cost = 0
 		removal_cost = -1 # works
 
 		ledger = civilian
 	}
 
-  military_staff = {
+    military_staff = {
 		character_slot = army_chief 
 		character_slot = navy_chief 
 		character_slot = air_chief
 		character_slot = high_command
+		slot = high_command_focus
+		slot = high_command_focus
 
 		ledger = invalid # must be overridden
 
@@ -182,10 +184,10 @@ idea_categories = {
 }
 
 slot_ledgers = {
-	chief_of_staff = army
-	chief_of_army = army
-	chief_of_navy = navy
-	chief_of_air_force = air
+	high_command = army
+	army_chief = army
+	navy_chief = navy
+	air_chief = air
 
 	tank_manufacturer = army
 	naval_manufacturer = navy

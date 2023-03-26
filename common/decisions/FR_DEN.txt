@@ -9,7 +9,7 @@ DEN_domestic_affairs_decisions = {
 				has_government = vanguardist
 				has_government = collectivist
 				has_government = libertarian_socialist
-				has_country_flag = coalition_libertarian_socialist
+				is_in_array = { ROOT.coalition_partners = token:libertarian_socialist }
 			}
  		}
  		visible = {

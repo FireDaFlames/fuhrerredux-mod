@@ -1,3 +1,11 @@
+is_valid_state_for_development = {
+	impassable = no
+	NOT = {
+		has_state_category = wasteland
+		has_state_category = tiny_island
+		has_state_category = small_island
+	}
+}
 is_actual_major = {
 	AND = {
 		is_major = yes
@@ -579,7 +587,9 @@ is_brz_portuguese = {
 }
 is_chinese_tag = {
 	OR = {
+		tag = MAN 
 		tag = CHI
+		tag = ZHI
 		tag = YUN
 		tag = GXC
 		tag = SHX
@@ -938,6 +948,8 @@ is_han_chinese_region = {
 		state = 932
 		state = 874
 		state = 614
+		state = 1046
+		state = 1045
 		#Shanxi
 		state = 983
 		state = 615
@@ -953,6 +965,7 @@ is_han_chinese_region = {
 		#Henan
 		state = 891
 		state = 607
+		state = 1041
 		#Anhui
 		state = 606
 		state = 934
@@ -995,6 +1008,8 @@ is_han_chinese_region = {
 		state = 603
 		#Sichuan
 		state = 605
+		state = 1044
+		state = 1043
 		#Xikang
 		state = 601
 		#Ningxia
@@ -1004,6 +1019,7 @@ is_han_chinese_region = {
 		state = 283
 		#Qinghai
 		state = 604
+		state = 1040
 		#Chahar
 		state = 612
 		state = 611
@@ -1033,5 +1049,8 @@ is_xinjiang = {
 		state = 975
 		state = 287
 		state = 619
+		state = 1042
+		state = 1041
+		state = 1019
 	}
 }

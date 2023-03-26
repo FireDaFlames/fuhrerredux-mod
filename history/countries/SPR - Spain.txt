@@ -150,7 +150,7 @@ set_popularities = {
   valkist = 5
 }
 
-set_country_flag = coalition_market_liberal
+add_coalition_market_liberal = yes 
 
 set_convoys = 150
 set_stability = 0.50

@@ -15,7 +15,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event fr.political.1"}
 
 	hidden = yes
-	fire_only_once = no
+	fire_only_once = yes 
 	mean_time_to_happen = {
 		days = 40	#prevent spam, this shit slows down the game if triggered every day
 	}
@@ -179,155 +179,10 @@ country_event = {
 	id = fr.political.2
 	immediate = {log = "[GetDateText]: [Root.GetName]: event fr.political.2"}
     hidden = yes
-    fire_only_once = no
+    fire_only_once = yes 
 	mean_time_to_happen = {
 		days = 20	#prevent spam, this shit slows down the game if triggered every day
 	}
-    immediate = {
-        ### Scripted effects	
-        SP_NS_coalition_pop_eval = yes			
-
-        ### Events
-
-        #### Political popularity
-		if = {
-			limit = {
-				NOT = {
-					has_country_flag = GEN_senate_set
-				}
-			}
-			ROOT = {
-				set_country_flag = GEN_senate_set
-			}
-		
-			set_variable = { senators_support = NS_ruling_party_pop }
-			round_variable = senators_support		
-			set_variable = { var = senators_total value = 100 }
-			#set_variable = { var = representatives_support value = 218 }
-			#set_variable = { var = representatives_total value = 435 }
-			set_variable = { var = quorum_low value = 39 }
-			set_variable = { var = quorum_medium value = 49 }
-			set_variable = { var = quorum_high value = 58 }
-		
-		}
-		# for 0.5
-		# if = {
-			# limit = {
-				# OR = {
-					# has_idea = presidential_republic
-					# has_idea = semi_presidential_republic
-					# has_idea = parliamentary_republic
-					# has_idea = theocratic_republic
-					# has_idea = constitutional_monarchy
-					# AND = {
-						# has_idea = failed_state
-						# OR = {
-							# has_country_flag = GEN_presidential_republic
-							# has_country_flag = GEN_semi_presidential_republic
-							# has_country_flag = GEN_parliamentary_republic
-							# has_country_flag = GEN_presidential_republic
-							# has_country_flag = GEN_presidential_republic
-						# }
-					# }
-				# }
-			# }
-			# if = {
-				# limit = {
-					# OR = {
-						# has_idea = presidential_republic
-						# has_idea = semi_presidential_republic
-						# has_idea = parliamentary_republic
-						# has_idea = theocratic_republic
-						# has_idea = constitutional_monarchy
-					# }
-				# }
-				# if = {
-					# limit = {
-						# ROOT = {
-							# check_variable = { senators_support > 0 }
-							# check_variable = { senators_support < 20 }
-						# }
-					# }
-					# remove_ideas = low_legislature
-					# remove_ideas = medium_low_legislature
-					# remove_ideas = medium_high_legislature
-					# remove_ideas = high_legislature
-					# remove_ideas = very_high_legislature
-					# add_ideas = very_low_legislature
-				# }
-				# else_if = {
-					# limit = {
-						# ROOT = {
-							# check_variable = { senators_support > 19 }
-							# check_variable = { senators_support < 40 }
-						# }
-					# }
-					# remove_ideas = very_low_legislature
-					# remove_ideas = medium_low_legislature
-					# remove_ideas = medium_high_legislature
-					# remove_ideas = high_legislature
-					# remove_ideas = very_high_legislature					
-					# add_ideas = low_legislature
-				# }
-				# else_if = {
-					# limit = {
-						# ROOT = {
-							# check_variable = { senators_support > 39 }
-							# check_variable = { senators_support < 50 }
-						# }
-					# }
-					# remove_ideas = very_low_legislature
-					# remove_ideas = low_legislature
-					# remove_ideas = medium_high_legislature
-					# remove_ideas = high_legislature
-					# remove_ideas = very_high_legislature				
-					# add_ideas = medium_low_legislature
-				# }
-				# else_if = {
-					# limit = {
-						# ROOT = {
-							# check_variable = { senators_support > 49 }
-							# check_variable = { senators_support < 60 }
-						# }
-					# }
-					# remove_ideas = very_low_legislature
-					# remove_ideas = low_legislature
-					# remove_ideas = medium_low_legislature
-					# remove_ideas = high_legislature
-					# remove_ideas = very_high_legislature				
-					# add_ideas = medium_high_legislature
-				# }
-				# else_if = {
-					# limit = {
-						# ROOT = {
-							# check_variable = { senators_support > 59 }
-							# check_variable = { senators_support < 80 }
-						# }
-					# }
-					# remove_ideas = very_low_legislature
-					# remove_ideas = low_legislature
-					# remove_ideas = medium_low_legislature
-					# remove_ideas = medium_high_legislature
-					# remove_ideas = very_high_legislature					
-					# add_ideas = high_legislature
-				# }
-				# else_if = {
-					# limit = {
-						# ROOT = {
-							# check_variable = { senators_support > 79 }
-						# }
-					# }
-					# remove_ideas = very_low_legislature
-					# remove_ideas = low_legislature
-					# remove_ideas = medium_low_legislature
-					# remove_ideas = medium_high_legislature
-					# remove_ideas = high_legislature			
-					# add_ideas = very_high_legislature
-				# }
-			# }
-		#}
-	}
-
     option = { name = OK }
 }
 

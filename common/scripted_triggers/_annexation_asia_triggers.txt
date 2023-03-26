@@ -223,7 +223,7 @@ can_release_sinkiang = {
 
 #Tibet - annexation_TIB_CONQ
 can_release_tibet = {
-  state = 332
+  state = 322
   NOT = { is_claimed_by = ROOT }
   ROOT = {
     NOT = { 

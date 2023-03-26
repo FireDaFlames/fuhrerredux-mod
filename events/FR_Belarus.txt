@@ -25,7 +25,8 @@ country_event = { # Otaman Assassinated!
 		remove_ideas = BLR_diarchy_stable
 		set_country_flag = BLR_otaman_assassinated
 		set_country_flag = BLR_start_power_struggle
-		clr_country_flag = coalition_paternal_autocrat
+		set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
+		remove_from_coalition = yes 
 		set_power_balance = {
 			id = BLR_power_balance
 			left_side = BLR_home_guard_side # will keep the last set side if not specified
