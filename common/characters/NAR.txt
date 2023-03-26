@@ -173,6 +173,7 @@ characters = {
 		portraits = {
 			army = {
 				large = "gfx/leaders/NAR/Portrait_NAR_Bruce_C_Clarke.png"
+				small = "gfx/interface/ministers/NAR/NAR_Bruce_C_Clarke.png"
 			}
 		}
 		corps_commander = {
