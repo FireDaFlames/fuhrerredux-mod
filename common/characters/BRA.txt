@@ -11,8 +11,7 @@ characters = {
 			traits = { }
 		}
 	}
-<<<<<<< Updated upstream
-		BRA_Mitsuyo_Maeda = {
+	BRA_Mitsuyo_Maeda = {
 			name = "Mitsuyo Maeda"
 			portraits = {
 				civilian = {
@@ -23,20 +22,18 @@ characters = {
 		country_leader = {
 			ideology = paternal_autocrat_subtype
 			traits = { }
-=======
-	characters = {
-		BRA_kikawa_junji = {
-			name = "Kikawa Junji"
-			portraits = {
-				civilian = {
-					large = "Portrait_JAP_Kikawa_Junji"
-				}
+		}
+	}
+	BRA_kikawa_junji = {
+		name = "Kikawa Junji"
+		portraits = {
+			civilian = {
+				large = "Portrait_JAP_Kikawa_Junji"
 			}
-			country_leader = {
-				ideology = paternal_autocrat_subtype
-				traits = { }
-			}
->>>>>>> Stashed changes
+		}
+		country_leader = {
+			ideology = paternal_autocrat_subtype
+			traits = { }
 		}
 	}
 	BRA_Julio_Prestes = {
