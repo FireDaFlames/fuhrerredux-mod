@@ -12,4 +12,443 @@ focus_tree = {
 	shared_focus = FIN_finnish_defence_forces
 	shared_focus = FIN_end_of_silver_decade
 
+###########################
+##    WINTER WAR TREE    ##
+###########################
+
+#original made by Detailed Bread, 
+#modified by thanasislanaras
+	focus = {
+		id = FIN_finlands_bold_opportunity
+		icon = GFX_integrate_karelia
+		cost = 3
+		x = 25
+		y = 2
+		available = {
+			AND = {
+				is_puppet = no
+				doesnt_have_socialist_party = yes
+				GER = {
+				has_war_with = SOV
+				}
+			}
+		}
+		bypass = {
+			AND = {
+				GER = {
+					has_war_with = SOV
+				}
+				FIN = {
+					OR = {
+						is_puppet_of = GER
+						is_puppet = no
+						any_allied_country = {
+							FIN = {
+								is_puppet_of = root
+							}
+						}
+					}
+				}
+			}
+			
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			#none ig 
+		}
+	}
+	focus = {
+		id = FIN_strengthening_the_mannerheim_line
+		icon = GFX_goal_generic_construct_military
+		cost = 3
+		prerequisite = {
+			focus = FIN_finlands_bold_opportunity
+		}
+		relative_position_id = FIN_finlands_bold_opportunity
+		x = -2
+		y = 1
+		available = {
+			is_puppet = no
+			doesnt_have_socialist_party = yes
+			owns_state = 146
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			146 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 3060
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 9150
+				}
+			}
+		}
+	}
+	focus = {
+		id = FIN_expanding_the_army
+		icon = GFX_army_training
+		cost = 3
+		prerequisite = {
+			focus = FIN_finlands_bold_opportunity
+		}
+		x = 0
+		y = 1
+		relative_position_id = FIN_finlands_bold_opportunity
+		available = {
+			is_puppet = no
+			doesnt_have_socialist_party = yes
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			army_experience = 50
+			# division_template = {
+			# 	name = "Winter War Template"
+			# 	regiments = {
+			# 		infantry = { x = 0 y = 0 }
+			# 		infantry = { x = 0 y = 1 }
+			# 		infantry = { x = 0 y = 2 }
+			# 		infantry = { x = 1 y = 0 }
+			# 		infantry = { x = 1 y = 1 }
+			# 		infantry = { x = 1 y = 2 }
+			# 		infantry = { x = 2 y = 0 }
+			# 		infantry = { x = 2 y = 1 }
+			# 		infantry = { x = 2 y = 2 }
+			# 	}
+			# 	is_locked = yes
+			# 	division_names_group = FIN_INF_02
+			# 	support = {
+			# 		engineer = {
+			# 			x = 0
+			# 			y = 0
+			# 		}
+			# 		artillery = {
+			# 			x = 0
+			# 			y = 1
+			# 		}
+			# 	}
+			# }
+			hidden_effect = {
+				load_oob = "Winter War Division"
+			}
+			111 = {
+				create_unit = {
+					division = "name = \"Winter War Division\" division_template = \"Winter War Division\" start_experience_factor = 0.5\"start_equipment_factor = 0.5"
+					owner = FIN
+				}
+			}
+			111 = {
+				create_unit = {
+					division = "name = \"Winter War Division\" division_template = \"Winter War Division\" start_experience_factor = 0.5\"start_equipment_factor = 0.5"
+					owner = FIN
+				}
+			}
+			111 = {
+				create_unit = {
+					division = "name = \"Winter War Division\" division_template = \"Winter War Division\" start_experience_factor = 0.5\"start_equipment_factor = 0.5"
+					owner = FIN
+				}
+			}
+			111 = {
+				create_unit = {
+					division = "name = \"Winter War Division\" division_template = \"Winter War Division\" start_experience_factor = 0.5\"start_equipment_factor = 0.5"
+					owner = FIN
+				}
+			}
+			111 = {
+				create_unit = {
+					division = "name = \"Winter War Division\" division_template = \"Winter War Division\" start_experience_factor = 0.5\"start_equipment_factor = 0.5"
+					owner = FIN
+				}
+			}
+			
+		}
+	}
+	focus = {
+		id = FIN_preparing_the_economy
+		icon = GFX_economy_hand
+		cost = 3
+		prerequisite = {
+			focus = FIN_finlands_bold_opportunity
+		}
+		x = 2
+		y = 1
+		relative_position_id = FIN_finlands_bold_opportunity
+		relative_position_id = FIN_finlands_bold_opportunity
+		available = {
+			is_puppet = no
+			doesnt_have_socialist_party = yes
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = war_economy
+		}
+	}
+	focus  = {
+		id = FIN_preparing_the_airforce
+		icon = GFX_aviation_training
+		cost = 3
+		prerequisite = {
+			focus = FIN_strengthening_the_mannerheim_line
+		}
+		x = 0
+		y = 1
+		relative_position_id = FIN_strengthening_the_mannerheim_line
+		available = {
+			is_puppet = no
+			doesnt_have_socialist_party = yes
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			air_experience = 50
+			# if = {
+			# 	limit = {
+			# 		has_dlc = "By Blood Alone"
+			# 	}
+			# 	add_equipment_to_stockpile = {
+			# 		type = cv_fighter_equipment
+			# 		amount = 100
+			# 		producer = FIN
+			# 	}
+			# 	else = {
+			# 		add_equipment_to_stockpile = {
+			# 			type = fighter_equipment
+			# 			amount = 100
+			# 			producer = FIN
+			# 		}
+			# 	}
+			# }
+			add_equipment_to_stockpile = {
+				type = fighter_equipment
+				amount = 100
+				producer = FIN
+			}
+			
+			
+		}
+	}			
+	focus  = {
+		id = FIN_construction_of_military_factories
+		icon = GFX_mils-pdn
+		cost = 3
+		prerequisite = {
+			focus = FIN_preparing_the_economy
+		}
+		x = 0
+		y = 1
+		relative_position_id = FIN_preparing_the_economy
+		available = {
+			is_puppet = no
+			doesnt_have_socialist_party = yes
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus  = {
+		id = FIN_winter_war
+		icon = GFX_winter_war
+		cost = 3
+		prerequisite = { focus = FIN_expanding_the_army }
+		x = 0
+		y = 1
+		relative_position_id = FIN_expanding_the_army
+		available = {
+			is_puppet = no
+			doesnt_have_socialist_party = yes
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			FIN = {
+				add_ideas = FIN_winter_war
+			}
+			
+		}		
+	}
+	focus  = {
+		id = FIN_declare_our_claims
+		icon = GFX_bold_opportunity
+		cost = 3
+		prerequisite = { 
+			focus = FIN_expanding_the_army 
+			focus = FIN_construction_of_military_factories 
+			focus = FIN_preparing_the_airforce
+		}
+		relative_position_id = FIN_winter_war
+		x = 0
+		y = 1
+		available = {
+			is_puppet = no
+			doesnt_have_socialist_party = yes
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_state_claim = 195
+			add_state_core =  216
+			add_state_core =  215
+			add_state_core =  213
+			add_state_core =  722
+		}
+	}
+	focus = {
+		id = FIN_for_victory
+		icon = GFX_preparation_for_war
+		cost = 3
+		prerequisite = { focus = FIN_declare_our_claims }
+		x = 0
+		y = 1
+		relative_position_id = FIN_declare_our_claims 
+		available = {
+			is_puppet = no
+			doesnt_have_socialist_party = yes
+			country_exists = SOV
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = SOV
+			}							
+		}
+	}
 }

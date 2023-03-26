@@ -53,8 +53,19 @@ BPS_social_conservative_party_long: "Partido Republicano"
 BPS_authoritarian_democrat_party: "Junta Militar"
 BPS_authoritarian_democrat_party_long: "Junta Militar do Governo"
 BPS_paternal_autocrat_party: "LEC"
-BPS_paternal_autocrat_party_long: "Liga Eleitoral Catolica"
+BPS_paternal_autocrat_party_long: "Liga Eleitoral Catolica                                                  The Liga Eleitoral Catolica is a catholic and right wing political party who houses a holds a wide range of white wing politicans and supporters across Brazil. The party has turned from a simple conservative party into a coalition of sorts between these politicians and parties in the aftermath of the Great War, and the parties that merged to form are the Integralists, the Monarchists, the original Liga Eleitoral Catolica, who has been dominated by politicans like Arthur Bernardes, Plínio Salgado, Getúlio Vargas, and many others. While they get along together fine now, the coalition is delicate. But if it means keeping communism out of Brazil or even better, taking the country, the party will stay together."
 BPS_national_populist_party: "Ação Verde-Amarela"
 BPS_national_populist_party_long: "Ação Verde-Amarela"
 BPS_valkist_party: "UVB"
 BPS_valkist_party_long: "União Valquista Brasileira"
+
+### Ideas
+BPS_the_world_doesn't_see_the_truth: "The World Doesn't See the Truth"
+BPS_the_world_doesnt_see_the_truth_desc: "The world stage still see's the Feds as the original government rather than the Peoples State. This destroys all trade oppotunities and leaves the economy in the gutter."
+BPS_the_legitimacy_problem: "The Legitimacy Problem"
+BPS_the_legitimacy_problem_desc: "The Peoples State's legitimacy is questionable in Brazil. Though to them the revolution is completely justified and legitimate, the world doesn't see them as so."
+
+### Events
+bps.1.t. "Foreign Recognition"
+bps.1.d: "The Brazilian Peoples State has finally gained its recognition by the powers of the World, we are now a real state on the world stage and can have better trading opportunities and have a voice in diplomatic affairs."
+bps.1.a: "Finally!"

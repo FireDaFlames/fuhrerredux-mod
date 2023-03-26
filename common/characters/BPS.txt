@@ -23,6 +23,30 @@ characters = {
 			traits = { }
 		}
 	}
+	BPS_Pedro_III = {
+		name = "Pedro III"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BPS/Portrait_BRA_Pedro_Henrique.png"
+			}
+		}
+		country_leader = {
+			ideology = authoritarian_democrat_subtype
+			traits = { }
+		}
+		country_leader = {
+			ideology = paternal_autocrat_subtype
+			traits = { }
+		}
+		country_leader = {
+			ideology = national_populist_subtype
+			traits = { }
+		}
+		country_leader = {
+			ideology = valkist_subtype
+			traits = { }
+		}
+	}
 	BPS_Plinio_Correa = {
 		name = "Plinio Correa"
 		portraits = {

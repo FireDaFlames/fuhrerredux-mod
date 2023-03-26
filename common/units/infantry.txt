@@ -3,7 +3,6 @@
 # For sea units: ship,transport,uboat
 
 sub_units = {
-
 	infantry = {
 		sprite = infantry
 		map_icon_category = infantry
