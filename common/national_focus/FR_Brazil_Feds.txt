@@ -520,14 +520,8 @@ focus_tree = {
 				bypass = {
 					
 				}
-<<<<<<< Updated upstream
-				 relative_position_id = BRA_upholding_of_tradition
-				 x =0
-				 y =1
-=======
 				 x =14
 				 y =2
->>>>>>> Stashed changes
 				 cost = 8 
 		
 				available_if_capitulated = no
@@ -555,22 +549,12 @@ focus_tree = {
 					bypass = {
 						
 					}
-<<<<<<< Updated upstream
-					 relative_position_id = BRA_upholding_of_tradition
-				 x =0
-				 y =1
-					 cost = 8 
-			
-					available_if_capitulated = no
-					prerequisite = { focus = BRA_upholding_of_tradition }
-=======
 					 x =12
 					 y =2
 					 cost = 8 
 			
 					available_if_capitulated = no
 					prerequisite = { focus = BRA_conservadores }
->>>>>>> Stashed changes
 					completion_reward = {
 						swap_ideas = {
 							remove_idea = BRA_recovering_from_the_civil_war_five
@@ -831,25 +815,7 @@ focus_tree = {
 		
 				available_if_capitulated = no
 				completion_reward = {
-<<<<<<< Updated upstream
-					set_cosmetic_tag = BRA_BRS
-					set_country_flag = BRA_BRS
-					set_party_name = { 
-						ideology = paternal_autocrat_democrat
-						long_name = BRA_shogunate_party
-						name = BRA_shogunate_party_long
-					}
-					BRA_Mitsuyo_Maeda = {
-						add_country_leader_role = {
-							promote_leader = yes
-							country_leader = {
-								ideology = paternal_autocrat_subtype
-							}
-						}
-					}
-=======
 					
->>>>>>> Stashed changes
 				}
 				search_filters = {
 				 FOCUS_FILTER_POLITICAL
@@ -873,10 +839,6 @@ focus_tree = {
 				 cost = 8 
 		
 				available_if_capitulated = no
-<<<<<<< Updated upstream
-				prerequisite = { focus = BRA_the_shogunate_consolidated }
-=======
->>>>>>> Stashed changes
 				completion_reward = {
 					add_political_power = 100
 					add_opinion_modifier = {
@@ -912,10 +874,6 @@ focus_tree = {
 					 cost = 8 
 			
 					available_if_capitulated = no
-<<<<<<< Updated upstream
-					prerequisite = { focus = BRA_open_the_japanese_embassy }
-=======
->>>>>>> Stashed changes
 					completion_reward = {
 						
 					}
@@ -940,10 +898,6 @@ focus_tree = {
 						 cost = 8 
 				
 						available_if_capitulated = no
-<<<<<<< Updated upstream
-						prerequisite = { focus = BRA_join_the_coprosperity_sphere }
-=======
->>>>>>> Stashed changes
 						completion_reward = {
 							
 						}
@@ -951,14 +905,6 @@ focus_tree = {
 						 FOCUS_FILTER_POLITICAL
 						 }
 						}
-<<<<<<< Updated upstream
-
-
-
-
-						
-=======
->>>>>>> Stashed changes
 			
 			### Industry Tree	
 			
@@ -968,11 +914,7 @@ focus_tree = {
 		
 				 ai_will_do = { factor = 10 } 
 				 available = {
-<<<<<<< Updated upstream
-					
-=======
 					has_government = social_conservative
->>>>>>> Stashed changes
 				}
 				
 				bypass = {
@@ -1018,10 +960,6 @@ focus_tree = {
 				 cost = 8 
 			
 				available_if_capitulated = no
-<<<<<<< Updated upstream
-				prerequisite = { focus = BRA_companhia_siderúrgica_nacional }
-=======
->>>>>>> Stashed changes
 				completion_reward = {
 					random_owned_controlled_state = {
 						limit = {
@@ -1064,10 +1002,6 @@ focus_tree = {
 					 cost = 8 
 				
 					available_if_capitulated = no
-<<<<<<< Updated upstream
-					prerequisite = { focus = BRA_companhia_siderúrgica_nacional }
-=======
->>>>>>> Stashed changes
 					completion_reward = {
 						495 = {
 								limit = {
