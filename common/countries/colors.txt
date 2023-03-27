@@ -974,7 +974,7 @@ JAM = {
 }
 BAH = {
 	color = rgb { 204 255 204 }
-	color_ui = rgb { 204 255 204 }
+	color_ui = rgb { 204 255 204 } 
 }
 KUW = {
 	color = rgb { 153 76 0 }
@@ -1063,4 +1063,8 @@ RAS = {
 KMT = {
 	color = rgb { 248 198 0 }
 	color_ui = rgb { 255 198 0 }
+}
+BRA_BRS = {
+	color = rgb { 36 189 63 }
+	color_ui = rgb { 36 189 63 }
 }

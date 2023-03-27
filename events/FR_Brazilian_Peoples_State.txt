@@ -5,7 +5,7 @@ add_namespace = bps
 
 country_event = { #Foreign Recognition 
 	id = bps.1
-	immediate = {log = "[GetDateText]: [Root.GetName]: event bcw.1"}
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bps.1"}
 	title = bps.1.t
 	desc = bps.1.d
 	picture = 
