@@ -517,5 +517,46 @@ country_event = { #Military Coup
 		add_political_power = -50
 	}
 }
-FR_Brazil.txt
-11 KB
+country_event = { #Japanese Coup
+	id = bra.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bra.27"}
+	title = bra.27.t
+	desc = bra.27.d
+	picture = news_event_generic_rally2
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BRA
+		NOT =
+		has_country_flag = BRA_bcw_ended
+		}
+	}
+	option = {
+		name = bra.27.a
+		ai_chance = { factor = 50 }
+		add_country_leader_role = {
+      character = BRA_Mitsuyo_Maeda
+      promote_leader = yes
+      country_leader = {
+        ideology = paternal_autocrat_subtype
+        traits = {}
+      }
+    }
+		add_popularity = { ideology = paternal_autocrat popularity = 0.25 }
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+		}
+		add_stability = -0.10
+		set_cosmetic_tag = BRS_BRA
+		set_country_flag = BRS_BRA
+		set_party_name = { 
+			ideology = neutrality 
+			long_name = BRA_shogunate_party
+			name = BRA_shogunate_party_long
+		}
+	}

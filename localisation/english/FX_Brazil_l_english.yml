@@ -142,9 +142,6 @@ BRA_open_the_japanese_embassy: "Open the Japanese Embassy"
 BRA_open_the_japanese_embassy_desc: "To further improve our relations with the Japanese, we should re-open diplomatic relations with them anbd begin further cooperation between our two nations and maybe one day, we will rule the world together."
 BRA_join_the_coprosperity_sphere: "Join the Co-Prosperity Sphere"
 BRA_join_the_coprosperity_sphere_desc: "Well it seems like an appropriate time to formally ally the Japanese. We have already established ties with them so why not work together to achieve both of our interests together. So now let us now rule the world and make the world more Japanese."
-
-
-#focus tree
 BRA_post_civil_war_elections: "Post Civil-War Elections"
 BRA_post_civil_war_elections_desc: "As our men are buried and our country is exausted, the nation shattered that still could destroy the illegitimate rebellions around Brazil, we must now fire snap elections to see who is best for rebuilding our nation."
 BRA_liberais: "Liberais"
@@ -265,7 +262,9 @@ bra.25.a: "We welcome them."
 bra.26.t: "An Unexpected Betrayal?"
 bra.26.d: "As the civil war has taken its toll on us, it has been apparent to everyone that the capabilities of our president to mantain control has been questioned. Not only by the obvious traitors, but also my our own forces. The army in particular has been shady in its loyalties.\n\nThis finally catapulted into action when this afternoon general Euclides Figueiredo showed up with an ultimatum for the president to stand down, as the military, under his lead, would take direct control of the republic's state apparatus and lead Brazil during this civil war. Not everyone seemed to support him, however."
 bra.26.a: "The Army takes over, under Figueiredo's leadership."
-
+bra_27.t: "Japanese Assume Control!"
+bra_27.d: "In an unexpected run of events the Japanese have raided the government and taken control! The Federal Guard was unable to destroy the force of Japanese soldiers and minuement and the coutnry is now doomed to an uncertain future."
+bra_27.a: "Excuse me, WHAT???"
 bra.50.t: "The States' Rivalry"
 bra.50.d: "Decades under political hegemony under Sao Paulo and Minas Gerais has made us forget the true nature of our republic, an union of states. Or at least, so have felt the "other" states, and have so expressed their representatives in a message to our president.\n\nWhile no one can deny that this is the case, this has left president Salles in a rather awkward position. By giving the favour to the states, he'd help sustain the stability of our nation, something which is sorely needed. But it would make Sao Paulo and Minas Gerais upset, and their hold into our political system is such that doing so would make them disrupt our government. This is not a very easy decision."
 bra.50.a: "We need to keep true to the union."
