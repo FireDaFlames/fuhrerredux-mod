@@ -15151,6 +15151,13 @@ spriteTypes = {
     effectFile = "gfx/FX/buttonstate.lua"
     animation = {
       animationmaskfile = "gfx/interface/goals/goal_JAP_victory_of_alliance.png"
+
+  spriteType = {
+    name = "GFX_goal_FIN_integrate_karelia_shine"
+    texturefile = "gfx/interface/goals/FIN_integrate_karelia.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+      animationmaskfile = "gfx/interface/goals/FIN_integrate_karelia.png"
       animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
       animationrotation = -90.0
       animationlooping = no
@@ -16559,6 +16566,7 @@ spriteTypes = {
 
     animation = {
       animationmaskfile = "gfx/interface/goals/goal_JAP_kokutai_minshu.png"
+      animationmaskfile = "gfx/interface/goals/FIN_integrate_karelia.png"
       animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
       animationrotation = 90.0
       animationlooping = no
@@ -16571,5 +16579,6 @@ spriteTypes = {
     }
     legacy_lazy_load = no
   }
+    
 }
   
