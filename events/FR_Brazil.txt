@@ -1,4 +1,4 @@
-﻿### Republic of Brazil events ###
+﻿### Repudlic of Brazil events ###
 #by matixzun (Trimeon)#
 
 add_namespace = bra
@@ -555,8 +555,104 @@ country_event = { #Japanese Coup
 		set_cosmetic_tag = BRS_BRA
 		set_country_flag = BRS_BRA
 		set_party_name = { 
-			ideology = neutrality 
+			ideology = paternal_autocrat 
 			long_name = BRA_shogunate_party
 			name = BRA_shogunate_party_long
 		}
 	}
+
+	country_event = { #Elections!!
+	id = bra.28
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bra.28"}
+	title = bra.28.t
+	desc = bra.28.d
+	picture = news_event_generic_rally2
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BRA
+		has_country_flag = BRA_bcw_ended
+		}
+		NOT {
+		has_country_flag = brazilian_civil_war
+		}
+	}
+	option = {
+		name = bra.28.a
+		ai_chance = { factor = 50 }
+		set_politics = {
+			ruling_party = market_liberal
+			elections_allowed = yes
+			add_popularity = {
+				ideology = market_liberal
+				popularity = 0.1
+				unlock_national_focus = BRA_liberais
+			}
+		}
+		}
+	
+	option = {
+		name = bra.28.b
+		ai_chance = { factor = 50 }
+		set_politics = {
+			ruling_party = social_conservative
+			elections_allowed = yes
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.1
+				unlock_national_focus = BRA_conservadores
+			}
+		}
+	}
+
+	option = {
+		name = bra.28.c
+		ai_chance = { factor = 50 }
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = yes
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.1
+				unlock_national_focus = BRA_socialistas
+			}
+		}
+	}
+
+	option = {
+		name = bra.28.d
+		ai_chance = { factor = 50 }
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = yes
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.1
+				unlock_national_focus = BRA_status_quo
+			}
+		}
+		}
+
+	option = {
+		name = bra.28.e
+		ai_chance = { factor = 50 }
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.1
+				unlock_national_focus = WIP
+			}
+		}
+
+	option = {
+		name = bra.28.f
+		ai_chance = { factor = 50 }
+			add_popularity = {
+				ideology = paternal_autocrat
+				popularity = 0.1
+				unlock_national_focus = BRA_the_shogunate_consolidated
+			}
+		}

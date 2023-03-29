@@ -31,13 +31,15 @@ focus_tree = {
 		}
 		available_if_capitulated = no
 		completion_reward = {
+		
 			hidden_effect = { 
 				
 			}
+		}
 			search_filters = {
 				FOCUS_FILTER_POLITICAL
 			}
-		} 
+		
 	}	
 	focus = { 
 		id = BRA_liberais
@@ -630,12 +632,13 @@ focus_tree = {
 		bypass = {
 			
 		}
-		x =12
-		y =5
+		relative_position_id = BRA_upholding_of_tradition
+		x = 0
+		y = 1
 		cost = 8 
 		
 		available_if_capitulated = no
-		prerequisite = { focus = BRA_conservadores }
+		prerequisite = { focus = BRA_upholding_of_capitalism }
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = BRA_recovering_from_the_civil_war_nine
@@ -660,12 +663,13 @@ focus_tree = {
 		bypass = {
 			
 		}
-		x =16
-		y =5
+		relative_position_id = BRA_cut_down_cartels
+		x = 0
+		y = 1
 		cost = 8 
 		
 		available_if_capitulated = no
-		prerequisite = { focus = BRA_conservadores }
+		prerequisite = { focus = BRA_cut_down_cartels }
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = BRA_recovering_from_the_civil_war_nine
@@ -680,7 +684,6 @@ focus_tree = {
 	focus = { 
 		id = BRA_unity_is_possible
 		icon = GFX_goal_bra_cooperation
-		
 		ai_will_do = { factor = 10 } 
 		available = {
 			has_government = social_conservative
@@ -689,12 +692,13 @@ focus_tree = {
 		bypass = {
 			
 		}
-		x =14
-		y =5
+		relative_position_id = BRA_lower_government_spending
+		x = 0
+		y = 1
 		cost = 8 
-		
+		prerequisite = { focus = BRA_lower_government_spending }
 		available_if_capitulated = no
-		prerequisite = { focus = BRA_conservadores }
+		
 		completion_reward = {
 			add_stability = 0.10
 			
@@ -704,6 +708,35 @@ focus_tree = {
 		}
 	}
 	
+	focus = { 
+		id = BRA_ratify_the_redone_constitution
+		icon = GFX_WIP
+		ai_will_do = { factor = 10 } 
+		available = {
+			has_government = social_conservative
+		}
+		
+		bypass = {
+			
+		}
+		x =14
+		y =6
+		cost = 8 
+		prerequisite = { 
+		focus = BRA_upholding_of_capitalism 
+		focus = BRA_unity_is_possible 
+		focus = BRA_we_are_all_brazilians  }
+		available_if_capitulated = no
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+			
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
 	focus = { 
 		id = BRA_a_brazil_for_all_brazilians
 		icon = GFX_goal_bra_cooperation
@@ -721,7 +754,7 @@ focus_tree = {
 		cost = 8 
 		
 		available_if_capitulated = no
-		prerequisite = { focus = BRA_conservadores }
+		prerequisite = { focus = BRA_ratify_the_redone_constitution }
 		completion_reward = {
 			add_stability = 0.10
 			
@@ -730,6 +763,305 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 	}
+
+	### Socialist Branch
+
+	focus = { 
+		id = BRA_introduce_welfare
+		icon = GFX_wip
+		
+		ai_will_do = { factor = 10 } 
+		available = {
+			has_government = social_democrat
+		}
+		
+		bypass = {
+			
+		}
+		relative_position_id = BRA_socialistas
+		x = -1
+		y = 1
+		cost = 8 
+		
+		available_if_capitulated = no
+		prerequisite = { focus = BRA_socialistas }
+		completion_reward = {
+		
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	focus = { 
+		id = BRA_compromise_with_the_union
+		icon = GFX_wip
+		
+		ai_will_do = { factor = 10 } 
+		available = {
+			has_government = social_democrat
+		}
+		
+		bypass = {
+			
+		}
+		relative_position_id = BRA_socialistas
+		x = 0
+		y = 1
+		cost = 8 
+		
+		available_if_capitulated = no
+		prerequisite = { focus = BRA_socialistas }
+		completion_reward = {
+		
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	focus = { 
+		id = BRA_humanize_capitalism
+		icon = GFX_wip
+		
+		ai_will_do = { factor = 10 } 
+		available = {
+			has_government = social_democrat
+		}
+		
+		bypass = {
+			
+		}
+		relative_position_id = BRA_socialistas
+		x = 2
+		y = 1
+		cost = 8 
+		
+		available_if_capitulated = no
+		prerequisite = { focus = BRA_socialistas }
+		completion_reward = {
+		
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	focus = { 
+		id = BRA_higher_wages
+		icon = GFX_wip
+		
+		ai_will_do = { factor = 10 } 
+		available = {
+			has_government = social_democrat
+		}
+		
+		bypass = {
+			
+		}
+		relative_position_id = BRA_introduce_welfare
+		x = 0
+		y = 1
+		cost = 8 
+		
+		available_if_capitulated = no
+		prerequisite = { focus = BRA_introduce_welfare }
+		completion_reward = {
+		
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	focus = { 
+		id = BRA_compromise_with_the_liberals
+		icon = GFX_wip
+		
+		ai_will_do = { factor = 10 } 
+		available = {
+			has_government = social_democrat
+		}
+		
+		bypass = {
+			
+		}
+		relative_position_id = BRA_compromise_with_the_union
+		x = 0
+		y = 1
+		cost = 8 
+		
+		available_if_capitulated = no
+		prerequisite = { focus = BRA_compromise_with_the_union }
+		completion_reward = {
+		
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	focus = { 
+		id = BRA_womens_rights
+		icon = GFX_wip
+		
+		ai_will_do = { factor = 10 } 
+		available = {
+			has_government = social_democrat
+		}
+		
+		bypass = {
+			
+		}
+		relative_position_id = BRA_humanize_capitalism
+		x = 0
+		y = 1
+		cost = 8 
+		
+		available_if_capitulated = no
+		prerequisite = { focus = BRA_humanize_capitalism }
+		completion_reward = {
+		
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	focus = { 
+		id = BRA_minorities_become_brazilian
+		icon = GFX_wip
+		
+		ai_will_do = { factor = 10 } 
+		available = {
+			has_government = social_democrat
+		}
+		
+		bypass = {
+			
+		}
+		relative_position_id = BRA_higher_wages
+		x = 0
+		y = 1
+		cost = 8 
+		
+		available_if_capitulated = no
+		prerequisite = { focus = BRA_higher_wages }
+		completion_reward = {
+		
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	focus = { 
+		id = BRA_compromise_with_the_conservatives
+		icon = GFX_wip
+		
+		ai_will_do = { factor = 10 } 
+		available = {
+			has_government = social_democrat
+		}
+		
+		bypass = {
+			
+		}
+		relative_position_id = BRA_compromise_with_the_liberals
+		x = 0
+		y = 1
+		cost = 8 
+		
+		available_if_capitulated = no
+		prerequisite = { focus = BRA_compromise_with_the_liberals }
+		completion_reward = {
+		
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	focus = { 
+		id = BRA_military_reform?
+		icon = GFX_wip
+		
+		ai_will_do = { factor = 10 } 
+		available = {
+			has_government = social_democrat
+		}
+		
+		bypass = {
+			
+		}
+		relative_position_id = BRA_womens_rights
+		x = 0
+		y = 1
+		cost = 8 
+		
+		available_if_capitulated = no
+		prerequisite = { focus = BRA_womens_rights }
+		completion_reward = {
+		
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	focus = { 
+		id = BRA_attack_the_authoritarians
+		icon = GFX_wip
+		
+		ai_will_do = { factor = 10 } 
+		available = {
+			has_government = social_democrat
+		}
+		
+		bypass = {
+			
+		}
+		relative_position_id = BRA_compromise_with_the_conservatives
+		x = 0
+		y = 1
+		cost = 8 
+		
+		available_if_capitulated = no
+		prerequisite = { focus = BRA_minority_rights focus = BRA_compromise_with_the_conservatives focus = BRA_military_reform? }
+		completion_reward = {
+		
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+focus = { 
+	id = BRA_a_true_socialist_utopia
+	icon = GFX_wip
+	
+	ai_will_do = { factor = 10 } 
+	available = {
+		has_government = social_democrat
+	}
+	
+	bypass = {
+		
+	}
+	relative_position_id = BRA_compromise_with_the_conservatives
+	x = 0
+	y = 1
+	cost = 8 
+	
+	available_if_capitulated = no
+	prerequisite = { focus = BRA_attack_the_authoritarians }
+	completion_reward = {
+	
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+}
 	### Shogunate Tree
 	
 	focus = { 
