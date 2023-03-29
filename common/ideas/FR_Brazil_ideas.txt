@@ -41,6 +41,7 @@ ideas = {
 		}
 	
 	BRA_recovering_from_the_civil_war = {
+		on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRA_recovering_from_the_civil_war"}
 		allowed = { original_tag = BRA }
 		picture = BRA_scw_intervention_republicans_focus
 		modifier = {
@@ -52,6 +53,7 @@ ideas = {
 	}
 }
 	BRA_recovering_from_the_civil_war_one = {
+		on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRA_recovering_from_the_civil_war_one"}
 		allowed = { original_tag = BRA }
 		picture = BRA_scw_intervention_republicans_focus
 		modifier = {
@@ -63,6 +65,7 @@ ideas = {
 	}
 }
 BRA_recovering_from_the_civil_war_two = {
+	on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRA_recovering_from_the_civil_war_two"}
 	allowed = { original_tag = BRA }
 	picture = BRA_scw_intervention_republicans_focus
 	modifier = {
@@ -83,6 +86,7 @@ BRA_welfare_systems = {
 }
 }
 BRA_recovering_from_the_civil_war_three = {
+	on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRA_recovering_from_the_civil_war_three"}
 	allowed = { original_tag = BRA }
 	picture = BRA_scw_intervention_republicans_focus
 	modifier = {
@@ -94,6 +98,7 @@ BRA_recovering_from_the_civil_war_three = {
 }
 }
 BRA_recovering_from_the_civil_war_four = {
+	on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRA_recovering_from_the_civil_war_four"}
 	allowed = { original_tag = BRA }
 	picture = BRA_scw_intervention_republicans_focus
 	modifier = {
@@ -102,6 +107,7 @@ BRA_recovering_from_the_civil_war_four = {
 }
 }
 BRA_recovering_from_the_civil_war_five = {
+	on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRA_recovering_from_the_civil_war_five"}
 	allowed = { original_tag = BRA }
 	picture = BRA_scw_intervention_republicans_focus
 	modifier = {
@@ -113,6 +119,7 @@ BRA_recovering_from_the_civil_war_five = {
 }
 }
 BRA_recovering_from_the_civil_war_six = {
+	on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRA_recovering_from_the_civil_war_six"}
 	allowed = { original_tag = BRA }
 	picture = BRA_scw_intervention_republicans_focus
 	modifier = {
@@ -124,6 +131,7 @@ BRA_recovering_from_the_civil_war_six = {
 }
 }
 BRA_recovering_from_the_civil_war_seven = {
+	on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRA_recovering_from_the_civil_war_seven"}
 	allowed = { original_tag = BRA }
 	picture = BRA_scw_intervention_republicans_focus
 	modifier = {
@@ -135,6 +143,7 @@ BRA_recovering_from_the_civil_war_seven = {
 }
 }
 BRA_recovering_from_the_civil_war_eight = {
+	on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRA_recovering_from_the_civil_war_eight"}
 	allowed = { original_tag = BRA }
 	picture = BRA_scw_intervention_republicans_focus
 	modifier = {
@@ -145,6 +154,7 @@ BRA_recovering_from_the_civil_war_eight = {
 }
 }
 BRA_recovering_from_the_civil_war_nine = {
+	on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRA_recovering_from_the_civil_war_nine"}
 	allowed = { original_tag = BRA }
 	picture = BRA_scw_intervention_republicans_focus
 	modifier = {
@@ -154,6 +164,7 @@ BRA_recovering_from_the_civil_war_nine = {
 }
 }
 BRA_recovering_from_the_civil_war_ten = {
+	on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRA_recovering_from_the_civil_war_ten"}
 	allowed = { original_tag = BRA }
 	picture = BRA_scw_intervention_republicans_focus
 	modifier = {

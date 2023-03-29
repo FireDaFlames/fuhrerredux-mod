@@ -18,7 +18,7 @@ focus_tree = {
 	### Post Civil War ###
 	focus = { 
 		id = BRA_post_civil_war_elections
-		icon = goal_flag_brazil
+		icon = GFX_goal_brazil
 		ai_will_do = { factor = 10 } 
 		x =15
 		y =0 
@@ -335,12 +335,10 @@ focus_tree = {
 		cost = 8 
 		
 		available_if_capitulated = no
-		prerequisite = { focus = BRA_military_in_the_government }
-		prerequisite = { focus = BRA_minority_rights }
-		prerequisite = { focus = BRA_deals_with_the_conservatives }
+		prerequisite = { focus = BRA_military_in_the_government focus = BRA_deals_with_the_conservatives focus = BRA_minority_rights }
 		completion_reward = {
 			country_event = {
-				id = bra.bra.31
+				id = bra.31
 				days = 0
 				random = 50
 				random_days = 10
@@ -577,7 +575,7 @@ focus_tree = {
 		cost = 8 
 		
 		available_if_capitulated = no
-		prerequisite = { focus = BRA_conservadores }
+		prerequisite = { focus = BRA_god_as_our_witness }
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = BRA_recovering_from_the_civil_war_seven
@@ -606,7 +604,7 @@ focus_tree = {
 		cost = 8 
 		
 		available_if_capitulated = no
-		prerequisite = { focus = BRA_conservadores }
+		prerequisite = { focus = BRA_tax_cuts }
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = BRA_recovering_from_the_civil_war_eight
@@ -614,6 +612,7 @@ focus_tree = {
 			}
 			remove_idea = BRA_minor_drug_cartels
 		}
+	}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -853,7 +852,7 @@ focus_tree = {
 		
 		ai_will_do = { factor = 10 } 
 		available = {
-			has_government = social_conservative
+			available_if_capitulated = no
 		}
 		
 		bypass = {
@@ -978,6 +977,3 @@ focus_tree = {
 			FOCUS_FILTER_INDUSTRY
 		}
 	}
-}
-message_1.txt
-18 KB
