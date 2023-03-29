@@ -58,7 +58,7 @@ characters = {
 		name = "Lev Hankevych"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/Generic/Portrait_Europe_Generic_new_7.png"
+				large = "gfx/leaders/UKR/Portrait_UKR_Lev_Hankevych.png"
 			}
 		}
 		country_leader = {
