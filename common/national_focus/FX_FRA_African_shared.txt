@@ -1,0 +1,553 @@
+shared_focus = {
+	id = AFR_Military_Reforms
+	icon = GFX_goal_generic_army_command_power
+	x = 2
+	y = 5
+	# offset = {
+	# 	x = -18
+	# 	y = 0
+	# 	trigger = {
+	# 		has_focus_tree = AFR-RFG
+	# 	}
+	# }
+	ai_will_do = {
+		factor = 30
+	}
+	cost = 5
+	continue_if_invalid = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus AFR_Military_Reforms"
+		army_experience = 30
+	}
+	search_filters = { FOCUS_FILTER_ARMY_BONUS }
+}
+shared_focus = {
+	id = AFR_Establish_Airforce
+	# icon = GFX_goal_AFR_Schutzluftwaffe
+	prerequisite = {
+		focus = AFR_Military_Reforms
+	}
+	x = -3
+	y = 1
+	relative_position_id = AFR_Military_Reforms
+	ai_will_do = {
+		factor = 20
+	}
+	cost = 5
+	continue_if_invalid = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus AFR_Establish_Airforce"
+		add_tech_bonus = {
+			name = AFR_Establish_Airforce
+			bonus = 1
+			uses = 1
+			category = light_fighter
+			category = cat_heavy_fighter
+		}
+	}
+	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_AIRFORCE_BONUS }
+}
+
+shared_focus = {
+	id = AFR_African_Pilots
+	# icon = GFX_goal_AFR_African_Pilots
+	prerequisite = {
+		focus = AFR_Establish_Airforce
+	}
+	mutually_exclusive = { focus = AFR_Merc_Pilots}
+	x = 1
+	y = 1
+	relative_position_id = AFR_Establish_Airforce
+	ai_will_do = {
+		factor = 20
+	}
+	cost = 5
+	continue_if_invalid = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus AFR_African_Pilots"
+		add_ideas = AFR_Black_Pilots
+		set_rule = {
+			can_generate_female_aces = yes
+		}
+	}
+	search_filters = { FOCUS_FILTER_AIRFORCE_BONUS }
+}
+
+shared_focus = {
+	id = AFR_Merc_Pilots
+	# icon = GFX_goal_AFR_Merc_Pilots
+	prerequisite = {
+		focus = AFR_Establish_Airforce
+	}
+	mutually_exclusive = { focus = AFR_African_Pilots}
+	x = -1
+	y = 1
+	relative_position_id = AFR_Establish_Airforce
+	ai_will_do = {
+		factor = 20
+	}
+	cost = 5
+	continue_if_invalid = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus AFR_Merc_Pilots"
+		add_ideas = AFR_Mercenary_Pilots_air
+	}
+	search_filters = { FOCUS_FILTER_AIRFORCE_BONUS }
+}
+
+shared_focus = {
+	id = AFR_Bomber_Aircraft
+	icon = GFX_HUN_heavy_bombers
+	prerequisite = {
+		focus = AFR_Establish_Airforce
+	}
+	x = 0
+	y = 2
+	relative_position_id = AFR_Establish_Airforce
+	ai_will_do = {
+		factor = 20
+	}
+	cost = 5
+	continue_if_invalid = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus AFR_Bomber_Aircraft"
+		add_tech_bonus = {
+			name = AFR_Bomber_Aircraft
+			bonus = 1
+			uses = 1
+			category = tactical_bomber
+			category = cat_strategic_bomber
+			category = cas_bomber
+		}
+	}
+	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_AIRFORCE_BONUS }
+}
+
+shared_focus = {
+	id = AFR_Airfields
+	icon = GFX_goal_generic_airports
+	prerequisite = {
+		focus = AFR_Bomber_Aircraft
+	}
+	x = -1
+	y = 3
+	relative_position_id = AFR_Establish_Airforce
+	ai_will_do = {
+		factor = 20
+	}
+	cost = 5
+	continue_if_invalid = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus AFR_Airfields"
+		if = {
+			limit = {
+				tag = TUN
+			}
+			458 = {
+				add_building_construction = {
+					type = air_base
+					level = 4
+				}
+			}
+		}
+		if = {
+			limit = {
+				tag = NFA
+			}
+			974 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+				}
+			}
+			272 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+				}
+			}
+			556 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+				}
+			}
+		}
+		if = {
+			limit = {
+				tag = NFQ
+			}
+			539 = {
+				add_building_construction = {
+					type = air_base
+					level = 3
+				}
+			}
+			660 = {
+				add_building_construction = {
+					type = air_base
+					level = 3
+				}
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_AIRFORCE_BONUS }
+}
+
+shared_focus = {
+	id = AFR_white_phosphorus
+	# icon = GFX_goal_AFR_white_phosphorus
+	prerequisite = {
+		focus = AFR_Bomber_Aircraft
+	}
+
+	x = 1
+	y = 3
+	relative_position_id = AFR_Establish_Airforce
+	ai_will_do = {
+		factor = 20
+	}
+	cost = 5
+	continue_if_invalid = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus AFR_white_phosphorus"
+		add_ideas = AFR_white_phosphorus_idea
+	}
+	search_filters = { FOCUS_FILTER_AIRFORCE_BONUS }
+}
+
+shared_focus = {
+	id = AFR_Afrikan_Air_Industry
+	icon = GFX_goal_CZE_air_industry
+	prerequisite = {
+		focus = AFR_white_phosphorus
+	}
+	prerequisite = {
+		focus = AFR_Airfields
+	}
+
+	x = 0
+	y = 4
+	relative_position_id = AFR_Establish_Airforce
+	ai_will_do = {
+		factor = 20
+	}
+	cost = 5
+	continue_if_invalid = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus AFR_Afrikan_Air_Industry"
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_AIRFORCE_BONUS }
+}
+
+shared_focus = {
+	id = AFR_Jet_Research
+	icon = GFX_goal_generic_jet
+	prerequisite = {
+		focus = AFR_Afrikan_Air_Industry
+	}
+
+	x = 1
+	y = 5
+	relative_position_id = AFR_Establish_Airforce
+	ai_will_do = {
+		factor = 10
+	}
+	cost = 5
+	continue_if_invalid = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus AFR_Jet_Research"
+		add_tech_bonus = {
+			name = AFR_Jet_Research
+			bonus = 1
+			uses = 1
+			category = rocketry
+			category = jet_technology
+		}
+	}
+	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_AIRFORCE_BONUS }
+}
+
+shared_focus = {
+	id = AFR_endurance_training
+	icon = GFX_goal_generic_air_CAS_german
+	prerequisite = {
+		focus = AFR_Afrikan_Air_Industry
+	}
+
+	x = -1
+	y = 5
+	relative_position_id = AFR_Establish_Airforce
+	ai_will_do = {
+		factor = 10
+	}
+	cost = 5
+	continue_if_invalid = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus AFR_endurance_training"
+		add_doctrine_cost_reduction = {
+			name = air_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = air_doctrine
+		}
+	}
+	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_AIRFORCE_BONUS }
+}
+
+shared_focus = {
+	id = AFR_Undefeated_Army
+	icon = GFX_goal_AFR_Schutzetruppe
+	prerequisite = {
+		focus = AFR_Military_Reforms
+	}
+
+	x = 3
+	y = 1
+	relative_position_id = AFR_Military_Reforms
+	ai_will_do = {
+		factor = 30
+	}
+	cost = 5
+	continue_if_invalid = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus AFR_Undefeated_Army"
+		add_tech_bonus = {
+			name = AFR_Undefeated_Army
+			bonus = 1
+			uses = 1
+			category = infantry_weapons
+		}
+	}
+	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_BONUS }
+}
+
+shared_focus = {
+	id = AFR_Modern_Artillery
+	icon = GFX_AFR_gunners_of_konigsberg
+	prerequisite = {
+		focus = AFR_Undefeated_Army
+	}
+
+	x = 2
+	y = 2
+	relative_position_id = AFR_Military_Reforms
+	ai_will_do = {
+		factor = 30
+	}
+	cost = 5
+	continue_if_invalid = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus AFR_Modern_Artillery"
+		add_tech_bonus = {
+			name = AFR_Modern_Artillery
+			bonus = 1
+			uses = 1
+			category = artillery
+		}
+	}
+	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_BONUS }
+}
+
+shared_focus = {
+	id = AFR_Sturdy_Trucks
+	icon = GFX_goal_generic_armored_cars
+	prerequisite = {
+		focus = AFR_Undefeated_Army
+	}
+
+	x = 4
+	y = 2
+	relative_position_id = AFR_Military_Reforms
+	ai_will_do = {
+		factor = 30
+	}
+	cost = 5
+	continue_if_invalid = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus AFR_Sturdy_Trucks"
+		add_ideas = {
+			AFR_Sturdy_Trucks
+		}
+	}
+	search_filters = { FOCUS_FILTER_ARMY_BONUS }
+}
+
+shared_focus = {
+	id = AFR_Modern_Tactics
+	icon = GFX_goal_generic_basic_weapons
+	prerequisite = {
+		focus = AFR_Modern_Artillery
+	}
+
+	prerequisite = {
+		focus = AFR_Sturdy_Trucks
+	}
+
+	x = 3
+	y = 3
+	relative_position_id = AFR_Military_Reforms
+	ai_will_do = {
+		factor = 30
+	}
+	cost = 5
+	continue_if_invalid = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus AFR_Modern_Tactics"
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+	}
+	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_BONUS }
+}
+
+shared_focus = {
+	id = AFR_Modern_Support_Divs
+	icon = GFX_goal_generic_support_equipment
+	prerequisite = {
+		focus = AFR_Modern_Tactics
+	}
+	x = 2
+	y = 4
+	relative_position_id = AFR_Military_Reforms
+	ai_will_do = {
+		factor = 30
+	}
+	cost = 5
+	continue_if_invalid = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus AFR_Modern_Support_Divs"
+		add_tech_bonus = {
+			name = AFR_Modern_Support_Divs
+			bonus = 1
+			uses = 1
+			category = support_tech
+		}
+	}
+	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_BONUS }
+}
+
+shared_focus = {
+	id = AFR_Light_Infantry
+	icon = GFX_goal_generic_mountain_warfare
+	prerequisite = {
+		focus = AFR_Modern_Tactics
+	}
+	x = 4
+	y = 4
+	relative_position_id = AFR_Military_Reforms
+	ai_will_do = {
+		factor = 30
+	}
+	cost = 5
+	continue_if_invalid = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus AFR_Light_Infantry"
+		add_tech_bonus = {
+			name = AFR_Light_Infantry
+			bonus = 1
+			uses = 1
+			category = mountaineers_tech
+		}
+	}
+	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_BONUS }
+}
+
+shared_focus = {
+	id = AFR_White_Graveyard
+	icon = GFX_goal_AFR_Graveyard
+	prerequisite = {
+		focus = AFR_Modern_Support_Divs
+	}
+	prerequisite = {
+		focus = AFR_Light_Infantry
+	}
+	x = 3
+	y = 5
+	relative_position_id = AFR_Military_Reforms
+	ai_will_do = {
+		factor = 30
+	}
+	cost = 5
+	continue_if_invalid = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus AFR_White_Graveyard"
+		custom_effect_tooltip = jungle_warfare_effect
+		# # hidden_effect = {
+		# 	set_technology = { jungle_warfare = 1 popup =  no }
+		# # }
+	}
+	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_BONUS }
+}
+
+shared_focus = {
+	id = AFR_colonial_affairs
+	icon = none
+	cost = 5
+	x = 1
+	y = 1
+	completion_reward = { }
+}

@@ -1,0 +1,20 @@
+focus_tree = {
+	id = FX_NFQ_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			OR = {
+				tag = NFQ
+				tag = NFA
+				tag = TUN
+			}
+		}
+	}
+	continuous_focus_position = {
+		x = 1
+		y = 1
+	}
+	shared_focus = AFR_Military_Reforms
+	# shared_focus = AFR_blackmondayadjustment
+}

@@ -24,6 +24,15 @@ set_politics = {
 	elections_allowed = no
 }
 
+if = {
+  limit = {
+    has_dlc_tfv = yes
+  }
+  ENG = {
+    puppet = PREV
+  }
+}
+
 set_popularities = {
   vanguardist = 0
   collectivist = 0
