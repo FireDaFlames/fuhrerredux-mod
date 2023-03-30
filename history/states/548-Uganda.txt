@@ -8,7 +8,7 @@ state={
 
 	history={
 		add_core_of = UGA
-		owner = ENG
+		owner = KEN
 		buildings = {
 			infrastructure = 3
 
