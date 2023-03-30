@@ -112,3 +112,23 @@ country_event = { # Dontsov Accusses Government of Wide-Scale Corruption
     name = ukraine.5.b
   }
 }
+
+country_event = { # Strikes!
+  id = ukraine.6
+  title = ukraine.6.t
+  desc = ukraine.6.d
+  picture = GFX_report_event_worker_protests
+  is_triggered_only = yes
+
+  option = { # Give concessions
+    name = ukraine.6.a
+    add_political_power = -100
+  }
+  options = { # Disperse the strikers
+    name = ukraine.6.b
+    add_popularity = {
+      ideology = social_democrat
+      popularity = -0.1
+    }
+  }
+}
