@@ -52,3 +52,4 @@ recruit_character = BEA_Ernst_Herman_van_Rappard
 recruit_character = BEA_Henri_Nicolas_Alfred_Swart
 recruit_character = BEA_Hein_ter_Poorten
 recruit_character = BEA_Gerardus_Johannes_Berenschot
+recruit_character = BEA_Robert_Brooke_Popham

@@ -441,8 +441,8 @@ ICE = {
 	color_ui = rgb { 100  125  175 }
 }
 UKR = {
-	color = rgb { 128 66 25 }# 122  89  46, 102 58 42
-	color_ui = rgb { 22 95 186 }	
+	color = rgb { 0 87 183 }
+	color_ui = rgb { 0 87 183 }
 }
 FRP = {
 	color = rgb { 96 130 182 }

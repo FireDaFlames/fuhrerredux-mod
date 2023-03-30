@@ -2,6 +2,7 @@ has_custom_ministers = {
   OR = {
     tag = AFG
     tag = ARG
+    tag = BEA
     tag = BEL
     tag = BLR
     tag = BOL

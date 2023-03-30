@@ -78,6 +78,25 @@ characters = {
 			traits = { }
 		}
 	}
+	BEA_Robert_Brooke_Popham = {
+		name = "Robert Brooke Popham"
+		portraits = {
+			army = {
+				large = "gfx/leaders/BEA/Portrait_BEA_Robert_Brooke_Popham.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				infantry_leader
+				artillery_officer
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
 	BEA_Henri_Nicolas_Alfred_Swart = {
 		name = "Henri Nicolas Alfred Swart"
 		portraits = {
