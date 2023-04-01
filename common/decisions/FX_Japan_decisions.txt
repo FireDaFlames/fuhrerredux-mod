@@ -396,14 +396,57 @@ JAP_taiheiyo_circuit_project = {
 
 		timeout_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision timeout JAP_tokyo_clockwork"
+			add_political_power = 50
 			if = {
 				limit = {
 					has_completed_focus = JAP_under_supervision_of_government
+				}
+				if = {
+					limit = {
+						ROOT = {
+							NOT = {
+								has_tech = radio_detection
+							}
+						}
+					}
+					set_technology = {
+						radio_detection = 1
+					}
+					set_technology = {
+						decimetric_radar = 1
+					}
+				}
+				282 = {
+					add_building_construction = {
+						type = radar_station
+						level = 2
+						instant_build = yes
+						province = 1182
+					}
 				}
 			}
 			else_if = {
 				limit = {
 					has_completed_focus = JAP_privatize_the_public_company
+				}
+				if = {
+					limit = {
+						ROOT = {
+							NOT = {
+								has_tech = interwar_antiair
+							}
+						}
+					}
+					set_technology = {
+						interwar_antiair = 1
+					}
+				}
+				282 = {
+					add_building_construction = {
+						type = anti_air_building
+						level = 3
+						instant_build = yes
+					}
 				}
 			}
 		}
@@ -653,10 +696,38 @@ JAP_taiheiyo_circuit_project = {
 					limit = {
 						has_completed_focus = JAP_under_supervision_of_government
 					}
+					531 = {
+						add_extra_state_shared_building_slots = 5
+						add_building_construction = {
+							type = industrial_complex
+							level = 5
+							instant_build = yes
+						}
+					}
 				}
 				else_if = {
 					limit = {
 						has_completed_focus = JAP_privatize_the_public_company
+					}
+					if = {
+						limit = {
+							ROOT = {
+								NOT = {
+									has_tech = synth_oil_experiments
+								}
+							}
+						}
+						set_technology = {
+							synth_oil_experiments = 1
+						}
+					}
+					531 = {
+						add_extra_state_shared_building_slots = 5
+						add_building_construction = {
+							type = synthetic_refinery
+							level = 3
+							instant_build = yes
+						}
 					}
 				}	
 			}
