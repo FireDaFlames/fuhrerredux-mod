@@ -2763,6 +2763,18 @@ focus_tree = {
 	}
 
 	focus = {
+		id = SAF_the_game_for_rhodesia
+		icon = none
+		cost = 5
+		x = 5
+		y = 1
+		prerequisite = {
+			focus =
+		}
+		relative_position_id = SAF_Take_Back_Our_Nation
+		completion_reward = { }
+	}
+	focus = {
 		id = SAF_Lock_Down_Rhodesia
 		icon = GFX_goal_skull_treaty
 		prerequisite = { focus = SAF_Military_Crackdown }
@@ -2800,7 +2812,7 @@ focus_tree = {
 		id = SAF_Encourage_Violence
 		icon = GFX_goal_refugee_management
 		prerequisite = { focus = SAF_PNP_Victory }
-		x = 47
+		x = 50
 		y = 2
 		cost = 5
 		ai_will_do = {
@@ -2830,7 +2842,7 @@ focus_tree = {
 		id = SAF_Government_Police
 		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = SAF_Encourage_Violence }
-		x = 47
+		x = 50
 		y = 4
 		cost = 5
 		ai_will_do = {
