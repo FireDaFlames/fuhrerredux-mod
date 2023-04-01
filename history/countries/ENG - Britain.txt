@@ -170,12 +170,17 @@ if = {
 		autonomous_state = autonomy_colony
 		freedom_level = 0.5
 	}
-
 	set_autonomy = {
 		target = BEA
 		autonomous_state = autonomy_colony
 		freedom_level = 0.5
 	}
+	#african
+	set_autonomy = {
+		target = KEN
+		autonomy_state = autonomy_colony
+	}
+
 	else = {
 		puppet = RAJ
 		puppet = NFL
@@ -186,6 +191,7 @@ if = {
 		puppet = ISR
 		puppet = IRQ
 		puppet = BEA
+		puppet = KEN
 	}
 }
 
@@ -244,6 +250,7 @@ add_to_faction = NFL
 add_to_faction = ISR
 add_to_faction = IRQ
 add_to_faction = BEA
+add_to_faction = KEN
 
 give_military_access = RAJ
 add_to_faction = RAJ		# Must be after puppet
@@ -279,6 +286,13 @@ SAF = {
 }
 
 RAJ = {
+	add_opinion_modifier = {
+		target = ENG
+		modifier = IMP_no_statute
+	}
+}
+
+KEN = {
 	add_opinion_modifier = {
 		target = ENG
 		modifier = IMP_no_statute

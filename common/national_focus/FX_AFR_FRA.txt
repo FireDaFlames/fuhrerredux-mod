@@ -1,5 +1,5 @@
 focus_tree = {
-	id = FX_NFQ_focus
+	id = FX_AFR_focus
 	country = {
 		factor = 0
 		modifier = {
@@ -8,6 +8,7 @@ focus_tree = {
 				tag = NFQ
 				tag = NFA
 				tag = TUN
+				tag = MOR
 			}
 		}
 	}
