@@ -69,7 +69,6 @@ focus_tree = {
     relative_position_id = USA_last_minute_reforms
     completion_reward = {
       USA_decrease_effects_of_the_depression = yes
-      USA_decrease_effects_of_the_depression = yes
       end_puppet = PHI
       set_country_flag = USA_recognized_filipino_independence
       PHI = {
@@ -207,8 +206,6 @@ focus_tree = {
     prerequisite = { focus = USA_liquidate_failing_companies }
     relative_position_id = USA_pass_the_economic_stimulus_bill
     completion_reward = {
-      increase_ruling_party_popularity_by_5 = yes
-      add_stability = 0.05
       increase_ruling_party_popularity_by_5 = yes
       add_stability = 0.05
       hidden_effect = {
@@ -3642,6 +3639,8 @@ focus_tree = {
       }
 
       unlock_decision_tooltip = USA_propose_alliance_with_brazil
+
+      unlock_decision_tooltip = USA_propose_alliance_with_brazil
     }
   }
 
@@ -4073,9 +4072,7 @@ focus_tree = {
     y = 1
     cost = 6
     available = {
-      NOT = {
-        country_exists = IRE
-      }
+      country_exists = IRE
       ENG = {
         exists = yes
         any_owned_state = {
@@ -4098,6 +4095,19 @@ focus_tree = {
     }
     relative_position_id = USA_avenge_1812
     completion_reward = {
+      custom_effect_tooltip = USA_blood_on_the_emerald_isle_tt
+
+      ENG = {
+        every_owned_state = {
+          limit = {
+            is_core_of = IRE
+            NOT = { is_core_of = ENG }
+          }
+
+          add_resistance = 20
+        }
+      }
+    }
       custom_effect_tooltip = USA_blood_on_the_emerald_isle_tt
 
       ENG = {
@@ -4384,7 +4394,6 @@ focus_tree = {
       focus = USA_carribean_lake
     }
     prerequisite = { focus = USA_blood_on_the_emerald_isle }
-    prerequisite = { focus = USA_blood_on_the_emerald_isle }
     relative_position_id = USA_avenge_1812
     completion_reward = {
       638 = {
@@ -4581,8 +4590,6 @@ focus_tree = {
         add_idea = USA_persued_interventionism_1
       }
     }
-  }
-
   # Entente Lend Lease
   focus = {
     id = USA_entente_lend_lease
