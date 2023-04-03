@@ -69,8 +69,8 @@ country_event = { #you are dumb as fuck
 		add_political_power = -100
 	}
 }
-
-country_event = { #socialist belgium // might me changed later
+ 
+state_event = { #socialist belgium // might me changed later
 	id = bca.3
 	immediate = {log = "[GetDateText]: [Root.GetName]: event bca.3"}
 	title = bca.3.t
