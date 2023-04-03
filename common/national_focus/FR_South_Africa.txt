@@ -1,8 +1,9 @@
-###########################
+#########################################
 # South Africa Focus Tree
-###########################
-# By Santander
-###########################
+#########################################
+# By Santander 
+# Modifications by thanasislanaras
+#########################################
 
 focus_tree = {
 	id = south_africa_focus
@@ -12,7 +13,7 @@ focus_tree = {
 
 		modifier = {
 			add = 10
-			TAG = saf
+			TAG = SAF
 		}
 	}
 
@@ -2761,19 +2762,6 @@ focus_tree = {
 			add_political_power = 50
 		}
 	}
-
-	focus = {
-		id = SAF_the_game_for_rhodesia
-		icon = none
-		cost = 5
-		x = 5
-		y = 1
-		prerequisite = {
-			focus =
-		}
-		relative_position_id = SAF_Take_Back_Our_Nation
-		completion_reward = { }
-	}
 	focus = {
 		id = SAF_Lock_Down_Rhodesia
 		icon = GFX_goal_skull_treaty
@@ -2812,7 +2800,7 @@ focus_tree = {
 		id = SAF_Encourage_Violence
 		icon = GFX_goal_refugee_management
 		prerequisite = { focus = SAF_PNP_Victory }
-		x = 50
+		x = 48
 		y = 2
 		cost = 5
 		ai_will_do = {
@@ -2837,12 +2825,11 @@ focus_tree = {
 			add_political_power = 100
 		}
 	}
-
 	focus = {
 		id = SAF_Government_Police
 		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = SAF_Encourage_Violence }
-		x = 50
+		x = 48
 		y = 4
 		cost = 5
 		ai_will_do = {
@@ -4060,4 +4047,24 @@ focus_tree = {
 			country_event = { id = southafrica.71 days = 1 }
 		}
 	}
+	# focus = {
+	# 	id = SAF_the_game_for_rhodesia
+	# 	icon = none
+	# 	cost = 5
+	# 	x = 30
+	# 	y = 10
+	# 	completion_reward = {}
+	# }
+	# focus = {
+	# 	id = SAF_appease_united_kingdom
+	# 	icon = none
+	# 	cost = 5
+	# 	x = 0
+	# 	y = 1
+	# 	relative_position_id = SAF_the_game_for_rhodesia
+	# 	prerequisite = {
+	# 		focus = SAF_the_game_for_rhodesia
+	# 	}
+	# 	completion_reward = {}
+	# }
 }

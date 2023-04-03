@@ -2,6 +2,7 @@
 
 oob = "00_default_template"
 
+
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -51,7 +52,7 @@ set_stability = 0.62
 set_war_support = 0.55
 
 add_ideas = {
-	party_pop_0_30
+	party_pop_0_70
 	parliamentary_republic
 }
 
@@ -75,4 +76,12 @@ set_popularities = {
   paternal_autocrat = 3
   national_populist = 4
   valkist = 0
+}
+
+set_cosmetic_tag = ENG_RHO
+
+if = {
+	limit = { has_dlc = "Together for Victory" }
+
+	add_to_tech_sharing_group = commonwealth_research
 }
