@@ -17,5 +17,6 @@ focus_tree = {
 		y = 1
 	}
 	shared_focus = AFR_Military_Reforms
+	shared_focus = AFR_our_boldest_opportunity
 	# shared_focus = AFR_blackmondayadjustment
 }
