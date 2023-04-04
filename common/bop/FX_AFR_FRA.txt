@@ -10,7 +10,7 @@ AFR_FRA_colony_france_balance = {
 	}
 	side = {
 		id = AFR_FRA_France_side
-		icon = GFX_idea_unbalanced_economy
+		icon = GFX_idea_AA
 		range = {
 			id = AFR_FRA_France_low
 			min = -0.3
