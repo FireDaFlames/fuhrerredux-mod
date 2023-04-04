@@ -19,6 +19,11 @@ set_technology = {
 	electronic_mechanical_engineering = 1
 	fuel_silos = 1
 }
+set_power_balance = {
+	id = AFR_FRA_colony_france_balance
+	left_side = AFR_FRA_France_side
+	right_side = AFR_FRA_Colony_side
+}
 
 if = {
   limit = { has_dlc = "No Step Back" }
