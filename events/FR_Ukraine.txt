@@ -113,22 +113,141 @@ country_event = { # Dontsov Accusses Government of Wide-Scale Corruption
   }
 }
 
-country_event = { # Strikes!
+country_event = { # Rumours of President Hankevych's Death
   id = ukraine.6
-  title = ukraine.6.t
-  desc = ukraine.6.d
+  title = ukraine.6
+  desc = ukraine.6
+  is_triggered_only = yes
+
+  option = { # The President decides to make a public appearance
+    name = ukraine.6.a
+    add_political_power = 100
+
+    hidden_effect = {
+      country_event = { id = ukraine.7 days = 2 }
+    }
+  }
+  option = { # The President ignores the matter
+    name = ukraine.6.b
+    add_popularity = {
+      ideology = valkist
+      popularity = 0.05
+    }
+    add_popularity = {
+      ideology = paternal_autocrat
+      popularity = 0.05
+    }
+  }
+}
+
+country_event = { # Speech well received
+  id = ukraine.7
+  title = ukraine.7.t
+  desc = ukraine.7.d
+  is_triggered_only = yes
+
+  option = {
+    name = ukraine.7.a
+    increase_ruling_party_popularity_by_5 = yes
+    add_stability = 0.05
+  }
+}
+
+country_event = { # Deploying the Police?
+  id = ukraine.8
+  title = ukraine.8.t
+  desc = ukraine.8.d
+  is_triggered_only = yes
+
+  option = { # We must ensure the safety of the people
+    name = ukraine.8.a
+    add_political_power = -10
+    hidden_effect = {
+      country_event = { id = ukraine.11 days = 2 }
+    }
+  }
+
+  option = { # They will be fine, probably.
+    name = ukraine.8.b
+    add_political_power = -20
+    hidden_effect = {
+      country_event = { id = ukraine.9 days = 2 }
+    }
+  }
+}
+
+country_event = { # Death of Konovalets
+  id = ukraine.9
+  title = ukraine.9.t
+  desc = ukraine.9.d
+  is_triggered_only = yes
+
+  option = { # Send me the police report
+    name = ukraine.9.a
+    retire_character = UKR_Yevhen_Konovalets
+
+    hidden_effect = {
+      country_event = { id = ukraine.10 days = 2 }
+    }
+  }
+}
+
+country_event = { # OUN Supporters flock to NIPU
+  id = ukraine.10
+  title = ukraine.10.t
+  desc = ukraine.10.d
+  is_triggered_only = yes
+
+  option = { # Oh no
+    name = ukraine.10.a
+
+    set_country_flag = UKR_oun_dead
+    add_popularity = {
+      ideology = paternal_autocrat
+      popularity = -0.15
+    }
+    add_popularity = {
+      ideology = valkist
+      popularity = 0.15
+    }
+  }
+}
+
+country_event = { # Attempted Assassination of Konovalets!
+  id = ukraine.11
+  title = ukraine.11.t
+  desc = ukraine.11.d
+  picture = GFX_report_event_worker_protests
+  is_triggered_only = yes
+
+  option = { # Good grief
+    name = ukraine.11.a
+
+    add_stability = 0.05
+    set_country_flag = UKR_nipu_dead
+    add_popularity = {
+      ideology = valkist
+      popularity = -0.15
+    }
+  }
+}
+
+country_event = { # Strikes!
+  id = ukraine.12
+  title = ukraine.12.t
+  desc = ukraine.12.d
   picture = GFX_report_event_worker_protests
   is_triggered_only = yes
 
   option = { # Give concessions
-    name = ukraine.6.a
+    name = ukraine.12.a
     add_political_power = -100
   }
   options = { # Disperse the strikers
-    name = ukraine.6.b
+    name = ukraine.12.b
     add_popularity = {
-      ideology = social_democrat
-      popularity = -0.1
+      ideology = libertarian_socialist
+      popularity = 0.1
     }
   }
 }

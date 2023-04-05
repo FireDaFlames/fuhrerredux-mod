@@ -124,8 +124,11 @@ set_popularities = {
 
 country_event = { id = ukraine.1 days = 1 } # Intro Event
 country_event = { id = ukraine.3 days = 40 } # Disunity in the Pink-Orange Coalition
-country_event = { id = ukraine.4 days = 160 } # Clashes Between the OUN and PNIU
-country_event = { id = ukraine.5 days = 250 } # Strikes
+country_event = { id = ukraine.4 days = 65 } # Clashes Between the OUN and PNIU
+country_event = { id = ukraine.5 days = 120 } # Dontsov Accusses Government of Wide-Scale Corruption
+country_event = { id = ukraine.6 days = 140 } # Rumours about the President's Death
+country_event = { id = ukraine.8 days = 170 } # Deploying the Police?
+country_event = { id = ukraine.12 days = 250 } # Strikes
 
 recruit_character = UKR_Mykola_Strypnyk
 recruit_character = UKR_Yurii_Lapchynsky
