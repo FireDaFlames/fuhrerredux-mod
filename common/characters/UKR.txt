@@ -985,7 +985,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = economy_minister
+			slot = security_minister
 			available = { 
 				hidden_trigger = { has_country_flag = UKR_Oleksandr_Zhukivskyi_sec_sli_hired }
 			}
@@ -1011,7 +1011,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = foreign_minister
+			slot = security_minister
 			available = { 
 				hidden_trigger = { has_country_flag = UKR_Mikola_Lebid_sec_pau_hired }
 			}

@@ -316,7 +316,7 @@ country_event = { # 1936 Elections
       NOT = { has_country_flag = UKR_oun_dead }
     }
     set_politics = {
-      ideology = paternal_autocrat
+      ruling_party = paternal_autocrat
       elections_allowed = no
     }
     increase_ruling_party_popularity_by_15 = yes
@@ -339,7 +339,7 @@ country_event = { # 1936 Elections
       NOT = { has_country_flag = UKR_nipu_dead }
     }
     set_politics = {
-      ideology = valkist
+      ruling_party = valkist
       elections_allowed = no
     }
     increase_ruling_party_popularity_by_15 = yes
