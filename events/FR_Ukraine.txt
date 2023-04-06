@@ -251,3 +251,104 @@ country_event = { # Strikes!
     }
   }
 }
+
+country_event = { # 1936 Elections
+  id = ukraine.13
+  title = ukraine.13.t
+  desc = ukraine.13.d
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  trigger = {
+    tag = UKR
+    date > 1936.1.1
+		date < 1937.1.1
+    NOT = { has_country_flag = UKR_had_1936_elections }
+  }
+
+  option = { # Social-Democratic Party (LibSoc)
+    name = ukraine.13.a
+    set_politics = {
+      ruling_party = libertarian_socialist
+      elections_allowed = yes
+    }
+    increase_ruling_party_popularity_by_15 = yes
+    remove_every_minister = yes
+    add_ideas = {
+      UKR_Grigori_Sokolnikov_hog_lib
+      UKR_Oleksandr_Shulhyn_for_lib
+      UKR_Mykhailo_Boholiepov_eco_lib
+      UKR_Pavlo_Khrystiuk_sec_lib
+    }
+    hidden_effect = {
+      set_country_flag = UKR_had_1936_elections
+      set_country_flag = UKR_soc_dem_party_victory
+    }
+  }
+
+  option = { # People's Labour Party (SocLib)
+    name = ukraine.13.b
+    set_politics = {
+      ruling_party = social_liberal
+      elections_allowed = yes
+    }
+    increase_ruling_party_popularity_by_15 = yes
+    remove_every_minister = yes
+    add_ideas = {
+      UKR_Stepan_Vytvytskyi_hog_sli
+      UKR_Mykola_Liubynskyi_for_sli
+      UKR_Mykola_Tvorydlo_eco_sli
+      UKR_Oleksandr_Zhukivskyi_sec_sli
+    }
+    hidden_effect = {
+      set_country_flag = UKR_had_1936_elections
+      set_country_flag = UKR_peoples_labour_victory
+    }
+  }
+
+  option = { # Union of Hetmanists-Statesman (SocCon or AuthDem)
+    name = ukraine.13.c
+  }
+
+  option = { # OUN (NatPop)
+    name = ukraine.13.e
+    trigger = {
+      NOT = { has_country_flag = UKR_oun_dead }
+    }
+    set_politics = {
+      ideology = paternal_autocrat
+      elections_allowed = no
+    }
+    increase_ruling_party_popularity_by_15 = yes
+    remove_every_minister = yes
+    add_ideas = {
+      UKR_Andrii_Melnyk_hog_pau
+      UKR_Dmytro_Andriievskyi_for_pau
+      UKR_Mikola_Stsiborsky_eco_pau
+      UKR_Mikola_Lebid_sec_pau
+    }
+    hidden_effect = {
+      set_country_flag = UKR_had_1936_elections
+      set_country_flag = UKR_oun_victory
+    }
+  }
+
+  option = { # NIPU (Val)
+    name = ukraine.13.f
+    trigger = {
+      NOT = { has_country_flag = UKR_nipu_dead }
+    }
+    set_politics = {
+      ideology = valkist
+      elections_allowed = no
+    }
+    increase_ruling_party_popularity_by_15 = yes
+    remove_every_minister = yes
+    add_ideas = {
+      UKR_Mikhaylo_Kolodzinsky_hog_val
+      UKR_Volodymyr_Kubiiovych_for_val
+      UKR_Leonid_Kostariv_eco_val
+      UKR_Yaroslav_Diakon_sec_val
+    }
+  }
+}

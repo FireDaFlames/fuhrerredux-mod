@@ -673,20 +673,98 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = foreign_minister
+			slot = head_of_government
 			available = { 
-				hidden_trigger = { has_country_flag = UKR_Grigori_Sokolnikov_for_col_hired }
+				hidden_trigger = { has_country_flag = UKR_Grigori_Sokolnikov_hog_lib_hired }
 			}
-			idea_token = UKR_Grigori_Sokolnikov_for_col
+			idea_token = UKR_Grigori_Sokolnikov_hog_lib
 			on_add = {
-				ROOT = { set_country_flag = UKR_Grigori_Sokolnikov_for_col_hired }
+				ROOT = { set_country_flag = UKR_Grigori_Sokolnikov_hog_lib_hired }
 			}
 			on_remove = {
-				ROOT = { clr_country_flag = UKR_Grigori_Sokolnikov_for_col_hired }
+				ROOT = { clr_country_flag = UKR_Grigori_Sokolnikov_hog_lib_hired }
 			}
 			traits = {
-				collectivist
-				for_apologetic_clerk
+				libertarian_socialist
+				hog_ambitious_union_boss
+			}
+		}
+	}
+	UKR_Oleksandr_Shulhyn = {
+		name = "Oleksandr Shulhyn"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ministers/UKR/UKR_Oleksandr_Shulhyn.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = foreign_minister
+			available = { 
+				hidden_trigger = { has_country_flag = UKR_Oleksandr_Shulhyn_for_lib_hired }
+			}
+			idea_token = UKR_Oleksandr_Shulhyn_for_lib
+			on_add = {
+				ROOT = { set_country_flag = UKR_Oleksandr_Shulhyn_for_lib_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = UKR_Oleksandr_Shulhyn_for_lib_hired }
+			}
+			traits = {
+				libertarian_socialist
+				for_biased_intellectual
+			}
+		}
+	}
+	UKR_Mykhailo_Boholiepov = {
+		name = "Mykhailo Boholiepov"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ministers/UKR/UKR_Mykhailo_Boholiepov.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = economy_minister
+			available = { 
+				hidden_trigger = { has_country_flag = UKR_Mykhailo_Boholiepov_eco_lib_hired }
+			}
+			idea_token = UKR_Mykhailo_Boholiepov_eco_lib
+			on_add = {
+				ROOT = { set_country_flag = UKR_Mykhailo_Boholiepov_eco_lib_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = UKR_Mykhailo_Boholiepov_eco_lib_hired }
+			}
+			traits = {
+				libertarian_socialist
+				eco_imbedded_unioneer
+			}
+		}
+	}
+	UKR_Pavlo_Khrystiuk = {
+		name = "Pavlo Khrystiuk"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ministers/UKR/UKR_Pavlo_Khrystiuk.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = security_minister
+			available = { 
+				hidden_trigger = { has_country_flag = UKR_Pavlo_Khrystiuk_sec_lib_hired }
+			}
+			idea_token = UKR_Pavlo_Khrystiuk_sec_lib
+			on_add = {
+				ROOT = { set_country_flag = UKR_Pavlo_Khrystiuk_sec_lib_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = UKR_Pavlo_Khrystiuk_sec_lib_hired }
+			}
+			traits = {
+				libertarian_socialist
+				sec_efficient_sociopath
 			}
 		}
 	}
@@ -820,29 +898,133 @@ characters = {
 			}
 		}
 	}
-	UKR_Mikola_Lebed = {
-		name = "Mikola Lebed"
+	UKR_Stepan_Vytvytskyi = {
+		name = "Stepan Vytvytskyi"
 		portraits = {
 			civilian = {
-				small = "gfx/interface/ministers/UKR/UKR_Mikola_Lebed.png"
+				small = "gfx/interface/ministers/UKR/UKR_Stepan_Vytvytskyi.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = head_of_government
+			available = { 
+				hidden_trigger = { has_country_flag = UKR_Stepan_Vytvytskyi_hog_sli_hired }
+			}
+			idea_token = UKR_Stepan_Vytvytskyi_hog_sli
+			on_add = {
+				ROOT = { set_country_flag = UKR_Stepan_Vytvytskyi_hog_sli_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = UKR_Stepan_Vytvytskyi_hog_sli_hired }
+			}
+			traits = {
+				social_liberal
+				hog_political_protege
+			}
+		}
+	}
+	UKR_Mykola_Liubynskyi = {
+		name = "Mykola Liubynskyi"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ministers/UKR/UKR_Mykola_Liubynskyi.png"
 			}
 		}
 		advisor = {
 			cost = 150
 			slot = foreign_minister
 			available = { 
-				hidden_trigger = { has_country_flag = UKR_Mikola_Lebed_for_npo_hired }
+				hidden_trigger = { has_country_flag = UKR_Mykola_Liubynskyi_for_sli_hired }
 			}
-			idea_token = UKR_Mikola_Lebed_for_npo
+			idea_token = UKR_Mykola_Liubynskyi_for_sli
 			on_add = {
-				ROOT = { set_country_flag = UKR_Mikola_Lebed_for_npo_hired }
+				ROOT = { set_country_flag = UKR_Mykola_Liubynskyi_for_sli_hired }
 			}
 			on_remove = {
-				ROOT = { clr_country_flag = UKR_Mikola_Lebed_for_npo_hired }
+				ROOT = { clr_country_flag = UKR_Mykola_Liubynskyi_for_sli_hired }
 			}
 			traits = {
-				national_populist
-				for_the_cloak_n_dagger_schemer
+				social_liberal
+				for_general_staffer
+			}
+		}
+	}
+	UKR_Mykola_Tvorydlo = {
+		name = "Mykola Tvorydlo"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ministers/UKR/UKR_Mykola_Tvorydlo.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = economy_minister
+			available = { 
+				hidden_trigger = { has_country_flag = UKR_Mykola_Tvorydlo_eco_sli_hired }
+			}
+			idea_token = UKR_Mykola_Tvorydlo_eco_sli
+			on_add = {
+				ROOT = { set_country_flag = UKR_Mykola_Tvorydlo_eco_sli_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = UKR_Mykola_Tvorydlo_eco_sli_hired }
+			}
+			traits = {
+				social_liberal
+				eco_balanced_budget_economy
+			}
+		}
+	}
+	UKR_Oleksandr_Zhukivskyi = {
+		name = "Oleksandr Zhukivskyi"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ministers/UKR/UKR_Oleksandr_Zhukivskyi.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = economy_minister
+			available = { 
+				hidden_trigger = { has_country_flag = UKR_Oleksandr_Zhukivskyi_sec_sli_hired }
+			}
+			idea_token = UKR_Oleksandr_Zhukivskyi_sec_sli
+			on_add = {
+				ROOT = { set_country_flag = UKR_Oleksandr_Zhukivskyi_sec_sli_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = UKR_Oleksandr_Zhukivskyi_sec_sli_hired }
+			}
+			traits = {
+				social_liberal
+				sec_compassionate_gentleman
+			}
+		}
+	}
+	UKR_Mikola_Lebid = {
+		name = "Mikola Lebid"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ministers/UKR/UKR_Mikola_Lebid.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = foreign_minister
+			available = { 
+				hidden_trigger = { has_country_flag = UKR_Mikola_Lebid_sec_pau_hired }
+			}
+			idea_token = UKR_Mikola_Lebid_sec_pau
+			on_add = {
+				ROOT = { set_country_flag = UKR_Mikola_Lebid_sec_pau_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = UKR_Mikola_Lebid_sec_pau_hired }
+			}
+			traits = {
+				paternal_autocrat
+				sec_silent_lawyer
 			}
 		}
 	}
@@ -1323,20 +1505,20 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = security_minister
+			slot = head_of_government
 			available = { 
-				hidden_trigger = { has_country_flag = UKR_Mikhaylo_Kolodzinsky_sec_npo_hired }
+				hidden_trigger = { has_country_flag = UKR_Mikhaylo_Kolodzinsky_hog_val_hired }
 			}
-			idea_token = UKR_Mikhaylo_Kolodzinsky_sec_npo
+			idea_token = UKR_Mikhaylo_Kolodzinsky_hog_val
 			on_add = {
-				ROOT = { set_country_flag = UKR_Mikhaylo_Kolodzinsky_sec_npo_hired }
+				ROOT = { set_country_flag = UKR_Mikhaylo_Kolodzinsky_hog_val_hired }
 			}
 			on_remove = {
-				ROOT = { clr_country_flag = UKR_Mikhaylo_Kolodzinsky_sec_npo_hired }
+				ROOT = { clr_country_flag = UKR_Mikhaylo_Kolodzinsky_hog_val_hired }
 			}
 			traits = {
-				national_populist
-				sec_man_of_the_people
+				valkist
+				hog_ruthless_warlord
 			}
 		}
 	}
@@ -1708,5 +1890,160 @@ characters = {
 			}
 		}
 	}
-	
+	UKR_Andrii_Melnyk = {
+		name = "Andrii Melnyk"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ministers/UKR/UKR_Andrii_Melnyk.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = head_of_government
+			available = { 
+				hidden_trigger = { has_country_flag = UKR_Andrii_Melnyk_hog_pau_hired }
+			}
+			idea_token = UKR_Andrii_Melnyk_hog_pau
+			on_add = {
+				ROOT = { set_country_flag = UKR_Andrii_Melnyk_hog_pau_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = UKR_Andrii_Melnyk_hog_pau_hired }
+			}
+			traits = {
+				paternal_autocrat
+				hog_determined_populist
+			}
+		}
+	}
+	UKR_Dmytro_Andriievskyi = {
+		name = "Dmytro Andriievskyi"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ministers/UKR/UKR_Dmytro_Andriievskyi.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = foreign_minister
+			available = { 
+				hidden_trigger = { has_country_flag = UKR_Dmytro_Andriievskyi_for_pau_hired }
+			}
+			idea_token = UKR_Dmytro_Andriievskyi_for_pau
+			on_add = {
+				ROOT = { set_country_flag = UKR_Dmytro_Andriievskyi_for_pau_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = UKR_Dmytro_Andriievskyi_for_pau_hired }
+			}
+			traits = {
+				paternal_autocrat
+				for_ideological_crusader
+			}
+		}
+	}
+	UKR_Mykola_Stsiborskyi = {
+		name = "UKR_Mykola_Stsiborskyi"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ministers/UKR/UKR_Mykola_Stsiborskyi.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = economy_minister
+			available = { 
+				hidden_trigger = { has_country_flag = UKR_Mykola_Stsiborskyi_eco_pau_hired }
+			}
+			idea_token = UKR_Mykola_Stsiborskyi_eco_pau
+			on_add = {
+				ROOT = { set_country_flag = UKR_Mykola_Stsiborskyi_eco_pau_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = UKR_Mykola_Stsiborskyi_eco_pau_hired }
+			}
+			traits = {
+				paternal_autocrat
+				eco_mixed_economy
+			}
+		}
+	}
+	UKR_Volodymyr_Kubiiovych = {
+		name = "Volodymyr Kubiiovych"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ministers/UKR/UKR_Volodymyr_Kubiiovych.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = foreign_minister
+			available = { 
+				hidden_trigger = { has_country_flag = UKR_Volodymyr_Kubiiovych_for_val_hired }
+			}
+			idea_token = UKR_Volodymyr_Kubiiovych_for_val
+			on_add = {
+				ROOT = { set_country_flag = UKR_Volodymyr_Kubiiovych_for_val_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = UKR_Volodymyr_Kubiiovych_for_val_hired }
+			}
+			traits = {
+				valkist
+				for_the_cloak_n_dagger_schemer
+			}
+		}
+	}
+	UKR_Leonid_Kostariv = {
+		name = "Leonid Kostariv"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ministers/UKR/UKR_Leonid_Kostariv.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = economy_minister
+			available = { 
+				hidden_trigger = { has_country_flag = UKR_Leonid_Kostariv_eco_val_hired }
+			}
+			idea_token = UKR_Leonid_Kostariv_eco_val
+			on_add = {
+				ROOT = { set_country_flag = UKR_Leonid_Kostariv_eco_val_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = UKR_Leonid_Kostariv_eco_val_hired }
+			}
+			traits = {
+				valkist
+				eco_infantry_proponent
+			}
+		}
+	}
+	UKR_Yaroslav_Diakon = {
+		name = "Yaroslav Diakon"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ministers/UKR/UKR_Yaroslav_Diakon.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = security_minister
+			available = { 
+				hidden_trigger = { has_country_flag = UKR_Yaroslav_Diakon_sec_val_hired }
+			}
+			idea_token = UKR_Yaroslav_Diakon_sec_val
+			on_add = {
+				ROOT = { set_country_flag = UKR_Yaroslav_Diakon_sec_val_hired }
+			}
+			on_remove = {
+				ROOT = { clr_country_flag = UKR_Yaroslav_Diakon_sec_val_hired }
+			}
+			traits = {
+				valkist
+				sec_preserver_of_culture
+			}
+		}
+	}
 }

@@ -252,6 +252,13 @@ ukraine.12.t: "Strikes in Kyiv"
 ukraine.12.d: "Due to the effects of Black Wednesday, effectively crippling our economy; many radical members of the Socialist Party of Ukraine have organized a strike to protest the rising inflation and lowering of their salaries. These workers were greatly affected by the economic collapse and have been struggling to feed their family ever since.\n\nThe aim of this protests were to reverse the capitalists' move to lower their compensation and for the government to deal with the ever rising economic issues faster. What would the government do?"
 ukraine.12.a: "Give concessions"
 ukraine.12.b: "Disperse the strikers"
+ukraine.13.t: "The [GetYear] General Elections"
+ukraine.13.d: "According to the Constitution elections are to be held every four years. The Rada's term has expired and the time has come to elect a new parliament. There are 90 seats in the Rada available and various political parties have begun their campaigns. Which one shall prevail?"
+ukraine.13.a: "Social-Democratic Party"
+ukraine.13.b: "People's Labour Party"
+ukraine.13.c: "Union of Hetmanists-Statesmen"
+ukraine.13.e: "Organization of Ukrainaian Nationalists"
+ukraine.13.f: "National-Integralist Party of Ukraine"
 
 ### Companies
 # Industrial
