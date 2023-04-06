@@ -132,6 +132,38 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.1
 			}
 		}
+		# LibSoc Tree
+		UKR_higher_education = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_higher_education"}
+			picture = jap_supremacy_of_will
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+		UKR_increased_welfare = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_increased_welfare"}
+			picture = generic_production_bonus
+			modifier = {
+				monthly_population = 0.25
+				political_power_gain = 0.1
+			}
+		}
+		UKR_welfare_state = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea UKR_welfare_state" }
+			picture = prc_low_popular_support3
+			modifier = {
+				monthly_population = 0.5
+				political_power_gain = 0.15
+			}
+		}
+		UKR_social_economy_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_social_economy_idea"}
+			picture = generic_central_management
+			modifier = {
+				global_building_slots_factor = 0.2
+				industrial_capacity_factory = 0.1
+			}
+		}
 	}
 
 	industrial_concern = {

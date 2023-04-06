@@ -308,6 +308,10 @@ country_event = { # 1936 Elections
 
   option = { # Union of Hetmanists-Statesman (SocCon or AuthDem)
     name = ukraine.13.c
+    hidden_effect = {
+      set_country_flag = UKR_had_1936_elections
+      set_country_flag = UKR_hetman_statesman_victory
+    }
   }
 
   option = { # OUN (NatPop)
@@ -349,6 +353,25 @@ country_event = { # 1936 Elections
       UKR_Volodymyr_Kubiiovych_for_val
       UKR_Leonid_Kostariv_eco_val
       UKR_Yaroslav_Diakon_sec_val
+    }
+  }
+}
+
+country_event = { # Status of the Bund
+  id = ukraine.14
+  title = ukraine.14.t
+  desc = ukraine.14.d
+  is_triggered_only = yes
+
+  option = {
+    name = ukraine.14.a
+    add_political_power = 150
+  }
+  option = {
+    name = ukraine.14.b
+    add_popularity = {
+      ideology = collectivist
+      popularity = 0.1
     }
   }
 }

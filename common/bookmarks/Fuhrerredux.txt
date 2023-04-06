@@ -194,6 +194,7 @@ bookmarks = {
       }
       focuses = {
         UKR_reinforce_crimea
+        UKR_general_elections
       }
     }
     "BLR" = {

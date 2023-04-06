@@ -231,6 +231,14 @@ spriteType = {
 		texturefile = "gfx/interface/goals/ENG_naval_conference.png"
 	}
 	spriteType = {
+		name = "GFX_goal_GBR_fate_of_unions"
+		texturefile = "gfx/interface/goals/GBR_fate_of_unions.png"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_workers_democracy"
+		texturefile = "gfx/interface/goals/generic_workers_democracy.png"
+	}
+	spriteType = {
 		name = "GFX_goal_BEA_air_force"
 		texturefile = "gfx/interface/goals/BEA_air_force.png"
 	}
