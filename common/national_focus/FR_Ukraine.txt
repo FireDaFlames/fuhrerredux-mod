@@ -1948,6 +1948,7 @@ focus_tree = {
 			set_country_flag = coalition_collectivist
 			set_country_flag = coalition_vanguardist
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 
 	# Nationalise Foreign Assets
@@ -1998,6 +1999,10 @@ focus_tree = {
         }
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_PRODUCTION
+		}
 	}
 
 	# Benefits for the Unemployed
@@ -2015,6 +2020,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = UKR_increased_welfare
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 
 	# Encourage Unionization
@@ -2037,13 +2043,14 @@ focus_tree = {
 				popularity = 0.05
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 	}
 
 	# Socialist Economy
 	focus = {
 		id = UKR_socialist_economy
 		icon = GFX_goal_state_economy
-		x = 1
+		x = 0
 		y = 1
 		cost = 6
 		available = {
@@ -2051,10 +2058,12 @@ focus_tree = {
 		}
 		prerequisite = { focus = UKR_benefits_for_the_unemployed }
 		prerequisite = { focus = UKR_encourage_unionization }
-		relative_position_id = UKR_benefits_for_the_unemployed
+		prerequisite = { focus = UKR_develop_the_rural_regions }
+		relative_position_id = UKR_encourage_unionization
 		completion_reward = {
-			add_ideas = UKR_social_economy_idea
+			add_ideas = UKR_socialist_economy_idea
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
 	# Breadbasket of Europe
@@ -2073,10 +2082,11 @@ focus_tree = {
 			add_tech_bonus = {
 				category = industry
 				category = electronics
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 			}
 		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
 	# Free Higher Education
@@ -2094,6 +2104,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = UKR_higher_education
 		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
 	# Radical Land Reform
@@ -2146,6 +2157,7 @@ focus_tree = {
         }
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
 	# Finance Small Businesses
@@ -2170,6 +2182,7 @@ focus_tree = {
 				level = 1
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
 	# Status of the Bund
@@ -2187,6 +2200,7 @@ focus_tree = {
 		completion_reward = {
 			country_event = { id = ukraine.14 days = 2 }
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 
 	# Ministry of Culture and Arts
@@ -2204,6 +2218,7 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = UKR_russian_issue
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 
 	# Review the Military Budget
@@ -2221,6 +2236,7 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = UKR_underfunded_army
 		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS }
 	}
 
 	# Ban the Nationalists
@@ -2258,6 +2274,7 @@ focus_tree = {
 				popularity = -0.1
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 
 	# Increase Social Spending
@@ -2278,6 +2295,7 @@ focus_tree = {
 				add_idea = UKR_welfare_state
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
 	# Irrigation Projects
@@ -2292,13 +2310,14 @@ focus_tree = {
 		}
 		prerequisite = { focus = UKR_increase_social_spending }
 		relative_position_id = UKR_increase_social_spending
+		search_filters = { FOCUS_FILTER_PRODUCTION }
 	}
 
 	# Rising Socialist Democracy
 	focus = {
 		id = UKR_rising_socialist_democracy
 		icon = GFX_goal_generic_workers_democracy
-		x = 1
+		x = -1
 		y = 1
 		cost = 6
 		available = {
@@ -2306,6 +2325,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = UKR_ministry_of_culture_and_arts }
 		prerequisite = { focus = UKR_status_of_the_bund }
+		prerequisite = { focus = UKR_irrigation_projects }
 		relative_position_id = UKR_ministry_of_culture_and_arts
 	}
 
@@ -2332,6 +2352,7 @@ focus_tree = {
 			add_political_power = 150
 			increase_ruling_party_popularity_by_10 = yes
 		}
+		search_filters = { FOCUS_FILTER_STABILITY }
 	}
 
 	# Develop the Rural Regions
@@ -2374,5 +2395,405 @@ focus_tree = {
 				197 = { set_state_category = town }
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	# State Taxation Reforms
+	focus = {
+		id = UKR_state_taxation_reforms
+		icon = GFX_goal_generic_austerity_measures
+		x = 0
+		y = 1
+		cost = 6
+		available = {
+			has_government = social_liberal
+		}
+		prerequisite = { focus = UKR_peoples_labour_party }
+		relative_position_id = UKR_peoples_labour_party
+		completion_reward = {
+			add_offsite_building = {
+				level = 2
+				type = industrial_complex
+			}
+		}
+	}
+
+	# Safeguard Press Freedoms
+	focus = {
+		id = UKR_safeguard_press_freedoms
+		icon = GFX_goal_big_news
+		x = 0
+		y = 1
+		cost = 6
+		available = {
+			has_government = social_liberal
+		}
+		prerequisite = { focus = UKR_state_taxation_reforms }
+		relative_position_id = UKR_state_taxation_reforms
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 100
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.05
+			}
+		}
+		search_filters = { FOCUS_FILTER_STABILITY }
+	}
+
+	# Soften Regulations
+	focus = {
+		id = UKR_soften_regulations
+		icon = GFX_goal_generic_debt_negotiations
+		x = 2
+		y = 1
+		cost = 6
+		prerequisite = { 
+			focus = UKR_peoples_labour_party
+			focus = UKR_hetmanists_statemen_union
+		}
+		relative_position_id = UKR_peoples_labour_party
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 100
+			increase_ruling_party_popularity_by_10 = yes
+		}
+		search_filters = { FOCUS_FILTER_STABILITY }
+	}
+
+	# Financial Institutions
+	focus = {
+		id = UKR_financial_institutions
+		icon = GFX_goal_generic_financial_markets
+		x = 0
+		y = 1
+		cost = 6
+		prerequisite = { focus = UKR_soften_regulations }
+		relative_position_id = UKR_soften_regulations
+		completion_reward = {
+			add_offsite_building = {
+				level = 1
+				type = industrial_complex
+			}
+			add_ideas = UKR_good_fiscal_policies
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	# Free Economy
+	focus = {
+		id = UKR_free_economy
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 0
+		y = 1
+		cost = 6
+		available = {
+			has_government = social_liberal
+		}
+		prerequisite = { focus = UKR_safeguard_press_freedoms }
+		prerequisite = { focus = UKR_develop_the_rural_regions }
+		prerequisite = { focus = UKR_financial_institutions }
+		relative_position_id = UKR_safeguard_press_freedoms
+		completion_reward = {
+			add_ideas = UKR_free_economy_idea
+		}
+		search_filters = { FOCUS_FILTER_PRODUCTION }
+	}
+
+	# Bastion of Eastern European Democracy
+	focus = {
+		id = UKR_bastion_of_eastern_european_democracy
+		icon = GFX_goal_liberty
+		x = 0
+		y = 1
+		cost = 6
+		available = {
+			has_government = social_liberal
+		}
+		prerequisite = { focus = UKR_free_economy }
+		relative_position_id = UKR_free_economy
+		completion_reward = {
+			add_political_power = 150
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+
+	# Heavy Handed Development
+	focus = {
+		id = UKR_heavy_handed_development
+		icon = GFX_goal_generic_improve_industry
+		x = -2
+		y = 1
+		cost = 6
+		available = {
+			has_government = social_liberal
+		}
+		prerequisite = { focus = UKR_bastion_of_eastern_european_democracy }
+		relative_position_id = UKR_bastion_of_eastern_european_democracy
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 500 }
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = { building = industrial_complex size > 0 include_locked = yes }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = { building = industrial_complex size > 0 include_locked = yes }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	# Farming Grants
+	focus = {
+		id = UKR_farming_grants
+		icon = GFX_goal_generic_agricultural_aid
+		x = -1
+		y = 1
+		cost = 6
+		available = {
+			has_government = social_liberal
+		}
+		prerequisite = { focus = UKR_heavy_handed_development }
+		relative_position_id = UKR_heavy_handed_development
+		completion_reward = {
+			add_offsite_building = {
+				level = 1
+				type = industrial_complex
+			}
+			add_tech_bonus = {
+				category = industry
+				bonus = 1
+				uses = 2
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	# Garner Private Capital
+	focus = {
+		id = UKR_garner_private_capital
+		icon = GFX_goal_bag_of_money
+		x = 0
+		y = 2
+		cost = 6
+		available = {
+			has_government = social_liberal
+		}
+		prerequisite = { focus = UKR_heavy_handed_development }
+		relative_position_id = UKR_heavy_handed_development
+		completion_reward = {
+			remove_ideas = UKR_underfunded_army
+			add_tech_bonus = {
+				category = infantry_weapons
+				category = artillery
+				category = armor
+				bonus = 0.75
+				uses = 2
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	# Bank of Ukraine
+	focus = {
+		id = UKR_bank_of_ukraine
+		icon = GFX_goal_generic_banking_legislation
+		x = 0
+		y = 2
+		cost = 6
+		available = {
+			has_government = social_liberal
+		}
+		prerequisite = { focus = UKR_farming_grants }
+		prerequisite = { focus = UKR_garner_private_capital }
+		relative_position_id = UKR_farming_grants
+		completion_reward = {
+			add_ideas = UKR_bank_of_ukraine_idea
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_PRODUCTION }
+	}
+
+	# Flexibilise Work Laws
+	focus = {
+		id = UKR_flexibilise_work_laws
+		icon = GFX_goal_production
+		x = 0
+		y = 1
+		cost = 6
+		available = {
+			has_government = social_liberal
+		}
+		prerequisite = { focus = UKR_bastion_of_eastern_european_democracy }
+		relative_position_id = UKR_bastion_of_eastern_european_democracy
+		completion_reward = {
+			add_ideas = UKR_consumer_and_labour_laws
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_PRODUCTION }
+	}
+
+	# Guarantee Religious Freedoms
+	focus = {
+		id = UKR_guarantee_religious_freedoms
+		icon = GFX_goal_UKR_minority_rights
+		x = -1
+		y = 1
+		cost = 6
+		available = {
+			has_government = social_liberal
+		}
+		prerequisite = { focus = UKR_flexibilise_work_laws }
+		relative_position_id = UKR_flexibilise_work_laws
+		completion_reward = {
+			add_stability = 0.05
+			increase_ruling_party_popularity_by_5 = yes
+		}
+		search_filters = { FOCUS_FILTER_STABILITY }
+	}
+
+	# Support the Unions
+	focus = {
+		id = UKR_support_the_unions
+		icon = GFX_goal_munitions_factories
+		x = 1
+		y = 1
+		cost = 6
+		available = {
+			has_government = social_liberal
+		}
+		prerequisite = { focus = UKR_flexibilise_work_laws }
+		relative_position_id = UKR_flexibilise_work_laws
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = UKR_consumer_and_labour_laws
+				add_idea = UKR_consumer_and_labour_laws_1
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_PRODUCTION }
+	}
+
+	# New Universities
+	focus = {
+		id = UKR_new_universities
+		icon = GFX_goal_foreign_diplomacy
+		x = 1
+		y = 1
+		cost = 6
+		available = {
+			has_government = social_liberal
+		}
+		prerequisite = { focus = UKR_support_the_unions }
+		prerequisite = { focus = UKR_guarantee_religious_freedoms }
+		relative_position_id = UKR_guarantee_religious_freedoms
+		completion_reward = {
+			add_research_slot = 1
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	# Reignite Ukrainian Nationalism
+	focus = {
+		id = UKR_reignite_ukrainian_nationalism
+		icon = GFX_goal_offensive_army
+		x = 2
+		y = 1
+		cost = 6
+		available = {
+			has_government = social_liberal
+		}
+		prerequisite = { focus = UKR_bastion_of_eastern_european_democracy }
+		relative_position_id = UKR_bastion_of_eastern_european_democracy
+		completion_reward = {
+			add_ideas = UKR_nationalism
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	}
+
+	# Promote the Ukrainian Language
+	focus = {
+		id = UKR_promote_the_ukrainian_language
+		icon = GFX_goal_ukraine
+		x = 0
+		y = 2
+		cost = 6
+		available = {
+			has_government = social_liberal
+		}
+		prerequisite = { focus = UKR_reignite_ukrainian_nationalism }
+		relative_position_id = UKR_reignite_ukrainian_nationalism
+		completion_reward = {
+			remove_ideas = UKR_russian_issue
+		}
+		search_filters = { FOCUS_FILTER_STABILITY }
+	}
+
+	# Protection for Minorities
+	focus = {
+		id = UKR_protection_for_minorities
+		icon = GFX_goal_conspiracy
+		x = 1
+		y = 1
+		cost = 6
+		available = {
+			has_government = social_liberal
+		}
+		prerequisite = { focus = UKR_reignite_ukrainian_nationalism }
+		relative_position_id = UKR_reignite_ukrainian_nationalism
+		completion_reward = {
+			add_ideas = UKR_minority_rights
+		}
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_ARMY_BONUS }
+	}
+
+	# Judicial Reforms
+	focus = {
+		id = UKR_judicial_reforms
+		icon = GFX_goal_DOM_The_Trial
+		x = 0
+		y = 2
+		cost = 6
+		available = {
+			has_government = social_liberal
+		}
+		prerequisite = { focus = UKR_protection_for_minorities }
+		prerequisite = { focus = UKR_promote_the_ukrainian_language }
+		relative_position_id = UKR_protection_for_minorities
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 100
+		}
+		search_filters = { FOCUS_FILTER_STABILITY }
+	}
+
+	# Ukraine, Liberal and Free
+	focus = {
+		id = UKR_ukraine_liberal_and_free
+		icon = GFX_goal_support_democracy
+		x = 0
+		y = 2
+		cost = 6
+		available = {
+			has_government = social_liberal
+		}
+		prerequisite = { focus = UKR_bank_of_ukraine }
+		prerequisite = { focus = UKR_judicial_reforms }
+		prerequisite = { focus = UKR_new_universities }
+		relative_position_id = UKR_new_universities
 	}
 }
