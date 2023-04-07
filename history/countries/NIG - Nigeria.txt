@@ -53,6 +53,15 @@ set_popularities = {
 }
 
 add_ideas = {
-	party_pop_0_60
+	party_pop_0_70
 	parliamentary_republic
+}
+
+set_cosmetic_tag = ENG_NIG
+
+if = {
+	limit = {
+		has_dlc_tfv = yes
+	}
+	add_to_tech_sharing_group = commonwealth_research
 }
