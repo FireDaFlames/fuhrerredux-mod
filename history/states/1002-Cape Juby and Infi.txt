@@ -4,7 +4,8 @@ state={
 	name="STATE_1002"
 
 	history={
-		owner = FRA
+		owner = MOR
+		add_core_of = MOR
 		buildings = {
 			infrastructure = 1
 			12857 = {
@@ -12,7 +13,7 @@ state={
 			}
 		}
 		add_claim_by = MOR
-    add_claim_by = FRA
+    	# add_claim_by = FRA
 		victory_points = {
 			12857 1 
 		}

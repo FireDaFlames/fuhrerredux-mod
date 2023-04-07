@@ -8,8 +8,8 @@ state={
 
 	history={
 		add_core_of = NGA
-		owner = ENG
-    add_claim_by = ENG
+		owner = NGA
+    	add_claim_by = ENG
 		buildings = {
 			infrastructure = 3
 			arms_factory = 0

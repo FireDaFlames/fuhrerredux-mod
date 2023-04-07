@@ -4,7 +4,8 @@ state={
 	name="STATE_863"
 
 	history={
-		owner = ENG
+		owner = SAF
+		add_claim_by = ENG
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

@@ -571,3 +571,12 @@ shared_focus = {
 		
 	}
 }
+shared_focus = {
+	id = AFR_declare_loyalty
+	icon = none
+	cost = 5
+	x = 17
+	y = 5
+	completion_reward = {
+	}
+}

@@ -185,6 +185,10 @@ if = {
 		autonomy_state = autonomy_colony
 		freedom_level = 0.5
 	}
+	set_autonomy = {
+		target = NGA
+		autonomy_state = autonomy_colony
+	}
 	else = {
 		puppet = RAJ
 		puppet = NFL
@@ -197,6 +201,7 @@ if = {
 		puppet = BEA
 		puppet = KEN
 		puppet = RHO
+		puppet = NGA
 	}
 }
 
@@ -257,6 +262,7 @@ add_to_faction = IRQ
 add_to_faction = BEA
 add_to_faction = KEN
 add_to_faction = RHO
+add_to_faction = NGA
 
 give_military_access = RAJ
 add_to_faction = RAJ		# Must be after puppet
@@ -312,6 +318,12 @@ RHO = {
 	}
 }
 
+NGA = {
+	add_opinion_modifier = {
+		target = ENG
+		modifier = IMP_no_statute
+	}
+}
 country_event = { id = uk.1 days = 1 }
 
 ENG_add_aircraft_variants = yes
