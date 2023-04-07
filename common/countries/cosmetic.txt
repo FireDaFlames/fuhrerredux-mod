@@ -578,3 +578,7 @@ BLR_LITVINISM = {
 	color = rgb { 154 69 116 }
 	color_ui = rgb { 154 69 116 }
 }
+GRE_unification = {
+	color = rgb { 147 82 173 }
+	color_ui = rgb { 147 82 173 }
+}

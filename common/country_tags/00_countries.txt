@@ -95,6 +95,7 @@ GRL = "countries/EastEuropean.txt" # Goralenland
 SLV = "countries/EastEuropean.txt" # Slovenia
 ZSR = "countries/EastEuropean.txt" # Zapadoslavian Socialist Republic
 FYR = "countries/EastEuropean.txt" # Fyrom
+ISC = "countries/EastEuropean.txt" # International Straits Commistion
 
 ### North America
 USA = "countries/WestEuropean.txt" # United States
