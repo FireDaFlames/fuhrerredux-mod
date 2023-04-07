@@ -210,7 +210,7 @@ ideas = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_minority_rights"}
 			picture = generic_victors_of_ww1
 			modifier = {
-				conscription_factor = 0.05
+				conscription_factor = 0.15
 				army_morale_factor = 0.1
 			}
 		}
@@ -219,6 +219,83 @@ ideas = {
 			picture = ger_mefo_bills_payment
 			modifier = {
 				consumer_goods_factor = -0.05
+			}
+		}
+		# AuthDem
+		UKR_statist_economy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_statist_economy"}
+			picture = state_economy
+			modifier = {
+				production_speed_buildings_factor = 0.025
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		UKR_statist_economy1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_statist_economy"}
+			picture = state_economy
+			modifier = {
+				production_speed_buildings_factor = 0.025
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		UKR_statist_economy2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_statist_economy"}
+			picture = state_economy
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+				production_lack_of_resource_penalty_factor = -0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		UKR_slava_ukraini_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_slava_ukraini_idea"}
+			picture = tfv_can_conscription_crisis
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		UKR_slava_ukraini_idea1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_slava_ukraini_idea1"}
+			picture = tfv_can_conscription_crisis
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				army_org_factor = 0.05
+				experience_gain_army_unit_factor = 0.15
+			}
+		}
+		UKR_slava_ukraini_idea2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_slava_ukraini_idea2"}
+			picture = tfv_can_conscription_crisis
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				army_org_factor = 0.05
+				experience_gain_army_unit_factor = 0.15
+				conscription_factor = 0.05
+			}
+		}
+		UKR_slava_ukraini_idea3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_slava_ukraini_idea3"}
+			picture = tfv_can_conscription_crisis
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				experience_gain_army_unit_factor = 0.15
+				conscription_factor = 0.05
+				surrender_limit = 0.1
+			}
+		}
+		UKR_agricultural_cooperatives_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_agricultural_cooperatives_idea"}
+			picture = generic_agrarian_society
+			modifier = {
+				supply_consumption_factor = -0.1
+				out_of_supply_factor = -0.2
 			}
 		}
 	}

@@ -67,7 +67,7 @@ country_event = { # Clashes Between the OUN and PNIU
   option = { # Focus on OUN
     name = ukraine.4.a
     add_popularity = {
-      ideology = valkist
+      ideology = national_populist
       popularity = 0.05
     }
   }
@@ -87,7 +87,7 @@ country_event = { # Clashes Between the OUN and PNIU
       popularity = 0.03
     }
     add_popularity = {
-      ideology = valkist
+      ideology = national_populist
       popularity = 0.03
     }
   }
@@ -103,7 +103,7 @@ country_event = { # Dontsov Accusses Government of Wide-Scale Corruption
   option = { # The government should answer these allegations
     name = ukraine.5.a
     add_popularity = {
-      ideology = valkist
+      ideology = national_populist
       popularity = 0.05
     }
   }
@@ -130,7 +130,7 @@ country_event = { # Rumours of President Hankevych's Death
   option = { # The President ignores the matter
     name = ukraine.6.b
     add_popularity = {
-      ideology = valkist
+      ideology = national_populist
       popularity = 0.05
     }
     add_popularity = {
@@ -207,7 +207,7 @@ country_event = { # OUN Supporters flock to NIPU
       popularity = -0.15
     }
     add_popularity = {
-      ideology = valkist
+      ideology = national_populist
       popularity = 0.15
     }
   }
@@ -226,7 +226,7 @@ country_event = { # Attempted Assassination of Konovalets!
     add_stability = 0.05
     set_country_flag = UKR_nipu_dead
     add_popularity = {
-      ideology = valkist
+      ideology = national_populist
       popularity = -0.15
     }
   }
@@ -308,9 +308,27 @@ country_event = { # 1936 Elections
 
   option = { # Union of Hetmanists-Statesman (SocCon or AuthDem)
     name = ukraine.13.c
+    set_politics = {
+      ruling_party = social_conservative
+      elections_allowed = yes
+    }
+    increase_ruling_party_popularity_by_15 = yes
+    remove_every_minister = yes
+    custom_effect_tooltip = start_authdem_coalition_tt
+    add_popularity = {
+      ideology = authoritarian_democrat
+      popularity = 0.05
+    }
+    add_ideas = {
+      UKR_Vyacheslav_Lypynsky_hog_sco
+      UKR_Dmitri_Doroshenko_for_ade
+      UKR_Volodymyr_Zalozetskyi_Sas_eco_sco
+      UKR_Igor_Kistyakovsky_sec_ade
+    }
     hidden_effect = {
       set_country_flag = UKR_had_1936_elections
       set_country_flag = UKR_hetman_statesman_victory
+      set_country_flag = coalition_authoritarian_democrat
     }
   }
 
@@ -343,7 +361,7 @@ country_event = { # 1936 Elections
       NOT = { has_country_flag = UKR_nipu_dead }
     }
     set_politics = {
-      ruling_party = valkist
+      ruling_party = national_populist
       elections_allowed = no
     }
     increase_ruling_party_popularity_by_15 = yes
@@ -373,5 +391,48 @@ country_event = { # Status of the Bund
       ideology = collectivist
       popularity = 0.1
     }
+  }
+}
+
+country_event = { # Monarchy Referendum
+  id = ukraine.15
+  title = ukraine.15.t
+  desc = ukraine.15.d
+  is_triggered_only = yes
+
+  option = {
+    name = ukraine.15.a
+    remove_every_minister = yes
+    add_ideas = {
+      UKR_Vyacheslav_Lypynsky_hog_sco
+      UKR_Mykhailo_Savur_Tsypriianovych_for_sco
+      UKR_Volodymyr_Zalozetskyi_Sas_eco_sco
+      UKR_Vasyl_Kuchabskyi_sec_sco
+    }
+    UKR_Wilhelm_Franz_von_Habsburg_Lorithgen = {
+      set_character_name = "King Vasyl I"
+    }
+    hidden_effect = {
+      UKR_create_monarchy_vasyl = yes
+    }
+  }
+  option = {
+    name = ukraine.15.b
+    clr_country_flag = coalition_authoritarian_democrat
+    set_country_flag = coalition_social_conservative
+    set_politics = {
+      ruling_party = authoritarian_democrat
+      elections_allowed = no
+    }
+    increase_ruling_party_popularity_by_10 = yes
+    remove_every_minister = yes
+    add_ideas = {
+      UKR_Serhii_Shemet_hog_ade
+      UKR_Dmitri_Doroshenko_for_ade
+      UKR_Oleksandr_Skoropys_Yoltukhovskyi_eco_ade
+      UKR_Igor_Kistyakovsky_sec_ade
+      absolute_monarchy
+    }
+    set_cosmetic_tag = UKR_KINGDOM
   }
 }

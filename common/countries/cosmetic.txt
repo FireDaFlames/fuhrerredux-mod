@@ -578,3 +578,7 @@ BLR_LITVINISM = {
 	color = rgb { 154 69 116 }
 	color_ui = rgb { 154 69 116 }
 }
+UKR_KINGDOM = {
+	color = rgb { 153 61 0 }
+	color_ui = rgb { 153 61 0 }
+}

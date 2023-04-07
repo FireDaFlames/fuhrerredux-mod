@@ -2311,6 +2311,9 @@ focus_tree = {
 		prerequisite = { focus = UKR_increase_social_spending }
 		relative_position_id = UKR_increase_social_spending
 		search_filters = { FOCUS_FILTER_PRODUCTION }
+		completion_reward = {
+			custom_effect_tooltip = UKR_irrigation_projects_tt
+		}
 	}
 
 	# Rising Socialist Democracy
@@ -2448,6 +2451,12 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 6
+		available = {
+			OR = {
+				has_government = social_liberal
+				UKR_hetmanists_statemen_in_power = yes
+			}
+		}
 		prerequisite = { 
 			focus = UKR_peoples_labour_party
 			focus = UKR_hetmanists_statemen_union
@@ -2468,6 +2477,12 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 6
+		available = {
+			OR = {
+				has_government = social_liberal
+				UKR_hetmanists_statemen_in_power = yes
+			}
+		}
 		prerequisite = { focus = UKR_soften_regulations }
 		relative_position_id = UKR_soften_regulations
 		completion_reward = {
@@ -2513,6 +2528,7 @@ focus_tree = {
 		prerequisite = { focus = UKR_free_economy }
 		relative_position_id = UKR_free_economy
 		completion_reward = {
+			add_war_support = 0.1
 			add_political_power = 150
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -2526,13 +2542,37 @@ focus_tree = {
 		y = 1
 		cost = 6
 		available = {
+			has_capitulated = no
 			has_government = social_liberal
 		}
 		prerequisite = { focus = UKR_bastion_of_eastern_european_democracy }
 		relative_position_id = UKR_bastion_of_eastern_european_democracy
 		completion_reward = {
 			random_owned_controlled_state = {
-				prioritize = { 500 }
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = { building = arms_factory size > 0 include_locked = yes }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = { building = arms_factory size > 0 include_locked = yes }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
 					free_building_slots = { building = industrial_complex size > 0 include_locked = yes }
@@ -2563,7 +2603,7 @@ focus_tree = {
 	# Farming Grants
 	focus = {
 		id = UKR_farming_grants
-		icon = GFX_goal_generic_agricultural_aid
+		icon = GFX_goal_generic_agriculture2
 		x = -1
 		y = 1
 		cost = 6
@@ -2606,6 +2646,19 @@ focus_tree = {
 				category = armor
 				bonus = 0.75
 				uses = 2
+			}
+			random_owned_controlled_state = {
+				prioritize = { 500 }
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = { building = arms_factory size > 0 include_locked = yes }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -2795,5 +2848,429 @@ focus_tree = {
 		prerequisite = { focus = UKR_judicial_reforms }
 		prerequisite = { focus = UKR_new_universities }
 		relative_position_id = UKR_new_universities
+	}
+
+	# Strengthen our Grip
+	focus = {
+		id = UKR_strengthen_our_grip
+		icon = GFX_goal_DEI_focus_disband_volksraad
+		x = 0
+		y = 1
+		cost = 6
+		available = {
+			UKR_hetmanists_statemen_in_power = yes
+		}
+		prerequisite = { focus = UKR_hetmanists_statemen_union }
+		relative_position_id = UKR_hetmanists_statemen_union
+		completion_reward = {
+			if = {
+				limit = {
+					has_intelligence_agency = no
+				}
+				create_intelligence_agency = yes
+			}
+
+			if = {
+        limit = { 
+          NOT = { has_done_agency_upgrade = upgrade_passive_defense }
+        }
+        upgrade_intelligence_agency = upgrade_passive_defense
+      }
+      if = {
+        limit = {
+          NOT = { has_done_agency_upgrade = upgrade_anti_partisan }
+        }
+        upgrade_intelligence_agency = upgrade_anti_partisan
+      }
+      if = {
+        limit = {
+          NOT = { has_done_agency_upgrade = upgrade_interrogation_techniques }
+        }
+        upgrade_intelligence_agency = upgrade_interrogation_techniques
+      }
+      if = {
+        limit = {
+          NOT = { has_done_agency_upgrade = upgrade_psycho_warfare }
+        }
+        upgrade_intelligence_agency = upgrade_psycho_warfare
+      }
+		}
+	}
+
+	# Discredit the Socialist Opposition
+	focus = {
+		id = UKR_discredit_the_socialist_opposition
+		icon = GFX_HOL_crackdown_syndie
+		x = 2
+		y = 1
+		cost = 6
+		available = {
+			UKR_hetmanists_statemen_in_power = yes
+		}
+		prerequisite = { focus = UKR_hetmanists_statemen_union }
+		relative_position_id = UKR_hetmanists_statemen_union
+		completion_reward = {
+			add_popularity = {
+				ideology = social_democrat
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = -0.1
+			}
+		}
+	}
+
+	# The Monarchy Referendum
+	focus = {
+		id = UKR_the_monarchy_referendum
+		icon = GFX_goal_UKR_king
+		x = 0
+		y = 1
+		cost = 6
+		available = {
+			UKR_hetmanists_statemen_in_power = yes
+		}
+		prerequisite = { focus = UKR_strengthen_our_grip }
+		prerequisite = { focus = UKR_discredit_the_socialist_opposition }
+		relative_position_id = UKR_strengthen_our_grip
+		completion_reward = {
+			country_event = { id = ukraine.15 days = 1 }
+		}
+	}
+
+	# Statist Economic Management
+	focus = {
+		id = UKR_statist_economic_management
+		icon = GFX_goal_economic_control
+		x = 0
+		y = 1
+		cost = 6
+		available = {
+			UKR_hetmanists_statemen_in_power = yes
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_discredit_the_socialist_opposition }
+		relative_position_id = UKR_discredit_the_socialist_opposition
+		completion_reward = {
+			add_ideas = UKR_statist_economy
+			202 = {
+				if = {
+          limit = {
+            free_building_slots = {
+              building = arms_factory
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_extra_state_shared_building_slots = 1
+          add_building_construction = {
+            type = arms_factory
+            level = 1
+            instant_build = yes
+          }
+        }
+			}
+		}
+	}
+
+	# Corporate Economy
+	focus = {
+		id = UKR_corporate_economy
+		icon = GFX_goal_collaborate_local_elites
+		x = 1
+		y = 1
+		cost = 6
+		available = {
+			UKR_hetmanists_statemen_in_power = yes
+			has_capitulated = no
+		}
+		prerequisite = { focus = UKR_the_monarchy_referendum }
+		prerequisite = { focus = UKR_financial_institutions }
+		prerequisite = { focus = UKR_statist_economic_management }
+		relative_position_id = UKR_the_monarchy_referendum
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = UKR_statist_economy
+				add_idea = UKR_statist_economy1
+			}
+		}
+	}
+
+	# Glory to Ukraine!
+	focus = {
+		id = UKR_slava_ukraini
+		icon = GFX_goal_UKR_knights_of_the_hetman
+		x = 1
+		y = 1
+		cost = 6
+		available = {
+			UKR_hetmanists_statemen_in_power = yes
+		}
+		prerequisite = { focus = UKR_corporate_economy }
+		relative_position_id = UKR_corporate_economy
+		completion_reward = {
+			add_ideas = UKR_slava_ukraini_idea
+		}
+	}
+
+	# Church Backing
+	focus = {
+		id = UKR_church_backing
+		icon = GFX_goal_generic_orthodox_defense
+		x = 0
+		y = 1
+		cost = 6
+		available = {
+			UKR_hetmanists_statemen_in_power = yes
+		}
+		prerequisite = { focus = UKR_slava_ukraini }
+		relative_position_id = UKR_slava_ukraini
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = UKR_statist_economy1
+				add_idea = UKR_statist_economy2
+			}
+		}
+	}
+
+	# Censor the Press
+	focus = {
+		id = UKR_censor_the_press
+		icon = GFX_goal_generic_media_controls
+		x = -1
+		y = 1
+		cost = 6
+		available = {
+			UKR_hetmanists_statemen_in_power = yes
+		}
+		prerequisite = { focus = UKR_church_backing }
+		relative_position_id = UKR_church_backing
+		completion_reward = {
+			add_stability = 0.1
+			increase_ruling_party_popularity_by_10 = yes
+		}
+	}
+
+	# Education Programmes
+	focus = {
+		id = UKR_education_programmes
+		icon = GFX_focus_generic_military_academy
+		x = 0
+		y = 1
+		cost = 6
+		available = {
+			UKR_hetmanists_statemen_in_power = yes
+		}
+		prerequisite = { focus = UKR_censor_the_press }
+		relative_position_id = UKR_censor_the_press
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	# Administrative Language Reforms
+	focus = {
+		id = UKR_administrative_language_reforms
+		icon = GFX_goal_agency
+		x = 1
+		y = 1
+		cost = 6
+		available = {
+			UKR_hetmanists_statemen_in_power = yes
+		}
+		prerequisite = { focus = UKR_church_backing }
+		relative_position_id = UKR_church_backing
+		completion_reward = {
+			remove_ideas = UKR_russian_issue
+			add_political_power = 100
+		}
+	}
+
+	# Nationalist Fervour
+	focus = {
+		id = UKR_nationalist_fervour
+		icon = GFX_goal_national_mobilization
+		x = 2
+		y = 1
+		cost = 6
+		available = {
+			UKR_hetmanists_statemen_in_power = yes
+		}
+		prerequisite = { focus = UKR_slava_ukraini }
+		relative_position_id = UKR_slava_ukraini
+		completion_reward = {
+			add_war_support = 0.1
+			swap_ideas = {
+				remove_idea = UKR_slava_ukraini_idea
+				add_idea = UKR_slava_ukraini_idea1
+			}
+		}
+	}
+
+	# Three Year Plan
+	focus = {
+		id = UKR_three_year_plan
+		icon = GFX_goal_generic_authoritarian_government
+		x = 0
+		y = 2
+		cost = 6
+		available = {
+			UKR_hetmanists_statemen_in_power = yes
+		}
+		prerequisite = { focus = UKR_nationalist_fervour }
+		relative_position_id = UKR_nationalist_fervour
+		completion_reward = {
+			custom_effect_tooltip = UKR_three_year_plan_tt
+		}
+	}
+
+	# Reform the Conscription System
+	focus = {
+		id = UKR_reform_the_conscription_system
+		icon = GFX_goal_generic_army_cooperation
+		x = -2
+		y = 1
+		cost = 6
+		available = {
+			UKR_hetmanists_statemen_in_power = yes
+		}
+		prerequisite = { focus = UKR_three_year_plan }
+		relative_position_id = UKR_three_year_plan 
+		completion_reward = {
+			add_manpower = 10000
+			army_experience = 20
+			swap_ideas = {
+				remove_idea = UKR_slava_ukraini_idea1
+				add_idea = UKR_slava_ukraini_idea2
+			}
+		}
+	}
+
+	# State Owned Arms Industries
+	focus = {
+		id = UKR_state_owned_arms_industries
+		icon = GFX_goal_Focus_Military_Mobilisation
+		x = 0
+		y = 1
+		cost = 6
+		available = {
+			UKR_hetmanists_statemen_in_power = yes
+		}
+		prerequisite = { focus = UKR_three_year_plan }
+		relative_position_id = UKR_three_year_plan
+		completion_reward = {
+			random_owned_controlled_state = {
+				if = {
+          limit = {
+						is_core_of = ROOT
+            free_building_slots = {
+              building = arms_factory
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_extra_state_shared_building_slots = 1
+          add_building_construction = {
+            type = arms_factory
+            level = 1
+            instant_build = yes
+          }
+        }
+			}
+			random_owned_controlled_state = {
+				if = {
+          limit = {
+						is_core_of = ROOT
+            free_building_slots = {
+              building = arms_factory
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_extra_state_shared_building_slots = 1
+          add_building_construction = {
+            type = arms_factory
+            level = 1
+            instant_build = yes
+          }
+        }
+			}
+			random_owned_controlled_state = {
+				if = {
+          limit = {
+						is_core_of = ROOT
+            free_building_slots = {
+              building = arms_factory
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_extra_state_shared_building_slots = 1
+          add_building_construction = {
+            type = arms_factory
+            level = 1
+            instant_build = yes
+          }
+        }
+			}
+			random_owned_controlled_state = {
+				if = {
+          limit = {
+						is_core_of = ROOT
+            free_building_slots = {
+              building = arms_factory
+              size > 0
+              include_locked = yes
+            }
+          }
+          add_extra_state_shared_building_slots = 1
+          add_building_construction = {
+            type = arms_factory
+            level = 1
+            instant_build = yes
+          }
+        }
+			}
+		}
+	}
+
+	# Agricultural Cooperatives
+	focus = {
+		id = UKR_agricultural_cooperatives
+		icon = GFX_goal_generic_agriculture
+		x = 2
+		y = 1
+		cost = 6
+		available = {
+			UKR_hetmanists_statemen_in_power = yes
+		}
+		prerequisite = { focus = UKR_three_year_plan }
+		relative_position_id = UKR_three_year_plan
+		completion_reward = {
+			add_ideas = UKR_agricultural_cooperatives_idea
+		}
+	}
+
+	# Legacy of Kieven Rus
+	focus = {
+		id = UKR_legacy_of_kievan_rus
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		x = 0
+		y = 1
+		cost = 6
+		available = {
+			UKR_hetmanists_statemen_in_power = yes
+		}
+		prerequisite = { focus = UKR_reform_the_conscription_system }
+		prerequisite = { focus = UKR_state_owned_arms_industries }
+		prerequisite = { focus = UKR_agricultural_cooperatives }
+		relative_position_id = UKR_state_owned_arms_industries
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = UKR_slava_ukraini_idea2
+				add_idea = UKR_slava_ukraini_idea3
+			}
+		}
 	}
 }

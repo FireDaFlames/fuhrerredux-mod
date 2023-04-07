@@ -231,6 +231,26 @@ spriteType = {
 		texturefile = "gfx/interface/goals/ENG_naval_conference.png"
 	}
 	spriteType = {
+		name = "GFX_goal_agency"
+		texturefile = "gfx/interface/goals/agency.png"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_media_controls"
+		texturefile = "gfx/interface/goals/generic_media_controls.png"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_orthodox_defense"
+		texturefile = "gfx/interface/goals/generic_orthodox_defense.png"
+	}
+	spriteType = {
+		name = "GFX_goal_UKR_king"
+		texturefile = "gfx/interface/goals/UKR_king.png"
+	}
+	spriteType = {
+		name = "GFX_goal_UKR_knights_of_the_hetman"
+		texturefile = "gfx/interface/goals/UKR_knights_of_the_hetman.png"
+	}
+	spriteType = {
 		name = "GFX_goal_GBR_fate_of_unions"
 		texturefile = "gfx/interface/goals/GBR_fate_of_unions.png"
 	}

@@ -1,0 +1,5 @@
+UKR_breadbasket_of_europe_cat = {
+  allowed = { original_tag = UKR }
+  icon = GFX_decision_category_border_war
+  priority = 100
+}
