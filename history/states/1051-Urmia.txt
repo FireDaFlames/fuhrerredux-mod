@@ -1,17 +1,19 @@
 
 state={
-	id=1047
-	name="STATE_1047"
+	id=1051
+	name="STATE_1051"
 
 	history={
-		owner = IRQ
-		add_core_of = IRQ
+		owner = PER
+		add_core_of = PER
+		add_claim_by = ARM
+		add_claim_by = KUR
 		victory_points = {
-			2089 3 
+			7604 3 
 		}
 	}
 	provinces={
-		78 2004 2089 7977 8001 12726 
+		1636 7604 13120 
 	}
 	manpower=0
 	buildings_max_level_factor=1.000
