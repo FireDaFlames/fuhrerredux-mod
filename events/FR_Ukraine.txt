@@ -243,7 +243,7 @@ country_event = { # Strikes!
     name = ukraine.12.a
     add_political_power = -100
   }
-  options = { # Disperse the strikers
+  option = { # Disperse the strikers
     name = ukraine.12.b
     add_popularity = {
       ideology = libertarian_socialist

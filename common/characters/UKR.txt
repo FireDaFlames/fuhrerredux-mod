@@ -3,7 +3,7 @@ characters = {
 		name = "Wilhelm Franz von Habsburg-Lorithgen"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/UKR/UKR_Wilhelm_Franz_von_Habsburg_Lorithgen.png"
+				large = "gfx/leaders/UKR/Portrait_UKR_Wilhelm_Franz_von_Habsburg_Lorithgen.png"
 			}
 		}
 	}
@@ -152,10 +152,6 @@ characters = {
 			ideology = paternal_autocrat_subtype
 			traits = { }
 		}
-		country_leader = {
-			ideology = national_populist
-			traits = { }
-		}
 	}
 	UKR_Dmitri_Dontsov = {
 		name = "Dmitri Dontsov"
@@ -166,6 +162,10 @@ characters = {
 			}
 		}
 		country_leader = {
+			ideology = national_populist_subtype
+			traits = { }
+		}
+		country_leader = {
 			ideology = valkist_subtype
 			traits = { }
 		}
@@ -173,17 +173,17 @@ characters = {
 			cost = 150
 			slot = head_of_government
 			available = { 
-				hidden_trigger = { has_country_flag = UKR_Dmitri_Dontsov_hog_val_hired }
+				hidden_trigger = { has_country_flag = UKR_Dmitri_Dontsov_hog_npo_hired }
 			}
-			idea_token = UKR_Dmitri_Dontsov_hog_val
+			idea_token = UKR_Dmitri_Dontsov_hog_npo
 			on_add = {
-				ROOT = { set_country_flag = UKR_Dmitri_Dontsov_hog_val_hired }
+				ROOT = { set_country_flag = UKR_Dmitri_Dontsov_hog_npo_hired }
 			}
 			on_remove = {
-				ROOT = { clr_country_flag = UKR_Dmitri_Dontsov_hog_val_hired }
+				ROOT = { clr_country_flag = UKR_Dmitri_Dontsov_hog_npo_hired }
 			}
 			traits = {
-				valkist
+				national_populist
 				hog_flamboyant_tough_guy
 			}
 		}
