@@ -4,6 +4,9 @@ state={
 	provinces={
 		7953 5005
 	}
+	resources = {
+		oil = 10
+	}
 	history = {
 		owner = PER
 		add_core_of = PER
@@ -13,8 +16,15 @@ state={
 		victory_points = {
 			5005 1 
 		}
-	}	
-	manpower=0
+		buildings = {
+			infrastructure = 3
+			5005 = {
+				naval_base = 1
+			}
+		}
+	}
+	state_category = rural
+	manpower=41092
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }
