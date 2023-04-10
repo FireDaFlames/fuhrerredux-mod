@@ -1,6 +1,4 @@
 spriteTypes = {
-
-## SIAM ADDED THROUGH MERGING PHASE 2
 spriteType = {
 		name = "GFX_balance_in_power"
 		texturefile = "gfx/interface/goals/GFX_balance_in_power.png"
@@ -225,7 +223,14 @@ spriteType = {
 		name = "GFX_japanese_siamese_alliance"
 		texturefile = "gfx/interface/goals/Focus_japanese_siamese_alli.png"
 	}
-
+	spriteType = {
+		name = "GFX_goal_generic_attack_belarus.png"
+		texturefile = "gfx/interface/goals/generic_attack_belarus.png"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_attack_hungary.png"
+		texturefile = "gfx/interface/goals/generic_attack_hungary.png"
+	}
 	spriteType = {
 		name = "GFX_goal_ENG_naval_conference"
 		texturefile = "gfx/interface/goals/ENG_naval_conference.png"
