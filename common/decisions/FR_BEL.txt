@@ -30,7 +30,7 @@ BEL_economy = {
 	}
 }
 BEL_congo_decisions = {
-		BEL_congo_timer = {
+	BEL_congo_timer = {
 		name = BEL_congo_timer
 		icon = generic_political_discourse
 		days_mission_timeout = 1096
@@ -47,9 +47,12 @@ BEL_congo_decisions = {
 		complete_effect = {
 		}
 		timeout_effect = {
-			country_event = {
-				id = bca.2
+			BEL = {
+				country_event = {
+					id = belcog.2
+				}
 			}
+
 		}
 	}
 }

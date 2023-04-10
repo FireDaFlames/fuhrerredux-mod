@@ -302,7 +302,7 @@ HAN_kingdom = {
 	color = rgb { 220 220 73 }
 	color_ui = rgb { 242 255 73 }
 }
-COG_BEL = { 
+COG_BCA = { 
 	color = rgb { 193 171 8 }
 	color_ui = rgb { 193 171 8 }
 }
@@ -357,6 +357,10 @@ PIE_socialist = {
 SCI_nationalist = {
 	color = rgb { 59 148 65 }
 	color_ui = rgb { 74 186 82 }
+}
+LBA_ITA = {
+	color = rgb { 73 125 78 }
+	color_ui = rgb { 88 165 82 }
 }
 LBA_colony = {
 	color = rgb { 72 125 78 }

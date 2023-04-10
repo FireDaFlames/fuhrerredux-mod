@@ -22,18 +22,27 @@ set_politics = {
 	elections_allowed = no
 }
 
+if = {
+	limit = {
+		COG = {
+			is_puppet_of = BEL
+		}
+	}
+	set_cosmetic_tag = COG_BCA
+}
+
 set_popularities = {
-  vanguardist = 0
-  collectivist = 0
-  libertarian_socialist = 0
-  social_democrat = 0
-  social_liberal = 0
-  market_liberal = 0
-  social_conservative = 0
-  authoritarian_democrat = 100
-  paternal_autocrat = 0
-  national_populist = 0
-  valkist = 0
+	vanguardist = 0
+	collectivist = 0
+	libertarian_socialist = 0
+	social_democrat = 0
+	social_liberal = 0
+	market_liberal = 0
+	social_conservative = 0
+	authoritarian_democrat = 100
+	paternal_autocrat = 0
+	national_populist = 0
+	valkist = 0
 }
 
 add_ideas = {

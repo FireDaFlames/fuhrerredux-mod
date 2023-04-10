@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 
 ##################################
 #### AFRICAN REWORK BY thanasislanaras, "Legendary Kebab Remover"
@@ -32,7 +32,7 @@ RHO_national_populist_ADJ: "Rhodesian"
 RHO_national_populist_DEF: "Rhodesia"
 
 
-# NIG (now NG)
+# NIG (now NGA)
 NIG_social_democrat: "Nigeria"
 NIG_social_democrat_ADJ: "Nigerian"
 NIG_social_democrat_DEF: "The Nigerian Republic"
@@ -58,6 +58,6 @@ NIG_national_populist: "Nigeria"
 NIG_national_populist_ADJ: "Nigerian"
 NIG_national_populist_DEF: "Rhodesia"
 
-ENG_NGA_social_conservative: "British West Africa"
-ENG_NGA_social_conservative_DEF: "The British West Africa"
-ENG_NGA_social_conservative_ADJ: "British-West-African"
+ENG_NGA: "British West Africa"
+ENG_NGA_DEF: "The British West Africa"
+ENG_NGA_ADJ: "British-West-African"

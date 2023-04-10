@@ -3,7 +3,7 @@
 #############################
 
 add_namespace = bel
-add_namespace = bca
+add_namespace = belcog
 
 country_event = { #Intro
 	id = bel.1
@@ -26,8 +26,8 @@ country_event = { #Intro
 }
 
 country_event = { #Belgisch Centraal-Afrika intro
-	id = bca.1
-	immediate = {log = "[GetDateText]: [Root.GetName]: event bca.1"}
+	id = belcog.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event belcog.1"}
 	title = bca.1.t
 	desc = bca.1.d
 	picture = GFX_BEL_bca_intro
@@ -35,11 +35,18 @@ country_event = { #Belgisch Centraal-Afrika intro
 	fire_only_once = yes
 
 	trigger = {
-		tag = BEL
+		AND = {
+			tag = BEL
+			COG = {
+				exists = yes
+			}
+			NOT = {
+				tag = GER
+			}
+		}
 	}
 
 	mean_time_to_happen = { days = 7 }
-
 	option = {
 		name = bca.1.a
 		custom_effect_tooltip = bcaintro_tt
@@ -51,14 +58,13 @@ country_event = { #Belgisch Centraal-Afrika intro
 }
 
 country_event = { #you are dumb as fuck
-	id = bca.2
-	immediate = {log = "[GetDateText]: [Root.GetName]: event bca.2"}
+	id = belcog.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event belcog.2"}
 	title = bca.2.t
 	desc = bca.2.d
 	picture = GFX_BEL_bca_intro
-
+	
 	fire_only_once = yes
-
 	option = {
 		name = bca.2.a
 		annex_country = {
@@ -71,8 +77,8 @@ country_event = { #you are dumb as fuck
 }
  
 state_event = { #socialist belgium // might me changed later
-	id = bca.3
-	immediate = {log = "[GetDateText]: [Root.GetName]: event bca.3"}
+	id = belcog.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event belcog.3"}
 	title = bca.3.t
 	desc = bca.3.d
 	picture = GFX_BEL_bca_intro

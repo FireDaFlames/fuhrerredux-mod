@@ -21,7 +21,7 @@ if = {
 		}
 	}
 	LBA = {
-		set_cosmetic_tag = LBA_colony
+		set_cosmetic_tag = LBA_ITA
 		add_ideas = {
 			limited_conscription
 			colonial_government
