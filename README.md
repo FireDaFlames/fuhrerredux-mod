@@ -8,14 +8,18 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/dax0102/fuhrerredux-mod?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/dax0102/fuhrerredux-mod?style=social)
 # Führerredux Mod
-The required files for the mod Fuhrerredux for the Paradox game Hearts of Iron IV.
+The required files for the mod Fuhrerredux for the Paradox game: Hearts of Iron IV.
 ## How to install the github version?
-1)Create a new mod through the Paradox Launcher                   
-2)Download the zip folder using the Green Button              
-3)Unzip the zip folder              
-4)Take all of its contents and put them in the folder of the mod you created previously           
-5)When prompted to replace files, say yes
-6)In the mod file, there should be a .mod file with the name of the mod you created. Edit this file to include the following in the end:
+<details><summary>Click here to show instructions</summary>
+<ul>
+  <li>Create a new mod through the Paradox Launcher</li>                  
+  <li>Download the zip folder using the Green Button</li>             
+  <li>Unzip the zip folder</li>
+  <li>Take all of its contents and put them in the folder of the mod you created previously</li>
+  <li>When prompted to replace files, say yes</li>
+  <li>In the mod file, there should be a .mod file with the name of the mod you created. Edit this file to include the following in the end:</li>
+</ul>
+
 <details><summary>CLICK ME</summary>
 <p>
 
@@ -82,12 +86,13 @@ replace_path="tests"
 </p>
 </details>
 
-Note: you need to **include them**, so you don't need to delete anything else.
+**Note:** you need to **include them**, so you don't need to delete anything else.
+</details>
+
 ## How to become a developer?
-To become a developer, you need to join our Discord Server and do the application on the #recruitment channel! Then dm @dax#0254, so he can review and accept your
-application!
+To become a developer, you need to join our Discord Server and see `#recruitment`!
 # 
-Note: You can always get rejected, it is not guaranteed that you will get accepted.
+<sup>Note: You can always get rejected, it is not guaranteed that you will get accepted.</sup>
 ## But where's the link?
 Here is the link:
 https://discord.gg/dVT7bHNVgY
@@ -95,20 +100,30 @@ https://discord.gg/dVT7bHNVgY
 We appreciate any help we can get, if you have any ideas for a specific country or path or any form of icons/flags/portraits/localisation, that you fell we could use, consider joining our discord and telling us about it!
 We regularly post teasers on our discord server about new content!
 # TODO LIST
-## Work In Progress
+## Work-In-Progress
 - Greece
 - Japan
 - Serbia
-- Finland (new focus branch)
 - Hungary
-- Brazil
 - Bulgaria
+- Brazil
+- Belgium
+- African Countries
+
 ## Planned
+- Germany
 - Ukraine
-- Latvia
-- Dutch Royalists
+- Mashriq
+- Arabia
+- Albania
+
 ## Released
-- Belarus
+- Belarus 
+- Finland (new focus branch)
+
+## No updates/paused
+- Latvia
+- Dutch exiles
 
 #### if your read this far, congrats!
 ##### ENJOY A TRIANGLE
