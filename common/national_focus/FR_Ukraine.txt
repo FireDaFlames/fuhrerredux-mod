@@ -2848,6 +2848,13 @@ focus_tree = {
 		prerequisite = { focus = UKR_judicial_reforms }
 		prerequisite = { focus = UKR_new_universities }
 		relative_position_id = UKR_new_universities
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = UKR_nationalism
+				add_idea = UKR_nationalism1
+			}
+			custom_effect_tooltip = UKR_foreign_policy_unlocked_tt
+		}
 	}
 
 	# Strengthen our Grip
@@ -3272,5 +3279,643 @@ focus_tree = {
 				add_idea = UKR_slava_ukraini_idea3
 			}
 		}
+	}
+
+	######################################################
+  #                                                    #
+  #                   FOREIGN POLICY                   #
+  #                                                    #
+  ######################################################
+
+	# Rising Tensions
+	focus = {
+		id = UKR_rising_tensions
+		icon = GFX_goal_flames_of_rebellion
+		x = 2
+		y = 2
+		cost = 6
+		available = {
+			threat > 0.4
+			has_capitulated = no
+			is_subject = no
+		}
+		relative_position_id = UKR_rising_socialist_democracy
+		completion_reward = {
+			add_war_support = 0.1
+			increase_conscription = yes
+		}
+	}
+
+	# Western Claims
+	focus = {
+		id = UKR_western_claims
+		icon = GFX_goal_generic_treaty_fails
+		x = 4
+		y = 1
+		cost = 6
+		available = {
+			has_army_manpower = {
+				size > 250000
+			}
+		}
+		prerequisite = { focus = UKR_rising_tensions }
+		relative_position_id = UKR_rising_tensions
+		completion_reward = {
+			increase_mobilisation = yes
+		}
+	}
+
+	# Plebiscite in Galicia
+	focus = {
+		id = UKR_plebiscite_in_galicia
+		icon = GFX_goal_poland
+		x = -1
+		y = 1
+		cost = 6
+		available = {
+			country_exists = POL
+			NOT = { has_war_with = POL }
+			POL = {
+				owns_state = 89
+				owns_state = 91
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = { country_exists = POL }
+				POL = {
+					NOT = {
+						owns_state = 89
+						owns_state = 91
+					}
+					is_subject_of = ROOT
+				}
+			}
+		}
+		prerequisite = { focus = UKR_western_claims }
+		relative_position_id = UKR_western_claims
+	}
+
+	# Protection for Bucovina and Bessarabia
+	focus = {
+		id = UKR_protection_for_bucovina_and_bessarabia
+		icon = GFX_focus_rom_preserve_romania
+		x = 1
+		y = 1
+		cost = 6
+		available = {
+			country_exists = ROM
+			NOT = { has_war_with = ROM }
+			ROM = {
+				owns_state = 80
+				owns_state = 78
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = { country_exists = ROM }
+				ROM = {
+					NOT = {
+						owns_state = 80
+						owns_state = 78
+					}
+					is_subject_of = ROOT
+				}
+			}
+		}
+		prerequisite = { focus = UKR_western_claims }
+		relative_position_id = UKR_western_claims
+	}
+
+	# Referendum for Transcarpathia
+	focus = {
+		id = UKR_referendum_for_transcarpathia
+		icon = GFX_goal_generic_mountain_warfare
+		x = 0
+		y = 2
+		cost = 6
+		available = {
+			country_exists = SLO
+			NOT = { has_war_with = SLO }
+			SLO = {
+				owns_state = 73
+			}
+		}
+		bypass = {
+			OR = {
+				owns_state = 73
+				NOT = { country_exists = SLO }
+				SLO = {
+					is_subject_of = ROOT
+				}
+			}
+		}
+		prerequisite = { focus = UKR_western_claims }
+		relative_position_id = UKR_western_claims
+	}
+
+	# Meet with the Entente
+	focus = {
+		id = UKR_meet_with_the_entente
+		icon = GFX_goal_FRA_paris
+		x = -2
+		y = 1
+		cost = 6
+		available = {
+			country_exists = FRA
+			NOT = { has_war_with = FRA }
+			FRA = {
+				has_capitulated = no
+				is_faction_leader = yes
+			}
+		}
+		bypass = {
+			is_in_faction_with = FRA
+		}
+		mutually_exclusive = { focus = UKR_cooperate_with_warsaw }
+		prerequisite = { focus = UKR_rising_tensions }
+		relative_position_id = UKR_rising_tensions
+	}
+
+	# Cooperate with Warsaw
+	focus = {
+		id = UKR_cooperate_with_warsaw
+		icon = GFX_goal_generic_polish_agreement
+		x = -5
+		y = 1
+		cost = 6
+		available = {
+			country_exists = POL
+			NOT = { has_war_with = POL }
+			POL = {
+				has_capitulated = no
+				OR = {
+					is_in_faction = no
+					is_faction_leader = yes
+				}
+			}
+		}
+		bypass = {
+			is_in_faction = yes
+		}
+		mutually_exclusive = { focus = UKR_meet_with_the_entente }
+		prerequisite = { focus = UKR_rising_tensions }
+		relative_position_id = UKR_rising_tensions
+	}
+
+	# Expand the Foreign Ministry
+	focus = {
+		id = UKR_expand_the_foreign_ministry
+		icon = GFX_goal_foreign_diplomacy
+		x = 1
+		y = 1
+		cost = 6
+		available = {
+			is_in_faction = yes
+			has_capitulated = no
+		}
+		prerequisite = {
+			focus = UKR_cooperate_with_warsaw
+			focus = UKR_meet_with_the_entente
+		}
+		relative_position_id = UKR_cooperate_with_warsaw
+	}
+
+	# Request Entente Armaments
+	focus = {
+		id = UKR_request_entente_armaments
+		icon = GFX_goal_industry_air
+		x = 0
+		y = 1
+		cost = 6
+		available = {
+			country_exists = FRA
+			NOT = { has_war_with = FRA }
+			FRA = {
+				has_capitulated = no
+				is_faction_leader = yes
+			}
+			is_in_faction_with = FRA
+		}
+		prerequisite = { focus = UKR_rising_tensions }
+		relative_position_id = UKR_rising_tensions
+	}
+
+	# Entente Advisors
+	focus = {
+		id = UKR_entente_advisors
+		icon = GFX_goal_generic_french_officers
+		x = 2
+		y = 1
+		cost = 6
+		available = {
+			country_exists = FRA
+			NOT = { has_war_with = FRA }
+			FRA = {
+				has_capitulated = no
+				is_faction_leader = yes
+			}
+			is_in_faction_with = FRA
+		}
+		prerequisite = { focus = UKR_rising_tensions }
+		relative_position_id = UKR_rising_tensions
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = UKR_war_games_in_crimea
+				category = land_doctrine
+				cost_reduction = 0.75
+				uses = 1
+			}
+			add_doctrine_cost_reduction = {
+				name = UKR_war_games_in_crimea
+				category = naval_doctrine
+				cost_reduction = 0.5
+				uses = 1
+			}
+			add_doctrine_cost_reduction = {
+				name = UKR_war_games_in_crimea
+				category = air_doctrine
+				cost_reduction = 0.5
+				uses = 1
+			}
+		}
+	}
+
+	# War Games in Crimea
+	focus = {
+		id = UKR_war_games_in_crimea
+		icon = GFX_goal_checkmate
+		x = 0
+		y = 1
+		cost = 6
+		available = {
+			is_in_faction = yes
+			has_capitulated = no
+			owns_state = 72
+			owns_state = 137
+		}
+		prerequisite = { 
+			focus = UKR_request_entente_armaments
+			focus = UKR_entente_advisors
+		}
+		prerequisite = { focus = UKR_meet_with_the_entente }
+		relative_position_id = UKR_request_entente_armaments
+		completion_reward = {
+			army_experience = 25
+			air_experience = 10
+			navy_experience = 10
+		}
+	}
+
+	# Approach the Baltic
+	focus = {
+		id = UKR_approach_the_baltic
+		icon = GFX_goal_GER_pressure_the_baltic
+		x = 0
+		y = 1
+		cost = 6
+		available = {
+			OR = {
+				AND = {
+					country_exists = LAT
+					NOT = { has_war_with = LAT }
+					LAT = {
+						is_subject = no
+						is_in_faction = no
+					}
+				}
+				AND = {
+					country_exists = EST
+					NOT = { has_war_with = EST }
+					EST = {
+						is_subject = no
+						is_in_faction = no
+					}
+				}
+			}
+		}
+		prerequisite = { focus = UKR_expand_the_foreign_ministry }
+		relative_position_id = UKR_expand_the_foreign_ministry
+	}
+
+	# Membership for Finland
+	focus = {
+		id = UKR_membership_for_finland
+		icon = GFX_goal_FIN_for_victory
+		x = 0
+		y = 1
+		cost = 6
+		available = {
+			country_exists = FIN
+			NOT = { has_war_with = FIN }
+			FIN = {
+				is_subject = no
+				is_in_faction = no
+			}
+		}
+		prerequisite = { focus = UKR_approach_the_baltic }
+		relative_position_id = UKR_approach_the_baltic
+	}
+
+	# Protection for Caucasia
+	focus = {
+		id = UKR_protection_for_caucasia
+		icon = GFX_GEOARM
+		x = -2
+		y = 1
+		cost = 6
+		available = {
+			OR = {
+				AND = {
+					country_exists = GEO
+					NOT = { has_war_with = GEO }
+					GEO = {
+						is_subject = no
+						is_in_faction = no
+					}
+				}
+				AND = {
+					country_exists = ARM
+					NOT = { has_war_with = ARM }
+					ARM = {
+						is_subject = no
+						is_in_faction = no
+					}
+				}
+				AND = {
+					country_exists = AZR
+					NOT = { has_war_with = AZR }
+					AZR = {
+						is_subject = no
+						is_in_faction = no
+					}
+				}
+			}
+		}
+		prerequisite = { focus = UKR_expand_the_foreign_ministry }
+		relative_position_id = UKR_expand_the_foreign_ministry
+	}
+
+	# Membership for Czechia
+	focus = {
+		id = UKR_membership_for_czechia
+		icon = GFX_focus_zapadoslavia
+		x = 2
+		y = 1
+		cost = 6
+		available = {
+			country_exists = CZE
+			NOT = { has_war_with = CZE }
+			CZE = {
+				is_subject = no
+				is_in_faction = no
+			}
+		}
+		prerequisite = { focus = UKR_expand_the_foreign_ministry }
+		relative_position_id = UKR_expand_the_foreign_ministry
+	}
+
+	# Visit Belgrade
+	focus = {
+		id = UKR_visit_belgrade
+		icon = GFX_goal_flag_serbia
+		x = 0
+		y = 1
+		cost = 6
+		available = {
+			country_exists = SER
+			NOT = { has_war_with = SER }
+			SER = {
+				is_subject = no
+				is_in_faction = no
+			}
+		}
+		bypass = {
+			SER = {
+				exists = no
+				is_in_faction_with = ROOT
+				has_war_with = ROOT
+			}
+		}
+		prerequisite = { focus = UKR_membership_for_czechia }
+		relative_position_id = UKR_membership_for_czechia
+	}
+
+	# Support Greece
+	focus = {
+		id = UKR_support_greece
+		icon = GFX_GRE_megali
+		x = -1
+		y = 3
+		cost = 6
+		available = {
+			country_exists = GRE
+			NOT = { has_war_with = GRE }
+			GRE = {
+				is_subject = no
+				has_capitulated = no
+				has_war_with = TUR
+			}
+		}
+		mutually_exclusive = { focus = UKR_support_turkey }
+		prerequisite = { focus = UKR_expand_the_foreign_ministry }
+		relative_position_id = UKR_expand_the_foreign_ministry
+	}
+
+	# Support Turkey
+	focus = {
+		id = UKR_support_turkey
+		icon = GFX_GRE_tur_cooperation
+		x = 1
+		y = 3
+		cost = 6
+		available = {
+			country_exists = TUR
+			NOT = { has_war_with = TUR }
+			TUR = {
+				is_subject = no
+				has_capitulated = no
+				has_war_with = GRE
+			}
+		}
+		mutually_exclusive = { focus = UKR_support_greece }
+		prerequisite = { focus = UKR_expand_the_foreign_ministry }
+		relative_position_id = UKR_expand_the_foreign_ministry
+	}
+
+	# Sponsor Belarussian Entry
+	focus = {
+		id = UKR_sponsor_belarussian_entry
+		icon = GFX_goal_BLR_belarusian_identity
+		x = 4
+		y = 1
+		cost = 6
+		available = {
+			country_exists = BLR
+			NOT = { has_war_with = BLR }
+			BLR = {
+				is_subject = no
+				is_in_faction = no
+				has_elected_government = yes
+				custom_trigger_tooltip = {
+					tooltip = UKR_belarus_not_friendly_with_germany_tt
+					OR = {
+						NOT = { has_country_flag = BLR_konigsberg_gut }
+						has_country_flag = BLR_konigsberg_nicht_gut
+					}
+				}
+			}
+		}
+		bypass = {
+			BLR = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
+				}
+			}
+		}
+		mutually_exclusive = { focus = UKR_topple_the_belarussian_threat }
+		prerequisite = { 
+			focus = UKR_expand_the_foreign_ministry
+		}
+		relative_position_id = UKR_expand_the_foreign_ministry
+	}
+
+	# Topple the Belarussian Threat
+	focus = {
+		id = UKR_topple_the_belarussian_threat
+		icon = GFX_goal_generic_attack_belarus
+		x = 2
+		y = 1
+		cost = 6
+		available = {
+			country_exists = BLR
+			BLR = {
+				OR = {
+					has_government = valkist
+					custom_trigger_tooltip = {
+						tooltip = UKR_belarus_is_friendly_with_germany_tt
+						OR = {
+							NOT = { has_country_flag = BLR_konigsberg_nicht_gut }
+							has_country_flag = BLR_konigsberg_gut
+						}
+					}
+				}
+			}
+		}
+		bypass = {
+			BLR = {
+				OR = {
+					exists = no
+					has_war_with = ROOT
+				}
+			}
+		}
+		mutually_exclusive = { focus = UKR_sponsor_belarussian_entry }
+		prerequisite = {
+			focus = UKR_war_games_in_crimea
+		}
+		relative_position_id = UKR_war_games_in_crimea
+	}
+
+	# Crush Germany
+	focus = {
+		id = UKR_crush_germany
+		icon = GFX_goal_generic_attack_german_reich
+		x = 3
+		y = 2
+		cost = 6
+		available = {
+			country_exists = GER
+			NOT = { has_war_with = GER }
+		}
+		bypass = {
+			has_war_with = GER
+		}
+		prerequisite = { 
+			focus = UKR_war_games_in_crimea
+		}
+		relative_position_id = UKR_war_games_in_crimea
+	}
+
+	# The Hungarian Situation
+	focus = {
+		id = UKR_the_hungarian_situation
+		icon = GFX_goal_generic_attack_hungary
+		x = 0
+		y = 1
+		available = {
+			country_exists = HUN
+			NOT = { has_war_with = HUN }
+		}
+		prerequisite = { 
+			focus = UKR_membership_for_czechia
+			focus = UKR_sponsor_belarussian_entry
+			focus = UKR_topple_the_belarussian_threat
+		}
+		relative_position_id = UKR_sponsor_belarussian_entry
+	}
+
+	# State Visit to Bulgaria
+	focus = {
+		id = UKR_state_visit_to_bulgaria
+		icon = GFX_BUL_bulgarian_government
+		x = -1
+		y = 2
+		cost = 6
+		available = {
+			country_exists = BUL
+			NOT = { has_war_with = BUL }
+			BUL = {
+				is_subject = no
+				has_capitulated = no
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = { country_exists = BUL }
+				is_in_faction_with = BUL
+			}
+		}
+		mutually_exclusive = { focus = UKR_tame_bulgaria }
+		prerequisite = {
+			focus = UKR_sponsor_belarussian_entry
+			focus = UKR_topple_the_belarussian_threat
+			focus = UKR_visit_belgrade
+		}
+		relative_position_id = UKR_sponsor_belarussian_entry
+	}
+
+	# Tame Bulgaria
+	focus = {
+		id = UKR_tame_bulgaria
+		icon = GFX_goal_generic_attack_bulgaria
+		x = 1
+		y = 2
+		cost = 6
+		available = {
+			country_exists = BUL
+			NOT = { has_war_with = BUL }
+			BUL = {
+				is_subject = no
+				has_capitulated = no
+			}
+		}
+		bypass = {
+			OR = {
+				has_war_with = BUL
+				is_in_faction_with = BUL
+				BUL = {
+					is_subject_of = ROOT
+				}
+			}
+		}
+		mutually_exclusive = { focus = UKR_state_visit_to_bulgaria }
+		prerequisite = {
+			focus = UKR_sponsor_belarussian_entry
+			focus = UKR_topple_the_belarussian_threat
+			focus = UKR_visit_belgrade
+		}
+		relative_position_id = UKR_sponsor_belarussian_entry
 	}
 }

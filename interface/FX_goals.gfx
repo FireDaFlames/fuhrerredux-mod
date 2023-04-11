@@ -1,5 +1,9 @@
 spriteTypes = {
-spriteType = {
+	spriteType = {
+		name = "GFX_goal_FRA_paris"
+		texturefile = "gfx/interface/goals/FRA_paris.png"
+	}
+	spriteType = {
 		name = "GFX_balance_in_power"
 		texturefile = "gfx/interface/goals/GFX_balance_in_power.png"
 	}
@@ -224,11 +228,11 @@ spriteType = {
 		texturefile = "gfx/interface/goals/Focus_japanese_siamese_alli.png"
 	}
 	spriteType = {
-		name = "GFX_goal_generic_attack_belarus.png"
+		name = "GFX_goal_generic_attack_belarus"
 		texturefile = "gfx/interface/goals/generic_attack_belarus.png"
 	}
 	spriteType = {
-		name = "GFX_goal_generic_attack_hungary.png"
+		name = "GFX_goal_generic_attack_hungary"
 		texturefile = "gfx/interface/goals/generic_attack_hungary.png"
 	}
 	spriteType = {
@@ -2195,10 +2199,6 @@ spriteType = {
 	spriteType = {
 		name = "GFX_goal_generic_balkan_diplomacy"
 		textureFile = "gfx/interface/goals/focus_generic_balkan_diplomacy.png"
-	}
-	spriteType = {
-		name = "GFX_goal_generic_attack_hungary"
-		textureFile = "gfx/interface/goals/focus_attack_hungary.png"
 	}
 	spriteType = {
 		name = "GFX_goal_BUL_free_balkan_states"
