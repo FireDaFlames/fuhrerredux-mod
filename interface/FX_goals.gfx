@@ -1981,6 +1981,7 @@ spriteTypes = {
 		name = "GFX_goal_MAC_to_west"
 		textureFile = "gfx/interface/goals/MAC_to_west.png"
 	}
+	#### GREECE 
 	SpriteType = {
 		name = "GFX_goal_GRE_treaty_of_ankara"
 		texturefile = "gfx/interface/goals/GRE_treaty_of_ankara.png"
@@ -2734,5 +2735,26 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_GRE_legacy_leonidas"
 		texturefile = "gfx/interface/goals/GRE_legacy_leonidas.png"
+	}
+	##### BULGARIA
+	SpriteType = {
+		name = "GFX_goal_BUL_balkan_empire"
+		texturefile = "gfx/interface/goals/BUL_balkan_empire.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_BUL_balkan_subjucate_balkans"
+		texturefile = "gfx/interface/goals/BUL_balkan_subjucate_balkans.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_BUL_balkan_integrate_balkans"
+		texturefile = "gfx/interface/goals/BUL_balkan_integrate_balkans.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_BUL_the_balkan_empire"
+		texturefile = "gfx/interface/goals/BUL_a_balkan_empire.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_BUL_balkan_empire"
+		texturefile = "gfx/interface/goals/BUL_a_balkan_empire.png"
 	}
 }
