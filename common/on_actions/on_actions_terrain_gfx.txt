@@ -1641,7 +1641,7 @@ on_actions = {
 				}				
 			}
 			
-			676 = {
+			1048 = {
 				add_province_modifier = {
 					static_modifiers = { terrain_kirkuk }
 					province = { id = 8123 }
@@ -1655,7 +1655,7 @@ on_actions = {
 				}
 			}
 			
-			778 = {
+			354 = {
 				add_province_modifier = {
 					static_modifiers = { terrain_trabzond }
 					province = { id = 9932 }
@@ -2701,7 +2701,7 @@ on_actions = {
 				}
 			}
 			
-			291 = {
+			1047 = {
 				add_province_modifier = {
 					static_modifiers = { terrain_basra }
 					province = { id = 2089 }

@@ -1,3 +1,9 @@
+#Added to quick switch positions, and not having to search, thank me later :)
+@faction_name_pos_x = 11
+@faction_name_pos_y = 15
+@faction_name_max_width = 127
+@faction_name_max_height = 55
+
 guiTypes = {
 
 	containerWindowType = {
@@ -1768,6 +1774,25 @@ guiTypes = {
 			spriteType = "GFX_small_flag_frame_thin"
 			position = { x= 48 y = 4 }
 			alwaystransparent = yes
+		}
+	}
+	# YAY I FIXED THE ERROR (thanasislanaras)
+	containerWindowType = {
+		name = "puppet_faction_name_container"
+		position = { x = 175 y = 213 }
+		size = { width = 255 height = 60 }
+		clipping = no
+
+		instantTextboxType = {
+			name = "puppet_faction_name"
+			position = { x = @faction_name_pos_x y = @faction_name_pos_y }
+			font = "hoi_16mbs"
+			text = "[ROOT.GetFactionName]"
+			maxWidth = @faction_name_max_width
+			maxHeight = @faction_name_max_height
+			format = centre
+			vertical_alignment = center
+			fixedsize = yes
 		}
 	}
 	
