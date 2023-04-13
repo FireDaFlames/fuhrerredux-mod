@@ -4110,19 +4110,6 @@ focus_tree = {
         }
       }
     }
-      custom_effect_tooltip = USA_blood_on_the_emerald_isle_tt
-
-      ENG = {
-        every_owned_state = {
-          limit = {
-            is_core_of = IRE
-            NOT = { is_core_of = ENG }
-          }
-
-          add_resistance = 20
-        }
-      }
-    }
   }
 
   # Stop the Valkist Menace
@@ -4592,6 +4579,8 @@ focus_tree = {
         add_idea = USA_persued_interventionism_1
       }
     }
+  }
+  
   # Entente Lend Lease
   focus = {
     id = USA_entente_lend_lease
