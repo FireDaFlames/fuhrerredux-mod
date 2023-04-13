@@ -3639,6 +3639,8 @@ focus_tree = {
       }
 
       unlock_decision_tooltip = USA_propose_alliance_with_brazil
+
+      unlock_decision_tooltip = USA_propose_alliance_with_brazil
     }
   }
 
@@ -4095,6 +4097,19 @@ focus_tree = {
     }
     relative_position_id = USA_avenge_1812
     completion_reward = {
+      custom_effect_tooltip = USA_blood_on_the_emerald_isle_tt
+
+      ENG = {
+        every_owned_state = {
+          limit = {
+            is_core_of = IRE
+            NOT = { is_core_of = ENG }
+          }
+
+          add_resistance = 20
+        }
+      }
+    }
       custom_effect_tooltip = USA_blood_on_the_emerald_isle_tt
 
       ENG = {
@@ -4577,8 +4592,6 @@ focus_tree = {
         add_idea = USA_persued_interventionism_1
       }
     }
-  }
-
   # Entente Lend Lease
   focus = {
     id = USA_entente_lend_lease
