@@ -156,6 +156,15 @@ ideas = {
 				political_power_gain = 0.15
 			}
 		}
+		UKR_welfare_state1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea UKR_welfare_state1" }
+			picture = prc_low_popular_support3
+			modifier = {
+				monthly_population = 0.5
+				political_power_gain = 0.15
+				production_factory_max_efficiency_factor = 0.15
+			}
+		}
 		UKR_socialist_economy_idea = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_socialist_economy_idea"}
 			picture = generic_central_management

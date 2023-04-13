@@ -710,12 +710,17 @@ focus_tree = {
 		cost = 6
 		available = {
 			has_capitulated = no
+			num_of_factories > 100
 		}
 		prerequisite = { focus = UKR_expand_kiev_officer_school }
 		relative_position_id = UKR_expand_kiev_officer_school
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus UKR_science_of_war"
-			add_research_slot = 1
+			add_tech_bonus = {
+				category = nuclear
+				bonus = 1.0
+				uses = 1
+			}
 		}
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
@@ -2330,6 +2335,13 @@ focus_tree = {
 		prerequisite = { focus = UKR_status_of_the_bund }
 		prerequisite = { focus = UKR_irrigation_projects }
 		relative_position_id = UKR_ministry_of_culture_and_arts
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = UKR_welfare_state
+				add_idea = UKR_welfare_state1
+			}
+			custom_effect_tooltip = UKR_foreign_policy_unlocked_tt
+		}
 	}
 
 	# Introduce Minimum Wage
@@ -3167,6 +3179,7 @@ focus_tree = {
 		prerequisite = { focus = UKR_three_year_plan }
 		relative_position_id = UKR_three_year_plan
 		completion_reward = {
+			remove_ideas = UKR_underfunded_army
 			random_owned_controlled_state = {
 				if = {
           limit = {
@@ -3844,9 +3857,19 @@ focus_tree = {
 		icon = GFX_goal_generic_attack_hungary
 		x = 0
 		y = 1
+		cost = 6
 		available = {
 			country_exists = HUN
 			NOT = { has_war_with = HUN }
+		}
+		bypass = {
+			HUN = {
+				OR = {
+					has_war_with = ROOT
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
+				}
+			}
 		}
 		prerequisite = { 
 			focus = UKR_membership_for_czechia
