@@ -3,16 +3,14 @@ state={
 	name="STATE_781"
 
 	history={
-		owner = TUR
+		owner = KUR
+		add_core_of = KUR
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
-			}
-		add_core_of = TUR
-
 		}
-
-
+		add_core_of = TUR
+	}
 	provinces={
 		876 9860 9868 11797 
 	}
