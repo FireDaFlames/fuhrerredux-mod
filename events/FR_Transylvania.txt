@@ -128,6 +128,7 @@ country_event = { #Literally not anchluss anschluss anymore
 			set_state_owner = 76 
 			set_state_owner = 84 
 			set_state_owner = 82
+			set_state_owner = 1040
 		}
 		ai_chance = {
 			factor = 20
