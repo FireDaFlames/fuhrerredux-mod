@@ -352,7 +352,7 @@ focus_tree = {
     prerequisite = { focus = ARB_expand_trading_partners }
     relative_position_id = ARB_expand_trading_partners
     completion_reward = {
-      679 = {
+      12883 = {
         add_building_construction = {
           type = naval_base
           level = 2

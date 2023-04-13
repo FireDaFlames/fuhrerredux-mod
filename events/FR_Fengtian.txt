@@ -372,7 +372,7 @@ country_event = {
         }
       }
       remove_ideas_with_trait = head_of_government
-      add_ideas = MAN_Zhang_Xueliang_hog_pau
+    #   add_ideas = MAN_Zhang_Xueliang_hog_pau
 
       country_event = { id = man.11 days = 7 }
     }
@@ -2420,7 +2420,7 @@ country_event = {
     }
     remove_every_minister = yes
     add_ideas = {
-      MAN_Zhang_Xueliang_hog_pau
+    #   MAN_Zhang_Xueliang_hog_pau
       MAN_Wu_Jinglian_for_ade
       MAN_Jin_Yunpeng_eco_ade
       MAN_Ding_Jianxiu_sec_sde
