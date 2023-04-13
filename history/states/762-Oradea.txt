@@ -1,6 +1,7 @@
+
 state={
 	id=762
-	name="STATE_762"
+	name="Oradea"
 
 	history={
 		owner = ROM
@@ -9,16 +10,14 @@ state={
 			industrial_complex = 2
 
 		}
-		victory_points = {
-			6711 5 
-		}
 		add_claim_by = HUN
-	}
 
+	}
 	provinces={
 		713 3696 3709 9687 
 	}
 	manpower=544900
 	buildings_max_level_factor=1.000
 	state_category=town
+	local_supplies=0.000
 }

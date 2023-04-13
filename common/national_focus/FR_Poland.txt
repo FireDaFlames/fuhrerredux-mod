@@ -143,7 +143,7 @@ focus = {
 		add_ideas = parliamentary_republic
 		set_politics = { ruling_party = social_conservative elections_allowed = no }
 		add_political_power = 100
-		add_ideas = POL_Adolf_Bninski_hog_sco
+		# add_ideas = POL_Adolf_Bninski_hog_sco
 	}
 }
 #AUTHDEM	
@@ -348,7 +348,7 @@ focus = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_guiding_hand"
 		custom_effect_tooltip = POL_kalmoire_silly
 		country_event = poland.10
-		add_ideas = POL_Franciszek_Radziwill_hog_ade
+		# add_ideas = POL_Franciszek_Radziwill_hog_ade
 	}
 }
 
@@ -1431,11 +1431,11 @@ focus = {
 		custom_effect_tooltip = POL_party_member_tooltip
 		
 		hidden_effect = {
-			add_ideas = POL_Adolf_Bninski_hog_sco
-			add_ideas = POL_Boleslaw_Biega_for_sco
-			add_ideas = POL_Adam_Chadzynski_eco_sco
+			# add_ideas = POL_Adolf_Bninski_hog_sco
+			# add_ideas = POL_Boleslaw_Biega_for_sco
+			# add_ideas = POL_Adam_Chadzynski_eco_sco
 			add_ideas = POL_Karol_Popiel_sec_sco
-			add_ideas = POL_Maksymilian_Thullie_int_sco
+			# add_ideas = POL_Maksymilian_Thullie_int_sco
 		}
 	}
 }
@@ -1819,7 +1819,7 @@ focus = {
 			ideology = social_democrat
 			popularity = -0.1
 		}
-		add_ideas = POL_Franciszek_Radziwill_hog_ade
+		# add_ideas = POL_Franciszek_Radziwill_hog_ade
 	}
 }
 focus = {
@@ -1888,8 +1888,8 @@ focus = {
 		hidden_effect = {
 			add_ideas = POL_Kazimierz_Sosnkowski_for_pau
 			add_ideas = POL_Adam_Koc_eco_pau
-			add_ideas = POL_Jan_Jur_Gorzechowski_sec_pau
-			add_ideas = POL_Jan_Henryk_Zychon_int_pau
+			# add_ideas = POL_Jan_Jur_Gorzechowski_sec_pau
+			# add_ideas = POL_Jan_Henryk_Zychon_int_pau
 		}
 	}
 }
