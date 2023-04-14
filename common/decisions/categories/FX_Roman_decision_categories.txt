@@ -1,0 +1,18 @@
+BYZ_strategic_islands_category = {
+	allowed = {
+		OR = {
+			original_tag = BUL
+			original_tag = GRE
+		}
+	}
+	priority = 9999
+	visible_when_empty = yes
+	on_ma\p_mode = { 
+		state = 116
+		name = "Develop Islands"
+		zoom = 850
+		target_root_trigger = {
+			tag = GRE
+		}
+	}
+}

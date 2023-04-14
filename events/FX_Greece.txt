@@ -671,7 +671,7 @@ country_event = {
 
 	option = {
 		name = gre.21.a
-		load_focus_tree = aughhhhhhhugugugugugugugug
+		# load_focus_tree = aughhhhhhhugugugugugugugug
 		add_ideas = GRE_fallen_state
 	}
 }
@@ -691,7 +691,7 @@ country_event = {
 
 	option = {
 		name = gre.22.a
-		load_focus_tree = aughhhhhhhugugugugugugugug
+		# load_focus_tree = aughhhhhhhugugugugugugugug
 		add_ideas = GRE_chaos_in_state
 		remove_ideas = GRE_scorched_earth
 		remove_ideas = GRE_total_war
@@ -856,7 +856,7 @@ country_event = {
 		name = grepeace.1.a
 		white_peace = TUR
 		set_country_flag = GRE_LIBCONFRE_victory
-		remove_country_flag = GRE_warwithturkey
+		clr_country_flag = GRE_warwithturkey
 		hidden_effect = {
 			GRE = {
 				set_rule = { allow_join_faction = yes }
@@ -910,7 +910,7 @@ country_event = {
 	option = {
 		set_rule = { allow_join_faction = yes }
 		name = grepeace.2.a
-		remove_country_flag = GRE_warwithturkey
+		clr_country_flag = GRE_warwithturkey
 		set_country_flag = GRE_EEK_victory
 		GRE = {
 			annex_country = TUR
@@ -1007,7 +1007,7 @@ country_event = { #TURKEY WINS
 			transfer_state = 339
 			transfer_state = 763
 		}
-		remove_country_flag = GRE_warwithturkey
+		clr_country_flag = GRE_warwithturkey
 	}
 }
 
@@ -1034,7 +1034,7 @@ country_event = { #WAR IS STUCK AND TURKEY WINS
 			set_rule = { allow_join_faction = yes }
 		}
 		white_peace = TUR
-		remove_country_flag = GRE_warwithturkey
+		clr_country_flag = GRE_warwithturkey
 	}
 }
 

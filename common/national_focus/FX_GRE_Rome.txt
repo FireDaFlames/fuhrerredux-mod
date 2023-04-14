@@ -1,7 +1,13 @@
-#GREEK FOCUS TREE BY FOKEŁ 2022
+############################################################
+#            GREEK ROMAN NATIONAL FOCUS TREE               #
+############################################################
+############################################################
+# Created by thanasislanaras "The Legendary Kebab Remover" #
+############################################################
+#Started by Fokel
 
 focus_tree = {
-	id = greece_rome_focus
+	id = GRE_Rome_focus
 	country = {
 		factor = 0
 		modifier = {
@@ -17,10 +23,10 @@ focus_tree = {
 		id = GRE_turkish_plot
 		icon = GFX_goal_GRE_turkish_plot
 		cost = 4
-		x = 82
-		y = 10
+		x = 10
+		y = 0
 		available = {
-			always = false
+			always = no
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRE_turkish_plot"
@@ -29,6 +35,7 @@ focus_tree = {
 			}
 		}
 	}
+
 
 	focus = {
 		id = GRE_the_final_solution
@@ -253,7 +260,11 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRE_the_final_solution"
 			if = { 
-				limit = { romevar > 4 }
+				limit = { 
+					check_variable = {
+						romevar > 4
+					}
+				}
 				country_event = {
 					id = gre.22
 					days = 5

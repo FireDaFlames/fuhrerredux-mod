@@ -1,0 +1,3 @@
+﻿l_english:
+  BYZ_strategic_islands_category: "The Strategic Islands"
+  BYZ_strategic_islands_category_desc: "The Greek islands, and in extend the medditeranean islands, are of strategic importance. That's why the [ENG.GetFlag][ENG.GetName] has taken [183.GetName] and [116.GetName], that's why [ITA.GetFlag][ITA.GetName] has taken the [164.GetName]. We, must liberate our islands, and keep them intact!\n\n§RCurrent Number of Controlled Islands:§! [?BYZ_num_of_str_islands]"

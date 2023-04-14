@@ -1,0 +1,109 @@
+# GREEK AND BULGARIAN FOCUS TREES BY thanasislanaras
+
+
+############################################################
+#               ROMAN SHARED FOCUS TREE                    #
+############################################################
+############################################################
+# Created by thanasislanaras "The Legendary Kebab Remover" #
+############################################################
+
+
+shared_focus = {
+	id = BYZ_rectify_economic_mistakes
+	icon = none
+	cost = 5
+	x = 10
+	y = 1
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = BUZ_farming_crisis
+	icon = none
+	cost = 5
+	x = 5
+	y = 1
+	relative_position_id = BYZ_rectify_economic_mistakes
+	prerequisite = {
+		focus = BYZ_rectify_economic_mistakes
+	}
+	completion_reward = { }
+}
+
+shared_focus = {
+	id = BYZ_reopen_civilian_industry
+	icon = none
+	cost = 5
+	x = 5
+	y = 1
+	relative_position_id = BUZ_farming_crisis
+	prerequisite = {
+		focus = BUZ_farming_crisis
+	}
+	completion_reward = {
+		random_owned_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_state = {
+			limit = {
+				is_coastal = yes
+			}
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 1
+			name = electronics
+			category = electronics
+		}
+	}
+}
+
+shared_focus = {
+	id = BYZ_export_luxury_commodities
+	icon = none
+	cost = 5
+	x = 2
+	y = 1
+	relative_position_id = BYZ_reopen_civilian_industry
+	prerequisite = {
+		focus = BYZ_reopen_civilian_industry
+	}
+	completion_reward = { }
+}
+
+shared_focus = {
+	id = BYZ_make_use_of_islands
+	icon = none
+	cost = 5
+	x = -2
+	y = 1
+	relative_position_id = BYZ_export_luxury_commodities
+	prerequisite = {
+		focus = BYZ_export_luxury_commodities
+	}
+	completion_reward = {
+		
+	}
+}

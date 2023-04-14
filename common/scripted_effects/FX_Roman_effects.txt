@@ -1,0 +1,739 @@
+find_num_of_str_islands_owned_by_BYZ = {
+	# if = {
+	# 	limit = {
+	# 		182 = {
+	# 			is_owned_and_core_of_BYZ = yes
+	# 		}
+	# 	}
+	# 	182 = {
+	# 		set_state_flag = BYZ_island_is_owned
+	# 		# if = {
+	# 		# 	limit = {
+	# 		# 		has_variable = BYZ_num_of_str_islands
+	# 		# 	}
+	# 			add_to_variable = {
+	# 				var = BYZ_num_of_str_islands
+	# 				value = 1
+	# 			}
+	# 			# else = {
+	# 			# 	set_variable = {
+	# 			# 		BYZ_num_of_str_islands = 1
+	# 			# 	}
+	# 			# }
+	# 		# }
+	# 	}
+	# 	else = {
+	# 		182 = {
+	# 			set_state_flag = BYZ_island_not_owned
+	# 		}
+	# 		# if = {
+	# 		# 	limit = {
+	# 		# 		has_variable = BYZ_num_of_str_islands
+	# 		# 	}
+	# 			subtract_from_variable = {
+	# 				var = BYZ_num_of_str_islands
+	# 				value = -1
+	# 			}
+	# 			# else = {
+	# 			# 	set_variable = {
+	# 			# 		BYZ_num_of_str_islands = -1
+	# 			# 	}
+	# 			# }
+	# 		# }
+	# 	}
+	# }
+	# if = {
+	# 	limit = {
+	# 		187 = {
+	# 			is_owned_and_core_of_BYZ = yes
+	# 		}
+	# 	}
+	# 	187 = {
+	# 		set_state_flag = BYZ_island_is_owned
+	# 		# if = {
+	# 		# 	limit = {
+	# 		# 		has_variable = BYZ_num_of_str_islands
+	# 		# 	}
+	# 			add_to_variable = {
+	# 				var = BYZ_num_of_str_islands
+	# 				value = 1
+	# 			}
+	# 			# else = {
+	# 			# 	set_variable = {
+	# 			# 		BYZ_num_of_str_islands = 1
+	# 			# 	}
+	# 			# }
+	# 		# }
+	# 	}
+	# 	else = {
+	# 		187 = {
+	# 			set_state_flag = BYZ_island_not_owned
+	# 		}
+	# 		# if = {
+	# 		# 	limit = {
+	# 		# 		has_variable = BYZ_num_of_str_islands
+	# 		# 	}
+	# 			subtract_from_variable = {
+	# 				var = BYZ_num_of_str_islands
+	# 				value = -1
+	# 			}
+	# 			# else = {
+	# 			# 	set_variable = {
+	# 			# 		BYZ_num_of_str_islands = -1
+	# 			# 	}
+	# 			# }
+	# 		}
+	# 	# }
+	# }
+	# if = {
+	# 	limit = {
+	# 		1046 = {
+	# 			is_owned_and_core_of_BYZ = yes
+	# 		}
+	# 	}
+	# 	1046 = {
+	# 		set_state_flag = BYZ_island_is_owned
+	# 		# if = {
+	# 		# 	limit = {
+	# 		# 		has_variable = BYZ_num_of_str_islands
+	# 		# 	}
+	# 			add_to_variable = {
+	# 				var = BYZ_num_of_str_islands
+	# 				value = 1
+	# 			}
+	# 		# 	else = {
+	# 		# 		set_variable = {
+	# 		# 			BYZ_num_of_str_islands = 1
+	# 		# 		}
+	# 		# 	}
+	# 		# }
+	# 	}
+	# 	else = {
+	# 		1046 = {
+	# 			set_state_flag = BYZ_island_not_owned
+	# 		}
+	# 		# if = {
+	# 		# 	limit = {
+	# 		# 		has_variable = BYZ_num_of_str_islands
+	# 		# 	}
+	# 			subtract_from_variable = {
+	# 				var = BYZ_num_of_str_islands
+	# 				value = -1
+	# 			}
+	# 		# 	else = {
+	# 		# 		set_variable = {
+	# 		# 			BYZ_num_of_str_islands = -1
+	# 		# 		}
+	# 		# 	}
+	# 		# }
+	# 	}
+	# }
+	# if = {
+	# 	limit = {
+	# 		164 = {
+	# 			is_owned_and_core_of_BYZ = yes
+	# 		}
+	# 	}
+	# 	164 = {
+	# 		set_state_flag = BYZ_island_is_owned
+	# 		# if = {
+	# 		# 	limit = {
+	# 		# 		has_variable = BYZ_num_of_str_islands
+	# 		# 	}
+	# 			add_to_variable = {
+	# 				var = BYZ_num_of_str_islands
+	# 				value = 1
+	# 			}
+	# 		# 	else = {
+	# 		# 		set_variable = {
+	# 		# 			BYZ_num_of_str_islands = 1
+	# 		# 		}
+	# 		# 	}
+	# 		# }
+	# 	}
+	# 	else = {
+	# 		164 = {
+	# 			set_state_flag = BYZ_island_not_owned
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				has_variable = BYZ_num_of_str_islands
+	# 			}
+	# 			add_to_variable = {
+	# 				var = BYZ_num_of_str_islands
+	# 				value = -1
+	# 			}
+	# 			else = {
+	# 				subtract_from_variable = {
+	# 					BYZ_num_of_str_islands = -1
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# if = {
+	# 	limit = {
+	# 		183 = {
+	# 			is_owned_and_core_of_BYZ = yes
+	# 		}
+	# 	}
+	# 	183 = {
+	# 		set_state_flag = BYZ_island_is_owned
+	# 		if = {
+	# 			limit = {
+	# 				has_variable = BYZ_num_of_str_islands
+	# 			}
+	# 			add_to_variable = {
+	# 				var = BYZ_num_of_str_islands
+	# 				value = 1
+	# 			}
+	# 			else = {
+	# 				set_variable = {
+	# 					BYZ_num_of_str_islands = 1
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	else = {
+	# 		183 = {
+	# 			set_state_flag = BYZ_island_not_owned
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				has_variable = BYZ_num_of_str_islands
+	# 			}
+	# 			add_to_variable = {
+	# 				var = BYZ_num_of_str_islands
+	# 				value = -1
+	# 			}
+	# 			else = {
+	# 				set_variable = {
+	# 					BYZ_num_of_str_islands = -1
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# if = {
+	# 	limit = {
+	# 		116 = {
+	# 			is_owned_and_core_of_BYZ = yes
+	# 		}
+	# 	}
+	# 	116 = {
+	# 		set_state_flag = BYZ_island_is_owned
+	# 		if = {
+	# 			limit = {
+	# 				has_variable = BYZ_num_of_str_islands
+	# 			}
+	# 			add_to_variable = {
+	# 				var = BYZ_num_of_str_islands
+	# 				value = 1
+	# 			}
+	# 			else = {
+	# 				set_variable = {
+	# 					BYZ_num_of_str_islands = 1
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	else = {
+	# 		116 = {
+	# 			set_state_flag = BYZ_island_not_owned
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				has_variable = BYZ_num_of_str_islands
+	# 			}
+	# 			add_to_variable = {
+	# 				var = BYZ_num_of_str_islands
+	# 				value = -1
+	# 			}
+	# 			else = {
+	# 				set_variable = {
+	# 					BYZ_num_of_str_islands = -1
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# if = {
+	# 	limit = {
+	# 		115 = {
+	# 			is_owned_and_core_of_BYZ = yes
+	# 		}
+	# 	}
+	# 	115 = {
+	# 		set_state_flag = BYZ_island_is_owned
+	# 		if = {
+	# 			limit = {
+	# 				has_variable = BYZ_num_of_str_islands
+	# 			}
+	# 			add_to_variable = {
+	# 				var = BYZ_num_of_str_islands
+	# 				value = 1
+	# 			}
+	# 			else = {
+	# 				set_variable = {
+	# 					BYZ_num_of_str_islands = 1
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	else = {
+	# 		115 = {
+	# 			set_state_flag = BYZ_island_not_owned
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				has_variable = BYZ_num_of_str_islands
+	# 			}
+	# 			add_to_variable = {
+	# 				var = BYZ_num_of_str_islands
+	# 				value = -1
+	# 			}
+	# 			else = {
+	# 				set_variable = {
+	# 					BYZ_num_of_str_islands = -1
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# if = {
+	# 	limit = {
+	# 		768 = {
+	# 			is_owned_and_core_of_BYZ = yes
+	# 		}
+	# 	}
+	# 	768 = {
+	# 		set_state_flag = BYZ_island_is_owned
+	# 		if = {
+	# 			limit = {
+	# 				has_variable = BYZ_num_of_str_islands
+	# 			}
+	# 			add_to_variable = {
+	# 				var = BYZ_num_of_str_islands
+	# 				value = 1
+	# 			}
+	# 			else = {
+	# 				set_variable = {
+	# 					BYZ_num_of_str_islands = 1
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	else = {
+	# 		768 = {
+	# 			set_state_flag = BYZ_island_not_owned
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				has_variable = BYZ_num_of_str_islands
+	# 			}
+	# 			add_to_variable = {
+	# 				var = BYZ_num_of_str_islands
+	# 				value = -1
+	# 			}
+	# 			else = {
+	# 				set_variable = {
+	# 					BYZ_num_of_str_islands = -1
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# if = {
+	# 	limit = {
+	# 		114 = {
+	# 			is_owned_and_core_of_BYZ = yes
+	# 		}
+	# 	}
+	# 	114 = {
+	# 		set_state_flag = BYZ_island_is_owned
+	# 		if = {
+	# 			limit = {
+	# 				has_variable = BYZ_num_of_str_islands
+	# 			}
+	# 			add_to_variable = {
+	# 				var = BYZ_num_of_str_islands
+	# 				value = 1
+	# 			}
+	# 			else = {
+	# 				set_variable = {
+	# 					BYZ_num_of_str_islands = 1
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	else = {
+	# 		114 = {
+	# 			set_state_flag = BYZ_island_not_owned
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				has_variable = BYZ_num_of_str_islands
+	# 			}
+	# 			add_to_variable = {
+	# 				var = BYZ_num_of_str_islands
+	# 				value = -1
+	# 			}
+	# 			else = {
+	# 				set_variable = {
+	# 					BYZ_num_of_str_islands = -1
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# if = {
+	# 	limit = {
+	# 		1 = {
+	# 			is_owned_and_core_of_BYZ = yes
+	# 		}
+	# 	}
+	# 	1 = {
+	# 		set_state_flag = BYZ_island_is_owned
+	# 		if = {
+	# 			limit = {
+	# 				has_variable = BYZ_num_of_str_islands
+	# 			}
+	# 			add_to_variable = {
+	# 				var = BYZ_num_of_str_islands
+	# 				value = 1
+	# 			}
+	# 			else = {
+	# 				set_variable = {
+	# 					BYZ_num_of_str_islands = 1
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	else = {
+	# 		1 = {
+	# 			set_state_flag = BYZ_island_not_owned
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				has_variable = BYZ_num_of_str_islands
+	# 			}
+	# 			add_to_variable = {
+	# 				var = BYZ_num_of_str_islands
+	# 				value = -1
+	# 			}
+	# 			else = {
+	# 				set_variable = {
+	# 					BYZ_num_of_str_islands = -1
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# if = {
+	# 	limit = {
+	# 		177 = {
+	# 			is_owned_and_core_of_BYZ = yes
+	# 		}
+	# 	}
+	# 	177 = {
+	# 		set_state_flag = BYZ_island_is_owned
+	# 		if = {
+	# 			limit = {
+	# 				has_variable = BYZ_num_of_str_islands
+	# 			}
+	# 			add_to_variable = {
+	# 				var = BYZ_num_of_str_islands
+	# 				value = 1
+	# 			}
+	# 			else = {
+	# 				set_variable = {
+	# 					BYZ_num_of_str_islands = 1
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	else = {
+	# 		177 = {
+	# 			set_state_flag = BYZ_island_not_owned
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				has_variable = BYZ_num_of_str_islands
+	# 			}
+	# 			add_to_variable = {
+	# 				var = BYZ_num_of_str_islands
+	# 				value = -1
+	# 			}
+	# 			else = {
+	# 				set_variable = {
+	# 					BYZ_num_of_str_islands = -1
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+	if = {
+		limit = {
+			182 = {
+				is_owned_and_core_of_BYZ = yes
+			}
+		}
+		182 = {
+			set_state_flag = BYZ_island_is_owned
+		}
+
+		add_to_variable = {
+			var = BYZ_num_of_str_islands
+			value = 1
+		}
+	}
+	else = {
+		182 = {
+			set_state_flag = BYZ_island_not_owned
+		}
+		# subtract_from_variable = {
+		# 	var = BYZ_num_of_str_islands
+		# 	value = -1
+		# }
+	}
+	if = {
+		limit = {
+			164 = {
+				is_owned_and_core_of_BYZ = yes
+			}
+		}
+		164 = {
+			set_state_flag = BYZ_island_is_owned
+		}
+
+		add_to_variable = {
+			var = BYZ_num_of_str_islands
+			value = 1
+		}
+	}
+	else = {
+		164 = {
+			set_state_flag = BYZ_island_not_owned
+		}
+		# subtract_from_variable = {
+		# 	var = BYZ_num_of_str_islands
+		# 	value = -1
+		# }
+	}
+	if = {
+		limit = {
+			187 = {
+				is_owned_and_core_of_BYZ = yes
+			}
+		}
+		187 = {
+			set_state_flag = BYZ_island_is_owned
+		}
+
+		add_to_variable = {
+			var = BYZ_num_of_str_islands
+			value = 1
+		}
+	}
+	else = {
+		187 = {
+			set_state_flag = BYZ_island_not_owned
+		}
+		# subtract_from_variable = {
+		# 	var = BYZ_num_of_str_islands
+		# 	value = -1
+		# }
+	}
+	if = {
+		limit = {
+			1046 = {
+				is_owned_and_core_of_BYZ = yes
+			}
+		}
+		1046 = {
+			set_state_flag = BYZ_island_is_owned
+		}
+
+		add_to_variable = {
+			var = BYZ_num_of_str_islands
+			value = 1
+		}
+	}
+	else = {
+		1046 = {
+			set_state_flag = BYZ_island_not_owned
+		}
+		# subtract_from_variable = {
+		# 	var = BYZ_num_of_str_islands
+		# 	value = -1
+		# }
+	}
+	if = {
+		limit = {
+			183 = {
+				is_owned_and_core_of_BYZ = yes
+			}
+		}
+		183 = {
+			set_state_flag = BYZ_island_is_owned
+		}
+
+		add_to_variable = {
+			var = BYZ_num_of_str_islands
+			value = 1
+		}
+	}
+	else = {
+		183 = {
+			set_state_flag = BYZ_island_not_owned
+		}
+		# subtract_from_variable = {
+		# 	var = BYZ_num_of_str_islands
+		# 	value = -1
+		# }
+	}
+	if = {
+		limit = {
+			116 = {
+				is_owned_and_core_of_BYZ = yes
+			}
+		}
+		116 = {
+			set_state_flag = BYZ_island_is_owned
+		}
+
+		add_to_variable = {
+			var = BYZ_num_of_str_islands
+			value = 1
+		}
+	}
+	else = {
+		116 = {
+			set_state_flag = BYZ_island_not_owned
+		}
+		# subtract_from_variable = {
+		# 	var = BYZ_num_of_str_islands
+		# 	value = -1
+		# }
+	}
+	if = {
+		limit = {
+			115 = {
+				is_owned_and_core_of_BYZ = yes
+			}
+		}
+		115 = {
+			set_state_flag = BYZ_island_is_owned
+		}
+
+		add_to_variable = {
+			var = BYZ_num_of_str_islands
+			value = 1
+		}
+	}
+	else = {
+		115 = {
+			set_state_flag = BYZ_island_not_owned
+		}
+		# subtract_from_variable = {
+		# 	var = BYZ_num_of_str_islands
+		# 	value = -1
+		# }
+	}
+	if = {
+		limit = {
+			1 = {
+				is_owned_and_core_of_BYZ = yes
+			}
+		}
+		1 = {
+			set_state_flag = BYZ_island_is_owned
+		}
+
+		add_to_variable = {
+			var = BYZ_num_of_str_islands
+			value = 1
+		}
+	}
+	else = {
+		1 = {
+			set_state_flag = BYZ_island_not_owned
+		}
+		# subtract_from_variable = {
+		# 	var = BYZ_num_of_str_islands
+		# 	value = -1
+		# }
+	}
+	if = {
+		limit = {
+			768 = {
+				is_owned_and_core_of_BYZ = yes
+			}
+		}
+		768 = {
+			set_state_flag = BYZ_island_is_owned
+		}
+
+		add_to_variable = {
+			var = BYZ_num_of_str_islands
+			value = 1
+		}
+	}
+	else = {
+		768 = {
+			set_state_flag = BYZ_island_not_owned
+		}
+		# subtract_from_variable = {
+		# 	var = BYZ_num_of_str_islands
+		# 	value = -1
+		# }
+	}
+	if = {
+		limit = {
+			114 = {
+				is_owned_and_core_of_BYZ = yes
+			}
+		}
+		114 = {
+			set_state_flag = BYZ_island_is_owned
+		}
+
+		add_to_variable = {
+			var = BYZ_num_of_str_islands
+			value = 1
+		}
+	}
+	else = {
+		114 = {
+			set_state_flag = BYZ_island_not_owned
+		}
+		# subtract_from_variable = {
+		# 	var = BYZ_num_of_str_islands
+		# 	value = -1
+		# }
+	}
+	if = {
+		limit = {
+			177 = {
+				is_owned_and_core_of_BYZ = yes
+			}
+		}
+		177 = {
+			set_state_flag = BYZ_island_is_owned
+		}
+
+		add_to_variable = {
+			var = BYZ_num_of_str_islands
+			value = 1
+		}
+	}
+	else = {
+		177 = {
+			set_state_flag = BYZ_island_not_owned
+		}
+		# subtract_from_variable = {
+		# 	var = BYZ_num_of_str_islands
+		# 	value = -1
+		# }
+	}
+}

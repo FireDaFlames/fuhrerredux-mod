@@ -1,0 +1,53 @@
+spriteTypes = {
+	#Scripted Guis
+	#GRE_strategic_islands_scripted_gui
+	spriteType = {
+		name = "GFX_GRE_str_island_crete"
+		textureFile = "gfx/interface/GRE-BUL-BYZ/BYZ-Islands/Crete.png"
+	}
+	spriteType = {
+		name = "GFX_GRE_str_island_aegean"
+		textureFile = "gfx/interface/GRE-BUL-BYZ/BYZ-Islands/Aegean.png"
+	}
+	spriteType = {
+		name = "GFX_GRE_str_island_ionian"
+		textureFile = "gfx/interface/GRE-BUL-BYZ/BYZ-Islands/Ionian.png"
+	}
+	spriteType = {
+		name = "GFX_GRE_str_island_malta"
+		textureFile = "gfx/interface/GRE-BUL-BYZ/BYZ-Islands/Malta.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_GRE_str_island_cyprus"
+		textureFile = "gfx/interface/GRE-BUL-BYZ/BYZ-Islands/Cyprus.png"
+	}
+	spriteType = {
+		name = "GFX_GRE_str_island_sicily"
+		textureFile = "gfx/interface/GRE-BUL-BYZ/BYZ-Islands/Sicily.png"
+	}
+	spriteType = {
+		name = "GFX_GRE_str_island_sardinia"
+		textureFile = "gfx/interface/GRE-BUL-BYZ/BYZ-Islands/Sardinia.png"
+	}
+	spriteType = {
+		name = "GFX_GRE_str_island_portoTorres"
+		textureFile = "gfx/interface/GRE-BUL-BYZ/BYZ-Islands/PortoTorres.png"
+	}
+	spriteType = {
+		name = "GFX_GRE_str_island_dodecanese"
+		textureFile = "gfx/interface/GRE-BUL-BYZ/BYZ-Islands/Dodecanese.png"
+	}
+	spriteType = {
+		name = "GFX_GRE_str_island_corsica"
+		textureFile = "gfx/interface/GRE-BUL-BYZ/BYZ-Islands/Corsica.png"
+	}
+	spriteType = {
+		name = "GFX_GRE_str_island_baleric"
+		textureFile = "gfx/interface/GRE-BUL-BYZ/BYZ-Islands/Baleric.png"
+	}
+	spriteType = {
+		name = "GFX_GRE_GREY_BG"
+		textureFile = "gfx/interface/GRE-BUL-BYZ/BYZ-Islands/GREY_BG.png"
+	}
+}

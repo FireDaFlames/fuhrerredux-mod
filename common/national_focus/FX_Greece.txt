@@ -1,5 +1,13 @@
 #GREEK FOCUS TREE BY FOKEŁ 2022
 
+############################################################
+#            BULGARIAN NATIONAL FOCUS TREE                 #
+############################################################
+############################################################
+# Created by thanasislanaras "The Legendary Kebab Remover" #
+############################################################
+
+
 focus_tree = {
 	id = greece_focus
 	country = {
@@ -3555,7 +3563,7 @@ focus = {
 		custom_effect_tooltip = GRE_tt_GRE_imperium_romanum
 		set_capital = {state = 341}
 		hidden_effect = {
-			load_focus_tree = greece_rome_focus
+			load_focus_tree = GRE_Rome_focus
 			set_cosmetic_tag = GRE_roman
 		}
 	}

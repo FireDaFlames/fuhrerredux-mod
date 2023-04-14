@@ -1,0 +1,87 @@
+# BYZ_foreign_monopolies = {
+				
+# 	allowed = {
+# 		original_tag = BYZ
+# 	}
+
+# 	allowed_civil_war = {
+# 		always = yes
+# 	}
+
+# 	picture = generic_exploit_mines
+		
+# 	removal_cost = -1
+		
+# 	modifier = {
+# 		trade_laws_cost_factor = 0.75
+# 		economy_cost_factor	= 0.25
+# 		consumer_goods_factor = 0.2
+# 		trade_opinion_factor = 0.25
+# 	}
+# }
+
+# BYZ_foreign_monopolies_2 = {
+		
+# 	allowed = {
+# 		original_tag = BYZ
+# 	}
+
+# 	allowed_civil_war = {
+# 		always = yes
+# 	}
+
+# 	picture = generic_exploit_mines
+		
+# 	removal_cost = -1
+		
+# 	modifier = {
+# 		trade_laws_cost_factor = 0.75
+# 		economy_cost_factor	= 0.25
+# 		consumer_goods_factor = 0.15
+# 		trade_opinion_factor = 0.25
+# 	}
+# }
+
+# BYZ_foreign_monopolies_3 = {
+		
+# 	allowed = {
+# 		original_tag = BYZ
+# 	}
+
+# 	allowed_civil_war = {
+# 		always = yes
+# 	}
+
+# 	picture = generic_exploit_mines
+		
+# 	removal_cost = -1
+		
+# 	modifier = {
+# 		trade_laws_cost_factor = 0.75
+# 		economy_cost_factor	= 0.25
+# 		consumer_goods_factor = 0.1
+# 		trade_opinion_factor = 0.25
+# 	}
+# }
+
+# BYZ_foreign_monopolies_4 = {
+		
+# 	allowed = {
+# 		original_tag = BYZ
+# 	}
+
+# 	allowed_civil_war = {
+# 		always = yes
+# 	}
+
+# 	picture = generic_exploit_mines
+		
+# 	removal_cost = -1
+		
+# 	modifier = {
+# 		trade_laws_cost_factor = 0.75
+# 		economy_cost_factor	= 0.25
+# 		consumer_goods_factor = 0.05
+# 		trade_opinion_factor = 0.25
+# 	}
+# }

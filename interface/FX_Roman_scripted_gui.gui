@@ -1,0 +1,162 @@
+guiTypes = {
+	containerWindowType = {
+		name = "GRE_strategic_islands_scripted_gui"
+		size = {
+			width = 50%
+			height = 650
+		}
+		position = {
+			x = 0
+			y = 0
+		}
+		# background = {
+		# 	spriteType = "GFX_GRE_GREY_BG"
+		# 	position = {
+		# 		x = 0
+		# 		y = 0
+		# 	}
+		# 	alwaystransparent = yes
+		# }
+		buttonType = {
+			name = "GRE_str_island_crete"
+			spriteType = "GFX_GRE_str_island_crete"
+			# buttonText = "Crete"
+			position = {
+				x = 100
+				y = 400
+			}
+			scale = 0.5
+			pdx_tooltip = "The Island of Crete"
+			# buttonFont = "hoi_26mbs"
+		}
+		buttonType = {
+			name = "GRE_str_island_aegean"
+			spriteType = "GFX_GRE_str_island_aegean"
+			# buttonText = "Aegean"
+			position = {
+				x = 150
+				y = 100
+			}
+			scale = 0.5
+			pdx_tooltip = "The Aegean Islands"
+			# buttonFont = "hoi_26mbs"
+		}
+		buttonType = {
+			name = "GRE_str_island_ionian"
+			spriteType = "GFX_GRE_str_island_ionian"
+			# buttonText = "Ionian"
+			position = {
+				x = 10
+				y = 100
+			}
+			scale = 0.5
+			pdx_tooltip = "The Ionian Islands"
+			# buttonFont = "hoi_26mbs"
+		}
+		buttonType = {
+			name = "GRE_str_island_dodecanese"
+			spriteType = "GFX_GRE_str_island_dodecanese"
+			# buttonText = "Dodecanese"
+			position = {
+				x = 250
+				y = 300
+			}
+			scale = 0.5
+			pdx_tooltip = "The Dodecanese Islands"
+			# buttonFont = "hoi_26mbs"
+		}
+		buttonType = {
+			name = "GRE_str_island_cyprus"
+			spriteType = "GFX_GRE_str_island_cyprus"
+			# buttonText = "Cyprus"
+			position = {
+				x = 250
+				y = 500
+			}
+			scale = 0.5
+			pdx_tooltip = "The Cyprus Island"
+			# buttonFont = "hoi_26mbs"
+		}
+		buttonType = {
+			name = "GRE_str_island_malta"
+			spriteType = "GFX_GRE_str_island_malta"
+			# buttonText = "Malta"
+			position = {
+				x = 125
+				y = 575
+			}
+			scale = 0.25
+			pdx_tooltip = "The Malta Island"
+			# buttonFont = "hoi_26mbs"
+			frame = 1
+
+		}
+		# buttonType = {
+		# 	name = "GRE_str_island_corsica"
+		# 	spriteType = "GFX_GRE_str_island_corsica"
+		# 	buttonText = "Corsica"
+		# 	position = {
+		# 		x = 150
+		# 		y = 450
+		# 	}
+		# 	pdx_tooltip = "The Corsica Island"
+		# 	buttonFont = "hoi_26mbs"
+		# 	scale = 0.25
+		# }
+		# buttonType = {
+		# 	name = "GRE_str_island_sardinia"
+		# 	spriteType = "GFX_GRE_str_island_sardinia"
+		# 	buttonText = "Sardinia"
+		# 	position = {
+		# 		x = 150
+		# 		y = 550
+		# 	}
+		# 	scale = 0.25
+		# 	pdx_tooltip = "The Sardinia Island"
+		# 	buttonFont = "hoi_26mbs"
+		# }
+		# buttonType = {
+		# 	name = "GRE_str_island_portoTorres"
+		# 	spriteType = "GFX_GRE_str_island_portoTorres"
+		# 	buttonText = "Crete"
+		# 	position = {
+		# 		x = 75
+		# 		y = 75
+		# 	}
+		# 	pdx_tooltip = "The PortoTorres State of Sardinia"
+		# 	buttonFont = "hoi_26mbs"
+		# }
+		# buttonType = {
+		# 	name = "GRE_str_island_baleric"
+		# 	spriteType = "GFX_GRE_str_island_baleric"
+		# 	buttonText = "Crete"
+		# 	position = {
+		# 		x = 25
+		# 		y = 75
+		# 	}
+		# 	pdx_tooltip = "The Baleric Islands"
+		# 	buttonFont = "hoi_26mbs"
+		# }
+		buttonType = {
+			name = "GRE_str_island_sicely"
+			spriteType = "GFX_GRE_str_island_sicily"
+			# buttonText = "Sicely"
+			position = {
+				x = 50
+				y = 500
+			}
+			scale = 0.25
+			pdx_tooltip = "The Sicily Island"
+			# buttonFont = "hoi_26mbs"
+			
+		}
+		# instantTextBoxType = {
+		# 	name = "GRE_str_islands_text"
+		# 	position = {
+		# 		x = 0
+		# 		y = 0
+		# 	}
+		# 	text = "HELLO NIG"
+		# }
+	}
+}

@@ -1,0 +1,4 @@
+BYZ_strategic_islands_category = {
+	BYZ_power_projects_in_malta = { 
+	}
+}
