@@ -1,3 +1,4 @@
+
 state={
 	id=953
 	name="STATE_953"
@@ -7,15 +8,17 @@ state={
 		buildings = {
 			infrastructure = 3
 			air_base = 3
+
 		}
 		add_core_of = UKR
 
 	}
 
 	provinces={
-		11453 6232 6556 9554 6579
+		535 6232 6556 6579 9554 11453 
 	}
 	manpower=534632
 	buildings_max_level_factor=1.000
 	state_category=rural
+	local_supplies=0.000
 }
