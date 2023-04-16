@@ -60,7 +60,7 @@ country_event = { #Invitation to Hungary's faction
 		name = trans.3.a
 		HUN = {
 			add_to_faction = TRA
-		add_political_power = -20
+			add_political_power = -20
 		}
 		ai_chance = {
 			factor = 50
@@ -127,7 +127,8 @@ country_event = { #Literally not anchluss anschluss anymore
 		HUN = {
 			set_state_owner = 76 
 			set_state_owner = 84 
-			set_state_owner = 82 
+			set_state_owner = 82
+			set_state_owner = 1040
 		}
 		ai_chance = {
 			factor = 20

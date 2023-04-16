@@ -127,9 +127,9 @@ country_event = {
 					} 
 				}
 				hidden_effect = { 
-					random_other_country = {
-						news_event = { id = news.16 hours = 12 }
-					} 
+					# random_other_country = {
+					# 	news_event = { id = news.16 hours = 12 }
+					# } 
 				}
 			}
 		}
@@ -292,9 +292,9 @@ country_event = {
 		remove_every_minister = yes
 		add_ideas = {
 			presidential_republic
-			TUR_Hueseyin_Rauf_Pasa_hog_ade
-			TUR_Selahattin_Pasa_for_ade
-			TUR_Resad_Muhlis_Bey_eco_ade
+			# TUR_Hueseyin_Rauf_Pasa_hog_ade
+			# TUR_Selahattin_Pasa_for_ade
+			# TUR_Resad_Muhlis_Bey_eco_ade
 			TUR_Yunus_Nadi_Bey_sec_ade
 		}
 

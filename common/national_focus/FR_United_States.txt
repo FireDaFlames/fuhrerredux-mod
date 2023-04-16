@@ -3639,6 +3639,8 @@ focus_tree = {
       }
 
       unlock_decision_tooltip = USA_propose_alliance_with_brazil
+
+      unlock_decision_tooltip = USA_propose_alliance_with_brazil
     }
   }
 
@@ -4578,7 +4580,7 @@ focus_tree = {
       }
     }
   }
-
+  
   # Entente Lend Lease
   focus = {
     id = USA_entente_lend_lease
