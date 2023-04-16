@@ -1,9 +1,9 @@
 
 state={
-	id=1041
-	name="STATE_1041"
+	id=1054
+	name="STATE_1054"
 	provinces={
-		1838 4704 4843 12598 
+		7732 10839 12524 12671 13303 13304 13305 13306 13307 
 	}
 	history={
 		owner = SIK
@@ -15,8 +15,8 @@ state={
 			infrastructure = 3
 		}
 	}
-	state_category = town
-	manpower=521000
+	manpower=255001
+	state_category = pastoral
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }
