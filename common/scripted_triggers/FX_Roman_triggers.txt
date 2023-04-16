@@ -1,17 +1,17 @@
 is_owned_and_core_of_BYZ = {
-	AND = {
-		OR = {
+	# AND = {
+		# OR = {
 			AND = {
 				is_owned_by = GRE
 				is_core_of = GRE
 				is_controlled_by = GRE
 			}
-			AND = {
-				is_owned_by = BUL
-				is_core_of = BUL
-				is_controlled_by = BUL
-			}
-		}
+			# AND = {
+			# 	is_owned_by = BUL
+			# 	is_core_of = BUL
+			# 	is_controlled_by = BUL
+			# }
+		# }
 		# OR = {
 		# 	AND = {
 		# 		GRE = { exists = yes}
@@ -22,5 +22,5 @@ is_owned_and_core_of_BYZ = {
 		# 		BUL = { exists = yes }
 		# 	}
 		# }
-	}
+	# }
 }

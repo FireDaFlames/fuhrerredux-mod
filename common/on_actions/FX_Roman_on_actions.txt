@@ -1,13 +1,18 @@
 on_actions = {
 	on_startup = {
 		effect = {
-			set_variable = { BYZ_num_of_str_islands = 0 }
-			find_num_of_str_islands_owned_by_BYZ = yes
+			GRE = {
+				set_variable = { BYZ_num_of_str_islands = 0 }
+				find_num_of_str_islands_owned_by_BYZ = yes
+			}
 		}
 	}
 	on_weekly = {
 		effect = {
-			find_num_of_str_islands_owned_by_BYZ = yes
+			GRE = {
+				set_variable = { BYZ_num_of_str_islands = 0 }
+				find_num_of_str_islands_owned_by_BYZ = yes	
+			}
 		}
 	}
 }

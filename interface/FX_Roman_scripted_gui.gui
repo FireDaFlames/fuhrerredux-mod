@@ -159,4 +159,25 @@ guiTypes = {
 		# 	text = "HELLO NIG"
 		# }
 	}
+
+	containerWindowType = {
+		name = "GRE_strategic_islands_tooltip_scripted_gui"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 20
+			height = 20
+		}
+		iconType = {
+			name = "question_mark_tooltip_GRE_str_islands"
+			spriteType = "GFX_help_button"
+			position = {
+				x = 470
+				y = -75
+			}
+			pdx_tooltip = "GRE_strategic_islands_tooltip_text"
+		}
+	}
 }

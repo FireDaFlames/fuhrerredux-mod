@@ -1,18 +1,61 @@
 BYZ_strategic_islands_category = {
 	allowed = {
 		OR = {
-			original_tag = BUL
+			# original_tag = BUL
 			original_tag = GRE
 		}
 	}
 	priority = 9999
 	visible_when_empty = yes
-	on_ma\p_mode = { 
-		state = 116
-		name = "Develop Islands"
-		zoom = 850
-		target_root_trigger = {
-			tag = GRE
+	# on_map_mode = { 
+	# 	state = 116
+	# 	name = "Develop Islands"
+	# 	zoom = 850
+	# 	target_root_trigger = {
+	# 		tag = GRE
+	# 	}
+	# }
+	scripted_gui = GRE_strategic_islands_tooltip_gui
+	icon = GFX_decision_category_border_war
+	on_map_area = {
+		name = GRE_strategic_islands_cores
+		zoom = 250
+
+		targets = { 164 182 1046 187 183 116 115 114 1 768 177 }
+		target_trigger = {
+			owns_state = FROM
+			FROM = {
+				is_core_of = ROOT
+				is_owned_by = ROOT
+				is_controlled_by = ROOT
+			}
+		}
+	}
+	on_map_area = {
+		name =  GRE_strategic_islands_controlled
+		zoom = 250
+		targets = { 164 182 1046 187 183 116 115 114 1 768 177 }
+		target_trigger = {
+			owns_state = FROM
+			FROM = {
+				is_controlled_by = ROOT
+				is_owned_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+		}
+	}
+	on_map_area = {
+		name =  GRE_strategic_islands_claims
+		zoom = 250
+		targets = { 164 182 1046 187 183 116 115 114 1 768 177 }
+		target_trigger = {
+			NOT = { owns_state = FROM }
+			FROM = {
+				is_claimed_by = ROOT
+			}
 		}
 	}
 }
