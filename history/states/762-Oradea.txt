@@ -1,7 +1,7 @@
 
 state={
 	id=762
-	name="Oradea"
+	name="STATE_762"
 
 	history={
 		owner = ROM
