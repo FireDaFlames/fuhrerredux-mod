@@ -2127,6 +2127,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_goal_JAP_the_manager"
 		texturefile = "gfx/interface/goals/goal_JAP_the_manager.png"
+	}
 	#FINLAND WINTER WAR BRANCH
 	spriteType = {
 		name = "GFX_goal_FIN_attack_soviets"
