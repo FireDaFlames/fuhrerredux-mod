@@ -661,6 +661,14 @@ focus_tree = {
 		cost = 0
 		x = -6
 		y = 1
+		# allow_branch = {
+		# 	OR = {
+		# 		has_government = national_populist
+		# 		has_government = valkist
+		# 		has_government = authoritarian_democrat
+		# 		has_government = paternal_autocrat
+		# 	}
+		# }
 		relative_position_id = BUL_future_of_empire
 		prerequisite = {
 			focus = BUL_future_of_empire
@@ -688,14 +696,14 @@ focus_tree = {
 			has_government = paternal_autocrat
 			has_government = authoritarian_democrat
 		}
-		x = 2
+		x = 1
 		y = 1
 	}
 	focus = {
 		id = BUL_empire_other_balkan_countries
 		icon = none 
 		cost = 5
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = BUL_empire_bulgarian
 		prerequisite = {
@@ -816,7 +824,7 @@ focus_tree = {
 		id = BUL_empire_volga
 		icon = none
 		cost = 5
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = BUL_a_bulgarian_empire
 		prerequisite = {
@@ -833,7 +841,7 @@ focus_tree = {
 		id = BUL_empire_natural_homeland
 		icon = none
 		cost = 5
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = BUL_empire_volga
 		prerequisite = {
@@ -872,7 +880,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BUL_the_ukrainian_massacre
+		id = BUL_the_ukrainian_liberation
 		icon = none
 		cost = 5
 		x = 0
@@ -891,9 +899,9 @@ focus_tree = {
 		cost = 5
 		x = 0
 		y = 1
-		relative_position_id = BUL_the_ukrainian_massacre
+		relative_position_id = BUL_the_ukrainian_liberation
 		prerequisite = {
-			focus = BUL_the_ukrainian_massacre
+			focus = BUL_the_ukrainian_liberation
 		}
 		completion_reward = {
 
@@ -1879,8 +1887,14 @@ focus_tree = {
 		id = BUL_the_peoples_king
 		icon = none
 		cost = 5
-		x = 30
-		y = 20
+		x = 20
+		y = 15
+		allow_branch = {
+			OR = {
+				has_government = authoritarian_democrat
+				has_government = paternal_autocrat
+			}
+		}
 		completion_reward = { }
 	}
 	focus = {
@@ -2057,11 +2071,89 @@ focus_tree = {
 		id = BUL_taking_matters_to_our_hands
 		icon = none
 		cost = 5
-		x = 5
+		x = 6
 		y = 1
 		relative_position_id = BUL_the_peoples_king
 		prerequisite = {
 			focus = BUL_the_peoples_king
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = BUL_ban_political_parties
+		icon = none
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_taking_matters_to_our_hands
+		prerequisite = {
+			focus = BUL_taking_matters_to_our_hands
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = BUL_found_the_brannik_movement
+		icon = none
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_ban_political_parties
+		prerequisite = {
+			focus = BUL_ban_political_parties
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = BUL_state_capitalism
+		icon = none
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = BUL_found_the_brannik_movement
+		prerequisite = {
+			focus = BUL_found_the_brannik_movement
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = BUL_non_partisan_government
+		icon = none
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_found_the_brannik_movement
+		prerequisite = {
+			focus = BUL_found_the_brannik_movement
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = BUL_class_solidarity
+		icon = none
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = BUL_found_the_brannik_movement
+		prerequisite = {
+			focus = BUL_found_the_brannik_movement
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = BUL_boris_bulgarian_god
+		icon = none
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BUL_non_partisan_government
+		prerequisite = {
+			focus = BUL_non_partisan_government
+		}
+		prerequisite = {
+			focus = BUL_class_solidarity
+		}
+		prerequisite = {
+			focus = BUL_state_capitalism
 		}
 		completion_reward = { }
 	}
