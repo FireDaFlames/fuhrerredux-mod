@@ -128,7 +128,7 @@ guiTypes = {
 
 			instantTextboxType = {
 				name = "elections"
-				position = { x = 27 y = 10 }
+				position = { x = 27 y = 16 } #don't shift it upwards, for example in GRE it bugs
 				font = "hoi_16mbs"
 				text = "elections"
 				maxWidth = 110
