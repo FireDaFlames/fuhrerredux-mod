@@ -7,7 +7,6 @@
 # Created by thanasislanaras "The Legendary Kebab Remover" #
 ############################################################
 
-
 focus_tree = {
 	id = greece_focus
 	country = {

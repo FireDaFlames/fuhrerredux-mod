@@ -107,3 +107,549 @@ shared_focus = {
 		
 	}
 }
+
+# ########################### #
+# INDUSTRY QUESTION SUBBRANCH #
+# ########################### #
+
+shared_focus = {
+	id = BYZ_the_industry_question
+	cost = 5
+	prerequisite = {
+		focus = BYZ_rectify_economic_mistakes
+	}
+	relative_position_id = BYZ_rectify_economic_mistakes
+	x = -7
+	y = 1
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = BYZ_foreign_industry
+	cost = 5
+	prerequisite = {
+		focus = BYZ_the_industry_question
+	}
+	relative_position_id = BYZ_the_industry_question
+	x = 3
+	y = 1
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	id = BYZ_nationalise_foreign_industry
+	icon = GFX_goal_economic_control
+	cost = 5
+	prerequisite = {
+		focus = BYZ_foreign_industry
+
+	}
+	mutually_exclusive = {
+		focus =  BYZ_privatize_industry
+	}
+	relative_position_id = BYZ_foreign_industry
+	x = -2
+	y = 1
+	completion_reward = {
+		decrease_ruling_party_popularity_by_5 = yes
+		add_timed_idea = {
+			idea = BYZ_nationalised_industry
+			days = 365
+		}
+	}
+}
+shared_focus = {
+	id = BYZ_privatize_industry
+	icon = GFX_goal_factory_complex
+	cost = 5
+	prerequisite = {
+		focus = BYZ_foreign_industry
+
+	}
+	mutually_exclusive = {
+		focus = BYZ_nationalise_foreign_industry
+	}
+	relative_position_id = BYZ_foreign_industry
+	x = 2
+	y = 1
+	completion_reward = {
+		add_timed_idea = {
+			idea = BYZ_privatised_industry
+			days = 365
+		}
+		increase_ruling_party_popularity_by_5 = yes
+	}
+}
+shared_focus = {
+	id = BYZ_fund_businesses
+	icon = GFX_goal_generic_construct_civ_factory
+	cost = 5
+	prerequisite = {
+		focus = BYZ_nationalise_foreign_industry
+		focus = BYZ_privatize_industry
+	}
+	relative_position_id = BYZ_nationalise_foreign_industry
+	x = 0
+	y = 1
+	completion_reward = {
+		add_political_power = -50
+		random_owned_controlled_state = {
+			prioritize = {
+				1045 #attica
+			}
+			limit = {
+				is_in_home_area = yes
+				industrial_complex > 0
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = BYZ_military_conversion
+	icon = GFX_goal_generic_construct_mil_factory
+	cost = 5
+	prerequisite = {
+		focus = BYZ_privatize_industry
+		focus = BYZ_nationalise_foreign_industry
+	}
+	available = {
+		num_of_military_factories > 3
+	}
+	relative_position_id = BYZ_privatize_industry
+	x = 0
+	y = 1
+	completion_reward = {
+		random_owned_controlled_state = {
+			prioritize = {
+				1045
+			}
+			limit = {
+				arms_factory > 0
+			}
+			remove_building = {
+				type = industrial_complex
+				level = 1
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			prioritize = {
+				731 #Thessaloniki
+			}
+			limit = {
+				arms_factory > 0
+			}
+			remove_building = {
+				type = industrial_complex
+				level = 1
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	cost = 5
+	id = BYZ_open_foreign_factories
+	prerequisite = {
+		focus = BYZ_military_conversion
+	}
+	prerequisite = {
+		focus = BYZ_fund_businesses
+	}
+	relative_position_id = BYZ_military_conversion
+	x = -2
+	y = 1
+	completion_reward = {
+		custom_effect_tooltip = BYZ_open_foreign_factories_opinion_tooltip
+		if = {
+			limit = {
+				GRE = {
+					exists = yes
+					has_global_flag = GRE_FORMED_ROMAN_EMPIRE
+					NOT = {
+						has_global_flag = BUL_formed_roman_empire
+						BUL = {
+							exists = yes
+						}
+					}
+				}
+				OR = {
+					ENG = {
+						has_opinion = {
+							target = GRE
+							value > 80
+						}
+					}
+					FRA = {
+						has_opinion = {
+							target = GRE
+							value > 80
+						}
+					}
+					ITA = {
+						has_opinion = {
+							target = GRE
+							value > 80
+						}
+					}
+					GER = {
+						has_opinion = {
+							target = GRE
+							value > 80
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					ENG = {
+						has_opinion = {
+							target = GRE
+							value > 80
+						}
+					}
+				}
+				GRE = {
+					add_offsite_building = {
+						type = industrial_complex
+						level = 1
+					}
+					add_offsite_building = {
+						type = arms_factory
+						level = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					FRA = {
+						has_opinion = {
+							target = GRE
+							value > 80
+						}
+					}
+				}
+				GRE = {
+					add_offsite_building = {
+						type = industrial_complex
+						level = 1
+					}
+					add_offsite_building = {
+						type = arms_factory
+						level = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					ITA = {
+						has_opinion = {
+							target = GRE
+							value > 80
+						}
+					}
+				}
+				GRE = {
+					add_offsite_building = {
+						type = industrial_complex
+						level = 1
+					}
+					add_offsite_building = {
+						type = arms_factory
+						level = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					GER = {
+						has_opinion = {
+							target = GRE
+							value > 80
+						}
+					}
+				}
+				GRE = {
+					add_offsite_building = {
+						type = industrial_complex
+						level = 1
+					}
+					add_offsite_building = {
+						type = arms_factory
+						level = 1
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				BUL = {
+					exists = yes
+					has_global_flag = BUL_formed_roman_empire
+					NOT = {
+						has_global_flag = GRE_FORMED_ROMAN_EMPIRE
+						GRE = {
+							exists = yes
+						}
+					}
+				}
+				OR = {
+					ENG = {
+						has_opinion = {
+							target = BUL
+							value > 80
+						}
+					}
+					FRA = {
+						has_opinion = {
+							target = BUL
+							value > 80
+						}
+					}
+					ITA = {
+						has_opinion = {
+							target = BUL
+							value > 80
+						}
+					}
+					GER = {
+						has_opinion = {
+							target = BUL
+							value > 80
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					ENG = {
+						has_opinion = {
+							target = BUL
+							value > 80
+						}
+					}
+				}
+				BUL = {
+					add_offsite_building = {
+						type = industrial_complex
+						level = 1
+					}
+					add_offsite_building = {
+						type = arms_factory
+						level = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					FRA = {
+						has_opinion = {
+							target = BUL
+							value > 80
+						}
+					}
+				}
+				BUL = {
+					add_offsite_building = {
+						type = industrial_complex
+						level = 1
+					}
+					add_offsite_building = {
+						type = arms_factory
+						level = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					ITA = {
+						has_opinion = {
+							target = BUL
+							value > 80
+						}
+					}
+				}
+				BUL = {
+					add_offsite_building = {
+						type = industrial_complex
+						level = 1
+					}
+					add_offsite_building = {
+						type = arms_factory
+						level = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					BUL = {
+						has_opinion = {
+							target = GRE
+							value > 80
+						}
+					}
+				}
+				BUL = {
+					add_offsite_building = {
+						type = industrial_complex
+						level = 1
+					}
+					add_offsite_building = {
+						type = arms_factory
+						level = 1
+					}
+				}
+			}
+		}
+	}
+}
+shared_focus = {
+	cost = 5
+	id = BYZ_invest_decisions
+	prerequisite = {
+		focus = BYZ_open_foreign_factories
+	}
+	relative_position_id = BYZ_open_foreign_factories
+	x = 0
+	y = 1
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	cost = 5
+	id = BYZ_our_industry
+	prerequisite = {
+		focus = BYZ_the_industry_question
+	}
+	relative_position_id = BYZ_the_industry_question
+	x = -3
+	y = 1
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	cost = 5
+	id = BYZ_board_of_industry
+	prerequisite = {
+		focus = BYZ_our_industry
+	}
+	relative_position_id = BYZ_our_industry
+	x = -2
+	y = 1
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	cost = 5
+	id = BYZ_direct_petrol
+	prerequisite = {
+		focus = BYZ_board_of_industry
+	}
+	relative_position_id = BYZ_board_of_industry
+	x = 0
+	y = 1
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	cost = 5
+	id = BYZ_gun_policy
+	prerequisite = {
+		focus = BYZ_direct_petrol
+	}
+	relative_position_id = BYZ_direct_petrol
+	x = 0
+	y = 1
+	completion_reward = {
+
+	}
+}
+
+
+shared_focus = {
+	cost = 5
+	icon = GFX_focus_generic_steel
+	id = BYZ_the_tag_mining
+	prerequisite = {
+		focus = BYZ_our_industry
+	}
+	relative_position_id = BYZ_our_industry
+	x = 2
+	y = 1
+	completion_reward = {
+		add_tech_bonus = {
+			name = BYZ_byzantine_mining
+			bonus = 1
+			uses = 1
+			category = excavation_tech
+		}
+	}
+}
+shared_focus = {
+	cost = 5
+	id = BYZ_tag_railways
+	prerequisite = {
+		focus = BYZ_the_tag_mining
+	}
+	relative_position_id = BYZ_the_tag_mining
+	x = 0
+	y = 1
+	completion_reward = {
+
+	}
+}
+shared_focus = {
+	cost = 5
+	id = BYZ_land_reform
+	prerequisite = {
+		focus = BYZ_tag_railways
+	}
+	relative_position_id = BYZ_tag_railways
+	x = 0
+	y = 1
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	cost = 5
+	id = BYZ_model_european_industry
+	prerequisite = {
+		focus = BYZ_land_reform
+	}
+	prerequisite = {
+		focus = BYZ_gun_policy
+	}
+	relative_position_id = BYZ_land_reform
+	x = -2
+	y = 1
+	completion_reward = {
+
+	}
+}

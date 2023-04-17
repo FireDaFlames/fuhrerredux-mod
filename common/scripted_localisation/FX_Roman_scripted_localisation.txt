@@ -1,0 +1,64 @@
+defined_text = {
+	name = "GETBYZANTIUMTAG"
+	text = {
+		trigger = {
+			country_exists = GRE
+			NOT = {
+				country_exists = BUL
+			}
+		}
+		localization_key = GREBYZANIUMTAG
+	}
+	
+	text = {
+		trigger = {
+			country_exists = BUL
+			NOT = {
+				country_exists = GRE
+			}
+		}
+		localization_key = BULBYZANTIUMTAG
+	}
+}
+defined_text = {
+	name = "GETBYZANTIUMFLAG"
+	text = {
+		trigger = {
+			country_exists = GRE
+			NOT = {
+				country_exists = BUL
+			}
+		}
+		localization_key = GREBYZANTIUMFLAG
+	}
+	text = {
+		trigger = {
+			country_exists = BUL
+			NOT = {
+				country_exists = GRE
+			}
+		}
+		localization_key = BULBYZANTIUMFLAG
+	}
+}
+defined_text = {
+	name = "GETBYZANTIUMTAGFLAG"
+	text = {
+		trigger = {
+			country_exists = GRE
+			NOT = {
+				country_exists = BUL
+			}
+		}
+		localization_key = GREBYZANTIUMTAGFLAG
+	}
+	text = {
+		trigger = {
+			country_exists = BUL
+			NOT = {
+				country_exists = GRE
+			}
+		}
+		localization_key = BULBYZANTIUMTAGFLAG
+	}
+}

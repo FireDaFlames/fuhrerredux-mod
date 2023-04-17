@@ -85,3 +85,40 @@
 # 		trade_opinion_factor = 0.25
 # 	}
 # }
+
+
+ideas = {
+	country = {
+		BYZ_privatised_industry = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BYZ_privatised_industry" }
+			picture = can_wartime_prices_and_trade_board
+			allowed = { 
+				OR = {
+					original_tag = BUL
+					original_tag = GRE
+				}
+			}
+			modifier = {
+				production_factory_max_efficiency_factor = 0.10
+				consumer_goods_factor = -0.05
+				stability_factor = -0.05
+			}
+		}
+		BYZ_nationalised_industry = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BYZ_nationalised_industry" }
+			picture = economic_control_icon
+			allowed = { 
+				OR = {
+					original_tag = BUL
+					original_tag = GRE
+				}
+			}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				production_factory_max_efficiency_factor = -0.10
+				production_speed_buildings_factor = 0.20
+				political_power_gain = 0.20
+			}
+		}
+	}
+}

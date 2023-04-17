@@ -17,13 +17,14 @@ focus_tree = {
 	}
 	default = no
 
+	shared_focus = BYZ_rectify_economic_mistakes
 	continuous_focus_position = { x = 50 y = 1800 }
 
 	focus = {
 		id = GRE_turkish_plot
 		icon = GFX_goal_GRE_turkish_plot
 		cost = 4
-		x = 10
+		x = 25
 		y = 0
 		available = {
 			always = no

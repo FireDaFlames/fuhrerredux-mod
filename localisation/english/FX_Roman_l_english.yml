@@ -5,3 +5,45 @@
   GRE_strategic_islands_cores: "Current Cored Islands"
   GRE_strategic_islands_controlled: "Current Controlled Islands"
   GRE_strategic_islands_claims: "Current Claimed Islands"
+
+
+
+
+#SHARED ROMAN TREE
+# ECONOMIC
+
+#The Industry Question Subtree
+#Our Industry Subbranch
+BYZ_rectify_economic_mistakes: "Rectify Economic Mistakes"
+BYZ_the_industry_question: "The Industry Question"
+BYZ_our_industry: "Our Industry"
+BYZ_the_tag_mining: "The [ROOT.GetAdjective] Mining"
+BYZ_tag_railways: "The [ROOT.GetAdjective] Railways"
+BYZ_land_reform: "Land Reform"
+BYZ_model_european_industry: "Model European Industry"
+#Foreign Industry Subbranch
+BYZ_foreign_industry: "Foreign Industry"
+BYZ_nationalise_foreign_industry: "Nationalise Foreign Industry"
+BYZ_privatize_industry: "Privatalise Foreign Industry"
+BYZ_fund_businesses: "Fund famous businesses"
+BYZ_military_conversion: "Military Conversion"
+BYZ_open_foreign_factories: "Open Foreign Factories"
+BYZ_invest_decisions: "Invest Decisions"
+
+
+
+
+
+
+
+# TOOLTIPS
+BYZ_open_foreign_factories_opinion_tooltip: "Every country ([GER.GetFlag][GER.GetName], [ENG.GetFlag][ENG.GetName], [FRA.GetFlag][FRA.GetName], [ITA.GetFlag][ITA.GetName]) that has opinion of [ROOT.GetFlag][ROOT.GetName] more than 80, will give [ROOT.GetName] an offmap military and civilian factory "
+
+
+#Scripted loc
+GREBYZANTIUMTAG: "[GRE.GetName]"
+BULBYZANTIUMTAG: "[BUL.GetName]"
+GREBYZANTIUMFLAG: "[GRE.GetFlag]"
+BULBYZANTIUMFLAG: "[BUL.GetFlag]"
+GREBYZANTIUMTAGFLAG: "[GRE.GetFlag][GRE.GetName]"
+BULBYZANTIUMTAGFLAG: "[BUL.GetFlag][BUL.GetName]"
