@@ -241,5 +241,36 @@ bookmarks = {
         FIN_declare_our_claims
       }
     }
+    "PER" = {
+      history = "PER_FUHRERREDUX_DESC"
+      ideology = paternal_autocrat
+      minor = yes
+      ideas = {
+        PER_british_influence_iran_idea
+        PER_underground_revolutionaries_idea
+        PER_primitive_military_idea
+      }
+      focuses = {
+        PER_react_economic_crisis
+        PER_reform_army
+        PER_open_foreign_office
+      }
+    }
+    "ARG" = {
+      history = "ARG_FUHRERREDUX_DESC"
+      ideology = social_liberal
+      minor = yes
+      ideas = {
+        ARG_british_companies
+        ARG_memories_of_the_chaco_war
+        ARG_labour_strikes
+      }
+      focuses = {
+        ARG_sunrise_in_argentina
+        ARG_rebuilding_the_army
+        ARG_master_of_the_south_atlantic
+      }
+    }
+
   }
 }
