@@ -271,6 +271,35 @@ bookmarks = {
         ARG_master_of_the_south_atlantic
       }
     }
-
+    "BLR" = {
+      history = "BLR_FUHRERREDUX_DESC"
+      ideology = valkist
+      minor = yes
+      ideas = {
+        BLR_question_of_legitimacy
+        BLR_can_you_read_my_son
+        BLR_diarchy_stable
+      }
+      focuses = {
+        BLR_half_mast
+        BLR_formalize_the_belarusian_armed_forces
+        BLR_konigsberg_conference
+      }
+    }
+    "AFG" = {
+      history = "AFG_FUHERRREDUX_DESC"
+      ideology = authoritarian_democrat
+      minor = yes
+      ideas = {
+        AFG_tribal_influences_afghanistan_idea
+        AFG_afghan_nationalism_idea
+        AFG_backward_army_and_economy_idea
+      }
+      focuses = {
+        AFG_develop_nation
+        AFG_kalakanis_return
+        AFG_king_is_dead_long_live_king
+      }
+    }
   }
 }
