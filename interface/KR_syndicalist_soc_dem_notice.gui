@@ -1,51 +1,51 @@
-guiTypes = {
-	containerWindowType = {
-		name = "syndicalist_soc_dem_notice_container"
-		position = { x = 88 y = 305 }
+# guiTypes = {
+# 	containerWindowType = {
+# 		name = "syndicalist_soc_dem_notice_container"
+# 		position = { x = 88 y = 305 }
 		
-		instantTextboxType = {
-			name = "soc_dem_notice"
-			position = { x = 9 y = 22 }
-			font = "hoi_16mbs"
-			text = "SYNDIE_SOC_DEM_NOTICE"
+# 		instantTextboxType = {
+# 			name = "soc_dem_notice"
+# 			position = { x = 9 y = 22 }
+# 			font = "hoi_16mbs"
+# 			text = "SYNDIE_SOC_DEM_NOTICE"
 
-			maxWidth = 155
-			maxHeight = 20
-			fixedsize = yes
-			format = left
-			alwaystransparent = yes
-		}
-	}
+# 			maxWidth = 155
+# 			maxHeight = 20
+# 			fixedsize = yes
+# 			format = left
+# 			alwaystransparent = yes
+# 		}
+# 	}
 	
-	containerWindowType = {
-		name = "subideology_container"
-		position = { x = 177 y = 237 }
-		instantTextboxType = {
-			name = "subideology_name"
-			position = { x = 9 y = 25 }
-			font = "hoi_16mbs"
-			text = "RulingIdeologySubtype_Text"
-			pdx_tooltip = "[GetRulingIdeologySubtype]"
-			maxWidth = 140
-			maxHeight = 20
-			format = left
-			alwaystransparent = no
-		}
-	}
+# 	containerWindowType = {
+# 		name = "subideology_container"
+# 		position = { x = 177 y = 237 }
+# 		instantTextboxType = {
+# 			name = "subideology_name"
+# 			position = { x = 9 y = 25 }
+# 			font = "hoi_16mbs"
+# 			text = "RulingIdeologySubtype_Text"
+# 			pdx_tooltip = "[GetRulingIdeologySubtype]"
+# 			maxWidth = 140
+# 			maxHeight = 20
+# 			format = left
+# 			alwaystransparent = no
+# 		}
+# 	}
 
-	containerWindowType = {
-		name = "subideology_container_diplo"
-		position = { x = 263 y = 143 }
-		instantTextboxType = {
-			name = "subideology_name_diplo"
-			position = { x = 0 y = 2 }
-			font = "hoi_16mbs"
-			text = "[GetDiploRulingPartySubtype]"
-			pdx_tooltip = "RulingIdeologySubtype_diplo_tt"
-			maxWidth = 200
-			maxHeight = 20
-			format = left
-			alwaystransparent = no
-		}
-	}
-}
+# 	containerWindowType = {
+# 		name = "subideology_container_diplo"
+# 		position = { x = 263 y = 143 }
+# 		instantTextboxType = {
+# 			name = "subideology_name_diplo"
+# 			position = { x = 0 y = 2 }
+# 			font = "hoi_16mbs"
+# 			text = "[GetDiploRulingPartySubtype]"
+# 			pdx_tooltip = "RulingIdeologySubtype_diplo_tt"
+# 			maxWidth = 200
+# 			maxHeight = 20
+# 			format = left
+# 			alwaystransparent = no
+# 		}
+# 	}
+# }
