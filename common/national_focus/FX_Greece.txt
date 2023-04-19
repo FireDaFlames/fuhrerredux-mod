@@ -48,6 +48,11 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRE_smyrna_crisis"
 			custom_effect_tooltip = GRE_tt_smyrna_crisis
+			set_politics = {
+				ruling_party = valkist
+				elections_allowed = no
+				
+			}
 		}
 	}
 
@@ -3874,6 +3879,7 @@ focus = {
 ############################
 	focus = {
 		id = GRE_armed_forces_parliament
+		icon = none
 		x = 50
 		y = 9
 		cost = 5
@@ -3888,213 +3894,226 @@ focus = {
 
 	focus = {
 		id = GRE_hellenic_airforce
+		icon = none
 		x = 0
 		y = 1
 		prerequisite = { focus = GRE_armed_forces_parliament }
 		cost = 5
 		relative_position_id = GRE_armed_forces_parliament
 		completion_reward = {
-			
 			#research bonus for any type of plane you want#
-			
+			add_tech_bonus = {
+				name = GRE_hellenic_airforce_bonus
+				bonus = 0.5
+				uses = 1
+				category = heavy_air
+			}
+			add_tech_bonus = {
+				name = GRE_hellenic_airforce_bonus
+				bonus = 0.5
+				uses = 1
+				category = light_air
+			}
 		}
 		
 	}
-
 	focus = {
 		id = GRE_found_the_icarus_school
+		icon = none
 		x = -1
 		y = 1
 		prerequisite = { focus = GRE_hellenic_airforce }
 		cost = 5
 		relative_position_id = GRE_hellenic_airforce
 		completion_reward = {
-			
 			#national spirit that boosts attack and defence by a small amount#
 			
 		}
 		
 	}
-
 	focus = {
 		id = GRE_expand_aiports
+		icon = none
 		x = 1
 		y = 1
 		prerequisite = { focus = GRE_hellenic_airforce }
 		cost = 5
 		relative_position_id = GRE_hellenic_airforce
 		completion_reward = {
-			
 			#builds airports in Attica Crete Epirus and Thrace #
-			
+			1045 = {
+				add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
+			}
+			182 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			342 = {
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+			}
+			185 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		
 	}
-
-
-
 	focus = {
-		
 		id = GRE_protecting_the_airspace
-		
+		icon = none
 		x = 1
-		
 		y = 1
-		
 		prerequisite = { focus = GRE_expand_aiports }
-		
 		prerequisite = { focus = GRE_found_the_icarus_school }
-		
 		cost = 5
-		
 		relative_position_id = GRE_expand_aiports
-		
-		
-		
 		completion_reward = {
-			
 			#research bonus for fighters #
-			
+			add_tech_bonus = {
+				name = GRE_protecting_the_airspace_bonus
+				uses = 1
+				bonus = 0.75
+				category = fighter_techs
+			}
 		}
 		
 	}
-
-
-
 	focus = {
-		
 		id = GRE_destroy_the_enemy
-		
+		icon = none
 		x = -3
-		
 		y = 1
-		
 		prerequisite = { focus = GRE_expand_aiports }
-		
 		prerequisite = { focus = GRE_found_the_icarus_school }
-		
 		cost = 5
-		
 		relative_position_id = GRE_expand_aiports
-		
-		
-		
 		completion_reward = {
-			
 			#research bonus for bombers #
-			
+			add_tech_bonus = {
+				name = GRE_destroy_the_enemy_bonus
+				uses = 1
+				bonus = 0.5
+				category = cat_strategic_bomber
+			}
 		}
-		
 	}
-
-
-
 	focus = {
-		
 		id = GRE_better_tactics
-		
+		icon = none
 		x = -1
-		
 		y = 2
-		
 		prerequisite = { focus = GRE_expand_aiports }
-		
 		prerequisite = { focus = GRE_found_the_icarus_school }
-		
 		cost = 5
-		
 		relative_position_id = GRE_expand_aiports
-		
-		
-		
 		completion_reward = {
-			
 			#bonus for air doctorine #
-			
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				name = GRE_better_tactics_doctine
+				uses = 1
+				category = air_doctrine
+			}
 		}
 		
 	}
-
-
-
 	focus = {
-		
 		id = GRE_defend_the_sea
-		
+		icon = none
 		x = -1
-		
 		y = 1
-		
 		prerequisite = { focus = GRE_better_tactics focus =GRE_destroy_the_enemy
-		
 		focus = GRE_protecting_the_airspace }
-		
-		mutually_exclusive = { GRE_install_antiair }
-		
+		mutually_exclusive = { focus = GRE_install_antiair }
 		cost = 5
-		
 		relative_position_id = GRE_better_tactics
-		
-		
-		
 		completion_reward = {
 			
 			#bonus for naval bombers #
-			
+			add_tech_bonus = {
+				name = GRE_defend_the_sea_bonus
+				uses = 1
+				bonus = 0.5
+				category = naval_bomber
+			}
 		}
 		
 	}
-
-
-
-
-
 	focus = {
-		
 		id = GRE_install_antiair
-		
+		icon = none
 		x = 1
-		
 		y = 1
-		
-		prerequisite = { focus = GRE_better_tactics focus =GRE_destroy_the_enemy
-		
-		focus = GRE_protecting_the_airspace }
-		
-		mutually_exclusive = { GRE_defend_the_sea }
-		
+		prerequisite = { 
+			focus = GRE_better_tactics 
+			focus = GRE_destroy_the_enemy
+			focus = GRE_protecting_the_airspace 
+		}
+		mutually_exclusive = { focus = GRE_defend_the_sea }
 		cost = 5
-		
 		relative_position_id = GRE_better_tactics
-		
-		
-		
 		completion_reward = {
 			
 			#2 random states and Athens get anti air #
-			
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					NOT = {
+						state = 1045
+					}
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					NOT = {
+						state = 1045
+					}
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+			1045 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+
 		}
 		
 	}
-
-
-
 	focus = {
-		
 		id = GRE_increase_production
-		
+		icon = none
 		x = -1
-		
 		y = 1
-		
 		prerequisite = { focus = GRE_install_antiair focus = GRE_defend_the_sea }
-		
 		cost = 5
-		
 		relative_position_id = GRE_install_antiair
-		
-		
-		
 		completion_reward = {
 			
 			#adds spirit which reduces production cost #
@@ -4102,25 +4121,14 @@ focus = {
 		}
 		
 	}
-
-
-
 	focus = {
-		
 		id = GRE_spirit_of_the_eagle
-		
+		icon = none
 		x = 0
-		
 		y = 1
-		
 		prerequisite = { focus = GRE_increase_production }
-		
 		cost = 5
-		
 		relative_position_id = GRE_increase_production
-		
-		
-		
 		completion_reward = {
 			
 			#adds spirit which improves attack and speed but increases accident Chance #
@@ -4128,60 +4136,48 @@ focus = {
 		}
 		
 	}
-
-
-
 	focus = {
-		
 		id = GRE_better_aircrafts
-		
+		icon = none
 		x = -1
-		
 		y = 1
-		
 		prerequisite = { focus = GRE_spirit_of_the_eagle }
-		
 		cost = 5
-		
 		relative_position_id = GRE_spirit_of_the_eagle
-		
-		
-		
 		completion_reward = {
 			
 			#Reduce ahead of time penalty by 1.0 year for fighters. Uses 1#
-			
+			add_tech_bonus = {
+				name = GRE_better_aircrafts_bonus
+				uses = 1
+				bonus = 0.5
+				ahead_reduction = 1
+				category = fighter_techs
+			}
 		}
 		
 	}
-
 	focus = {
-		
 		id = GRE_bigger_airforce
-		
+		icon = none
 		x = 1
-		
 		y = 1
-		
 		prerequisite = { focus = GRE_spirit_of_the_eagle }
-		
 		cost = 5
-		
 		relative_position_id = GRE_spirit_of_the_eagle
-		
-		
-		
 		completion_reward = {
 			
 			#i would recommend either decisions or an event to buy planes#
-			
+			# i wouldn't pls
+			# i am bored to do stuff like that lol
+			# pls
 		}
 		
 	}
-
 	focus = {
 		id = GRE_a_new_type_of_war
-		x = -1
+		icon = none
+		x = 1
 		y = 1
 		prerequisite = { focus = GRE_bigger_airforce }
 		prerequisite = { focus = GRE_better_aircrafts }
@@ -4190,13 +4186,20 @@ focus = {
 		completion_reward = {
 			
 			#bonus for air doctorine and adds air exp#
-			
+			air_experience = 50
+			add_doctrine_cost_reduction = {
+				cost_reduction = 1
+				name = GRE_a_new_type_of_war_doctrine
+				uses = 2
+				category = air_doctrine
+				
+			}
 		}
 		
 	}
-
 	focus = {
 		id = GRE_hellenic_army
+		icon = none
 		x = -5
 		y = 1
 		prerequisite = { focus = GRE_armed_forces_parliament }
@@ -4205,13 +4208,19 @@ focus = {
 		completion_reward = {
 			
 			#research bonus for guns#
-			
+			add_tech_bonus = {
+				name = GRE_hellenic_army_bonus
+				uses = 1
+				bonus = 0.5
+				category = cat_gunnery
+			}
 		}
 		
 	}
 
 	focus = {
 		id = GRE_land_of_mountains
+		icon = none
 		x = 0
 		y = 1
 		prerequisite = { focus = GRE_hellenic_army }
@@ -4227,6 +4236,7 @@ focus = {
 
 	focus = {
 		id = GRE_mobilise_the_army
+		icon = none
 		x = -1
 		y = 1
 		prerequisite = { focus = GRE_land_of_mountains }
@@ -4235,13 +4245,25 @@ focus = {
 		completion_reward = {
 			
 			#research bonus for trucks and mechanised#
-			
+			add_tech_bonus = {
+				name = GRE_mobilise_the_army_truck_bonus
+				uses = 1
+				bonus = 0.5
+				category = motorized_equipment
+			}
+			add_tech_bonus = {
+				name = GRE_mobilise_the_army_mech_bonus
+				uses = 1
+				bonus = 0.5
+				category = cat_mechanized_equipment
+			}
 		}
 		
 	}
 
 	focus = {
 		id = GRE_special_forces
+		icon = none
 		x = 1
 		y = 1
 		prerequisite = { focus = GRE_land_of_mountains }
@@ -4250,13 +4272,20 @@ focus = {
 		completion_reward = {
 			
 			#adds exp and research bonus for special forces#
-			
+			army_experience = 50
+			add_tech_bonus = {
+				name = GRE_special_forces_bonus
+				uses = 2
+				bonus = 0.35
+				category = cat_special_units
+			}
 		}
 		
 	}
 
 	focus = {
 		id = GRE_the_tank_program
+		icon = none
 		x = -2
 		y = 1
 		prerequisite = { focus = GRE_special_forces }
@@ -4266,17 +4295,24 @@ focus = {
 		completion_reward = {
 			
 			#research bonus for tanks#
-			
+			add_tech_bonus = {
+				name = GRE_the_tank_program
+				uses = 1
+				bonus = 1
+				category = tank_destroyer_tech
+			}
+			add_tech_bonus = {
+				name = GRE_the_tank_program
+				uses = 2
+				bonus = 0.25
+				category = cat_medium_armor
+			}
 		}
 		
-	} 
-
-
-
-
-
+	}
 	focus = {
 		id = GRE_honor_the_spartans
+		icon = none
 		x = 0
 		y = 1
 		prerequisite = { focus = GRE_special_forces }
@@ -4285,13 +4321,13 @@ focus = {
 		completion_reward = {
 
 			#adds spirit which boosts entrenchment and defence#
-			
 		}
 		
 	} 
 
 	focus = {
 		id = GRE_superrior_firepower
+		icon = none
 		x = 0
 		y = 1
 		prerequisite = { focus = GRE_honor_the_spartans }
@@ -4303,7 +4339,18 @@ focus = {
 		completion_reward = {
 			
 			#research bonus for artillery#
-			
+			add_tech_bonus = {
+				name = GRE_superior_firepower_bonus
+				uses = 1
+				bonus = 0.5
+				category = artillery
+			}
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				name = GRE_superior_firepower_doctrine
+				uses = 1
+				category = cat_superior_firepower
+			}
 		}
 		
 	} 
@@ -4316,16 +4363,30 @@ focus = {
 		y = 1
 		relative_position_id = GRE_the_tank_program
 		prerequisite = {
-			focus = GRE_mobile_warfare
+			focus = GRE_the_tank_program
 		}
 		mutually_exclusive = {
 			focus = GRE_superrior_firepower
 		}
-		completion_reward = { }
+		completion_reward = {
+			# add_tech_bonus = {
+			# 	name = GRE_superior_firepower_bonus
+			# 	uses = 1
+			# 	bonus = 0.5
+			# 	category = tank_destroyer_tech
+			# }
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.65
+				name = GRE_mobile_warfare_doctrine
+				uses = 1
+				category = cat_mobile_warfare
+			}
+		}
 	}
 
 	focus = {
 		id = GRE_increase_conscription
+		icon = none
 		x = -1
 		y = 1
 		prerequisite = { 
@@ -4343,6 +4404,7 @@ focus = {
 
 	focus = {
 		id = GRE_better_support
+		icon = none
 		x = -2
 		y = 1
 		prerequisite = { focus = GRE_increase_conscription }
@@ -4352,9 +4414,8 @@ focus = {
 		}
 		relative_position_id = GRE_increase_conscription
 		completion_reward = {
-			
 			#research bonus for support companies#
-			
+		
 		}
 		
 	} 
@@ -4363,6 +4424,7 @@ focus = {
 
 	focus = {
 		id = GRE_support_weapons
+		icon = none
 		x = 2
 		y = 1
 		prerequisite = { focus = GRE_increase_conscription }
@@ -4381,9 +4443,14 @@ focus = {
 
 	focus = {
 		id = GRE_new_tactics
+		icon = none
 		x = 0
-		y = 1
+		y = 2
 		prerequisite = { focus = GRE_increase_conscription }
+		prerequisite = {
+			focus = GRE_better_support
+			focus = GRE_support_weapons
+		}
 		cost = 5
 		relative_position_id = GRE_increase_conscription
 		completion_reward = {
@@ -4396,10 +4463,11 @@ focus = {
 
 	focus = {
 		id = GRE_phalangka
+		icon = none
 		x = 0
 		y = 1
-		prerequisite = { focus = GRE_better_support }
-		prerequisite = { focus = GRE_support_weapons }
+		# prerequisite = { focus = GRE_better_support }
+		# prerequisite = { focus = GRE_support_weapons }
 		prerequisite = { focus = GRE_new_tactics }
 		cost = 5
 		relative_position_id = GRE_new_tactics
@@ -4413,6 +4481,7 @@ focus = {
 
 	focus = {
 		id = GRE_hellenic_navy
+		icon = none
 		x = 6
 		y = 1
 		prerequisite = { focus = GRE_armed_forces_parliament }
@@ -4453,6 +4522,7 @@ focus = {
 
 	focus = {
 		id = GRE_rulers_of_aegean
+		icon = none
 		x = -1
 		y = 1
 		prerequisite = { focus = GRE_hellenic_navy }
@@ -4468,6 +4538,7 @@ focus = {
 
 	focus = {
 		id = GRE_nonvisible_war
+		icon = none
 		x = 2
 		y = 0
 		prerequisite = { focus = GRE_hellenic_navy }
@@ -4483,6 +4554,7 @@ focus = {
 
 	focus = {
 		id = GRE_frogpeople
+		icon = none
 		x = 0
 		y = 1
 		prerequisite = { focus = GRE_rulers_of_aegean }
@@ -4501,6 +4573,7 @@ focus = {
 
 	focus = {
 		id = GRE_naval_war
+		icon = none
 		x = 0
 		y = 1
 		prerequisite = { focus = GRE_nonvisible_war }
@@ -4516,6 +4589,7 @@ focus = {
 
 	focus = {
 		id = GRE_honor_athens
+		icon = none
 		x = -1
 		y = 1
 		prerequisite = { focus = GRE_frogpeople }
@@ -4534,6 +4608,7 @@ focus = {
 
 	focus = {
 		id = GRE_naval_invasion
+		icon = none
 		x = 0
 		y = 1
 		prerequisite = { focus = GRE_honor_athens }
@@ -4551,6 +4626,7 @@ focus = {
 
 	focus = {
 		id = GRE_improve_our_tactics
+		icon = none
 		x = -2
 		y = 1
 		prerequisite = { focus = GRE_naval_invasion }
@@ -4566,6 +4642,7 @@ focus = {
 
 	focus = {
 		id = GRE_supply_the_islands
+		icon = none
 		x = 2
 		y = 1
 		prerequisite = { focus = GRE_naval_invasion }
@@ -4577,13 +4654,13 @@ focus = {
 			random_owned_controlled_state = {
 				prioritize = {
 					187 # Aegean Islands
-					1046 # Ionian Islands
-					182 # Crete
+					# 1046 # Ionian Islands
+					# 182 # Crete
 					
 				}
 				limit = {
 					is_in_home_area = yes
-					naval_base > 1
+					naval_base > 0
 				}
 				add_building_construction = {
 					type = naval_base
@@ -4593,14 +4670,14 @@ focus = {
 			}
 			random_owned_controlled_state = {
 				prioritize = {
-					187 # Aegean Islands
+					# 187 # Aegean Islands
 					1046 # Ionian Islands
 					182 # Crete
 
 				}
 				limit = {
 					is_in_home_area = yes
-					naval_base > 1
+					naval_base > 0
 				}
 				add_building_construction = {
 					type = naval_base
@@ -4613,6 +4690,7 @@ focus = {
 	}
 	focus = {
 		id = GRE_secure_the_coast
+		icon = none
 		x = 0
 		y = 1
 		prerequisite = { focus = GRE_supply_the_islands }
@@ -4627,6 +4705,7 @@ focus = {
 	}
 	focus = {
 		id = GRE_more_ships
+		icon = none
 		x = 0
 		y = 1
 		prerequisite = { focus = GRE_improve_our_tactics }
@@ -4638,6 +4717,7 @@ focus = {
 	}
 	focus = {
 		id = GRE_ruler_of_seven_seas
+		icon = none
 		x = 2
 		y = 1
 		prerequisite = { focus = GRE_more_ships }
@@ -4645,9 +4725,14 @@ focus = {
 		cost = 5
 		relative_position_id = GRE_more_ships
 		completion_reward = {
-			
+			add_	
 			#research bonus for battleship, battlecruiser and submarine #
-			
+			# add_tech_bonus = {
+			# 	name = GRE_rulers_of_seven_seas_battleship_bonus
+			# 	uses = 1
+			# 	bonus = 0.5
+			# 	category = 
+			# }
 		}
 	}
 }

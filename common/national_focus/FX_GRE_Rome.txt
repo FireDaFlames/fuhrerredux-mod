@@ -18,6 +18,8 @@ focus_tree = {
 	default = no
 
 	shared_focus = BYZ_rectify_economic_mistakes
+	shared_focus = BYZ_army_and_air_forces
+	shared_focus = BYZ_navy
 	continuous_focus_position = { x = 50 y = 1800 }
 
 	focus = {

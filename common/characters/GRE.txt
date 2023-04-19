@@ -75,8 +75,14 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = paternal_autocrat_subtype
+			ideology = metaxism_valkist_subtype
 			traits = { }
+		}
+		country_leader = {
+			ideology = authoritarian_democrat_subtype
+			traits = {
+				
+			}
 		}
 	}
 	GRE_Eleftherios_Kyriakou_Venizelos = {

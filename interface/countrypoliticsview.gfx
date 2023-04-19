@@ -527,7 +527,14 @@ spriteTypes = {
 		name = "GFX_ideology_valkist_group"
 		texturefile = "gfx/interface/ideologies/valkist_group.png"
 	}
-	
+
+	### SUBIDEOLOGIES
+
+	spriteType = {
+		name = "GFX_subideology_metaxism_group"
+		textureFile = "gfx/interface/ideologies/subideologies/metaxism_group.png"
+	}
+
 	spriteType = {
 		name = "GFX_ideology_unknown"
 		texturefile = "gfx/interface/ideologies/unknown.dds"

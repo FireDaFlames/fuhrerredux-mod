@@ -335,6 +335,9 @@ ideologies = {
 	valkist = {
 		types = {
 		valkist_subtype = {}
+		metaxism_valkist_subtype = {
+			can_be_randomly_selected = no
+		}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_VALKIST_1"

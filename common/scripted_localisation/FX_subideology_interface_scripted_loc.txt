@@ -1,0 +1,159 @@
+defined_text = {
+	name = GetRulingIdeologySubtype
+	text = {
+		trigger = {
+			has_country_leader_ideology = metaxism_valkist_subtype
+		}
+		localisation_key = metaxism_valkist_subtype
+	}
+}
+defined_text = {
+	name = GetDiploRulingPartySubtype
+	text = {
+		trigger = {
+			has_country_leader_ideology = vanguardist_subtype
+		}
+		localization_key = vanguardist
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = collectivist_subtype
+		}
+		localization_key = collectivist
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = libertarian_socialist_subtype
+		}
+		localization_key = libertarian_socialist
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = social_democrat_subtype
+		}
+		localization_key = social_democrat
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = social_liberal_subtype
+		}
+		localization_key = social_liberal
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = market_liberal_subtype
+		}
+		localization_key = market_liberal
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = social_conservative_subtype
+		}
+		localization_key = social_conservative
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = authoritarian_democrat_subtype
+		}
+		localization_key = authoritarian_democrat
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = paternal_autocrat_subtype
+		}
+		localization_key = paternal_autocrat
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = valkist_subtype
+		}
+		localization_key = valkist
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = national_populist_subtype
+		}
+		localization_key = national_populist
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = metaxism_valkist_subtype
+		}
+		localization_key = metaxism_valkist_subtype
+	}
+}
+defined_text = {
+	name = GetDiploPopularityTooltipDesc
+	text = {
+		trigger = {
+			has_country_leader_ideology = vanguardist_subtype
+		}
+		localization_key = vanguardist_subtype_desc
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = collectivist_subtype
+		}
+		localization_key = collectivist_subtype_desc
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = libertarian_socialist_subtype
+		}
+		localization_key = libertarian_socialist_subtype_desc
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = social_democrat_subtype
+		}
+		localization_key = social_democrat_subtype_desc
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = social_liberal_subtype
+		}
+		localization_key = social_liberal_subtype_desc
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = market_liberal_subtype
+		}
+		localization_key = market_liberal_subtype_desc
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = social_conservative_subtype
+		}
+		localization_key = social_conservative_subtype_desc
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = authoritarian_democrat_subtype
+		}
+		localization_key = authoritarian_democrat_subtype_desc
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = paternal_autocrat_subtype
+		}
+		localization_key = paternal_autocrat_subtype_desc
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = valkist_subtype
+		}
+		localization_key = valkist_subtype_desc
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = national_populist_subtype
+		}
+		localization_key = national_populist_subtype_desc
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = metaxism_valkist_subtype
+		}
+		localization_key = metaxism_valkist_subtype_desc
+	}
+}
