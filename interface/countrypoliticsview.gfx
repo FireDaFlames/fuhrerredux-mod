@@ -531,7 +531,7 @@ spriteTypes = {
 	### SUBIDEOLOGIES
 
 	spriteType = {
-		name = "GFX_subideology_metaxism_subtype"
+		name = "GFX_subideology_metaxism_valkism_subtype"
 		textureFile = "gfx/interface/ideologies/subideologies/metaxism_group.png"
 	}
 
