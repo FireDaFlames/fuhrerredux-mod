@@ -1,10 +1,12 @@
+#New frontendgamesetupview gui by thanasislanaras
+
 bookmarks = {
   bookmark = {
     name = "FUHRERREDUX_NAME"
     desc = "FUHRERREDUX_DESC"
     date = 1936.1.1
     picture = GFX_select_date_1936
-    default_country = "PHI"
+    default_country = "BLR"
     default = yes
     #### Majors
     # "MAC" = {
@@ -301,5 +303,111 @@ bookmarks = {
         AFG_king_is_dead_long_live_king
       }
     }
+    "ARB" = {
+      history = "ARB_FUHERRREDUX_DESC"
+      ideology = paternal_autocrat
+      minor = yes
+      ideas = {
+        ARB_ikhwan_raids
+        ARB_the_liquid_black_gold
+        ARB_british_influence
+      }
+      focuses = {
+        ARB_hashemite_hegemony
+        ARB_obdience_to_westminster
+        ARB_state_of_the_kingdom
+      }
+    }
+    "CAN" = {
+      history = "CAN_FUHERRREDUX_DESC"
+      ideology = social_conservative
+      minor = yes
+      ideas = {
+        CAN_red_tories
+        CAN_anglo_french_tension
+        CAN_east_west_divide
+      }
+      focuses = {
+        CAN_fund_oil_exploitation
+        CAN_spearhead_of_the_empire
+        CAN_elections_1938
+      }
+    }
+    "CHL" = {
+      history = "CHL_FUHERRREDUX_DESC"
+      ideology = social_liberal
+      minor = yes
+      ideas = {
+        CHL_crumbling_government
+        CHL_collapsed_economy
+        CHL_political_polarization
+      }
+      focuses = {
+        CHL_path_of_nation
+        CHL_elections_forty
+        CHL_road_to_conflict
+      }
+    }
+    "MEX" = {
+      history = "MEX_FUHERRREDUX_DESC"
+      ideology = national_populist
+      minor = yes
+      ideas = {
+        MEX_basta
+        MEX_nationalist_strife
+        MEX_military_corruption
+      }
+      focuses = {
+        MEX_final_election
+        MEX_ejercito_mexicano
+        MEX_armada_de_mexico
+      }
+    }
+    "CZE" = {
+      history = "CZE_FUHERRREDUX_DESC"
+      ideology = paternal_autocrat
+      minor = yes
+      ideas = {
+        CZE_suspended_democracy
+        CZE_memories_of_the_revolution
+        CZE_ethnic_tensions
+      }
+      focuses = {
+        CZE_state_of_the_czechs
+        CZE_czech_revolution
+        CZE_the_new_czechoslovakia
+      }
+    }
+    "TUR" = {
+      history = "TUR_FUHERRREDUX_DESC"
+      ideology = social_liberal
+      minor = yes
+      ideas = {
+        TUR_sick_man_of_europe
+        TUR_opda_idea
+        TUR_balkan_defense_council_spirit
+      }
+      focuses = {
+        TUR_emergency_session
+        TUR_death_of_an_empire
+        TUR_foreign_policy
+      }
+    }
+    "SAF" = {
+      history = "SAF_FUHERRREDUX_DESC"
+      ideology = authoritarian_democrat
+      minor = yes
+      ideas = {
+        SAF_Rhodesia_Unrest
+        SAF_Boer_Legacy
+        SAF_Anti_British_Sentiment
+      }
+      focuses = {
+        SAF_1937_Election
+        SAF_United_Victory
+        SAF_Imperial_Concerns
+      }
+    }
   }
+
 }

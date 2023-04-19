@@ -49,7 +49,7 @@ guiTypes = {
 				orientation = center_up
 				origo = center_up
 	
-				margin = { top = 6 bottom = 15 }	
+				margin = { top = 6 bottom = 20 }	
 				
 				background = {
 					name = "Background"

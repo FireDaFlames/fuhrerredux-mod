@@ -718,7 +718,7 @@ guiTypes = {
 					name = "box_grid"
 					position = { x = 10 y = 10 }
 					size = { width = 500 height = 1 }
-					slotsize = { width = 231 height = 74 }
+					slotsize = { width = 231 height = 95 }
 					max_slots_horizontal = 2
 					add_horizontal = yes
 					format = "UPPER_LEFT"
@@ -728,7 +728,7 @@ guiTypes = {
 					name = "box_list"
 					position = { x = 10 y = 10 }
 					size = { width = 500 height = 1 }
-					slotsize = { width = 462 height = 74 }
+					slotsize = { width = 462 height = 95 }
 					add_horizontal = no
 					format = "UPPER_LEFT"
 				}
@@ -883,7 +883,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "cost"
-			position = { x = 80 y = 47 }
+			position = { x = 80 y = 70 }
 			font = "hoi_16mbs"
 			text = ""
 			maxWidth = 142
@@ -894,7 +894,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "stats"
-			position = { x = 300 y = 32 }
+			position = { x = -10 y = 69 }
 			font = "hoi_16mbs"
 			text = ""
 			maxWidth = 142
