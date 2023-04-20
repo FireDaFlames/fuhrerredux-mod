@@ -19,7 +19,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "subideology_container"
-		position = { x = 177 y = 237 }
+		position = { x = 177 y = 230 }
 		instantTextboxType = {
 			name = "subideology_name"
 			position = { x = 9 y = 25 }
@@ -28,7 +28,7 @@ guiTypes = {
 			pdx_tooltip = "[GetRulingIdeologySubtype]"
 			maxWidth = 140
 			maxHeight = 20
-			format = left
+			format = center
 			alwaystransparent = no
 		}
 	}
