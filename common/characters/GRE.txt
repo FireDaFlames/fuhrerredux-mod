@@ -74,15 +74,15 @@ characters = {
 				large = "gfx/leaders/GRE/Portrait_GRE_Ioannis_Michail_Metaxas.png"
 			}
 		}
-		# country_leader = {
-		# 	ideology = metaxism_valkist_subtype
-		# 	traits = { }
-		# }
-		# country_leader = {
-		# 	ideology = authoritarian_democrat_subtype
-		# 	traits = {
-		# 	}
-		# }
+		country_leader = {
+			ideology = metaxism_valkist_subtype
+			traits = { }
+		}
+		country_leader = {
+			ideology = authoritarian_democrat_subtype
+			traits = {
+			}
+		}
 		country_leader = {
 			ideology = paternal_autocrat_subtype
 			traits = {

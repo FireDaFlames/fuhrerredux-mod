@@ -4,6 +4,15 @@ on_actions = {
 			GRE = {
 				set_variable = { BYZ_num_of_str_islands = 0 }
 				find_num_of_str_islands_owned_by_BYZ = yes
+				set_variable = {
+					metaxas_natpop_symps = 0
+				}
+				set_variable = {
+					metaxas_valkist_symps = 0
+				}
+				set_variable = {
+					metaxas_pataut_symps = 0
+				}
 			}
 		}
 	}

@@ -1,4 +1,3 @@
-#GREEK FOCUS TREE BY FOKEŁ 2022
 
 ############################################################
 #            BULGARIAN NATIONAL FOCUS TREE                 #
@@ -9,6 +8,7 @@
 ############################################################
 #		      Created with the help of Denis_MD            #
 ############################################################
+# Started by Fokel
 
 focus_tree = {
 	id = greece_focus
