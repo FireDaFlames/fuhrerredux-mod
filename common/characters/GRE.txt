@@ -61,10 +61,10 @@ characters = {
 			civilian = {
 				large = "gfx/leaders/GRE/Portrait_GRE_Konstantinos_Tsaldaris.png"
 			}
-			country_leader = {
-				ideology = social_conservative_subtype
-				traits = { }
-			}
+		}
+		country_leader = {
+			ideology = social_conservative_subtype
+			traits = { }
 		}
 	}
 	GRE_Ioannis_Michail_Metaxas = {
@@ -74,16 +74,25 @@ characters = {
 				large = "gfx/leaders/GRE/Portrait_GRE_Ioannis_Michail_Metaxas.png"
 			}
 		}
+		# country_leader = {
+		# 	ideology = metaxism_valkist_subtype
+		# 	traits = { }
+		# }
+		# country_leader = {
+		# 	ideology = authoritarian_democrat_subtype
+		# 	traits = {
+		# 	}
+		# }
 		country_leader = {
-			ideology = metaxism_valkist_subtype
-			traits = { }
-		}
-		country_leader = {
-			ideology = authoritarian_democrat_subtype
+			ideology = paternal_autocrat_subtype
 			traits = {
-				
 			}
 		}
+		# country_leader = {
+		# 	ideology = metaxism_natpop_subtype
+		# 	traits = {
+		# 	}
+		# }
 	}
 	GRE_Eleftherios_Kyriakou_Venizelos = {
 		name = "Elefthérios Kyriákou Venizélos"

@@ -128,10 +128,10 @@ guiTypes = {
 
 			instantTextboxType = {
 				name = "elections"
-				position = { x = 27 y = 16 } #don't shift it upwards, for example in GRE it bugs
+				position = { x = 9 y = 8 } #don't shift it upwards, for example in GRE it bugs
 				font = "hoi_16mbs"
 				text = "elections"
-				maxWidth = 110
+				maxWidth = 145
 				maxHeight = 50
 				format = centre
 				vertical_alignment = center
@@ -718,7 +718,7 @@ guiTypes = {
 					name = "box_grid"
 					position = { x = 10 y = 10 }
 					size = { width = 500 height = 1 }
-					slotsize = { width = 231 height = 74 }
+					slotsize = { width = 231 height = 95 }
 					max_slots_horizontal = 2
 					add_horizontal = yes
 					format = "UPPER_LEFT"
@@ -728,7 +728,7 @@ guiTypes = {
 					name = "box_list"
 					position = { x = 10 y = 10 }
 					size = { width = 500 height = 1 }
-					slotsize = { width = 462 height = 74 }
+					slotsize = { width = 462 height = 95 }
 					add_horizontal = no
 					format = "UPPER_LEFT"
 				}
@@ -883,7 +883,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "cost"
-			position = { x = 80 y = 47 }
+			position = { x = 80 y = 70 }
 			font = "hoi_16mbs"
 			text = ""
 			maxWidth = 142
@@ -894,7 +894,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "stats"
-			position = { x = 300 y = 32 }
+			position = { x = -10 y = 69 }
 			font = "hoi_16mbs"
 			text = ""
 			maxWidth = 142
@@ -1776,6 +1776,67 @@ guiTypes = {
 			format = centre
 			vertical_alignment = center
 			fixedsize = yes
+		}
+	}
+	#this was added by me, to reflect the subideologies better
+	# containerWindowType = {
+	# 	name = "subideology_name_container"
+	# 	position = {
+	# 		x = 175
+	# 		y = 33
+	# 	}
+	# 	size = {
+	# 		width = 255
+	# 		height = 60
+	# 	}
+	# 	clipping = no
+	# 	instantTextBoxType = {
+	# 		name = "subideology_name"
+	# 		position = {
+	# 			x = 7
+	# 			y = 213
+	# 		}
+	# 		font = "hoi_16mbs"
+	# 		text = "[GetSubideologyName]"
+	# 		maxWidth = 118
+	# 		maxHeight = 55
+	# 		format = centre
+	# 		vertical_alignment = center
+	# 		fixedsize = yes
+	# 		pdx_tooltip = "[GetSubideologyDesc]"
+	# 	}
+	# }
+	containerWindowType = {
+		name = "subideology_container"
+		position = { x = 177 y = 237 }
+		instantTextboxType = {
+			name = "subideology_name"
+			position = { x = 9 y = 3 }
+			font = "hoi_16mbs"
+			text = "RulingIdeologySubtype_Text"
+			pdx_tooltip = "[GetRulingIdeologySubtype]"
+			maxWidth = 142
+			maxHeight = 40
+			format = left
+			alwaystransparent = no
+			vertical_alignment = center
+			fixedsize = yes
+			format = centre
+		}
+	}
+	containerWindowType = {
+		name = "subideology_container_diplo"
+		position = { x = 263 y = 143 }
+		instantTextboxType = {
+			name = "subideology_name_diplo"
+			position = { x = 0 y = 2 }
+			font = "hoi_16mbs"
+			text = "[GetDiploRulingPartySubtype]"
+			pdx_tooltip = "RulingIdeologySubtype_diplo_tt"
+			maxWidth = 200
+			maxHeight = 20
+			format = left
+			alwaystransparent = no
 		}
 	}
 

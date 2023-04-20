@@ -302,6 +302,9 @@ ideologies = {
 	national_populist = {
 		types = {
 		national_populist_subtype = {}
+		metaxism_natpop_subtype = {
+			can_be_randomly_selected = no
+		}
 		#social_nationalist_subtype = {}
 		}
 		dynamic_faction_names = {
