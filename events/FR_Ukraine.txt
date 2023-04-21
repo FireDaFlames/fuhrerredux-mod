@@ -436,3 +436,499 @@ country_event = { # Monarchy Referendum
     set_cosmetic_tag = UKR_KINGDOM
   }
 }
+
+country_event = { # Request Armaments
+  id = ukraine.16
+  title = ukraine.16.t
+  desc = ukraine.16.d
+  picture = GFX_report_event_japanese_soldiers_01
+  is_triggered_only = yes
+
+  option = { # Send them the equipment
+    name = ukraine.16.a
+    send_equipment = {
+      target = FROM
+      type = infantry_equipment
+      amount = 1000
+    }
+    FROM = {
+      country_event = { id = ukraine.17 days = 2 }
+    }
+  }
+  option = { # We can't spare anything yet
+    name = ukraine.16.b
+    FROM = {
+      country_event = { id = ukraine.18 days = 2 }
+    }
+  }
+}
+
+country_event = { # Equipment Sent
+  id = ukraine.17
+  title = ukraine.17.t
+  desc = ukraine.17.d
+  picture = GFX_report_event_japanese_soldiers_01
+  is_triggered_only = yes
+
+  option = {
+    name = ukraine.17.a
+    effect_tooltip = {
+      add_equipment_to_stockpile = {
+        type = infantry_equipment
+        amount = 1000
+        producer = FROM
+      }
+    }
+  }
+}
+
+country_event = { # No Equipment Sent
+  id = ukraine.18
+  title = ukraine.18.t
+  desc = ukraine.18.d
+  picture = GFX_report_event_japanese_soldiers_01
+  is_triggered_only = yes
+
+  option = { # Dissapointing
+    name = ukraine.18.a
+    add_political_power = -20
+  }
+}
+
+country_event = { # Join Entente
+  id = ukraine.19
+  title = ukraine.19.t
+  desc = ukraine.19.d
+  picture = GFX_report_event_BLR_soldiers_review
+  is_triggered_only = yes
+
+  option = {
+    name = ukraine.19.a
+    
+    if = {
+      limit = { is_faction_leader = yes }
+      add_to_faction = FROM
+    }
+  }
+  option = {
+    name = ukraine.19.a
+    FROM = {
+      country_event = { id = ukraine.20 days = 2 }
+    }
+  }
+}
+
+country_event = { # Entente Entry Denied
+  id = ukraine.20
+  title = ukraine.20.t
+  desc = ukraine.20.d
+  picture = GFX_report_event_BLR_soldiers_review
+  is_triggered_only = yes
+
+  option = { # Dissapointing
+    name = ukraine.20.a
+  }
+}
+
+country_event = { # Offer to Poland
+  id = ukraine.21
+  title = ukraine.21.t
+  picture = GFX_report_event_BLR_soldiers_review
+  is_triggered_only = yes
+
+  desc = {
+    text = ukraine.21.d.1
+    trigger = {
+      is_faction_leader = yes
+    }
+  }
+  desc = {
+    text = ukraine.21.d.2
+    trigger = {
+      is_faction_leader = no
+    }
+  }
+
+  option = {
+    name = ukraine.21.a
+    if = {
+      limit = {
+        is_faction_leader = yes
+      }
+      add_to_faction = FROM
+    } else {
+      create_faction = "Intermarium"
+      add_to_faction = FROM
+    }
+  }
+  option = {
+    name = ukraine.21.a
+    FROM = {
+      country_event = { id = ukraine.20 days = 2 }
+    }
+  }
+}
+
+country_event = { # Polish Offer Refused
+  id = ukraine.22
+  title = ukraine.22.t
+  desc = ukraine.22.d
+  picture = GFX_report_event_BLR_soldiers_review
+  is_triggered_only = yes
+
+  option = { # Dissapointing
+    name = ukraine.22.a
+    uncomplete_national_focus = {
+      focus = UKR_cooperate_with_warsaw
+      uncomplete_children = yes
+      refund_political_power = no
+    }
+  }
+}
+
+country_event = { # A Referedum for Galicia
+  id = ukraine.23
+  title = ukraine.23.t
+  desc = ukraine.23.d
+  picture = GFX_report_event_BLR_soldiers_review
+  is_triggered_only = yes
+
+  option = { # Accept
+    name = ukraine.23.a
+    custom_effect_tooltip = UKR_galicia_referendum_allowed
+    hidden_effect = {
+      FROM = {
+        country_event = { id = ukraine.27 days = 1 }
+      }
+      random_list = {
+        50 = {
+          FROM = { country_event = { id = ukraine.24 days = 7 } }
+          ROOT = { country_event = { id = ukraine.25 days = 7 } }
+        } 
+        50 = {
+          FROM = { country_event = { id = ukraine.26 days = 7 } }
+          ROOT = { country_event = { id = ukraine.26 days = 7 } }
+        }
+      }
+    }
+  }
+  option = { # Refuse
+    name = ukraine.23.b
+    FROM = {
+      country_event = { id = ukraine.28 days = 2 }
+    }
+  }
+}
+
+country_event = { # Referedum Completed - Ukraine
+  id = ukraine.24
+  title = ukraine.24.t
+  desc = ukraine.24.d
+  picture = GFX_report_event_BLR_soldiers_review
+  is_triggered_only = yes
+
+  immediate_effect = {
+    hidden_effect = {
+      transfer_state = 89
+      transfer_state = 91
+    }
+  }
+
+  option = { # Hurrah!
+    name = ukraine.24.a
+  }
+}
+
+country_event = { # Referedum Completed - Poland
+  id = ukraine.25
+  title = ukraine.25.t
+  desc = ukraine.25.d
+  picture = GFX_report_event_BLR_soldiers_review
+  is_triggered_only = yes
+
+  option = {
+    name = ukraine.25.a
+    add_political_power = -50
+    effect_tooltip = {
+      UKR = {
+        transfer_state = 89
+        transfer_state = 91
+      }
+    }
+  }
+}
+
+country_event = { # Galicia Stays with Poland
+  id = ukraine.26
+  title = ukraine.26.t
+  desc = ukraine.26.d
+  picture = GFX_report_event_BLR_officers
+  is_triggered_only = yes
+
+  option = { # Dissapointing
+    name = ukraine.26.a
+    trigger = { tag = UKR }
+    add_political_power = -10
+  }
+  option = { # Good
+    name = ukraine.26.b
+    trigger = {
+      NOT = { tag = UKR }
+    }
+    add_political_power = 20
+  }
+}
+
+country_event = { # Poland Accepted Galician Referedum
+  id = ukraine.27
+  title = ukraine.27.t
+  desc = ukraine.27.d
+  picture = GFX_report_event_BLR_officers
+  is_triggered_only = yes
+
+  option = { #
+    name = ukraine.27.a
+    add_political_power = -50
+  }
+}
+
+country_event = { # Poland Refused Galician Referedum
+  id = ukraine.28
+  title = ukraine.28.t
+  desc = ukraine.28.d
+  picture = GFX_report_event_BLR_officers
+  is_triggered_only = yes
+
+  option = { # It's not worth a war
+    name = ukraine.28.a
+    decrease_ruling_party_popularity_by_5 = yes
+    add_state_claim = 89
+    add_state_claim = 91
+  }
+  option = { # We'll take them by force!
+    name = ukraine.28.b
+    add_state_claim = 89
+    add_state_claim = 91
+    declare_war_on = {
+      target = FROM
+      type = annex_everything
+    }
+  }
+}
+
+country_event = { # Proposals from Kiev
+  id = ukraine.29
+  title = ukraine.29.t
+  desc = ukraine.29.d
+  is_triggered_only = yes
+  picture = GFX_report_event_BLR_soldiers_review
+
+  option = { # Accept the proposals, it's only a tiny bit of land
+    name = ukraine.29.a
+    FROM = {
+      transfer_state = 80
+      transfer_state = 1041
+      country_event = { id = ukraine.32 days = 2 }
+    }
+  }
+  option = { # No, Greater Romania should be preserved.
+    name = ukraine.29.b
+    FROM = {
+      country_event = { id = ukraine.32 days = 2 }
+    }
+  }
+}
+
+country_event = { # Romania Accepts
+  id = ukraine.30
+  title = ukraine.30.t
+  desc = ukraine.30.d
+  is_triggered_only = yes
+  picture = GFX_report_event_BLR_soldiers_review
+
+  option = { # Excellent
+    name = ukraine.30.a
+    effect_tooltip = {
+      transfer_state = 80
+      transfer_state = 1041
+    }
+    if = {
+      limit = { is_in_faction = yes }
+      add_to_faction = FROM
+    } else = {
+      give_guarantee = FROM
+    }
+  }
+}
+
+country_event = { # Romania Refuses
+  id = ukraine.31
+  title = ukraine.31.t
+  desc = ukraine.31.d
+  is_triggered_only = yes
+  picture = GFX_report_event_BLR_soldiers_review
+
+  option = { # Mobilise the army!
+    name = ukraine.31.a
+    add_state_claim = 80
+    add_state_claim = 1041
+    declare_war_on = {
+      target = ROM
+      type = annex_everything
+    }
+  }
+  option = { # Why waste time and resources on them
+    name = ukraine.31.b
+    decrease_ruling_party_popularity_by_5 = yes
+    add_state_claim = 80
+    add_state_claim = 1041
+  }
+}
+
+country_event = { # Ukraine Petition to Invite to alliance
+  id = ukraine.32
+  title = ukraine.32.t
+  desc = ukraine.32.d
+  picture = GFX_report_event_BLR_soldiers_review
+  is_triggered_only = yes
+
+  option = { # Send the invitation
+    name = ukraine.32.a
+    event_target:UKR_potential_ally = {
+      country_event = { id = ukraine.33 days = 1 }
+    }
+  }
+  option = { # Rather not
+    name = ukraine.32.b
+    FROM = {
+      country_event = { id = ukraine.36 days = 1 }
+    }
+  }
+}
+
+country_event = { # Invitation to the alliance
+  id = ukraine.33
+  title = ukraine.33.t
+  desc = ukraine.33.d
+  picture = GFX_report_event_BLR_soldiers_review
+  is_triggered_only = yes
+
+  option = { # Sign it
+    name = ukraine.33.a
+    effect_tooltip = {
+      FROM = {
+        add_to_faction = ROOT
+      }
+    }
+
+    FROM = { country_event = { id = ukraine.34 days = 1 } }
+    UKR = { country_event = { id = ukraine.34 days = 1 } }
+  }
+  option = { # We'll keep our neutrality, for now
+    name = ukraine.33.b
+    FROM = { country_event = { id = ukraine.35 days = 1 } }
+    UKR = { country_event = { id = ukraine.35 days = 1 } }
+  }
+}
+
+country_event = { # Accepted
+  id = ukraine.34
+  title = ukraine.34.t
+  desc = ukraine.34.d
+  picture = GFX_report_event_BLR_soldiers_review
+  is_triggered_only = yes
+
+  option = { # Accepted
+    name = ukraine.34.a
+  }
+}
+
+country_event = { # Refused
+  id = ukraine.35
+  title = ukraine.35.t
+  desc = ukraine.35.d
+  picture = GFX_report_event_BLR_soldiers_review
+  is_triggered_only = yes
+
+  option = { # Don't crying back us for help!
+    name = ukraine.35.a
+  }
+}
+
+country_event = { # Faction Leader Refused
+  id = ukraine.36
+  title = ukraine.36.t
+  desc = ukraine.36.d
+  picture = GFX_report_event_BLR_soldiers_review
+  is_triggered_only = yes
+
+  option = { # Unfortunate
+    name = ukraine.36.a
+  }
+}
+
+country_event = { # Ukraine Demands Transcarpathia
+  id = ukraine.37
+  title = ukraine.37.t
+  desc = ukraine.37.d
+  picture = GFX_report_event_BLR_soldiers_review
+  is_triggered_only = yes
+
+  option = { # Give it to them
+    name = ukraine.37.a
+    FROM = {
+      transfer_state = 73
+      country_event = { id = ukraine.38 days = 1 }
+    }
+  }
+  option = { # They will have to march on capital first!
+    name = ukraine.37.a
+    FROM = {
+      country_event = { id = ukraine.39 days = 1 }
+    }
+  }
+}
+
+country_event = { # Slovakia Accepts
+  id = ukraine.38
+  title = ukraine.38.t
+  desc = ukraine.38.d
+  picture = GFX_report_event_BLR_soldiers_review
+  is_triggered_only = yes
+
+  option = { # Excellent
+    name = ukraine.38.a
+    effect_tooltip = {
+      transfer_state = 73
+    }
+  }
+}
+
+country_event = { # Slovakia Refuses
+  id = ukraine.39
+  title = ukraine.39.t
+  desc = ukraine.39.d
+  picture = GFX_report_event_BLR_soldiers_review
+  is_triggered_only = yes
+
+  option = { # War
+    name = ukraine.39.a
+    add_state_claim = 73
+    if = {
+      limit = { is_ai = no }
+      create_wargoal = {
+        target = FROM
+        type = annex_everything
+      }
+    } else = {
+      declare_war_on = {
+        target = FROM
+        type = annex_everything
+      }
+    }
+  }
+   option = { # No War
+    name = ukraine.39.b
+    add_state_claim = 73
+  }
+}

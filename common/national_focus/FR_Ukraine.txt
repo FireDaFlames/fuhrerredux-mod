@@ -2341,6 +2341,7 @@ focus_tree = {
 				add_idea = UKR_welfare_state1
 			}
 			custom_effect_tooltip = UKR_foreign_policy_unlocked_tt
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 
@@ -2866,7 +2867,9 @@ focus_tree = {
 				add_idea = UKR_nationalism1
 			}
 			custom_effect_tooltip = UKR_foreign_policy_unlocked_tt
+			mark_focus_tree_layout_dirty = yes
 		}
+		search_filters = { FOCUS_FILTER_STABILITY }
 	}
 
 	# Strengthen our Grip
@@ -2914,6 +2917,7 @@ focus_tree = {
         upgrade_intelligence_agency = upgrade_psycho_warfare
       }
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 	}
 
 	# Discredit the Socialist Opposition
@@ -2938,6 +2942,7 @@ focus_tree = {
 				popularity = -0.1
 			}
 		}
+		search_filters = { FOCUS_FILTER_STABILITY }
 	}
 
 	# The Monarchy Referendum
@@ -2956,6 +2961,7 @@ focus_tree = {
 		completion_reward = {
 			country_event = { id = ukraine.15 days = 1 }
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 
 	# Statist Economic Management
@@ -2991,6 +2997,7 @@ focus_tree = {
         }
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
 	# Corporate Economy
@@ -3014,6 +3021,7 @@ focus_tree = {
 				add_idea = UKR_statist_economy1
 			}
 		}
+		search_filters = { FOCUS_FILTER_PRODUCTION }
 	}
 
 	# Glory to Ukraine!
@@ -3031,6 +3039,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = UKR_slava_ukraini_idea
 		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS }
 	}
 
 	# Church Backing
@@ -3051,6 +3060,7 @@ focus_tree = {
 				add_idea = UKR_statist_economy2
 			}
 		}
+		search_filters = { FOCUS_FILTER_PRODUCTION }
 	}
 
 	# Censor the Press
@@ -3069,6 +3079,7 @@ focus_tree = {
 			add_stability = 0.1
 			increase_ruling_party_popularity_by_10 = yes
 		}
+		search_filters = { FOCUS_FILTER_STABILITY }
 	}
 
 	# Education Programmes
@@ -3086,6 +3097,7 @@ focus_tree = {
 		completion_reward = {
 			add_research_slot = 1
 		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
 	# Administrative Language Reforms
@@ -3104,6 +3116,7 @@ focus_tree = {
 			remove_ideas = UKR_russian_issue
 			add_political_power = 100
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 	}
 
 	# Nationalist Fervour
@@ -3125,6 +3138,7 @@ focus_tree = {
 				add_idea = UKR_slava_ukraini_idea1
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY_BONUS }
 	}
 
 	# Three Year Plan
@@ -3142,6 +3156,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = UKR_three_year_plan_tt
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
 	# Reform the Conscription System
@@ -3164,6 +3179,7 @@ focus_tree = {
 				add_idea = UKR_slava_ukraini_idea2
 			}
 		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_MANPOWER }
 	}
 
 	# State Owned Arms Industries
@@ -3253,6 +3269,7 @@ focus_tree = {
         }
 			}
 		}
+		search_filters = { FOCUS_FILTER_PRODUCTION FOCUS_FILTER_INDUSTRY }
 	}
 
 	# Agricultural Cooperatives
@@ -3270,6 +3287,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = UKR_agricultural_cooperatives_idea
 		}
+		search_filters = { FOCUS_FILTER_PRODUCTION }
 	}
 
 	# Legacy of Kieven Rus
@@ -3292,6 +3310,7 @@ focus_tree = {
 				add_idea = UKR_slava_ukraini_idea3
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 
 	######################################################
@@ -3312,6 +3331,12 @@ focus_tree = {
 			has_capitulated = no
 			is_subject = no
 		}
+		allow_branch = {
+			OR = {
+				has_completed_focus = UKR_rising_socialist_democracy
+				has_completed_focus = UKR_ukraine_liberal_and_free
+			}
+		}
 		relative_position_id = UKR_rising_socialist_democracy
 		completion_reward = {
 			add_war_support = 0.1
@@ -3327,6 +3352,7 @@ focus_tree = {
 		y = 1
 		cost = 6
 		available = {
+			has_capitulated = no
 			has_army_manpower = {
 				size > 250000
 			}
@@ -3338,9 +3364,9 @@ focus_tree = {
 		}
 	}
 
-	# Plebiscite in Galicia
+	# Approach Warsaw for Galicia
 	focus = {
-		id = UKR_plebiscite_in_galicia
+		id = UKR_approach_warsaw_for_galicia
 		icon = GFX_goal_poland
 		x = -1
 		y = 1
@@ -3367,6 +3393,11 @@ focus_tree = {
 		}
 		prerequisite = { focus = UKR_western_claims }
 		relative_position_id = UKR_western_claims
+		completion_reward = {
+			POL = {
+				country_event = { id = ukraine.23 days = 2 }
+			}
+		}
 	}
 
 	# Protection for Bucovina and Bessarabia
@@ -3381,7 +3412,7 @@ focus_tree = {
 			NOT = { has_war_with = ROM }
 			ROM = {
 				owns_state = 80
-				owns_state = 78
+				owns_state = 1041
 			}
 		}
 		bypass = {
@@ -3390,7 +3421,7 @@ focus_tree = {
 				ROM = {
 					NOT = {
 						owns_state = 80
-						owns_state = 78
+						owns_state = 1041
 					}
 					is_subject_of = ROOT
 				}
@@ -3398,17 +3429,23 @@ focus_tree = {
 		}
 		prerequisite = { focus = UKR_western_claims }
 		relative_position_id = UKR_western_claims
+		completion_reward = {
+			ROM = {
+				country_event = { id = ukraine.29 days = 2 }
+			}
+		}
 	}
 
-	# Referendum for Transcarpathia
+	# Demand Transcarpathia
 	focus = {
-		id = UKR_referendum_for_transcarpathia
+		id = UKR_demand_transcarpathia
 		icon = GFX_goal_generic_mountain_warfare
 		x = 0
 		y = 2
 		cost = 6
 		available = {
 			country_exists = SLO
+			is_neighbor_of = SLO
 			NOT = { has_war_with = SLO }
 			SLO = {
 				owns_state = 73
@@ -3425,6 +3462,11 @@ focus_tree = {
 		}
 		prerequisite = { focus = UKR_western_claims }
 		relative_position_id = UKR_western_claims
+		completion_reward = {
+			SLO = {
+				country_event = { id = ukraine.37 days = 1 }
+			}
+		}
 	}
 
 	# Meet with the Entente
@@ -3448,6 +3490,9 @@ focus_tree = {
 		mutually_exclusive = { focus = UKR_cooperate_with_warsaw }
 		prerequisite = { focus = UKR_rising_tensions }
 		relative_position_id = UKR_rising_tensions
+		completion_reward = {
+			custom_effect_tooltip = UKR_meet_with_the_entente_tt
+		}
 	}
 
 	# Cooperate with Warsaw
@@ -3474,6 +3519,9 @@ focus_tree = {
 		mutually_exclusive = { focus = UKR_meet_with_the_entente }
 		prerequisite = { focus = UKR_rising_tensions }
 		relative_position_id = UKR_rising_tensions
+		completion_reward = {
+			unlock_decision_tooltip = UKR_reapproach_poland
+		}
 	}
 
 	# Expand the Foreign Ministry
@@ -3484,14 +3532,20 @@ focus_tree = {
 		y = 1
 		cost = 6
 		available = {
-			is_in_faction = yes
 			has_capitulated = no
+			OR = {
+				is_in_faction_with = FRA
+				is_in_faction_with = POL
+			}
 		}
 		prerequisite = {
 			focus = UKR_cooperate_with_warsaw
 			focus = UKR_meet_with_the_entente
 		}
 		relative_position_id = UKR_cooperate_with_warsaw
+		completion_reward = {
+			add_political_power = 150
+		}
 	}
 
 	# Request Entente Armaments
@@ -3512,6 +3566,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = UKR_rising_tensions }
 		relative_position_id = UKR_rising_tensions
+		completion_reward = {
+			custom_effect_tooltip = UKR_request_entente_armaments_tt
+		}
 	}
 
 	# Entente Advisors
@@ -3533,23 +3590,14 @@ focus_tree = {
 		prerequisite = { focus = UKR_rising_tensions }
 		relative_position_id = UKR_rising_tensions
 		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = UKR_war_games_in_crimea
-				category = land_doctrine
-				cost_reduction = 0.75
-				uses = 1
-			}
-			add_doctrine_cost_reduction = {
-				name = UKR_war_games_in_crimea
-				category = naval_doctrine
-				cost_reduction = 0.5
-				uses = 1
-			}
-			add_doctrine_cost_reduction = {
-				name = UKR_war_games_in_crimea
-				category = air_doctrine
-				cost_reduction = 0.5
-				uses = 1
+			add_ideas = UKR_french_attache
+			if = {
+				limit = {
+					ITA = {
+						is_in_faction_with = FRA
+					}
+				}
+				add_ideas = UKR_italian_attache
 			}
 		}
 	}
@@ -3577,6 +3625,24 @@ focus_tree = {
 			army_experience = 25
 			air_experience = 10
 			navy_experience = 10
+			add_doctrine_cost_reduction = {
+				name = UKR_war_games_in_crimea
+				category = land_doctrine
+				cost_reduction = 0.75
+				uses = 1
+			}
+			add_doctrine_cost_reduction = {
+				name = UKR_war_games_in_crimea
+				category = naval_doctrine
+				cost_reduction = 0.5
+				uses = 1
+			}
+			add_doctrine_cost_reduction = {
+				name = UKR_war_games_in_crimea
+				category = air_doctrine
+				cost_reduction = 0.5
+				uses = 1
+			}
 		}
 	}
 
@@ -3609,6 +3675,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = UKR_expand_the_foreign_ministry }
 		relative_position_id = UKR_expand_the_foreign_ministry
+		completion_reward = {
+			custom_effect_tooltip = UKR_approach_the_baltic_tt
+		}
 	}
 
 	# Membership for Finland
@@ -3628,6 +3697,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = UKR_approach_the_baltic }
 		relative_position_id = UKR_approach_the_baltic
+		completion_reward = {
+			custom_effect_tooltip = UKR_membership_for_finland_tt
+		}
 	}
 
 	# Protection for Caucasia
@@ -3667,6 +3739,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = UKR_expand_the_foreign_ministry }
 		relative_position_id = UKR_expand_the_foreign_ministry
+		completion_reward = {
+			custom_effect_tooltip = UKR_protection_for_caucasia_tt
+		}
 	}
 
 	# Membership for Czechia
@@ -3686,6 +3761,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = UKR_expand_the_foreign_ministry }
 		relative_position_id = UKR_expand_the_foreign_ministry
+		completion_reward = {
+			custom_effect_tooltip = UKR_membership_for_czechia_tt
+		}
 	}
 
 	# Visit Belgrade
@@ -3712,6 +3790,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = UKR_membership_for_czechia }
 		relative_position_id = UKR_membership_for_czechia
+		completion_reward = {
+			custom_effect_tooltip = UKR_visit_belgrade_tt
+		}
 	}
 
 	# Support Greece
@@ -3733,6 +3814,16 @@ focus_tree = {
 		mutually_exclusive = { focus = UKR_support_turkey }
 		prerequisite = { focus = UKR_expand_the_foreign_ministry }
 		relative_position_id = UKR_expand_the_foreign_ministry
+		completion_reward = {
+			army_experience = 15
+			send_equipment = { 
+        target = GRE
+        type = infantry_equipment
+        amount = 1000
+      }
+			GRE = { country_event = { id = ukraine.17 days = 1 } }
+			custom_effect_tooltip = UKR_support_greece_tt
+		}
 	}
 
 	# Support Turkey
@@ -3754,6 +3845,16 @@ focus_tree = {
 		mutually_exclusive = { focus = UKR_support_greece }
 		prerequisite = { focus = UKR_expand_the_foreign_ministry }
 		relative_position_id = UKR_expand_the_foreign_ministry
+		completion_reward = {
+			army_experience = 15
+			send_equipment = { 
+        target = TUR
+        type = infantry_equipment
+        amount = 1000
+      }
+			TUR = { country_event = { id = ukraine.17 days = 1 } }
+			custom_effect_tooltip = UKR_support_turkey_tt
+		}
 	}
 
 	# Sponsor Belarussian Entry
@@ -3792,6 +3893,9 @@ focus_tree = {
 			focus = UKR_expand_the_foreign_ministry
 		}
 		relative_position_id = UKR_expand_the_foreign_ministry
+		completion_reward = {
+			custom_effect_tooltip = UKR_sponsor_belarussian_entry_tt
+		}
 	}
 
 	# Topple the Belarussian Threat
@@ -3828,7 +3932,22 @@ focus_tree = {
 		prerequisite = {
 			focus = UKR_war_games_in_crimea
 		}
+		will_lead_to_war_with = BLR
 		relative_position_id = UKR_war_games_in_crimea
+		completion_reward = {
+			if = {
+				limit = { is_ai = yes }
+				declare_war_on = {
+					target = BLR
+					type = annex_everything
+				}
+			} else = {
+				create_wargoal = {
+					target = BLR
+					type = topple_government
+				}
+			}
+		}
 	}
 
 	# Crush Germany
@@ -3841,6 +3960,9 @@ focus_tree = {
 		available = {
 			country_exists = GER
 			NOT = { has_war_with = GER }
+			any_allied_country = {
+				is_neighbor_of = GER
+			}
 		}
 		bypass = {
 			has_war_with = GER
@@ -3848,7 +3970,22 @@ focus_tree = {
 		prerequisite = { 
 			focus = UKR_war_games_in_crimea
 		}
+		will_lead_to_war_with = GER
 		relative_position_id = UKR_war_games_in_crimea
+		completion_reward = {
+			if = {
+				limit = { is_ai = yes }
+				declare_war_on = {
+					target = GER
+					type = annex_everything
+				}
+			} else = {
+				create_wargoal = {
+					target = GER
+					type = topple_government
+				}
+			}
+		}
 	}
 
 	# The Hungarian Situation
@@ -3861,6 +3998,9 @@ focus_tree = {
 		available = {
 			country_exists = HUN
 			NOT = { has_war_with = HUN }
+			any_allied_country = {
+				is_neighbor_of = HUN
+			}
 		}
 		bypass = {
 			HUN = {
@@ -3871,12 +4011,34 @@ focus_tree = {
 				}
 			}
 		}
+		will_lead_to_war_with = HUN
 		prerequisite = { 
 			focus = UKR_membership_for_czechia
 			focus = UKR_sponsor_belarussian_entry
 			focus = UKR_topple_the_belarussian_threat
 		}
 		relative_position_id = UKR_sponsor_belarussian_entry
+		completion_reward = {
+			if = {
+				limit = {
+					HUN = { has_democratic_government = yes }
+				}
+				custom_effect_tooltip = UKR_the_hungarian_situation_tt
+			} else = {
+				if = {
+					limit = { is_ai = no }
+					create_wargoal = {
+						target = HUN
+						type = topple_government
+					}
+				} else = {
+					declare_war_on = {
+						target = HUN
+						type = annex_everything
+					}
+				}
+			}
+		}
 	}
 
 	# State Visit to Bulgaria
@@ -3892,6 +4054,7 @@ focus_tree = {
 			BUL = {
 				is_subject = no
 				has_capitulated = no
+				has_democratic_government = yes
 			}
 		}
 		bypass = {
@@ -3907,6 +4070,9 @@ focus_tree = {
 			focus = UKR_visit_belgrade
 		}
 		relative_position_id = UKR_sponsor_belarussian_entry
+		completion_reward = {
+			custom_effect_tooltip = UKR_state_visit_to_bulgaria_tt
+		}
 	}
 
 	# Tame Bulgaria
@@ -3923,6 +4089,9 @@ focus_tree = {
 				is_subject = no
 				has_capitulated = no
 			}
+			any_allied_country = {
+				is_neighbor_of = BUL
+			}
 		}
 		bypass = {
 			OR = {
@@ -3933,6 +4102,7 @@ focus_tree = {
 				}
 			}
 		}
+		will_lead_to_war_with = BUL
 		mutually_exclusive = { focus = UKR_state_visit_to_bulgaria }
 		prerequisite = {
 			focus = UKR_sponsor_belarussian_entry
@@ -3940,5 +4110,19 @@ focus_tree = {
 			focus = UKR_visit_belgrade
 		}
 		relative_position_id = UKR_sponsor_belarussian_entry
+		completion_reward = {
+			if = {
+				limit = { is_ai = yes }
+				declare_war_on = {
+					target = BUL
+					type = annex_everything
+				}
+			} else = {
+				create_wargoal = {
+					target = BUL
+					type = topple_government
+				}
+			}
+		}
 	}
 }

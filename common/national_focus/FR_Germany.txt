@@ -4485,7 +4485,10 @@ focus_tree = {
 		}
 		
 		available = {
-			country_exists = UKR		
+			country_exists = UKR
+			UKR = {
+				UKR_hetmanists_statemen_in_power = yes
+			}
 		}
 		
 		bypass = { 

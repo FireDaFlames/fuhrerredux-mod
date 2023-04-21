@@ -40,7 +40,7 @@ operations = {
 
 foreign_support = {
 	icon = generic_political_actions
-
+	priority = 80
 	visible = {
 		NOT = { original_tag = ENG }
 	}

@@ -983,6 +983,13 @@ country_event = { # Filipino Equipment Arrives
 
   option = { # Much needed!
     name = philippines.39.a
+    effect_tooltip = {
+      add_equipment_to_stockpile = {
+        type = infantry_equipment
+        amount = 1000
+        producer = FROM
+      }
+    }
   }
 }
 

@@ -49,8 +49,7 @@ focus_tree = {
 		y = 1
 		cost = 3
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = unlocked_later
+			hidden_trigger = {
 				always = no
 			}
 		}
@@ -82,8 +81,7 @@ focus_tree = {
 		y = 1
 		cost = 3
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = unlocked_later
+			hidden_trigger = {
 				always = no
 			}
 		}

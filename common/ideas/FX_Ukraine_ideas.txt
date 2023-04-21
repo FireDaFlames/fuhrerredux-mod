@@ -316,6 +316,36 @@ ideas = {
 				out_of_supply_factor = -0.2
 			}
 		}
+		UKR_french_attache = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_french_attache"}
+			picture = advisors_france
+			available = {
+				country_exists = FRA
+			}
+			modifier = {
+				army_org_factor = 0.05
+				max_planning = 0.05
+				planning_speed = 0.05
+			}
+			research_bonus = {
+				air_equipment = 0.1
+			}
+		}
+		UKR_italian_attache = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_italian_attache"}
+			picture = advisors_italy
+			available = {
+				country_exists = ITA
+			}
+			research_bonus = {
+				naval_equipment = 0.1
+			}
+			modifier = {
+				naval_morale_factor = 0.1
+				amphibious_invasion = 0.15
+				naval_doctrine_cost_factor = -0.1
+			}
+		}
 	}
 
 	industrial_concern = {
