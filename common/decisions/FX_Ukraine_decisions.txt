@@ -58,6 +58,34 @@ foreign_politics = {
       }
     }
   }
+  UKR_join_stahlpakt = {
+    icon = eng_trade_unions_support
+    cost = 20
+    targets = { GER }
+    target_trigger = {
+      FROM = {
+        exists = yes
+        is_faction_leader = yes
+      }
+    }
+    available = {
+      FROM = {
+        has_capitulated = no
+      }
+      NOT = { has_war_with = FROM }
+    }
+    visible = {
+     has_completed_focus = UKR_ties_with_the_germans
+    }
+    ai_will_do = {
+      base = 200
+    }
+    complete_effect = {
+      FROM = {
+        country_event = { id = ukraine.19 days = 1 }
+      }
+    }
+  }
   UKR_petition_entry_to_entente = {
     icon = eng_trade_unions_support
     cost = 20

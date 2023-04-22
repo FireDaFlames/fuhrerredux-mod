@@ -26,6 +26,7 @@ focus_tree = {
 		x = 10
 		y = 0
 		cost = 6
+		ai_will_do = { base = 200 }
 		available = {
 			has_capitulated = no
 		}
@@ -49,6 +50,7 @@ focus_tree = {
 		x = -4
 		y = 1
 		cost = 6
+		ai_will_do = { base = 200 }
 		available = {
 			has_capitulated = no
 		}
@@ -101,6 +103,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 6
+		ai_will_do = { base = 200 }
 		available = {
 			has_capitulated = no
 		}
@@ -436,6 +439,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 6
+		ai_will_do = { base = 200 }
 		available = {
 			has_capitulated = no
 		}
@@ -541,6 +545,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 6
+		ai_will_do = { base = 200 }
 		available = {
 			has_capitulated = no
 		}
@@ -565,6 +570,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 6
+		ai_will_do = { base = 200 }
 		available = {
 			has_capitulated = no
 		}
@@ -738,6 +744,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		cost = 6
+		ai_will_do = { base = 400 }
 		available = {
 			has_capitulated = no
 			controls_state = 137
@@ -1124,6 +1131,7 @@ focus_tree = {
 		x = 14
 		y = 7
 		cost = 6
+		ai_will_do = { base = 400 }
 		available = {
 			has_capitulated = no
 		}
@@ -1153,6 +1161,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 6
+		ai_will_do = { base = 400 }
 		available = {
 			has_capitulated = no
 		}
@@ -1180,6 +1189,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 6
+		ai_will_do = { base = 400 }
 		available = {
 			has_capitulated = no
 		}
@@ -1235,6 +1245,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 6
+		ai_will_do = { base = 400 }
 		available = {
 			has_capitulated = no
 		}
@@ -1351,6 +1362,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 6
+		ai_will_do = { base = 400 }
 		available = {
 			has_capitulated = no
 		}
@@ -1395,6 +1407,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 6
+		ai_will_do = { base = 200 }
 		available = {
 			has_capitulated = no
 		}
@@ -1418,6 +1431,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 6
+		ai_will_do = { base = 800 }
 		available = {
 			has_capitulated = no
 			controls_state = 221
@@ -1458,6 +1472,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 6
+		ai_will_do = { base = 800 }
 		available = {
 			has_capitulated = no
 			custom_trigger_tooltip = {
@@ -1487,6 +1502,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 6
+		ai_will_do = { base = 1200 }
 		available = {
 			has_capitulated = no
 			custom_trigger_tooltip = {
@@ -1678,6 +1694,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		cost = 6
+		ai_will_do = { base = 1000 }
 		available = {
 			has_capitulated = no
 			hidden_trigger = {
@@ -1709,6 +1726,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 6
+		ai_will_do = { base = 1000 }
 		available = {
 			has_capitulated = no
 			custom_trigger_tooltip = {
@@ -1739,6 +1757,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 6
+		ai_will_do = { base = 400 }
 		available = {
 			has_capitulated = no
 		}
@@ -1779,6 +1798,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 6
+		ai_will_do = { base = 1000 }
 		available = {
 			has_capitulated = no
 			custom_trigger_tooltip = {
@@ -1809,6 +1829,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 6
+		ai_will_do = { base = 1000 }
 		available = {
 			has_capitulated = no
 			custom_trigger_tooltip = {
@@ -1855,6 +1876,7 @@ focus_tree = {
 		x = 30
 		y = 0
 		cost = 6
+		ai_will_do = { base = 200 }
 		available = {
 			hidden_trigger =  {
 				always = no
@@ -1875,6 +1897,13 @@ focus_tree = {
 		x = -4
 		y = 1
 		cost = 6
+		ai_will_do = { base = 200 }
+		allow_branch = {
+			NOT = {
+				has_country_flag = UKR_nipu_victory
+				has_country_flag = UKR_oun_victory
+			}
+		}
 		available = {
 			hidden_trigger =  {
 				always = no
@@ -1897,9 +1926,16 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 6
+		ai_will_do = { base = 200 }
 		available = {
 			hidden_trigger =  {
 				always = no
+			}
+		}
+		allow_branch = {
+			NOT = {
+				has_country_flag = UKR_nipu_victory
+				has_country_flag = UKR_oun_victory
 			}
 		}
 		bypass = {
@@ -1919,9 +1955,16 @@ focus_tree = {
 		x = 4
 		y = 1
 		cost = 6
+		ai_will_do = { base = 200 }
 		available = {
 			hidden_trigger =  {
 				always = no
+			}
+		}
+		allow_branch = {
+			NOT = {
+				has_country_flag = UKR_nipu_victory
+				has_country_flag = UKR_oun_victory
 			}
 		}
 		bypass = {
@@ -3309,6 +3352,8 @@ focus_tree = {
 				remove_idea = UKR_slava_ukraini_idea2
 				add_idea = UKR_slava_ukraini_idea3
 			}
+			custom_effect_tooltip = UKR_foreign_policy_unlocked_tt
+			mark_focus_tree_layout_dirty = yes
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -3332,9 +3377,9 @@ focus_tree = {
 			is_subject = no
 		}
 		allow_branch = {
-			OR = {
-				has_completed_focus = UKR_rising_socialist_democracy
-				has_completed_focus = UKR_ukraine_liberal_and_free
+			NOT = {
+				has_country_flag = UKR_nipu_victory
+				has_country_flag = UKR_oun_victory
 			}
 		}
 		relative_position_id = UKR_rising_socialist_democracy
@@ -3487,7 +3532,10 @@ focus_tree = {
 		bypass = {
 			is_in_faction_with = FRA
 		}
-		mutually_exclusive = { focus = UKR_cooperate_with_warsaw }
+		mutually_exclusive = { 
+			focus = UKR_cooperate_with_warsaw
+			focus = UKR_ties_with_the_germans
+		}
 		prerequisite = { focus = UKR_rising_tensions }
 		relative_position_id = UKR_rising_tensions
 		completion_reward = {
@@ -3495,11 +3543,46 @@ focus_tree = {
 		}
 	}
 
+	# Ties with the Germans
+	focus = {
+		id = UKR_ties_with_the_germans
+		icon = GFX_Valkist_Germany
+		x = -6
+		y = 1
+		cost = 6
+		allow_branch = {
+			OR = {
+				has_government = social_conservative
+				has_government = authoritarian_democrat
+			}
+		}
+		available = {
+			country_exists = GER
+			NOT = { has_war_with = GER }
+			GER = {
+				has_capitulated = no
+				is_faction_leader = yes
+			}
+		}
+		bypass = {
+			is_in_faction_with = GER
+		}
+		mutually_exclusive = {
+			focus = UKR_cooperate_with_warsaw
+			focus = UKR_meet_with_the_entente
+		}
+		prerequisite = { focus = UKR_rising_tensions }
+		relative_position_id = UKR_rising_tensions
+		completion_reward = {
+			custom_effect_tooltip = UKR_ties_with_the_germans_tt
+		}
+	}
+
 	# Cooperate with Warsaw
 	focus = {
 		id = UKR_cooperate_with_warsaw
 		icon = GFX_goal_generic_polish_agreement
-		x = -5
+		x = -4
 		y = 1
 		cost = 6
 		available = {
@@ -3516,7 +3599,10 @@ focus_tree = {
 		bypass = {
 			is_in_faction = yes
 		}
-		mutually_exclusive = { focus = UKR_meet_with_the_entente }
+		mutually_exclusive = { 
+			focus = UKR_meet_with_the_entente
+			focus = UKR_ties_with_the_germans
+		}
 		prerequisite = { focus = UKR_rising_tensions }
 		relative_position_id = UKR_rising_tensions
 		completion_reward = {
@@ -3528,7 +3614,7 @@ focus_tree = {
 	focus = {
 		id = UKR_expand_the_foreign_ministry
 		icon = GFX_goal_foreign_diplomacy
-		x = 1
+		x = -1
 		y = 1
 		cost = 6
 		available = {
@@ -3542,7 +3628,7 @@ focus_tree = {
 			focus = UKR_cooperate_with_warsaw
 			focus = UKR_meet_with_the_entente
 		}
-		relative_position_id = UKR_cooperate_with_warsaw
+		relative_position_id = UKR_meet_with_the_entente
 		completion_reward = {
 			add_political_power = 150
 		}
@@ -3650,7 +3736,7 @@ focus_tree = {
 	focus = {
 		id = UKR_approach_the_baltic
 		icon = GFX_goal_GER_pressure_the_baltic
-		x = 0
+		x = -1
 		y = 1
 		cost = 6
 		available = {
@@ -3706,7 +3792,7 @@ focus_tree = {
 	focus = {
 		id = UKR_protection_for_caucasia
 		icon = GFX_GEOARM
-		x = -2
+		x = -3
 		y = 1
 		cost = 6
 		available = {
@@ -3748,7 +3834,7 @@ focus_tree = {
 	focus = {
 		id = UKR_membership_for_czechia
 		icon = GFX_focus_zapadoslavia
-		x = 2
+		x = 1
 		y = 1
 		cost = 6
 		available = {
@@ -3799,7 +3885,7 @@ focus_tree = {
 	focus = {
 		id = UKR_support_greece
 		icon = GFX_GRE_megali
-		x = -1
+		x = -2
 		y = 3
 		cost = 6
 		available = {
@@ -3830,7 +3916,7 @@ focus_tree = {
 	focus = {
 		id = UKR_support_turkey
 		icon = GFX_GRE_tur_cooperation
-		x = 1
+		x = 0
 		y = 3
 		cost = 6
 		available = {
@@ -3861,7 +3947,7 @@ focus_tree = {
 	focus = {
 		id = UKR_sponsor_belarussian_entry
 		icon = GFX_goal_BLR_belarusian_identity
-		x = 4
+		x = 3
 		y = 1
 		cost = 6
 		available = {

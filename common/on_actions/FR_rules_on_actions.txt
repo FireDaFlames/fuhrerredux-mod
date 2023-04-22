@@ -553,6 +553,59 @@ on_actions = {
 					set_country_flag = ROM_autocrat_behavior
 				}
 			}
+			### Ukraine
+			UKR = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = UKR_ai_behavior
+							option = UKR_SOCIALIST_DEMOCRACY
+						}
+					}
+					set_country_flag = UKR_ai_chosen
+					set_country_flag = UKR_socialist_behavior
+				}
+				else_if = {
+					limit = {
+						has_game_rule = {
+							rule = UKR_ai_behavior
+							option = UKR_LIBERAL_AGE
+						}
+					}
+					set_country_flag = UKR_ai_chosen
+					set_country_flag = UKR_liberal_behavior
+				}
+				else_if = {
+					limit = {
+						has_game_rule = {
+							rule = UKR_ai_behavior
+							option = UKR_KIEVAN_RUS_LEGACY
+						}
+					}
+					set_country_flag = UKR_ai_chosen
+					set_country_flag = UKR_monarchist_behavior
+				}
+				else_if = {
+					limit = {
+						has_game_rule = {
+							rule = UKR_ai_behavior
+							option = UKR_POPULISM_IN_UKRAINE
+						}
+					}
+					set_country_flag = UKR_ai_chosen
+					set_country_flag = UKR_populist_behavior
+				}
+				else_if = {
+					limit = {
+						has_game_rule = {
+							rule = UKR_ai_behavior
+							option = UKR_DREAM_OF_KOLODZINSKY
+						}
+					}
+					set_country_flag = UKR_ai_chosen
+					set_country_flag = UKR_valkist_behavior
+				}
+			}
 		}
 	}
 }

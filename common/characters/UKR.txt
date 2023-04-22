@@ -1675,7 +1675,7 @@ characters = {
 			}
 			traits = {
 				valkist
-				hog_ruthless_warlord
+				hog_the_grey_cardinal
 			}
 		}
 	}

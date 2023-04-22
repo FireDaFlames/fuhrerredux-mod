@@ -42,11 +42,32 @@ country_event = { # Disunity in the Pink-Orange Coalition
 
   option = { # Force a compromise
     name = ukraine.3.a
+    ai_chance = {
+      base = 200
+      modifier = {
+        factor = 0
+        OR = {
+          has_country_flag = UKR_populist_behavior
+          has_country_flag = UKR_monarchist_behavior
+          has_country_flag = UKR_valkist_behavior
+        }
+      }
+    }
     add_political_power = 20
   }
 
   option = { # End the coalition
     name = ukraine.3.b
+    ai_chance = {
+      base = 200
+      modifier = {
+        factor = 0
+        OR = {
+          has_country_flag = UKR_socialist_behavior
+          has_country_flag = UKR_liberal_behavior
+        }
+      }
+    }
     custom_effect_tooltip = end_the_pink_orange_coalition_tt
     clr_country_flag = coalition_social_liberal
 
@@ -66,6 +87,13 @@ country_event = { # Clashes Between the OUN and PNIU
 
   option = { # Focus on OUN
     name = ukraine.4.a
+    ai_chance = {
+      base = 100
+      modifier = {
+        factor = 0
+        has_country_flag = UKR_populist_behavior
+      }
+    }
     add_popularity = {
       ideology = national_populist
       popularity = 0.05
@@ -74,6 +102,13 @@ country_event = { # Clashes Between the OUN and PNIU
 
   option = { # Focus on NIPU
     name = ukraine.4.b
+    ai_chance = {
+      base = 100
+      modifier = {
+        factor = 0
+        has_country_flag = UKR_valkist_behavior
+      }
+    }
     add_popularity = {
       ideology = paternal_autocrat
       popularity = 0.05
@@ -82,6 +117,9 @@ country_event = { # Clashes Between the OUN and PNIU
 
   option = { # Let them be
     name = ukraine.4.c
+    ai_chance = {
+      base = 100
+    }
     add_popularity = {
       ideology = paternal_autocrat
       popularity = 0.03
@@ -102,6 +140,13 @@ country_event = { # Dontsov Accusses Government of Wide-Scale Corruption
 
   option = { # The government should answer these allegations
     name = ukraine.5.a
+    ai_chance = {
+      base = 100
+      modifier = {
+        factor = 0
+        has_country_flag = UKR_valkist_behavior
+      }
+    }
     add_popularity = {
       ideology = national_populist
       popularity = 0.05
@@ -109,6 +154,9 @@ country_event = { # Dontsov Accusses Government of Wide-Scale Corruption
   }
 
   option = { # He's just talking nonsense
+    ai_chance = {
+      base = 100
+    }
     name = ukraine.5.b
   }
 }
@@ -121,6 +169,7 @@ country_event = { # Rumours of President Hankevych's Death
 
   option = { # The President decides to make a public appearance
     name = ukraine.6.a
+    ai_chance = { base = 200 }
     add_political_power = 100
 
     hidden_effect = {
@@ -129,6 +178,16 @@ country_event = { # Rumours of President Hankevych's Death
   }
   option = { # The President ignores the matter
     name = ukraine.6.b
+    ai_chance = {
+      base = 200
+      modifier = {
+        factor = 0
+        OR = {
+          has_country_flag = UKR_valkist_behavior
+          has_country_flag = UKR_populist_behavior
+        }
+      }
+    }
     add_popularity = {
       ideology = national_populist
       popularity = 0.05
@@ -161,6 +220,13 @@ country_event = { # Deploying the Police?
 
   option = { # We must ensure the safety of the people
     name = ukraine.8.a
+    ai_chance = {
+      base = 200
+      modifier = {
+        factor = 0
+        NOT = { has_country_flag = UKR_valkist_behavior }
+      }
+    }
     add_political_power = -10
     hidden_effect = {
       country_event = { id = ukraine.11 days = 2 }
@@ -169,6 +235,7 @@ country_event = { # Deploying the Police?
 
   option = { # They will be fine, probably.
     name = ukraine.8.b
+    ai_chance = { base = 200 }
     add_political_power = -20
     hidden_effect = {
       country_event = { id = ukraine.9 days = 2 }
@@ -241,10 +308,12 @@ country_event = { # Strikes!
 
   option = { # Give concessions
     name = ukraine.12.a
+    ai_chance = { base = 200 }
     add_political_power = -100
   }
   option = { # Disperse the strikers
     name = ukraine.12.b
+    ai_chance = { base = 80 }
     add_popularity = {
       ideology = libertarian_socialist
       popularity = 0.1
@@ -268,6 +337,13 @@ country_event = { # 1936 Elections
 
   option = { # Social-Democratic Party (LibSoc)
     name = ukraine.13.a
+    ai_chance = {
+      base = 200
+      modifier = {
+        factor = 10
+        has_country_flag = UKR_socialist_behavior
+      }
+    }
     set_politics = {
       ruling_party = libertarian_socialist
       elections_allowed = yes
@@ -288,6 +364,13 @@ country_event = { # 1936 Elections
 
   option = { # People's Labour Party (SocLib)
     name = ukraine.13.b
+    ai_chance = {
+      base = 200
+      modifier = {
+        factor = 10
+        has_country_flag = UKR_liberal_behavior
+      }
+    }
     set_politics = {
       ruling_party = social_liberal
       elections_allowed = yes
@@ -308,6 +391,13 @@ country_event = { # 1936 Elections
 
   option = { # Union of Hetmanists-Statesman (SocCon or AuthDem)
     name = ukraine.13.c
+    ai_chance = {
+      base = 200
+      modifier = {
+        factor = 10
+        has_country_flag = UKR_monarchist_behavior
+      }
+    }
     set_politics = {
       ruling_party = social_conservative
       elections_allowed = yes
@@ -334,6 +424,13 @@ country_event = { # 1936 Elections
 
   option = { # OUN (NatPop)
     name = ukraine.13.e
+    ai_chance = {
+      base = 200
+      modifier = {
+        factor = 10
+        has_country_flag = UKR_populist_behavior
+      }
+    }
     trigger = {
       NOT = { has_country_flag = UKR_oun_dead }
     }
@@ -352,11 +449,19 @@ country_event = { # 1936 Elections
     hidden_effect = {
       set_country_flag = UKR_had_1936_elections
       set_country_flag = UKR_oun_victory
+      mark_focus_tree_layout_dirty = yes
     }
   }
 
   option = { # NIPU (Val)
     name = ukraine.13.f
+    ai_chance = {
+      base = 200
+      modifier = {
+        factor = 10
+        has_country_flag = UKR_valkist_behavior
+      }
+    }
     trigger = {
       NOT = { has_country_flag = UKR_nipu_dead }
     }
@@ -371,6 +476,11 @@ country_event = { # 1936 Elections
       UKR_Volodymyr_Kubiiovych_for_val
       UKR_Leonid_Kostariv_eco_val
       UKR_Yaroslav_Diakon_sec_val
+    }
+    hidden_effect = {
+      set_country_flag = UKR_had_1936_elections
+      set_country_flag = UKR_nipu_victory
+      mark_focus_tree_layout_dirty = yes
     }
   }
 }
