@@ -13,6 +13,18 @@ on_actions = {
 				set_variable = {
 					metaxas_pataut_symps = 0
 				}
+				set_variable = {
+					south_cyprus_GRE_popularity = 85
+				}
+				set_variable = {
+					north_cyprus_GRE_popularity = 0
+				}
+				set_variable = {
+					bases_cyprus_GRE_popularity = -100
+				}
+				set_variable = {
+					cyprus_prob_independent = -25
+				}
 			}
 		}
 	}

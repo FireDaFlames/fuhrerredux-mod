@@ -21,7 +21,7 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = BUZ_farming_crisis
+	id = BYZ_farming_crisis
 	icon = none
 	cost = 5
 	x = 5
@@ -39,9 +39,9 @@ shared_focus = {
 	cost = 5
 	x = 5
 	y = 1
-	relative_position_id = BUZ_farming_crisis
+	relative_position_id = BYZ_farming_crisis
 	prerequisite = {
-		focus = BUZ_farming_crisis
+		focus = BYZ_farming_crisis
 	}
 	completion_reward = {
 		random_owned_state = {
@@ -97,7 +97,7 @@ shared_focus = {
 	id = BYZ_make_use_of_islands
 	icon = none
 	cost = 5
-	x = -2
+	x = -1
 	y = 1
 	relative_position_id = BYZ_export_luxury_commodities
 	prerequisite = {
@@ -106,6 +106,130 @@ shared_focus = {
 	completion_reward = {
 		
 	}
+}
+
+shared_focus = {
+	id = BYZ_our_tobacco_industry
+	icon = none
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = BYZ_export_luxury_commodities
+	prerequisite = {
+		focus = BYZ_export_luxury_commodities
+	}
+	completion_reward = { }
+}
+
+shared_focus = {
+	id = BYZ_archaeological_sites
+	icon = none
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = BYZ_our_tobacco_industry
+	prerequisite = {
+		focus = BYZ_our_tobacco_industry
+	}
+	completion_reward = { }
+}
+
+shared_focus = {
+	id = BYZ_encourage_tourism
+	icon = none 
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = BYZ_make_use_of_islands
+	prerequisite = {
+		focus = BYZ_make_use_of_islands
+	}
+	completion_reward = { }
+}
+
+shared_focus = {
+	id = BYZ_rejuvanate_constantinople
+	icon = none
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = BYZ_encourage_tourism
+	prerequisite = {
+		focus = BYZ_encourage_tourism
+	}
+	prerequisite = {
+		focus = BYZ_archaeological_sites
+	}
+	completion_reward = { }
+}
+
+# ######################### #
+# MECHANICE FARMING SUBTREE #
+# ######################### #
+
+shared_focus = {
+	id = BYZ_mechanise_farming 
+	icon = none
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = BYZ_farming_crisis
+	prerequisite = {
+		focus = BYZ_mechanise_farming
+	}
+	completion_reward = { }
+}
+
+shared_focus = {
+	id = BYZ_wildlife_protection
+	icon = none
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = BYZ_mechanise_farming
+	prerequisite = {
+		focus = BYZ_mechanise_farming
+	}
+	completion_reward = { }
+}
+
+shared_focus = {
+	id = BYZ_social_insurance_measures
+	icon = none
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = BYZ_wildlife_protection
+	prerequisite = {
+		focus = BYZ_wildlife_protection
+	}
+	completion_reward = { }
+}
+
+shared_focus = {
+	id = BYZ_fight_unemployment
+	icon = none
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = BYZ_mechanise_farming
+	prerequisite = {
+		focus = BYZ_mechanise_farming
+	}
+	completion_reward = { }
+}
+
+shared_focus = {
+	id = BYZ_wisen_banking_systems
+	icon = none
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = BYZ_fight_unemployment
+	prerequisite = {
+		focus = BYZ_fight_unemployment
+	}
+	completion_reward = { }
 }
 
 # ########################### #

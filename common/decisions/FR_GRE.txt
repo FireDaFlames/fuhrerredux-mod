@@ -734,3 +734,7 @@ GRE_final_solution = {
 		}
 	}
 }
+
+GRE_Cyprus_gui = {
+	GRE_south_cyprus_support
+}

@@ -456,4 +456,15 @@ GRE_Ioannis_Kellas:0 "Ioánnis 'John' Kéllas"
 GRE_Nicholas_Christofilos:0 "Nikólaos Christófilos"
 GRE_Demetrius_Hondros:0 "Dimítrios Chóndros"
 
+
+
+
+# Cyprus GUI decisions and stuff 
+# made by @Thanasis09
+
+GRE_Cyprus_gui: "The Cyprus Issue"
+GRE_Cyprus_gui_desc: "\nCurrent south Cyprus Greek Popularity: [?south_cyprus_GRE_popularity|%%+]\nCurrent north Cyprus Greek Popularity: [?north_cyprus_GRE_popularity|%%+]\nPropability of [ENG.GetName] giving us the Cyprus Bases: [?bases_cyprus_GRE_popularity|%%+]\nPropability of Cyprus becoming independent: [?cyprus_prob_independent|%%+]"
+
+
+
 ###############################################################

@@ -72,3 +72,9 @@ GRE_golden_dawn_decisions = {
 # 	priority = 9999
 # 	scripted_gui = "GRE_strategic_islands_scripted_gui"
 # }
+
+GRE_Cyprus_gui = {
+	visible_when_empty = yes
+	scripted_gui = "GRE_CYP_GUI"
+	priority = 9999
+}

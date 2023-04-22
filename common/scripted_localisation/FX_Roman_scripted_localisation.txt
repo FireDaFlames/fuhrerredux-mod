@@ -62,3 +62,108 @@ defined_text = {
 		localization_key = BULBYZANTIUMTAGFLAG
 	}
 }
+defined_text = {
+	name = "getNorthCyprusTagOwner"
+	text = {
+		trigger = {
+			1054 = {
+				is_owned_by = ENG
+			}
+		}
+		localization_key = "GFX_CYP_North_ENG"
+	}
+	text = {
+		trigger = {
+			1054 = {
+				is_owned_by = GRE
+			}
+		}
+		localization_key = "GFX_CYP_North_GRE"
+	}
+	text = {
+		trigger = {
+			1054 = {
+				is_owned_by = TUR
+			}
+		}
+		localization_key = "GFX_CYP_North_TUR"
+	}
+	text = {
+		trigger = {
+			1054 = {
+				is_owned_by = CYP
+			}
+		}
+		localization_key = "GFX_CYP_North_CYP"
+	}
+}
+defined_text = {
+	name = "getSouthCyprusTagOwner"
+	text = {
+		trigger = {
+			183 = {
+				is_owned_by = ENG
+			}
+		}
+		localization_key = "GFX_CYP_South_ENG"
+	}
+	text = {
+		trigger = {
+			183 = {
+				is_owned_by = GRE
+			}
+		}
+		localization_key = "GFX_CYP_South_GRE"
+	}
+	text = {
+		trigger = {
+			183 = {
+				is_owned_by = TUR
+			}
+		}
+		localization_key = "GFX_CYP_South_TUR"
+	}
+	text = {
+		trigger = {
+			183 = {
+				is_owned_by = CYP
+			}
+		}
+		localization_key = "GFX_CYP_South_CYP"
+	}
+}
+defined_text = {
+	name = "getBasesCyprusTagOwner"
+	text = {
+		trigger = {
+			1053 = {
+				is_owned_by = ENG
+			}
+		}
+		localization_key = "GFX_CYP_Bases_ENG"
+	}
+	text = {
+		trigger = {
+			1053 = {
+				is_owned_by = GRE
+			}
+		}
+		localization_key = "GFX_CYP_Bases_GRE"
+	}
+	text = {
+		trigger = {
+			1053 = {
+				is_owned_by = TUR
+			}
+		}
+		localization_key = "GFX_CYP_Bases_TUR"
+	}
+	text = {
+		trigger = {
+			1053 = {
+				is_owned_by = CYP
+			}
+		}
+		localization_key = "GFX_CYP_Bases_CYP"
+	}
+}

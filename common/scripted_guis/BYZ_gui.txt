@@ -22,4 +22,25 @@ scripted_gui = {
 		window_name = "GRE_strategic_islands_tooltip_scripted_gui"
 		context_type = decision_category
 	}
+
+	GRE_CYP_GUI = {
+		window_name = "GRE_CYP_decision_gui"
+		context_type = decision_category
+		parent_window_token = top_bar
+
+		visible = {
+			always = yes
+		}
+		properties = {
+			GFX_northCYP = {
+				image = [getNorthCyprusTagOwner]
+			}
+			GFX_southCYP = {
+				image = [getSouthCyprusTagOwner]
+			}
+			GFX_basesCYP = {
+				image = [getBasesCyprusTagOwner]
+			}
+		}
+	}
 }

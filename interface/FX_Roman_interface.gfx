@@ -50,4 +50,53 @@ spriteTypes = {
 		name = "GFX_GRE_GREY_BG"
 		textureFile = "gfx/interface/GRE-BUL-BYZ/BYZ-Islands/GREY_BG.png"
 	}
+	# CYPRUS GUI
+	spriteType = {
+		name = "GFX_CYP_South_GRE"
+		textureFile = "gfx/interface/GRE-BUL-BYZ/CYP-gui/southGRE.png"
+	}
+	spriteType = {
+		name = "GFX_CYP_South_CYP"
+		textureFile = "gfx/interface/GRE-BUL-BYZ/CYP-gui/southCYP.png"
+	}
+	spriteType = {
+		name = "GFX_CYP_South_ENG"
+		textureFile = "gfx/interface/GRE-BUL-BYZ/CYP-gui/southENG.png"
+	}
+	spriteType = {
+		name = "GFX_CYP_South_TUR"
+		textureFile = "gfx/interface/GRE-BUL-BYZ/CYP-gui/southTUR.png"
+	}
+	spriteType = {
+		name = "GFX_CYP_North_GRE"
+		textureFile = "gfx/interface/GRE-BUL-BYZ/CYP-gui/northGRE.png"
+	}
+	spriteType = {
+		name = "GFX_CYP_North_CYP"
+		textureFile = "gfx/interface/GRE-BUL-BYZ/CYP-gui/northCYP.png"
+	}
+	spriteType = {
+		name = "GFX_CYP_North_ENG"
+		textureFile = "gfx/interface/GRE-BUL-BYZ/CYP-gui/northENG.png"
+	}
+	spriteType = {
+		name = "GFX_CYP_North_TUR"
+		textureFile = "gfx/interface/GRE-BUL-BYZ/CYP-gui/northTUR.png"
+	}
+	spriteType = {
+		name = "GFX_CYP_Bases_GRE"
+		textureFile = "gfx/interface/GRE-BUL-BYZ/CYP-gui/basesGRE.png"
+	}
+	spriteType = {
+		name = "GFX_CYP_Bases_CYP"
+		textureFile = "gfx/interface/GRE-BUL-BYZ/CYP-gui/basesCYP.png"
+	}
+	spriteType = {
+		name = "GFX_CYP_Bases_ENG"
+		textureFile = "gfx/interface/GRE-BUL-BYZ/CYP-gui/basesENG.png"
+	}
+	spriteType = {
+		name = "GFX_CYP_Bases_TUR"
+		textureFile = "gfx/interface/GRE-BUL-BYZ/CYP-gui/basesTUR.png"
+	}
 }
