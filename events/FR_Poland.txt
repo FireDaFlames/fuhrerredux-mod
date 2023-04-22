@@ -4091,6 +4091,7 @@ country_event = { # Poland - peace with Ukraine
 		UKR = {
 			controls_state = 91
 			controls_state = 92
+			controls_state = 1044
 			is_in_faction = no
 			is_puppet = no
 		}
@@ -4229,6 +4230,7 @@ country_event = { # Ukraine - Poland wants peace
 			UKR = {
 				transfer_state = 92
 				transfer_state = 88
+				transfer_state = 1044
 			}
 		}
 	}
