@@ -4152,6 +4152,8 @@ focus = {
 			limit = {
 				owns_state = 73
 				owns_state = 71
+				owns_state = 1042
+				owns_state = 1043
 			}
 			THIS = { 
 				country_event = poland.52 

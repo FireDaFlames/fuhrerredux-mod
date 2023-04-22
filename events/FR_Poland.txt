@@ -1733,7 +1733,7 @@ country_event = {
 			has_country_flag = { flag = POL_support_lithuania value > 3 } 
 		}
 		POL = {
-		annex_country = { target = LIT }
+			annex_country = { target = LIT }
 		}
 	}
 }
@@ -1806,6 +1806,8 @@ country_event = { #take land focus poland galicia
 		POL = {
 			transfer_state = 73
 			transfer_state = 71
+			transfer_state = 1042
+			transfer_state = 1043
 		}
 	}
 	option = { #no!
@@ -4173,6 +4175,16 @@ country_event = { # Ukraine - Poland wants peace
 			}
 			UKR = {
 				transfer_state = 80
+			}
+		}
+		if = {
+			limit = {
+				POL = {
+					owns_state = 1042
+				}
+			}
+			UKR = {
+				transfer_state = 1042
 			}
 		}
 		

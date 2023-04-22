@@ -289,7 +289,7 @@ bookmarks = {
       }
     }
     "AFG" = {
-      history = "AFG_FUHERRREDUX_DESC"
+      history = "AFG_FUHRERREDUX_DESC"
       ideology = authoritarian_democrat
       minor = yes
       ideas = {
@@ -304,7 +304,7 @@ bookmarks = {
       }
     }
     "ARB" = {
-      history = "ARB_FUHERRREDUX_DESC"
+      history = "ARB_FUHRERREDUX_DESC"
       ideology = paternal_autocrat
       minor = yes
       ideas = {
@@ -319,7 +319,7 @@ bookmarks = {
       }
     }
     "CAN" = {
-      history = "CAN_FUHERRREDUX_DESC"
+      history = "CAN_FUHRERREDUX_DESC"
       ideology = social_conservative
       minor = yes
       ideas = {
@@ -334,7 +334,7 @@ bookmarks = {
       }
     }
     "CHL" = {
-      history = "CHL_FUHERRREDUX_DESC"
+      history = "CHL_FUHRERREDUX_DESC"
       ideology = social_liberal
       minor = yes
       ideas = {
@@ -349,7 +349,7 @@ bookmarks = {
       }
     }
     "MEX" = {
-      history = "MEX_FUHERRREDUX_DESC"
+      history = "MEX_FUHRERREDUX_DESC"
       ideology = national_populist
       minor = yes
       ideas = {
@@ -364,7 +364,7 @@ bookmarks = {
       }
     }
     "CZE" = {
-      history = "CZE_FUHERRREDUX_DESC"
+      history = "CZE_FUHRERREDUX_DESC"
       ideology = paternal_autocrat
       minor = yes
       ideas = {
@@ -379,7 +379,7 @@ bookmarks = {
       }
     }
     "TUR" = {
-      history = "TUR_FUHERRREDUX_DESC"
+      history = "TUR_FUHRERREDUX_DESC"
       ideology = social_liberal
       minor = yes
       ideas = {
@@ -394,7 +394,7 @@ bookmarks = {
       }
     }
     "SAF" = {
-      history = "SAF_FUHERRREDUX_DESC"
+      history = "SAF_FUHRERREDUX_DESC"
       ideology = authoritarian_democrat
       minor = yes
       ideas = {
