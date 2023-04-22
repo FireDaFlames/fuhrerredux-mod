@@ -1298,6 +1298,46 @@ focus = {
 	}
 }
 
+
+# MEGALITERI/MEGISTI IDEA BRANCH
+
+focus = {
+	id = GRE_realisation_of_greater_greece
+	icon = none 
+	cost = 5
+	x = -13
+	y = 1
+	relative_position_id = GRE_greco_turkish_war
+	prerequisite = {
+		focus = GRE_greco_turkish_war
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = GRE_megali_idea_triumphant_tt
+			has_completed_focus = GRE_megali_idea
+		}
+	}
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = GRE_integrate_isc
+	icon = none
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = GRE_realisation_of_greater_greece
+	prerequisite = {
+		focus = GRE_realisation_of_greater_greece
+	}
+	available = {
+		country_exists = ISC
+	}
+	completion_reward = { }
+}
+
 #ELECTIONS
 
 focus = {
