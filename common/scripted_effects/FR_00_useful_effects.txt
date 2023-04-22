@@ -600,3 +600,27 @@ destroy_all_ships = {
 		count = all
 	}
 }
+
+leads_to_war_with = {
+	custom_effect_tooltip = LEADS_TO_WAR_WITH
+}
+
+focus_leads_to_war_with = {
+	custom_effect_tooltip = FOCUS_LEADS_TO_WAR_WITH
+}
+
+decision_leads_to_war_with = {
+	custom_effect_tooltip = DECISION_LEADS_TO_WAR_WITH
+}
+
+event_leads_to_war_with = {
+	custom_effect_tooltip = EVENT_LEADS_TO_WAR_WITH
+}
+
+this_leads_to_war_with = {
+	custom_effect_tooltip = THIS_LEADS_TO_WAR_WITH
+}
+
+this_leads_to_war = {
+	custom_effect_tooltip = THIS_LEADS_TO_WAR
+}

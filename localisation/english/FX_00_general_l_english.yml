@@ -160,6 +160,14 @@ new_focus_tree_unlocked: "§GA new focus tree will be unlocked§!"
 
 computing_tech_research: "Computing Research Speed"
 
+## Effects
+LEADS_TO_WAR_WITH: "§gWill lead to a war with [PREV.GetFlag][PREV.GetNameDef]!§!"
+FOCUS_LEADS_TO_WAR_WITH: "§gThis focus will lead to a war with [PREV.GetFlag][PREV.GetNameDef]!§!"
+DECISION_LEADS_TO_WAR_WITH: "§gThis decision will lead to a war with [PREV.GetFlag][PREV.GetNameDef]!§!"
+EVENT_LEADS_TO_WAR_WITH: "§gThis event will lead to a war with [PREV.GetFlag][PREV.GetNameDef]!§!"
+THIS_LEADS_TO_WAR_WITH: "§gThis will lead to a war with [PREV.GetFlag][PREV.GetNameDef]!§!"
+THIS_LEADS_TO_WAR: "§gThis will lead to a war!§!"
+
 ### Factions
 imperial_protection_alliance: "Imperial Protection Alliance"
 continental_entente: "Continental Entente"
