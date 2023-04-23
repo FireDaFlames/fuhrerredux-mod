@@ -24,3 +24,10 @@ is_owned_and_core_of_BYZ = {
 		# }
 	# }
 }
+
+ISC_NOT_YET_EXISTS = {
+	custom_trigger_tooltip = {
+		tooltip = "THIS IS NEVER ALLOWED BECAUSE THIS HASN'T YET BEEN MADE"
+		always = no
+	}
+}

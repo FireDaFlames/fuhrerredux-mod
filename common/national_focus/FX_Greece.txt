@@ -24,7 +24,7 @@ focus_tree = {
 	}
 	default = no
 
-	continuous_focus_position = { x = 50 y = 1800 }
+	continuous_focus_position = { x = 50 y = 5 }
 
 ################################################################################
 ##############################Table of contents#################################
@@ -796,8 +796,13 @@ focus = {
 					exists = yes
 				}
 			}
+			add_ideas = GRE_isc_integration
+			else = {
+				add_state_core = 776
+				add_state_core = 347
+				add_state_core = 341
+			}
 		}
-		add_ideas = GRE_isc_integration
 		#EXTRA DECISIONS
 	}
 }
@@ -1337,12 +1342,16 @@ focus = {
 
 	}
 }
+### ISC INTEGRATION HIDDEN ALWAYS UNTIL ISC GETS CONTENT
 
 focus = {
-	id = GRE_integrate_isc
+	id = GRE_start_integrate_isc
 	icon = none
 	cost = 5
-	x = 0
+	allow_branch = {
+		ISC_NOT_YET_EXISTS = yes
+	}
+	x = -2
 	y = 1
 	relative_position_id = GRE_realisation_of_greater_greece
 	prerequisite = {
@@ -1350,11 +1359,415 @@ focus = {
 	}
 	available = {
 		country_exists = ISC
+		ISC_NOT_YET_EXISTS = yes 
+	}
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = GRE_integrate_isc
+	icon = none
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = GRE_start_integrate_isc
+	prerequisite = {
+		focus = GRE_start_integrate_isc
+	}
+	completion_reward = { }
+}
+
+focus = {
+	id = GRE_the_question_of_the_patriarchate
+	icon = none
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = GRE_integrate_isc
+	prerequisite = {
+		focus = GRE_integrate_isc
+	}
+	completion_reward = { }
+}
+
+# QUESTION OF THE PATRIARCHATE STUFF
+
+focus = {
+	id = GRE_the_patriarchate_moves_athens
+	icon = none
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = GRE_the_question_of_the_patriarchate
+	mutually_exclusive = {
+		focus = GRE_the_patriarchate_remains_constantinople
+	}
+	prerequisite = {
+		focus = GRE_the_question_of_the_patriarchate
+	}
+	completion_reward = { }
+}
+
+focus = {
+	id = GRE_His_All-Holiness
+	icon = none
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = GRE_the_patriarchate_moves_athens
+	prerequisite = {
+		focus = GRE_the_patriarchate_moves_athens
+	}
+	completion_reward = { }
+}
+
+focus = {
+	id = GRE_the_athens_protocol
+	icon = none
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = GRE_His_All-Holiness
+	prerequisite = {
+		focus = GRE_His_All-Holiness
+	}
+	completion_reward = { }
+}
+
+focus = {
+	id = GRE_the_patriarchate_remains_constantinople
+	icon = none
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = GRE_the_question_of_the_patriarchate
+	prerequisite = {
+		focus = GRE_the_question_of_the_patriarchate
+	}
+	mutually_exclusive = {
+		focus = GRE_the_patriarchate_moves_athens
+	}
+	completion_reward = { }
+}
+
+focus = {
+	id = GRE_request_help_assimilation
+	icon = none
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = GRE_the_patriarchate_remains_constantinople
+	prerequisite = {
+		focus = GRE_the_patriarchate_remains_constantinople
+	}
+	completion_reward = { }
+}
+
+focus = {
+	id = GRE_the_turkish_thaw
+	icon = none
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = GRE_request_help_assimilation
+	prerequisite = {
+		focus = GRE_request_help_assimilation
+	}
+	completion_reward = { }
+}
+
+focus = {
+	id = GRE_the_vasileuousa_in_greek_hands
+	icon = none
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = GRE_the_athens_protocol
+	prerequisite = {
+		focus = GRE_the_turkish_thaw
+		focus = GRE_the_athens_protocol
+	}
+	completion_reward = {
+		add_state_core = 341
+		add_state_core = 347
+		add_state_core = 776
+		if = {
+			limit = {
+				341 = {
+					is_demilitarized_zone = no
+				}
+			}
+			341 = {
+				set_demilitarized_zone = yes
+			}
+		}
+		if = {
+			limit = {
+				347 = {
+					is_demilitarized_zone = no
+				}
+			}
+			347 = {
+				set_demilitarized_zone = yes
+			}
+		}
+	}
+}
+
+
+
+# REBELS AND STUFF SUBTREE
+
+#REBELS SUBBRANCH
+
+focus = {
+	id = GRE_fight_the_rebels
+	icon = none
+	offset = {
+		x = -1
+		y = 0
+		trigger = {
+			ISC_NOT_YET_EXISTS = no
+		}
+	}
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = GRE_realisation_of_greater_greece
+	prerequisite = {
+		focus = GRE_realisation_of_greater_greece
+	}
+	completion_reward = {
+		add_ideas = GRE_rebel_problem
+	}
+}
+
+focus = {
+	id = GRE_teach_them_greek
+	icon = none
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = GRE_fight_the_rebels
+	prerequisite = {
+		focus = GRE_fight_the_rebels
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = GRE_rebel_problem
+			add_idea = GRE_rebel_problem2
+		}
+	}
+}
+
+focus = {
+	id = GRE_the_father_of_maths
+	icon = none
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = GRE_teach_them_greek
+	prerequisite = {
+		focus = GRE_teach_them_greek
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = GRE_rebel_problem2
+			add_idea = GRE_rebel_problem3
+		}
+	}
+}
+
+## Millitary subbranch
+
+focus = {
+	id = GRE_master_art_of_war
+	icon = none
+	cost = 5
+	x = 2
+	y = 1
+	offset = {
+		x = -1
+		y = 0
+		trigger = {
+			ISC_NOT_YET_EXISTS = no
+		}
+	}
+	relative_position_id = GRE_realisation_of_greater_greece
+	prerequisite = {
+		focus = GRE_realisation_of_greater_greece
+	}
+	completion_reward = {
+		add_ideas = GRE_mastered_art_of_war
+	}
+}
+
+focus = {
+	id = GRE_the_legacy_of_alexander
+	icon = none
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = GRE_master_art_of_war
+	prerequisite = {
+		focus = GRE_master_art_of_war
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = GRE_mastered_art_of_war
+			add_idea = GRE_the_legacy_of_alexander
+		}
+	}
+}
+
+focus = {
+	id = GRE_the_trojan_horse
+	icon = none
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = GRE_the_legacy_of_alexander
+	prerequisite = {
+		focus = GRE_the_legacy_of_alexander
+	}
+	completion_reward = {
+		add_ideas = GRE_the_lecacy_of_troy
+	}
+}
+
+## A NATION FULL OF HISTORY SUBBRANCHES CONNECTION
+
+focus = {
+	id = GRE_a_nation_full_of_history
+	icon = none
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = GRE_the_father_of_maths
+	prerequisite = {
+		focus = GRE_the_father_of_maths
+	} 
+	prerequisite = {
+		focus = GRE_the_trojan_horse
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = GRE_rebel_problem3
+			add_idea = GRE_rebel_problem4
+		}
+	}
+}
+
+focus = {
+	id = GRE_turkish_legitimacy
+	icon = none
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = GRE_a_nation_full_of_history
+	prerequisite = {
+		focus = GRE_a_nation_full_of_history
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = GRE_rebel_problem4
+			add_idea = GRE_rebel_problem5
+		}
+	}
+}
+
+focus = {
+	id = GRE_the_language_issue
+	icon = none
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = GRE_turkish_legitimacy
+	prerequisite = {
+		focus = GRE_turkish_legitimacy
+	}
+	completion_reward = {
+		add_ideas = GRE_language_issue_solved
+	}
+}
+
+focus = {
+	id = GRE_turkish_assimilation_done
+	icon = none
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = GRE_the_language_issue
+	prerequisite = {
+		focus = GRE_the_language_issue
 	}
 	completion_reward = {
 		
 	}
 }
+
+focus = {
+	id = GRE_free_the_straits
+	icon = none
+	cost = 5
+	x = -1
+	y = 1
+	offset = {
+		x = 2
+		y = 0
+		trigger = {
+			ISC_NOT_YET_EXISTS = no
+		}
+	}
+	relative_position_id = GRE_turkish_assimilation_done
+	prerequisite = {
+		focus = GRE_turkish_assimilation_done
+	}
+	# prerequisite = {
+	# 	focus = GRE_the_vasileuousa_in_greek_hands
+	# }
+	completion_reward = { }
+}
+
+focus = {
+	id = GRE_the_cyprus_issue
+	icon = none
+	cost = 5
+	x = -2
+	y = 0
+	relative_position_id = GRE_free_the_straits
+	# prerequisite = {
+	# 	focus = GRE_the_vasileuousa_in_greek_hands
+	# }
+	prerequisite = {
+		focus = GRE_turkish_assimilation_done
+	}
+	completion_reward = {
+		
+	}
+} 
+
+# MEGALITERI IDEA SUBTREE
+
+focus = {
+	id = GRE_realise_megaliteri_ambitions
+	icon = none
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = GRE_the_cyprus_issue
+	prerequisite = {
+		focus = GRE_the_cyprus_issue
+	}
+	prerequisite = {
+		focus = GRE_free_the_straits
+	}
+	completion_reward = {
+
+	}
+}
+
 
 #ELECTIONS
 

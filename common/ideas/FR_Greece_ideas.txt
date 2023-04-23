@@ -587,6 +587,80 @@ ideas = {
 				political_power_cost = 10
 			}
 		}
+		GRE_rebel_problem = {
+			modifier = {
+				political_power_gain = -10
+				political_power_cost = 10
+				resistance_activity = 0.1
+				resistance_growth = 0.1
+			}
+		}
+		GRE_rebel_problem2 = {
+			modifier = {
+				political_power_cost = 5
+				political_power_gain = -5
+				resistance_growth = 0.1
+				resistance_activity = 0.1
+			}
+		}
+		GRE_rebel_problem3 = {
+			modifier = {
+				political_power_cost = 5
+				political_power_gain = -5
+				resistance_growth = 0.05
+				resistance_activity = 0.05
+			}
+		}
+		GRE_rebel_problem4 = {
+			modifier = {
+				political_power_cost = 3
+				political_power_gain = -3
+				resistance_growth = 0.03
+				resistance_activity = 0.03
+			}
+		}
+		GRE_rebel_problem5 = {
+			modifier = {
+				political_power_cost = 0
+				political_power_gain = 0
+				resistance_growth = 0
+				resistance_activity = 0
+			}
+		}
+		GRE_mastered_art_of_war = {
+			modifier = {
+				defence = 0.05
+				offence = 0.05
+				mobilization_laws_cost_factor = -0.05
+				conscription_factor = 0.02
+			}
+		}
+		GRE_the_legacy_of_alexander = {
+			modifier = {
+				army_morale = 15
+				defence = 0.1
+				offence = 0.1
+				mobilization_laws_cost_factor = -0.05
+				conscription_factor = 0.05
+				mobilization_speed = 0.03
+				naval_morale = 15
+			}
+		}
+		GRE_the_lecacy_of_troy = {
+			modifier = {
+				breakthrough_factor = 0.03
+				army_org = 0.05
+			}
+		}
+		GRE_language_issue_solved = {
+			modifier = {
+				coordination_bonus = 0.1
+				army_org = 0.05
+				army_org_regain = 0.05
+				defence = 0.02
+				occupation_cost = -0.1
+			}
+		}
 	}
 
 	##############

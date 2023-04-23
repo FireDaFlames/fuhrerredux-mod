@@ -21,6 +21,7 @@ add_namespace = greeek
 add_namespace = crisis
 add_namespace = bulgre
 add_namespace = metaxas
+add_namespace = grepeace
 
 ### Introduction Event
 
@@ -1285,7 +1286,8 @@ country_event = {
 
 country_event = { #Metaxas sympathies DEBUG
 	id = metaxas.0
-	desc = metaxas.0.t
+	title = metaxas.0.t
+	desc = metaxas.0.d
 	is_triggered_only = yes
 	option = {
 		name = "IF YOU SEE THIS EVENT, REPORT IT CONTENT MAY NOT WORK"
@@ -1318,6 +1320,49 @@ country_event = { #Metaxas sympathies DEBUG
 			}
 			set_variable = {
 				metaxas_pataut_symps = 0
+			}
+		}
+	}
+}
+
+
+country_event = { #Peace with TUR for Greco-Turkish War
+	id = grepeace.1
+	title = grepeace.1.t
+	desc = grepeace.1.d
+	is_triggered_only = yes
+	option = {
+		name = grepeace.1.a
+		if = {
+			limit = {
+				GRE = {
+					OR = {
+						has_government = market_liberal
+						has_government = social_conservative
+						has_government = social_liberal
+						has_government = social_democrat
+					}
+				}
+			}
+			GRE = {
+				if = {
+					limit = {
+						NOT = {
+							controls_state = 340
+						}
+					}
+					transfer_state = 340
+					if = {
+						limit = {
+							NOT = {
+								340 = {
+									is_core_of = GRE
+								}
+							}
+						}
+						add_state_core = 340
+					}
+				}
 			}
 		}
 	}

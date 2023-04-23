@@ -1,0 +1,24 @@
+GRE_enact_peace_tur = {
+	if = {
+		limit = {
+			has_country_flag = first_greco_turkish_war
+		}
+		#
+		if = {
+			limit = {
+				GRE = {
+					has_elected_government = yes
+				}
+			}
+			
+		}
+
+
+		else_if = {
+			limit = {
+				has_country_flag = second_greco_turkish_war
+			}
+			#
+		}
+	}
+}
