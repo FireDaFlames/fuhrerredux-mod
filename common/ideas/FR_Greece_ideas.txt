@@ -1,7 +1,7 @@
 ideas = {
-	##############
-	# Country ideas
-	##############
+	################
+	# Country ideas#
+	################
 	country = {
 		#STARTING
 		GRE_abysmal_economy = {
@@ -569,6 +569,22 @@ ideas = {
 			modifier = {
 				set_rule = { can_not_declare_war = yes }
 				enemy_justify_war_goal_time = 1000
+			}
+		}
+		GRE_isc_integration = {
+			modifier = {
+				political_power_gain = -10
+				political_power_cost = 5
+			}
+		}
+		GRE_isc_integration_started = {
+			targeted_modifier = {
+				tag = ISC 
+				monthly_population = -1000
+			}
+			modifier = {
+				monthly_population = 1000
+				political_power_cost = 10
 			}
 		}
 	}
