@@ -172,7 +172,7 @@ characters = {
 		}
 	}
 	MAC_Alexander_The_Great_Communist = {
-		name = "Aléxandros O Mégas"
+		name = "Comrade Aléxandros"
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/MAC/Portrait_MAC_Alexander_The_Great_Communist.png"

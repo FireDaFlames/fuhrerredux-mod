@@ -274,9 +274,10 @@ ideas = {
 				}
 			}
 		}
-		maceconian_economy = {
+		macedonian_economy = {
 			level = 1
 			cost = 1000
+			picture = macedonian_economy
 			removal_cost = -1
 			cancel_if_invalid = no
 			available = {
@@ -446,6 +447,7 @@ ideas = {
 		}
 		
 		macedonian_trade = {
+			picture = macedonian_trade
 			level = 10
 			cost = 1000
 			removal_cost = -1
@@ -718,7 +720,7 @@ ideas = {
 			cost = 1000
 			removal_cost = -1
 			cancel_if_invalid = no
-			picture = GFX_idea_macedonian_legions
+			picture = macedonian_legions
 			available = {
 				original_tag = MAC
 			}
@@ -736,7 +738,7 @@ ideas = {
 			}
 			modifier = {
 				conscription = 1
-				training_time_factor = -1
+				training_time_factor = -0.98
 				industrial_capacity_dockyard = 1
 				industrial_capacity_factory = 1
 				research_speed_factor = 1

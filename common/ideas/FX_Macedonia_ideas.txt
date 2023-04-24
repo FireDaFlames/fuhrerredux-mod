@@ -1,12 +1,20 @@
 ideas = {
 	country = {
+		MAC_alexanders_regime = {
+			allowed = {
+				original_tag = MAC
+			}
+			modifier = {
+				disabled_ideas = 1
+			}
+		}
 		MAC_our_undefeatable_legions = {
 			allowed = {
 				has_completed_focus = MAC_rearm_our_legions
 			}
-			picture = "GFX_idea_MAC_macedonian_undefeatable_legions"
+			picture = "MAC_macedonian_undefeatable_legions"
 			modifier = {
-				conscription = 1
+				conscription = 0.98
 				army_morale = 1000
 				army_armor_attack_factor = 0.5
 				army_artillery_attack_factor = 0.5
@@ -25,7 +33,7 @@ ideas = {
 				supply_factor = 10000
 				# training_time_army = -100
 				# training_time_factor = -1
-				training_time_army_factor = -0.90
+				# training_time_army_factor = -0.90
 				land_doctrine_cost_factor = -1000
 				air_doctrine_cost_factor = -1000
 				naval_doctrine_cost_factor = -1000

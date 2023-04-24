@@ -332,4 +332,24 @@ spriteTypes = {
     name = "GFX_idea_MAC_macedonian_undefeatable_legions"
     textureFile = "gfx/interface/ideas/MAC/MAC_idea_macedonian_legions.png"
   }
+  spriteType = {
+    name = "GFX_idea_IRQ_hashmite_dynasty"
+    textureFile = "gfx/interface/ideas/IRQ/IRQ_hasmite_dynasty.png"
+  }
+  spriteType = {
+    name = "GFX_idea_IRQ_semi_democratic_state"
+    textureFile = "gfx/interface/ideas/IRQ/IRQ_semi_democratic_state.png"
+  }
+  spriteType = {
+    name = "GFX_idea_IRQ_british_protection"
+    textureFile = "gfx/interface/ideas/IRQ/IRQ_british_protection.png"
+  }
+  spriteType = {
+    name = "GFX_idea_IRQ_coalition_fraternal_communique"
+    textureFile = "gfx/interface/ideas/IRQ/IRQ_coalition_fraternal_communique.png"
+  }
+  spriteType = {
+    name = "GFX_idea_IRQ_nationalist_unrest"
+    textureFile = "gfx/interface/ideas/IRQ/IRQ_nationalist_unrest.png"
+  }
 }

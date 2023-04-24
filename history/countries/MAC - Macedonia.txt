@@ -1,4 +1,4 @@
-capital = 731
+capital = 447
 set_research_slots = 3
 set_stability = 1
 set_war_support = 1
@@ -9,8 +9,9 @@ add_ideas = {
 	party_pop_0_90
 	macedonian_legions
 	macedonian_trade
-	maceconian_economy
+	macedonian_economy
 	one_party_dictatorship
+	MAC_alexanders_regime
 }
 
 set_technology = {

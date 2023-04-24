@@ -1,6 +1,18 @@
-# spriteTypes = {
+spriteTypes = {
 # 	spriteType = {
 # 		name = "GFX_idea_macedonian_legions"
 # 		textureFile = "gfx/interface/ideas/laws/idea_macedonian_legions.png"
 # 	}
-# }
+	spriteType = {
+		name = "GFX_idea_macedonian_economy"
+		textureFile = "gfx/interface/ideas/MAC/macedonian_economy.png"
+	}
+	spriteType = {
+		name = "GFX_idea_macedonian_legions"
+		textureFile = "gfx/interface/ideas/MAC/macedonian_legions.png"
+	}
+	spriteType = {
+		name = "GFX_idea_macedonian_trade"
+		textureFile = "gfx/interface/ideas/MAC/macedonian_trade.png"
+	}
+}

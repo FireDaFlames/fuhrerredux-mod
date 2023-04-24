@@ -3,7 +3,6 @@ state={
 	name="STATE_787"
 
 	history={
-		add_core_of = MAC
 		owner = SER
 		add_core_of = SER
 		buildings = {

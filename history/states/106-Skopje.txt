@@ -9,7 +9,6 @@ state={
 	}
 
 	history={
-		add_core_of = MAC
 		owner = SER
 		buildings = {
 			infrastructure = 2

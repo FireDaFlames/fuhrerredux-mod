@@ -93,6 +93,17 @@ news_event = { #Alexander annexes greece
 				add_core_of = MAC
 			}
 			add_state_core = 765
+			add_state_core = 787
+			add_state_core = 106
+			set_capital = {
+				state = 731
+			}
+			731 = {
+				add_victory_points = {
+					province = 11818
+					value = 30
+				}
+			}
 		}
 		# }
 		# else = {
