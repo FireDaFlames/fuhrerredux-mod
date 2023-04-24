@@ -1,4 +1,4 @@
-GRE_enact_peace_tur = {
+GRE_enact_peace_tur_won = {
 	if = {
 		limit = {
 			has_country_flag = first_greco_turkish_war
@@ -7,12 +7,20 @@ GRE_enact_peace_tur = {
 		if = {
 			limit = {
 				GRE = {
-					has_elected_government = yes
+					has_elected_government = yes 
 				}
 			}
-			
-		}
+			GRE = {
+				transfer_state = 341
+				transfer_state = 347
+				transfer_state = 776
+				add_state_claim = 341
+				add_state_claim = 347
+				add_state_claim = 776
+				unlock_decision_tooltip = 
+			}
 
+		}
 
 		else_if = {
 			limit = {
