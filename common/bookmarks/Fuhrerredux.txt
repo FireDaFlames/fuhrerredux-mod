@@ -385,7 +385,7 @@ bookmarks = {
       ideas = {
         TUR_sick_man_of_europe
         TUR_opda_idea
-        TUR_balkan_defense_council_spirit
+        TUR_ottoman_constitution_idea
       }
       focuses = {
         TUR_emergency_session
