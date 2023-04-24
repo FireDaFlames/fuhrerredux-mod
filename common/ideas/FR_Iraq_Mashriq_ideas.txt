@@ -1,13 +1,13 @@
 ideas = { #Ideas added by thanasislanaras
 	country = {
-		IRQ_divided_nation = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IRQ_divided_nation"}
-			picture = generic_neutrality_drift_bonus
-			modifier = {
-				conscription_factor = -0.3
-				stability_factor = -0.1
-			}
-		}
+		# IRQ_divided_nation = {
+		# 	on_add = {log = "[GetDateText]: [Root.GetName]: add idea IRQ_divided_nation"}
+		# 	picture = generic_neutrality_drift_bonus
+		# 	modifier = {
+		# 		conscription_factor = -0.3
+		# 		stability_factor = -0.1
+		# 	}
+		# }
 		IRQ_hashmite_dynasty = {
 			picture = IRQ_hashmite_dynasty
 			targeted_modifier = {
