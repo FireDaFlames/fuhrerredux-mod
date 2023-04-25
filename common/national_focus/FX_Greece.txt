@@ -5196,7 +5196,7 @@ focus = {
 		cost = 5
 		relative_position_id = GRE_more_ships
 		completion_reward = {
-			add_	
+				
 			#research bonus for battleship, battlecruiser and submarine #
 			# add_tech_bonus = {
 			# 	name = GRE_rulers_of_seven_seas_battleship_bonus
