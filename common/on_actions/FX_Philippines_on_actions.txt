@@ -77,7 +77,10 @@ on_actions = {
                 is_in_faction_with = PHI 
               }
             }
-            NOT = { is_in_faction_with = GER } # Do not whitepeace if we are allied with Germany
+            NOT = { 
+              is_in_faction_with = GER # Do not whitepeace if we are allied with Germany
+              is_in_faction_with = USA # Do not whitepeace if we are allied with USA
+            } 
           }
         }
         FRA = { country_event = philippines.77 }

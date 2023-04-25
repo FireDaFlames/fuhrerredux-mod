@@ -3397,6 +3397,7 @@ focus_tree = {
 		y = 1
 		cost = 6
 		available = {
+			is_subject = no
 			has_capitulated = no
 			has_army_manpower = {
 				size > 250000
@@ -3417,6 +3418,7 @@ focus_tree = {
 		y = 1
 		cost = 6
 		available = {
+			is_subject = no
 			country_exists = POL
 			NOT = { has_war_with = POL }
 			POL = {
@@ -3453,6 +3455,7 @@ focus_tree = {
 		y = 1
 		cost = 6
 		available = {
+			is_subject = no
 			country_exists = ROM
 			NOT = { has_war_with = ROM }
 			ROM = {
@@ -3489,6 +3492,7 @@ focus_tree = {
 		y = 2
 		cost = 6
 		available = {
+			is_subject = no
 			country_exists = SLO
 			is_neighbor_of = SLO
 			NOT = { has_war_with = SLO }
@@ -3522,6 +3526,7 @@ focus_tree = {
 		y = 1
 		cost = 6
 		available = {
+			is_subject = no
 			country_exists = FRA
 			NOT = { has_war_with = FRA }
 			FRA = {
@@ -3586,6 +3591,7 @@ focus_tree = {
 		y = 1
 		cost = 6
 		available = {
+			is_subject = no
 			country_exists = POL
 			NOT = { has_war_with = POL }
 			POL = {
@@ -3618,6 +3624,7 @@ focus_tree = {
 		y = 1
 		cost = 6
 		available = {
+			is_subject = no
 			has_capitulated = no
 			OR = {
 				is_in_faction_with = FRA
@@ -3642,6 +3649,7 @@ focus_tree = {
 		y = 1
 		cost = 6
 		available = {
+			is_subject = no
 			country_exists = FRA
 			NOT = { has_war_with = FRA }
 			FRA = {
@@ -3665,6 +3673,7 @@ focus_tree = {
 		y = 1
 		cost = 6
 		available = {
+			is_subject = no
 			country_exists = FRA
 			NOT = { has_war_with = FRA }
 			FRA = {
@@ -3696,6 +3705,7 @@ focus_tree = {
 		y = 1
 		cost = 6
 		available = {
+			is_subject = no
 			is_in_faction = yes
 			has_capitulated = no
 			owns_state = 72
@@ -3740,6 +3750,7 @@ focus_tree = {
 		y = 1
 		cost = 6
 		available = {
+			is_subject = no
 			OR = {
 				AND = {
 					country_exists = LAT
@@ -3774,6 +3785,7 @@ focus_tree = {
 		y = 1
 		cost = 6
 		available = {
+			is_subject = no
 			country_exists = FIN
 			NOT = { has_war_with = FIN }
 			FIN = {
@@ -3796,6 +3808,7 @@ focus_tree = {
 		y = 1
 		cost = 6
 		available = {
+			is_subject = no
 			OR = {
 				AND = {
 					country_exists = GEO
@@ -3838,6 +3851,7 @@ focus_tree = {
 		y = 1
 		cost = 6
 		available = {
+			is_subject = no
 			country_exists = CZE
 			NOT = { has_war_with = CZE }
 			CZE = {
@@ -3860,6 +3874,7 @@ focus_tree = {
 		y = 1
 		cost = 6
 		available = {
+			is_subject = no
 			country_exists = SER
 			NOT = { has_war_with = SER }
 			SER = {
@@ -3889,6 +3904,7 @@ focus_tree = {
 		y = 3
 		cost = 6
 		available = {
+			is_subject = no
 			country_exists = GRE
 			NOT = { has_war_with = GRE }
 			GRE = {
@@ -3920,6 +3936,7 @@ focus_tree = {
 		y = 3
 		cost = 6
 		available = {
+			is_subject = no
 			country_exists = TUR
 			NOT = { has_war_with = TUR }
 			TUR = {
@@ -3951,6 +3968,7 @@ focus_tree = {
 		y = 1
 		cost = 6
 		available = {
+			is_subject = no
 			country_exists = BLR
 			NOT = { has_war_with = BLR }
 			BLR = {
@@ -3992,6 +4010,7 @@ focus_tree = {
 		y = 1
 		cost = 6
 		available = {
+			is_subject = no
 			country_exists = BLR
 			BLR = {
 				OR = {
@@ -4044,6 +4063,7 @@ focus_tree = {
 		y = 2
 		cost = 6
 		available = {
+			is_subject = no
 			country_exists = GER
 			NOT = { has_war_with = GER }
 			any_allied_country = {
@@ -4135,6 +4155,7 @@ focus_tree = {
 		y = 2
 		cost = 6
 		available = {
+			is_subject = no
 			country_exists = BUL
 			NOT = { has_war_with = BUL }
 			BUL = {
@@ -4169,6 +4190,7 @@ focus_tree = {
 		y = 2
 		cost = 6
 		available = {
+			is_subject = no
 			country_exists = BUL
 			NOT = { has_war_with = BUL }
 			BUL = {

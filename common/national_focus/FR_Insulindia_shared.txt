@@ -1405,12 +1405,7 @@
 		y = 2
 		
 		available = {
-			OR = {
-				has_government = social_democrat
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = social_conservative
-			}
+			has_democratic_government = yes
 		}
 		
 		ai_will_do = {
@@ -1429,6 +1424,17 @@
 		id = INS_strengthen_american_relations
 		icon = GFX_focus_chi_mission_to_the_us
 		cost = 7.00
+		available = {
+			is_subject = no
+			country_exists = USA
+			NOT = { has_war_with = USA }
+		}
+		bypass = {
+			OR = {
+				NOT = { country_exists = USA }
+				has_war_with = USA
+			}
+		}
 		prerequisite = {
 			focus = INS_find_democratic_friends
 		}
@@ -1453,6 +1459,11 @@
 		id = INS_grow_french_relations
 		icon = GFX_focus_chi_reach_out_to_france
 		cost = 7.00
+		available = {
+			is_subject = no
+			country_exists = FRA
+			NOT = { has_war_with = FRA }
+		}
 		prerequisite = {
 			focus = INS_strengthen_american_relations
 		}
@@ -1477,6 +1488,15 @@
 		id = INS_join_french_alliance
 		icon = GFX_goal_Paris
 		cost = 5.00
+		available = {
+			is_subject = no
+			country_exists = FRA
+			FRA = { is_faction_leader = yes }
+			NOT = { has_war_with = FRA }
+		}
+		bypass = {
+			is_in_faction_with = FRA
+		}
 		prerequisite = {
 			focus = INS_grow_french_relations
 		}
@@ -1513,12 +1533,7 @@
 		y = 2
 		
 		available = {
-			OR = {
-				has_government = vanguardist
-				has_government = collectivist
-				has_government = libertarian_socialist
-				has_government = social_democrat
-			}
+			has_socialist_government = yes
 		}
 		
 		ai_will_do = {
@@ -1537,6 +1552,12 @@
 		id = INS_strengthen_soviet_relations
 		icon = GFX_focus_chi_mission_to_the_soviet_union
 		cost = 7.00
+		available = {
+			is_subject = no
+			country_exists = SOV
+			NOT = { has_war_with = SOV }
+			has_socialist_government = yes
+		}
 		prerequisite = {
 			focus = INS_insulindian_revolution
 		}
@@ -1561,6 +1582,10 @@
 		id = INS_east_asian_revolutionary_funding
 		icon = GFX_goal_tripartite_pact
 		cost = 7.00
+		available = {
+			is_subject = no
+			has_socialist_government = yes
+		}
 		prerequisite = {
 			focus = INS_strengthen_soviet_relations
 		}
@@ -1574,7 +1599,7 @@
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus INS_east_asian_revolutionary_funding"
 			add_political_power = -50
-			RUS = {
+			PHI = {
 				add_political_power = -30
 				add_popularity = { ideology = collectivist popularity = 0.02 }
 			}
@@ -1595,12 +1620,20 @@
 				add_popularity = { ideology = collectivist popularity = 0.02 }
 			}
 		}
-
 	}
 	shared_focus = {
 		id = INS_join_soviet_alliance
 		icon = GFX_focus_generic_join_comintern
 		cost = 5.00
+		available = {
+			has_socialist_government = yes
+			is_subject = no
+			country_exists = SOV
+			SOV = { is_faction_leader = yes }
+		}
+		bypass = {
+			is_in_faction_with = SOV
+		}
 		prerequisite = {
 			focus = INS_east_asian_revolutionary_funding
 		}
@@ -1685,6 +1718,11 @@
 		y = 3
 		
 		available = {
+			is_subject = no
+			721 = { is_owned_by_ROOT_or_ally = no }
+		}
+		bypass = {
+			721 = { is_owned_by_ROOT_or_ally = yes }
 		}
 		
 		ai_will_do = {
@@ -1693,30 +1731,15 @@
 		
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus INS_sieze_timor"
-			if = {
-				limit = {
-					POR = {
-						owns_state = 721
+			721 = {
+				OWNER = {
+					create_wargoal = {
+						target = THIS
+						type = take_state_focus
 					}
-				}
-				create_wargoal = {
-					type = take_state_focus
-					target = POR
-				}
-			}
-			if = {
-				limit = {
-					PRR = {
-						owns_state = 721
-					}
-				}
-				create_wargoal = {
-					type = take_state_focus
-					target = PRR
 				}
 			}
 		}
-
 	}
 	shared_focus = {
 		id = INS_kick_out_japanese
@@ -1732,6 +1755,15 @@
 		y = 3
 		
 		available = {
+			is_subject = no
+			OR = {
+				668 = { is_owned_by_ROOT_or_ally = no }
+				773 = { is_owned_by_ROOT_or_ally = no }
+			}
+		}
+		bypass = {
+			owns_state = 668
+			owns_state = 673
 		}
 		
 		ai_will_do = {
@@ -1759,6 +1791,12 @@
 		y = 4
 		
 		available = {
+			is_subject = no
+			country_exists = ENG
+			NOT = { has_war_with = ENG }
+		}
+		bypass = {
+			has_war_with = ENG
 		}
 		
 		ai_will_do = {
@@ -1852,6 +1890,9 @@
 		id = INS_anti_colonialist_alliance
 		icon = GFX_focus_RAJ_clamp_down_on_corruption
 		cost = 5.00
+		available = {
+			is_subject = no
+		}
 		prerequisite = {
 			focus = INS_east_asian_revolutionary_funding
 			focus = INS_fund_anti_colonialist_groups
@@ -1869,9 +1910,8 @@
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus INS_anti_colonialist_alliance"
 			add_political_power = 30
-			#create_faction = INS_insulindian_faction
+
 			unlock_decision_tooltip = INS_join_co_prosperity_sphere
-			unlock_decision_tooltip = INS_create_new_alliance
 		}
 
 	}
@@ -1879,6 +1919,9 @@
 		id = INS_east_asian_relations
 		icon = GFX_focus_generic_military_academy
 		cost = 5.00
+		available = {
+			is_subject = no
+		}
 		prerequisite = {
 			focus = INS_insulindian_diplomacy
 		}
@@ -1892,13 +1935,8 @@
 		
 		available = {
 			OR = {
-				has_government = social_democrat
-				has_government = social_liberal
-				has_government = market_liberal
-				has_government = social_conservative
-				has_government = authoritarian_democrat
-				has_government = paternal_autocrat
-				has_government = national_populist
+				has_democratic_government = yes
+				has_authoritarian_government = yes
 			}
 		}
 		
@@ -1918,6 +1956,11 @@
 		id = INS_mission_to_japan
 		icon = GFX_focus_chi_collaboration_with_the_japanese
 		cost = 7.00
+		available = {
+			country_exists = JAP
+			is_subject = no
+			NOT = { has_war_with = JAP }
+		}
 		prerequisite = {
 			focus = INS_east_asian_relations
 		}
@@ -1942,8 +1985,15 @@
 		id = INS_try_buying_sulawesi
 		icon = GFX_goal_capitalist_system
 		cost = 7.00
+		available = {
+			is_subject = no
+			NOT = { owns_state = 673 }
+		}
 		prerequisite = {
 			focus = INS_mission_to_japan
+		}
+		bypass = {
+			owns_state = 673
 		}
 		x = 34
 		y = 4
@@ -1954,9 +2004,11 @@
 		
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus INS_try_buying_sulawesi"
-			JAP = {
-				country_event = {
-					id = insulindia.106 days = 1
+			673 = {
+				OWNER = {
+					country_event = {
+						id = insulindia.106 days = 1
+					}
 				}
 			}
 		}
@@ -1966,18 +2018,21 @@
 		id = INS_join_japanese_alliance
 		icon = Co_Prosperity_Sphere
 		cost = 5.00
+		available = {
+			is_subject = no
+			has_socialist_government = no
+			country_exists = JAP
+			NOT = { has_war_with = JAP }
+			JAP = { is_faction_leader = yes }
+		}
+		bypass = {
+			is_in_faction_with = JAP
+		}
 		prerequisite = {
 			focus = INS_try_buying_sulawesi
 		}
 		x = 34
 		y = 5
-		
-		available = {
-			JAP = {
-				is_faction_leader = yes
-			}
-			controls_state = 673
-		}
 		
 		ai_will_do = {
 			factor = 10

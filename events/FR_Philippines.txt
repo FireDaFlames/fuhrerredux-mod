@@ -2290,6 +2290,13 @@ country_event = { # Defeat in Indochina
         PREV = {
           country_event = philippines.78
         }
+        every_owned_state = {
+          limit = {
+            is_in_continent = asia
+            is_controlled_by = PHI
+          }
+          transfer_state = PREV
+        }
       }
       PHI = {
         annex_country = {

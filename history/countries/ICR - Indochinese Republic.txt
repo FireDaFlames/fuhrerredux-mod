@@ -1,4 +1,4 @@
-#set_capital = 
+set_capital = 961
 set_technology = {
 	### Infantry ###
 	infantry_weapons = 1
