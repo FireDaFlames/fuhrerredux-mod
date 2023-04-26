@@ -1,0 +1,2413 @@
+﻿focus_tree = {
+	id = columbia_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 69420
+			tag = CLB
+		}
+
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 3000 } # I would add it at 0, 0 to not bother :)
+##########################ScavengeForGuns###################
+	focus = {
+		id = CLB_Open_Abandoned_Stockpiles
+		icon = GFX_C
+		cost = 5
+		prerequisite = {
+			focus = 
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 16
+		y = 12
+}
+	focus = {
+		id = CLB_Request_Civilian_Guns
+		icon = GFX_C
+		cost = 5
+		prerequisite = {
+			focus = CLB_Open_Abandoned_Stockpiles
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 14
+		y = 13
+}
+	focus = {
+		id = CLB_Use_Everything_Weve_Got
+		icon = GFX_C
+		cost = 5
+		prerequisite = {
+			focus = CLB_Open_Abandoned_Stockpiles
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 18
+		y = 13
+}
+##########################INDUSTRY#############################
+	focus = {
+		id = CLB_Reinstate_The_Gold_Standard
+		icon = GFX_goal_generic_foreign_investments
+		cost = 5
+		prerequisite = {
+			focus = 
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 7
+		y = 12
+}
+	focus = {
+		id = CLB_Bolster_The_Military_Sector
+		icon = GFX_goal_generic_improve_industry
+		cost = 5
+		prerequisite = {
+			focus = CLB_Reinstate_The_Gold_Standard
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 7
+		y = 13
+}
+	focus = {
+		id = CLB_Guns_Made_of_American_Steel
+		icon = GFX_C
+		cost = 5
+		prerequisite = {
+			focus = CLB_Bolster_The_Military_Sector
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 6
+		y = 14
+}
+	focus = {
+		id = CLB_Factories_Built_In_A_Day
+		icon = GFX_C
+		cost = 5
+		prerequisite = {
+			focus = CLB_Bolster_The_Military_Sector
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 8
+		y = 14
+}
+	focus = {
+		id = CLB_Massive_Military_Build_Up
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5
+		prerequisite = {
+			focus = CLB_Factories_Built_In_A_Day
+		}
+		prerequisite = {
+			focus = CLB_Guns_Made_of_American_Steel
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 7
+		y = 15
+}
+	focus = {
+		id = CLB_Ramp_Up_Production
+		icon = GFX_goal_generic_oil_refinery
+		cost = 5
+		prerequisite = {
+			focus = CLB_Massive_Military_Build_Up
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 7
+		y = 16
+}
+	focus = {
+		id = CLB_Quality_Production_Tanks
+		icon = GFX_goal_generic_army_tanks2
+		cost = 5
+		prerequisite = {
+			focus = CLB_Ramp_Up_Production
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 6
+		y = 17
+}
+	focus = {
+		id = CLB_Rhodesian_Styled_Build_Up
+		icon = GFX_goal_gold_up
+		cost = 5
+		prerequisite = {
+			focus = CLB_Ramp_Up_Production
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 8
+		y = 17
+}
+	focus = {
+		id = CLB_The_Folk_Awakens
+		icon = GFX_CLB_The_Folk_Awakens
+		cost = 5
+		prerequisite = {
+			focus = CLB_Rhodesian_Styled_Build_Up
+		}
+		prerequisite = {
+			focus = CLB_Quality_Production_Tanks
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 7
+		y = 18
+}
+############CIVILIAN#######################
+	focus = {
+		id = CLB_Feed_The_People
+		icon = GFX_goal_famine
+		cost = 5
+		prerequisite = {
+			focus = CLB_Reinstate_The_Gold_Standard
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 3
+		y = 13
+}
+	focus = {
+		id = CLB_A_Home_For_Everyone
+		icon = GFX_goal_generic_build_housing
+		cost = 5
+		prerequisite = {
+			focus = CLB_Feed_The_People
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 2
+		y = 14
+}
+	focus = {
+		id = CLB_A_Reason_To_Be_Patriotic 
+		icon = GFX_C
+		cost = 5
+		prerequisite = {
+			focus = CLB_Feed_The_People
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 4
+		y = 14
+}
+	focus = {
+		id = CLB_Local_Family_Farms
+		icon = GFX_focus_AUS_agriculture
+		cost = 5
+		prerequisite = {
+			focus = CLB_A_Home_For_Everyone
+		}
+		prerequisite = {
+			focus = CLB_A_Reason_To_Be_Patriotic 
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 3
+		y = 15
+}
+	focus = {
+		id = CLB_German_Stlyed_Industrial_Sectors
+		icon = GFX_Germany_Pan
+		cost = 5
+		prerequisite = {
+			focus = CLB_Local_Family_Farms
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 3
+		y = 16
+}
+	focus = {
+		id = CLB_A_Satisfying_Job_For_Everyone
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 5
+		prerequisite = {
+			focus = CLB_German_Stlyed_Industrial_Sectors
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 2
+		y = 17
+}
+	focus = {
+		id = CLB_Never_Another_Depression
+		icon = GFX_C
+		cost = 5
+		prerequisite = {
+			focus = CLB_German_Stlyed_Industrial_Sectors
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 4
+		y = 17
+}
+	focus = {
+		id = CLB_Destroy_Liberal_Economic_Policies 
+		icon = GFX_CLB_Destroy_Liberal_Economic_Policies 
+		cost = 5
+		prerequisite = {
+			focus = CLB_A_Satisfying_Job_For_Everyone
+		}
+		prerequisite = {
+			focus = CLB_Never_Another_Depression
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 3
+		y = 18
+}
+###############RESEARCH#################
+	focus = {
+		id = CLB_Replace_Public_Schools
+		icon = GFX_goal_RAJ_Establish_Village_Schools
+		cost = 5
+		prerequisite = {
+			focus = CLB_Reinstate_The_Gold_Standard
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 11
+		y = 13
+}
+	focus = {
+		id = CLB_Teach_The_Way_of_Asatru
+		icon = GFX_goal_USA_no_valkist
+		cost = 5
+		prerequisite = {
+			focus = CLB_Replace_Public_Schools
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 10
+		y = 14
+}
+	focus = {
+		id = CLB_A_Boost_In_Private_Schools
+		icon = GFX_C
+		cost = 5
+		prerequisite = {
+			focus = CLB_Replace_Public_Schools
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 12
+		y = 14
+}
+	focus = {
+		id = CLB_Educate_The_Masses
+		icon = GFX_goal_KTG_Bookstack
+		cost = 5
+		prerequisite = {
+			focus = CLB_A_Boost_In_Private_Schools
+		}
+		prerequisite = {
+			focus = CLB_Teach_The_Way_of_Asatru
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 11
+		y = 15
+}
+	focus = {
+		id = CLB_Provide_Funding_For_Labs
+		icon = GFX_C
+		cost = 5
+		prerequisite = {
+			focus = CLB_Educate_The_Masses
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 11
+		y = 16
+}
+	focus = {
+		id = CLB_Engineering_Centers
+		icon = GFX_C
+		cost = 5
+		prerequisite = {
+			focus = CLB_Provide_Funding_For_Labs
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 10
+		y = 17
+}
+	focus = {
+		id = CLB_Studies_Guided_by_God
+		icon = GFX_C
+		cost = 5
+		prerequisite = {
+			focus = CLB_Provide_Funding_For_Labs
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 12
+		y = 17
+}
+	focus = {
+		id = CLB_100%_Literature_Rates
+		icon = GFX_C
+		cost = 5
+		prerequisite = {
+			focus = CLB_Studies_Guided_by_God
+		}
+		prerequisite = {
+			focus = CLB_Engineering_Centers
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 11
+		y = 18
+}
+
+	focus = {
+		id = CLB_Unstoppable_War_Machine
+		icon = GFX_CLB_Unstoppable_War_Machine
+		cost = 5
+		prerequisite = {
+			focus = CLB_100%_Literature_Rates
+		}
+		prerequisite = {
+			focus = CLB_Destroy_Liberal_Economic_Policies 
+		}
+		prerequisite = {
+			focus = CLB_The_Folk_Awakens
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 7
+		y = 20
+}
+
+#################Speacil Army#######################################
+	focus = {
+		id = CLB_Requirement_For_Speacil_Divisions
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+			focus = 
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		
+		x = 34
+		y = 20
+}
+	focus = {
+		id = CLB_Increase_MP_Funding
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+			focus = CLB_Requirement_For_Speacil_Divisions
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		
+		x = 32
+		y = 21
+}
+	focus = {
+		id = CLB_Recruit_Kennedy 
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+			focus = CLB_Requirement_For_Speacil_Divisions
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		
+		x = 34
+		y = 22
+}
+	focus = {
+		id = CLB_Panzercops
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+			focus = CLB_Increase_MP_Funding
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		
+		x = 31
+		y = 22
+}
+	focus = {
+		id = CLB_Bribe_Macarthur
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+			focus = CLB_Panzercops
+                        focus =  CLB_Recruit_DoMoRian_Mercenarys
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		
+		x = 34
+		y = 24
+}
+	focus = {
+		id = CLB_Shock_Units
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+			focus = CLB_Requirement_For_Speacil_Divisions
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		
+		x = 36
+		y = 21
+}
+	focus = {
+		id = CLB_Recruit_DoMoRian_Mercenarys
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+			focus = CLB_Shock_Units
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		
+		x = 37
+		y = 22
+}
+####################Diplomacy########################################
+	focus = {
+		id = CLB_A_Diplomatic_Aproach
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+			focus = 
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		
+		x = 7
+		y = 9
+}
+	focus = {
+		id = CLB_Assitance_From_Cruzoob
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+			focus = CLB_A_Diplomatic_Aproach
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		
+		x = 2
+		y = 10
+}
+	focus = {
+		id = CLB_Purchase_Alantic_Treaty_Ports
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+			focus = CLB_A_Diplomatic_Aproach
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		
+		x = 5
+		y = 10
+}
+	focus = {
+		id = CLB_Porto_Torres
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+			focus = CLB_Purchase_Alantic_Treaty_Ports
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		
+		x = 4
+		y = 11
+}
+	focus = {
+		id = CLB_Bornholm
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+			focus = CLB_Purchase_Alantic_Treaty_Ports
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		
+		x = 6
+		y = 11
+}
+	focus = {
+		id = CLB_Purchase_Pacific_Treaty_Ports
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+			focus = CLB_A_Diplomatic_Aproach
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		
+		x = 9
+		y = 10
+}
+	focus = {
+		id = CLB_Tsingtao
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+			focus = CLB_Purchase_Pacific_Treaty_Ports
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		
+		x = 8
+		y = 11
+}
+	focus = {
+		id = CLB_Reunion_Island
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+			focus = CLB_Purchase_Pacific_Treaty_Ports
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		
+		x = 10
+		y = 11
+}
+	focus = {
+		id = CLB_The_Russian_Exiles
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+			focus = CLB_A_Diplomatic_Aproach
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		
+		x = 12
+		y = 10
+}
+#################Stability in the nation#########
+	focus = {
+		id = CLB_Establish_The_AFA
+		icon = GFX_CLB_Establish_The_AFA
+		cost = 5
+		prerequisite = {
+			focus = 
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 16
+		y = 1
+                }
+	focus = {
+		id = CLB_Taxless_Cigars
+		icon = GFX_CLB_Taxless_Cigars
+		cost = 5
+		prerequisite = {
+			focus = CLB_Establish_The_AFA
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 18
+		y = 2
+}
+	focus = {
+		id = CLB_Eliminate_Degeneracy
+		icon = GFX_CLB_Eliminate_Degeneracy
+		cost = 5
+		prerequisite = {
+			focus = CLB_Establish_The_AFA
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 14
+		y = 2
+}
+	focus = {
+		id = CLB_Exterminate_Communist_Sympathisers
+		icon = GFX_goal_purge_opposition
+		cost = 5
+		prerequisite = {
+			focus = CLB_Establish_The_AFA
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 16
+		y = 2
+}
+	focus = {
+		id = CLB_Ban_Unethical_Weaponry
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+			focus = CLB_Establish_The_AFA
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 15
+		y = 3
+}
+	focus = {
+		id = CLB_Reinstate_Prohbition
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+			focus = CLB_Establish_The_AFA
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 17
+		y = 3
+}
+	focus = {
+		id = CLB_Common_Ground_Agreements
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+			focus = CLB_Reinstate_Prohbition
+		}
+		prerequisite = {
+			focus = CLB_Ban_Unethical_Weaponry
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 16
+		y = 4
+}
+	focus = {
+		id = CLB_Reassert_Government_Hegemony
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+			focus = CLB_Common_Ground_Agreements
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		
+		x = 16
+		y = 5
+		
+}
+	focus = {
+		id = CLB_A_New_American_Culture
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+			focus = CLB_Reassert_Government_Hegemony
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		
+		x = 16
+		y = 7
+}
+	focus = {
+		id = CLB_The_Religous_Folk
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+			focus = CLB_A_New_American_Culture
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		
+		x = 16
+		y = 8
+}
+	focus = {
+		id = CLB_Every_Town_A_Church
+		icon = GFX_Church
+		cost = 5
+		prerequisite = {
+			focus = CLB_The_Religous_Folk
+		    focus = CLB_Ein_Republik_Ein_Folk
+            focus = CLB_Rejuvination_of_Rural_Life			
+		}
+
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		
+		x = 16
+		y = 9
+}
+	focus = {
+		id = CLB_Integrate_Smaller_Religions
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+		   focus = CLB_Every_Town_A_Church
+		
+	
+		}
+
+		completion_reward = {
+			add_political_power = 10
+            add_stability = 0.15
+		}
+		
+		x = 16
+		y = 10
+}
+	focus = {
+		id = CLB_Venerate_Our_Ancestors
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+		focus = CLB_Every_Town_A_Church
+	
+		
+		}
+
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		
+		x = 18
+		y = 10
+}
+	focus = {
+		id = CLB_Local_Rallys_of_Democracy 
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = { 
+		focus = CLB_Every_Town_A_Church
+		
+		
+		}
+
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		
+		x = 14
+		y = 10
+}
+	focus = {
+		id = CLB_A_New_United_and_Prosperous_State
+		icon = GFX_CLB_A_New_United_and_Prosperous_State
+		cost = 5
+		prerequisite = {
+		   focus = CLB_Local_Rallys_of_Democracy 
+		}
+				prerequisite = {
+		   focus = CLB_Venerate_Our_Ancestors
+		}
+						prerequisite = {
+		   focus = CLB_Integrate_Smaller_Religions
+		}
+
+
+		completion_reward = {
+			add_political_power = 10
+            add_stability = 0.15
+		}
+		
+		x = 16
+		y = 11
+}			
+#############Left			
+       focus = {
+		id = CLB_Nationalize_The_Industry
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+			focus = CLB_Reassert_Government_Hegemony
+		}
+                mutually_exclusive = {
+			focus = CLB_Regional_Land_Reforms
+		}
+		
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 14
+		y = 6
+}    
+	focus = {
+		id = CLB_The_Beauty_of_Nature
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+			focus = CLB_Nationalize_The_Industry
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		
+		x = 12
+		y = 7
+}
+	focus = {
+		id = CLB_The_Independent_Folk
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+			focus = CLB_Nationalize_The_Industry
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		
+		x = 14
+		y = 7
+}
+	focus = {
+		id = CLB_Rejuvination_of_Rural_Life
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+			focus = CLB_The_Beauty_of_Nature
+		}
+				prerequisite = {
+			focus = CLB_The_Independent_Folk
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		
+		x = 13
+		y = 8
+}			
+########RIGHT   
+        focus = {
+		id = CLB_Regional_Land_Reforms
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+			focus = CLB_Reassert_Government_Hegemony
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 18
+		y = 6
+}
+	focus = {
+		id = CLB_Crush_Urban_Holdouts
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+			focus = CLB_Regional_Land_Reforms
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		
+		x = 18
+		y = 7
+}
+	focus = {
+		id = CLB_Subsidize_The_Greater_Family
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+			focus = CLB_Regional_Land_Reforms
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		
+		x = 20
+		y = 7
+}
+	focus = {
+		id = CLB_Ein_Republik_Ein_Folk
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+			focus = CLB_Subsidize_The_Greater_Family
+		}
+		prerequisite = {
+			focus = CLB_Crush_Urban_Holdouts
+		}
+		
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		
+		x = 19
+		y = 8
+}
+
+
+#Relgion or something stop reading my code its fine u big meany what is wrong with u>w>
+	focus = {
+		id = CLB_Christian_Pagan_Cooperation
+		icon = GFX_CLB_Christian_Pagan_Cooperation
+		cost = 3
+		prerequisite = {
+			focus = 
+		}
+
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 7
+		y = 1
+}
+	focus = {
+		id = CLB_Confiscate_The_Native_Lands
+		icon = GFX_CLB_
+		cost = 3
+		prerequisite = {
+			focus = CLB_Suffocate_Religous_Opponents
+		}
+
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 9
+		y = 2
+}
+
+	focus = {
+		id = CLB_Ask_For_Budhist_Cooperation
+		icon = GFX_CLB_Ask_For_Budhist_Cooperation
+		cost = 3
+		prerequisite = {
+			focus = CLB_Christian_Pagan_Cooperation
+		}
+				prerequisite = {
+			focus = CLB_Ensure_Religous_Equality
+ }
+ 				prerequisite = {
+			focus = CLB_Suffocate_Religous_Opponents
+ }
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 7
+		y = 2
+}
+	focus = {
+		id = CLB_Ensure_Religous_Equality
+		icon = GFX_
+		cost = 3
+		prerequisite = {
+			focus = 
+		}
+
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 5
+		y = 1
+}
+	focus = {
+		id = CLB_By_Any_Means_Necessary
+		icon = GFX_
+		cost = 3
+		prerequisite = {
+			focus = CLB_Ensure_Religous_Equality
+		}
+
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 5
+		y = 2
+}
+	focus = {
+		id = CLB_Suffocate_Religous_Opponents
+		icon = GFX_
+		cost = 3
+		prerequisite = {
+			focus = 
+		}
+
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 9
+		y = 1
+}
+
+	focus = {
+		id = CLB_Unify_Our_Religions
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+			focus = CLB_Ensure_Religous_Equality
+		}
+
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 7
+		y = 3
+}
+	focus = {
+		id = CLB_The_Worlds_Religion
+		icon = GFX_CLB_
+		cost = 4
+		prerequisite = {
+			focus = CLB_Unify_Our_Religions
+		
+		}
+                mutually_exclusive = {
+			focus = CLB_Pagan_Oriented_Stances
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 7
+		y = 4
+}
+	focus = {
+		id = CLB_Pagan_Oriented_Stances
+		icon = GFX_CLB_
+		cost = 4
+		prerequisite = {
+			focus = CLB_Unify_Our_Religions
+		
+		}
+                mutually_exclusive = {
+			focus = CLB_Unify_Our_Religions
+		}
+                mutually_exclusive = {
+			focus = CLB_Christian_Oriented_Stances
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 5
+		y = 5
+}
+	focus = {
+		id = CLB_Christian_Oriented_Stances
+		icon = GFX_CLB_
+		cost = 4
+		prerequisite = {
+			focus = CLB_Unify_Our_Religions
+		
+		}
+                mutually_exclusive = {
+			focus = CLB_Unify_Our_Religions
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 9
+		y = 5
+}
+	focus = {
+		id = CLB_Call_For_Elections
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+			focus = CLB_Pagan_Oriented_Stances
+                        focus = CLB_The_Worlds_Religion
+                        focus = CLB_Christian_Oriented_Stances
+		
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 7
+		y = 6
+}
+	focus = {
+		id = CLB_Bastion_of_Democracy
+		icon = GFX_CLB_Bastion_of_Democracy
+		cost = 3
+		prerequisite = {
+                Focus= CLB_Call_For_Elections
+
+		}
+		completion_reward = {
+			add_political_power = 10
+                        add_stability = 0.15
+		}
+		x = 7
+		y = 7
+}
+
+
+        ######ENDSEIG OH GOD HELP########
+	focus = {
+		id = CLB_ENDSIEG
+		icon = GFX_CLB_ENDSIEG
+		cost = 0
+		prerequisite = {
+			focus = 
+		}
+			modifier = {
+				factor = 4
+				CLB = {
+					surrender_progress > 0.25
+                     } 
+                                  
+				}
+		completion_reward = {
+			add_political_power = 100
+                        add_war_support = 0.20
+		}
+		x = 43
+		y = 1
+
+	}
+	focus = {
+		id = CLB_Scorch_The_Prairies
+		icon = GFX_
+		cost = 0
+		prerequisite = {
+			focus = CLB_ENDSIEG
+		}
+
+		completion_reward = {
+
+		}
+		x = 41
+		y = 2
+
+	}
+	focus = {
+		id = CLB_Scorch_The_Cities
+		icon = GFX_
+		cost = 0
+		prerequisite = {
+			focus = CLB_ENDSIEG
+		}
+
+		completion_reward = {
+
+		}
+		x = 45
+		y = 2
+
+	}
+	focus = {
+		id = CLB_KILL_EVERYTHING
+		icon = GFX_
+		cost = 0
+		prerequisite = {
+			focus = CLB_ENDSIEG
+		}
+
+		completion_reward = {
+
+		}
+		x = 43
+		y = 2
+
+	}
+	focus = {
+		id = CLB_Dig_In_Deep
+		icon = GFX_
+		cost = 0
+		prerequisite = {
+			focus = CLB_KILL_EVERYTHING
+		}
+		prerequisite = {
+			focus = CLB_Scorch_The_Cities
+		}
+		prerequisite = {
+			focus = CLB_Scorch_The_Prairies
+		}
+
+		completion_reward = {
+
+		}
+		x = 43
+		y = 3
+
+	}
+	focus = {
+		id = CLB_A_Final_Call
+		icon = GFX_A_Final_Call
+		cost = 0
+		prerequisite = {
+			focus = CLB_Dig_In_Deep
+		}
+		mutually_exclusive = {
+			focus = CLB_The_Final_Offensive
+		}
+
+
+		completion_reward = {
+
+		}
+		x = 41
+		y = 4
+
+	}
+		focus = {
+		id = CLB_Evactuate_The_Civilians 
+		icon = GFX_
+		cost = 0
+		prerequisite = {
+			focus = CLB_A_Final_Call
+		}
+
+
+		completion_reward = {
+
+		}
+		x = 41
+		y = 5
+
+	}
+			focus = {
+		id = CLB_Matsdotters_Dog
+		icon = GFX_CLB_Matsdotters_Dog
+		cost = 0
+		prerequisite = {
+			focus = CLB_Evactuate_The_Civilians
+			focus = CLB_Retain_Our_Hope
+		}
+
+
+		completion_reward = {
+
+		}
+		x = 43
+		y = 6
+
+	}
+	focus = {
+		id = CLB_The_Final_Offensive 
+		icon = GFX_
+		cost = 0
+		prerequisite = {
+			focus = CLB_Dig_In_Deep
+		}
+
+
+		completion_reward = {
+
+		}
+		x = 45
+		y = 4
+
+	}
+	    focus = {
+		id = CLB_Retain_Our_Hope
+		icon = GFX_
+		cost = 0
+		prerequisite = {
+			focus = CLB_The_Final_Offensive 
+		}
+		completion_reward = {
+
+		}
+		x = 45
+		y = 5
+
+	}
+	    focus = {
+		id = CLB_Matsdotter_A_National_Hero
+		icon = GFX_CLB_Matsdotter_A_National_Hero
+		cost = 0
+		prerequisite = {
+			focus = CLB_Matsdotters_Dog
+		}
+		completion_reward = {
+
+		}
+		x = 43
+		y = 7
+
+	}
+			focus = {
+		id = CLB_Blow_The_Western_Reactors
+		icon = GFX_
+		cost = 0
+		prerequisite = {
+			focus = CLB_Evactuate_The_Civilians
+			focus = CLB_Retain_Our_Hope
+		}
+
+
+		completion_reward = {
+
+		}
+		x = 41
+		y = 8
+
+	}
+			focus = {
+		id = CLB_Blow_The_Eastern_Reactors
+		icon = GFX_
+		cost = 0
+		prerequisite = {
+			focus = CLB_Evactuate_The_Civilians
+			focus = CLB_Retain_Our_Hope
+		}
+
+
+		completion_reward = {
+
+		}
+		x = 45
+		y = 8
+
+	}
+#################NuclearArmagedon#############
+	focus = {
+		id = CLB_Secret_Weaponry
+		icon = GFX_CLB_
+		cost = 10
+		prerequisite = {
+                Focus= 
+
+		}
+		completion_reward = {
+
+		}
+		x = 34
+		y = 1
+}
+	focus = {
+		id = CLB_A_Blank_Check
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+                Focus= CLB_Secret_Weaponry
+
+		}
+		completion_reward = {
+
+		}
+		x = 36
+		y = 2
+}
+	focus = {
+		id = CLB_Experimental_Research
+		icon = GFX_CLB_
+		cost = 5
+		prerequisite = {
+                Focus= CLB_Secret_Weaponry
+
+		}
+		completion_reward = {
+
+		}
+		x = 32
+		y = 2
+}
+	focus = {
+		id = CLB_Breakthrough_In_Scientology
+		icon = GFX_CLB_Breakthrough_In_Scientology
+		cost = 10
+		prerequisite = {
+                Focus= CLB_Experimental_Research
+
+		}
+                prerequisite = {
+                Focus= CLB_A_Blank_Check
+
+
+		}
+		completion_reward = {
+
+		}
+		x = 34
+		y = 3
+}
+	focus = {
+		id = CLB_Open_Urainium_Mines
+		icon = GFX_CLB_Open_Urainium_Mines
+		cost = 5
+		prerequisite = {
+                Focus= CLB_Breakthrough_In_Scientology
+
+		}
+		completion_reward = {
+
+		}
+		x = 32
+		y = 4
+}
+	focus = {
+		id = CLB_NUCLEAR_ARMAGEDON
+		icon = GFX_CLB_Open_Urainium_Mines
+		cost = 5
+		prerequisite = {
+                Focus= CLB_Open_Urainium_Mines
+
+		}
+		completion_reward = {
+
+		}
+		x = 32
+		y = 5
+}
+	focus = {
+		id = CLB_Jet_Engines 
+		icon = GFX_CLB_Open_Urainium_Mines
+		cost = 5
+		prerequisite = {
+                Focus= CLB_Breakthrough_In_Scientology
+
+		}
+		completion_reward = {
+
+		}
+		x = 34
+		y = 4
+}
+	focus = {
+		id = CLB_Propulsion_Systems
+		icon = GFX_CLB_Open_Urainium_Mines
+		cost = 5
+		prerequisite = {
+                Focus= CLB_Breakthrough_In_Scientology
+
+		}
+		completion_reward = {
+
+		}
+		x = 36
+		y = 4
+}
+	focus = {
+		id = CLB_In_Range_of_Moscow
+		icon = GFX_CLB_Open_Urainium_Mines
+		cost = 5
+		prerequisite = {
+                Focus= CLB_Breakthrough_In_Scientology
+
+		}
+		completion_reward = {
+
+		}
+		x = 36
+		y = 5
+}
+
+
+	##########Thank you to умный умец#1344 aka Ilya for inspiration###
+
+
+	################EXPANSIONISTTREE#########################
+	
+	focus = {
+		id = CLB_Opertaion_Folkstrum
+		icon = GFX_CLB_Opertaion_Folkstrum
+		cost = 2
+		prerequisite = {
+			focus = 
+		}
+		completion_reward = {
+			add_political_power = 100
+                        add_war_support = 0.20
+		}
+		x = 25
+		y = 1
+
+	}
+	focus = {
+		id = CLB_Crush_The_Fake_Republic
+		icon = GFX_generic_attack_usa
+		cost = 5
+		prerequisite = {
+			focus = CLB_Establish_Njoroshof
+		}
+			completion_reward = {
+			 declare_war_on = {
+             target = USA
+             type = annex_everything
+			 }
+
+			}
+		
+		x = 23
+		y = 3
+
+	}
+	focus = {
+		id = CLB_Sea_To_Sea
+		icon = GFX_CLB_Sea_To_Sea
+		cost = 4
+		prerequisite = {
+			focus = CLB_Opertaion_Folkstrum
+		}
+			 completion_reward = {
+			 annex_country = { target = ORE transfer_troops = yes }
+			 385 = { add_core_of = CLB }
+			 386 = { add_core_of = CLB }
+			}
+		x = 25
+		y = 2
+
+	}
+	focus = {
+		id = CLB_Establish_Njoroshof
+		icon = GFX_CLB_Establish_Njoroshof
+		cost = 0
+		prerequisite = {
+			focus = CLB_Opertaion_Folkstrum
+		}
+		completion_reward = {
+			 372 = { add_core_of = CLB }
+			 368 = { add_core_of = CLB }
+			 371 = { add_core_of = CLB }
+			 370 = { add_core_of = CLB }
+			 367 = { add_core_of = CLB }
+			 366 = { add_core_of = CLB }
+			 365 = { add_core_of = CLB }
+			 364 = { add_core_of = CLB }
+			 363 = { add_core_of = CLB }
+			 362 = { add_core_of = CLB }
+			 361 = { add_core_of = CLB }
+			 842 = { add_core_of = CLB }
+			}
+        
+		x = 22
+		y = 2
+
+	
+	}
+	focus = {
+		id = CLB_Reclaim_The_Eastern_lands
+		icon = GFX_Reclaim_The_Eastern_lands
+		cost = 5
+		prerequisite = { 
+			focus = CLB_Opertaion_Folkstrum
+		}
+					completion_reward = {
+			 declare_war_on = {
+             target = NAR
+             type = annex_everything
+			 }
+			 declare_war_on = {
+             target = SRA
+             type = annex_everything
+			 }
+			 394 = { add_core_of = CLB }
+			 395 = { add_core_of = CLB }
+			 396 = { add_core_of = CLB }
+			 393 = { add_core_of = CLB }
+			 261 = { add_core_of = CLB }
+			 369 = { add_core_of = CLB }
+			 843 = { add_core_of = CLB }
+			 360 = { add_core_of = CLB }
+			}
+		
+		x = 28
+		y = 2
+
+	}
+	focus = {
+		id = CLB_Back_Into_The_Fold
+		icon = GFX_CLB_Back_Into_The_Fold
+		cost = 2
+		prerequisite = {
+			focus = CLB_Reclaim_The_Eastern_lands
+		}
+		available = {
+			has_war = no
+		}
+		completion_reward = {
+		declare_war_on = {
+             target = NEE
+             type = annex_everything
+			 }
+			   359 = { add_core_of = CLB }
+               358 = { add_core_of = CLB }
+			   357 = { add_core_of = CLB }
+			   841 = { add_core_of = CLB }
+			   840 = { add_core_of = CLB }
+			   839 = { add_core_of = CLB }
+			   838 = { add_core_of = CLB }
+			   837 = { add_core_of = CLB }
+		}
+		x = 27
+		y = 3
+
+	}
+	focus = {
+		id = CLB_The_Final_Drug_War
+		icon = GFX_CLB_The_Final_Drug_War
+		cost = 5
+		prerequisite = {
+			focus = CLB_Crush_The_Fake_Republic
+		}
+                
+		prerequisite = {
+			focus = CLB_Back_Into_The_Fold
+			}
+                available = {
+			has_army_manpower = { size > 249999 }
+                        }
+			 completion_reward = {
+			 declare_war_on = {
+             target = MEX
+             type = annex_everything
+			 }
+			 add_political_power = 100
+			 add_war_support = 0.25
+			   919 = { add_core_of = CLB }
+               920 = { add_core_of = CLB }
+			   375 = { add_core_of = CLB }
+			   376 = { add_core_of = CLB }
+			   380 = { add_core_of = CLB }
+			   379 = { add_core_of = CLB }
+			   927 = { add_core_of = CLB }
+			   928 = { add_core_of = CLB }
+			   926 = { add_core_of = CLB }
+                           377 = { add_core_of = CLB }
+			   378 = { add_core_of = CLB }
+			   484 = { add_core_of = CLB }
+                           921 = { add_core_of = CLB }
+			   483 = { add_claim_by = CLB }
+			   482 = { add_claim_by = CLB }
+			   480 = { add_claim_by = CLB }
+		     }
+			 
+		x = 25
+		y = 4
+  
+	}
+	focus = {
+		id = CLB_FrostBlitz
+		icon = GFX_CLB_FrostBlitz
+		cost = 5
+		prerequisite = {
+			focus = CLB_The_Final_Drug_War
+		}
+                                available = {
+			has_army_manpower = { size > 349999 }
+                        }
+		completion_reward = {
+					 declare_war_on = {
+             target = CAN
+             type = annex_everything
+			 }
+			 add_political_power = 250
+			 add_war_support = 0.25
+			   473 = { add_core_of = CLB }
+			   740 = { add_core_of = CLB }
+			   480 = { add_core_of = CLB }
+			   739 = { add_core_of = CLB }
+			   463 = { add_core_of = CLB }
+			   471 = { add_core_of = CLB }
+			   470 = { add_core_of = CLB }
+			   472 = { add_core_of = CLB }
+			   683 = { add_core_of = CLB }
+			   469 = { add_core_of = CLB }
+			   467 = { add_core_of = CLB }
+			   468 = { add_core_of = CLB }
+			   465 = { add_core_of = CLB }
+			   464 = { add_core_of = CLB }
+			   696 = { add_core_of = CLB }
+			 
+			 
+			} 
+		x = 25
+		y = 5
+
+	
+    }
+		focus = {
+		id = CLB_Free_The_Central_Americans
+		icon = GFX_CLB_Free_The_Central_Americans
+		cost = 4
+		prerequisite = { 
+			focus = CLB_The_Final_Drug_War
+		}
+		completion_reward = {
+			add_political_power = 100
+                        add_war_support = 0.20
+		}
+		x = 27
+		y = 5
+
+	}
+		focus = {
+		id = CLB_Brazilian_Intervention
+		icon = GFX_CLB_Brazilian_Intervention
+		cost = 4
+		prerequisite = { 
+			focus = CLB_The_Final_Drug_War
+		}
+		completion_reward = {
+			add_political_power = 100
+                        add_war_support = 0.20
+		}
+		x = 23
+		y = 5
+
+	}
+			focus = {
+		id = CLB_Demand_All_American_Colonies
+		icon = GFX_goal_USA_spirit_of_monroe
+		cost = 4
+		prerequisite = { 
+			focus = CLB_A_Pagan_Paradise
+		}
+    available = {
+      OR = {
+        custom_trigger_tooltip = {
+          tooltip = USA_britain_owns_west_indies_tt
+          ENG = {
+            any_owned_state = {
+              OR = {
+                state = 689
+                state = 690
+                state = 691
+                state = 692
+                state = 693
+                state = 696
+                state = 308
+                state = 311
+              }
+            }
+          }
+        }
+        custom_trigger_tooltip = {
+          tooltip = USA_france_owns_west_indies_tt
+            FRA = {
+            any_owned_state = {
+              OR = {
+                state = 694
+                state = 310
+                state = 969
+              }
+            }
+          }
+        }
+        HAI = {
+          exists = yes
+          NOT = { is_subject_of = ROOT }
+        }
+        DOM = {
+          exists = yes
+          NOT = { is_subject_of = ROOT }
+        }
+      }
+    }
+    bypass = {
+      318 = { is_owned_by_ROOT_or_ally = yes }
+      319 = { is_owned_by_ROOT_or_ally = yes }
+    }
+		completion_reward = {
+      if = {
+        limit = {
+          HAI = { 
+            NOT = { is_subject_of = ROOT }
+          }
+        }
+        unlock_decision_tooltip = USA_demand_haiti
+      }
+      unlock_decision_tooltip = USA_demand_domincan_republic
+      unlock_decision_tooltip = USA_demand_british_west_indies
+      unlock_decision_tooltip = USA_demand_french_west_indies
+    }
+		x = 27
+		y = 8
+
+	}
+	
+			focus = {
+		id = CLB_East_Wind_Rains
+		icon = GFX_CLB_East_Wind_Rains
+		cost = 4
+		prerequisite = { 
+			focus = CLB_Retake_The_Traitors
+		}
+		completion_reward = {
+			add_political_power = 100
+                        add_war_support = 0.20
+		}
+		x = 23
+		y = 8
+
+	}
+	
+	
+	
+#####Northern Europa
+	focus = {
+		id = CLB_Liberate_Our_Brothers
+		icon = GFX_goal_GER_scandinavia_claims
+		cost = 4
+		prerequisite = { 
+			focus = CLB_FrostBlitz
+		}
+		completion_reward = {
+			add_political_power = 100
+                        add_war_support = 0.20
+		}
+		x = 30
+		y = 6
+
+	}
+	focus = {
+		id = CLB_Liberate_Norwegian_Folk
+		icon = GFX_
+		cost = 4
+		prerequisite = { 
+			focus = CLB_Liberate_Our_Brothers
+		}
+		completion_reward = {
+			add_political_power = 100
+                        add_war_support = 0.20
+		}
+		x = 29
+		y = 7
+
+	}
+	focus = {
+		id = CLB_Liberate_The_Swedes
+		icon = GFX_
+		cost = 4
+		prerequisite = { 
+			focus = CLB_Liberate_Our_Brothers
+		}
+		completion_reward = {
+			add_political_power = 100
+                        add_war_support = 0.20
+		}
+		x = 31
+		y = 7
+
+	}
+		focus = {
+		id = CLB_The_Final_Battle_of_Europa
+		icon = GFX_goal_GER_navy
+		cost = 4
+		prerequisite = { 
+			focus = CLB_Liberate_The_Swedes
+			focus = CLB_Liberate_Norwegian_Folk
+		}
+		completion_reward = {
+			add_political_power = 100
+                        add_war_support = 0.20
+		}
+		x = 30
+		y = 8
+
+	}
+######
+
+    focus = {
+		id = CLB_Seek_German_Ties
+		icon = GFX_Valkist_Germany
+		cost = 5
+		prerequisite = {
+			focus = CLB_FrostBlitz
+		}
+		completion_reward = {	
+    }
+	    x = 25
+		y = 6
+
+}
+	focus = {
+		id = CLB_Seize_Pacific_Assets
+		icon = GFX_CLB_Seize_Pacific_Assets
+		cost = 3
+		prerequisite = {
+			focus = CLB_FrostBlitz
+		}
+			 completion_reward = {
+			 annex_country = { target = HAW transfer_troops = yes }
+			 629 = { add_core_of = CLB }
+			 630 = { add_core_of = CLB }
+			 631 = { add_core_of = CLB }
+			 632 = { add_core_of = CLB }
+			 727 = { add_core_of = CLB }
+			 642 = { add_core_of = CLB }
+			}
+		x = 23
+		y = 6
+
+	}
+		focus = {
+		id = CLB_Seize_Alantic_Assets
+		icon = GFX_CLB_Seize_Alantic_Assets
+		cost = 3
+		prerequisite = {
+			focus = CLB_FrostBlitz
+		}
+			 completion_reward = {
+			 911 = { add_core_of = CLB }
+			 100 = { add_core_of = CLB }
+			 
+			}
+		x = 27
+		y = 6
+
+	}
+	    focus = {
+		id = CLB_ANTI_MARXIST_CRUSADE
+		icon = GFX_CLB_ANTI_MARXIST_CRUSADE
+		cost = 5
+                will_lead_to_war_with = SOV
+		prerequisite = {
+			focus = CLB_Seek_German_Ties
+
+		}
+                 
+		completion_reward = {	
+    }
+	    x = 25
+	    y = 7
+
+}
+
+		focus = {
+		id = CLB_A_Pagan_Paradise
+		icon = GFX_CLB_A_Pagan_Paradise
+		cost = 3
+		prerequisite = {
+			focus = CLB_Seize_Alantic_Assets
+		}
+			 completion_reward = {
+			 declare_war_on = {
+             target = CUB
+             type = annex_everything
+			 }
+			 add_stability = 0.05
+
+			 
+			}
+		x = 27
+		y = 7
+}
+
+		focus = {
+		id = CLB_Retake_The_Traitors
+		icon = GFX_CLB_Retake_The_traitors
+		cost = 3
+		prerequisite = {
+			focus = CLB_Seize_Pacific_Assets
+		}
+			 completion_reward = {
+			 			 declare_war_on = {
+             target = PHI
+             type = annex_everything
+			 }
+			 add_stability = 0.05
+
+			 
+			}
+		x = 23
+		y = 7
+
+	}
+	
+		    focus = {
+		id = CLB_Reclaim_The_Lost_Hoffs
+		icon = GFX_CLB_Reclaim_The_Lost_Hoffs
+		cost = 5
+		prerequisite = {
+			focus = CLB_A_Pagan_Paradise
+		}
+		prerequisite = {
+			focus = CLB_Retake_The_Traitors
+		}
+		prerequisite = {
+			focus = CLB_ANTI_MARXIST_CRUSADE
+		}
+		completion_reward = {
+        add_stability = 0.40		
+    }
+	    x = 25
+		y = 8
+	
+}
+                focus = {
+		id = CLB_New_World_Order
+		icon = GFX_CLB_New_World_Order
+		cost = 5
+		prerequisite = {
+			focus = CLB_Reclaim_The_Lost_Hoffs
+		}
+		completion_reward = {	
+    }
+	    x = 25
+		y = 9
+}
+#####StolenArmyTreeFromGermanyBasicallyItsAGoodTreeForArmy
+        focus = {
+		id = CLB_Lessons_From_The_Mexican_War
+		icon = GFX_goal_GER_army
+		cost = 5
+		prerequisite = {
+			focus = 
+		}
+		completion_reward = {	
+		army_experience = 50
+    }
+	    x = 34
+		y = 12
+}
+        focus = {
+		id = CLB_Lives_Have_Value
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = CLB_Lessons_From_The_Mexican_War
+		}
+		mutually_exclusive = { focus = CLB_Long_Term_Initiatives focus = CLB_FrostBlitz_Doctrine }
+		available = {
+			OR = {
+				NOT = {
+					has_tech = mobile_warfare
+					has_tech = trench_warfare
+					has_tech = mass_assault
+				}
+			}
+		}
+		completion_reward = {	
+				add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.75
+				uses = 2
+				category = cat_superior_firepower
+			}
+    }
+	    x = 32
+		y = 13
+}
+                focus = {
+		id = CLB_Modernize_Our_Equipment
+		icon = GFX_CLB_New_World_Order
+		cost = 5
+		prerequisite = {
+			focus = CLB_Lives_Have_Value
+		}
+		completion_reward = {	
+		add_ideas = GER_standardize_equipment
+    }
+	    x = 32
+		y = 14
+}
+                focus = {
+		id = CLB_Doubletime_On_ISGs
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = CLB_Modernize_Our_Equipment
+		}
+	completion_reward = {
+			add_tech_bonus = {
+				name = infantry_bonus
+				bonus = 0.75
+				uses = 3
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	    x = 32
+		y = 15
+}
+                focus = {
+		id = CLB_Long_Term_Initiatives
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = CLB_Lessons_From_The_Mexican_War
+		}
+		mutually_exclusive = { focus = CLB_Lives_Have_Value focus = CLB_FrostBlitz_Doctrine }
+		available = {
+			OR = {
+				NOT = {
+					has_tech = mobile_warfare
+					has_tech = superior_firepower
+					has_tech = mass_assault
+				}
+			}
+		}
+	completion_reward = {
+				add_doctrine_cost_reduction = {
+				name = doctrine_bonus
+				cost_reduction = 0.75
+				uses = 2
+				category = cat_grand_battle_plan
+				}
+        }
+	    x = 34
+		y = 13
+}
+	focus = {
+		id = CLB_Decentralize_The_Command_Structure
+		icon = GFX_C
+		cost = 5
+		prerequisite = {
+			focus = CLB_Long_Term_Initiatives
+		}
+		completion_reward = {
+		add_ideas = GER_command_structure
+		}
+		x = 34
+		y = 14
+}
+	focus = {
+		id = CLB_The_Grand_Plan
+		icon = GFX_C
+		cost = 5
+		prerequisite = {
+			focus = CLB_Decentralize_The_Command_Structure
+		}
+		completion_reward = {
+		add_ideas = GER_strategic_planning_school
+		}
+		x = 34
+		y = 15
+}
+	focus = {
+		id = CLB_FrostBlitz_Doctrine
+		icon = GFX_C
+		cost = 5
+		prerequisite = {
+			focus = CLB_Lessons_From_The_Mexican_War 
+		}
+		mutually_exclusive = { focus = CLB_Lives_Have_Value focus = CLB_Long_Term_Initiatives }
+		completion_reward = {
+				add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.75
+				uses = 2
+				category = cat_mobile_warfare
+		}
+	}
+		x = 36
+		y = 13
+}
+	focus = {
+		id = CLB_Wave_of_Steel
+		icon = GFX_C
+		cost = 5
+		prerequisite = {
+			focus = CLB_FrostBlitz_Doctrine
+		}
+		completion_reward = {
+			add_tech_bonus = {
+			name = armor_bonus
+			bonus = 0.75
+			uses = 2
+			category = armor
+		}
+	}
+		x = 36
+		y = 14
+}
+	focus = {
+		id = CLB_Exploit_The_Breakthroughs
+		icon = GFX_C
+		cost = 5
+		prerequisite = {
+			focus = CLB_Wave_of_Steel
+		}
+		completion_reward = {
+			add_ideas = GER_blitzkrieg
+		}
+	
+		x = 36
+		y = 15
+}
+	focus = {
+		id = CLB_Bring_Up_The_Reserves
+		icon = GFX_C
+		cost = 5
+		prerequisite = {
+			focus = CLB_The_Grand_Plan
+			focus = CLB_Doubletime_On_ISGs
+			focus = CLB_Exploit_The_Breakthroughs
+		}
+		completion_reward = {
+			add_ideas = extensive_conscription
+		}
+	bypass = {
+			OR = {
+				has_idea = extensive_conscription
+				has_idea = service_by_requirement
+				has_idea = all_adults_serve 
+				has_idea = scraping_the_barrel
+			}
+		}
+		x = 33
+		y = 16
+}
+	focus = {
+		id = CLB_Dominoes_of_War
+		icon = GFX_C
+		cost = 5
+		prerequisite = {
+			focus = CLB_The_Grand_Plan
+			focus = CLB_Doubletime_On_ISGs
+			focus = CLB_Exploit_The_Breakthroughs
+		}
+		completion_reward = {
+			add_ideas = war_economy
+		}
+				bypass = {
+			OR = {
+				has_idea = war_economy
+				has_idea = tot_economic_mobilisation
+			}
+	    }
+		x = 35
+		y = 16
+}
+	focus = {
+		id = CLB_A_New_FolkWave
+		icon = GFX_C
+		cost = 5
+		prerequisite = {
+			focus = CLB_Dominoes_of_War
+			focus = CLB_Bring_Up_The_Reserves
+		}
+		completion_reward = {
+		add_ideas = GER_new_wehrmacht
+		}
+	
+		x = 34
+		y = 17
+}
+###################################
+
+	

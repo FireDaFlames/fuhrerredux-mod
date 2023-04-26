@@ -61,15 +61,16 @@ characters = {
 			traits = { }
 		}
 	}
-	CLB_Henry_Allen = {
-		name = "Henry Allen"
+	CLB_Ronnie_Matsdotter = {
+		name = "Ronnie Matsdotter"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/Generic/Portrait_Europe_Generic_new_3.png"
+				large = "gfx/leaders/CLB/Portrait_CLB_Ronnie_Matsdotter.png"
 			}
 		}
 		country_leader = {
 			ideology = valkist_subtype
+                        desc = "CLB_RONNIE_MATSDOTTER_DESC"
 			traits = { }
 		}
 	}
@@ -109,6 +110,26 @@ characters = {
 			attack_skill = 3
 			defense_skill = 2
 			planning_skill = 1
+			logistics_skill = 4
+		}
+	}
+	CLB_Drake_Jensen = {
+		name = "Drake_Jensen"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CLB/Portrait_CLB_Drake_Jensen.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				career_officer
+                                commando
+				
+			}
+			skill = 2
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 3
 			logistics_skill = 4
 		}
 	}

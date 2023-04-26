@@ -1,6 +1,41 @@
 ﻿l_english:
 
-### Country Names
+
+###Focuses
+ CLB_Opertaion_Folkstrum:0 "Operation Folkstrum"
+ CLB_Opertaion_Folkstrum_desc:0 "We are trapped on all sides even the ones who caused this are still here. But, there is hope the Asatru Folk Assembly has promised they will not let us be snuffed out like a flame. With the help of the Christians we shall not stray from the path of war. If war is what they want they shall receive."
+ CLB_Crush_The_Fake_Republic:0 "Crush The Fake Republic"
+ CLB_Crush_The_Fake_Republic_desc:0 "The previous government betrayed us. They stabbed us in the back. They have disgraced us. They shall meet their end."
+ CLB_Sea_To_Sea:0 "Sea to Sea"
+ CLB_Sea_To_Sea_desc:0 "The Washington Folk if they still remain would love to see a government capable of maintaining the nation. Lucky for them the British have their backs turned." 
+ CLB_Establish_Njoroshof:0 "Establish Njoroshof"
+ CLB_Establish_Njoroshof_desc:0 "One of the greatest Gods will have a church named in the south. This should help give representation to the southern Folk. They shall embrace us with hugs in theory atleast."
+ CLB_Reclaim_The_Eastern_lands:0 "Reclaim the Eastern Lands"
+ CLB_Reclaim_The_Eastern_lands_desc:0 "The Steel Belt is of upmost importance to our industry. The assembly line was created there but we have perfected it. They shall be crushed"
+ CLB_Back_Into_The_Fold:0 "Back Into The Fold"
+ CLB_Back_Into_The_Fold_desc:0 "New England thinks they can escape the might of the AFA. May our Gods have mercy on their souls...."
+ CLB_The_Final_Drug_War:0 "The Final Mexican-American War" 
+ CLB_The_Final_Drug_War_desc:0 "Mexico has been known to be smuggling substances into our country. The Mexicans think they can just kill off our Folk. Unlucky for them.... They forgot who they left alive. The AFA reunited our broken peices and have made us stronger than before. It is time for Mexico to see how a real war plays out. They thought Cinco de mayo was death they'll see this will be nothing like the French Empire...."
+ CLB_FrostBlitz:0 "FrostBlitz"
+ CLB_FrostBlitz_desc:0 "We are naturally immune to cold tempatures due to our Minnesotan heritage. Because of this it should be easy to take out the British hounds. The United Kingdom is known for being a snake to get its way. So, we shall strike first. I heard the Maple is nice this year."
+ CLB_Seek_German_Ties:0 "Seek German Ties"
+ CLB_Seek_German_Ties_desc:0 "The German Folk seem to be on our side. Though we are unsure if they would consider a possible alliance. Considering we just went through a civil war they may find us unrealiable. Its a win-win situation the Germans help destroy the British and we will supply them with everthing they need."
+ CLB_Seize_Pacific_Assets:0 "Seize Pacific Assets"
+ CLB_Seize_Pacific_Assets_desc:0 "The Pacific is the key to safegaurding our Western flank. A surprise invasion should easilly catch the enemys off gaurd."
+ CLB_Seize_Alantic_Assets:0 "Seize Alantic Assets"
+ CLB_Seize_Alantic_Assets_desc:0 "The British think they can hide behind a ocean they shall think again. The plan according to the AFA is to island hop from Greenland to Iceland. After this our sights will be on England itself."
+ CLB_ANTI_MARXIST_CRUSADE:0 "ANTI MARXIST CRUSADE"
+ CLB_ANTI_MARXIST_CRUSADE_desc:0 "The Marxists are the true enemy here think about it. They were the cause of all of this. The Red menace fractured our beautiful nation which killed thousands of families. Now that we are united again they SHALL PAY with BLOOD"
+ CLB_A_Pagan_Paradise:0 "A Pagan Paradise"
+ CLB_A_Pagan_Paradise_desc:0 "The Southern Sea is a nice resting spot for our navy and our infantry too! I heard the snow and powder are great this time of year."
+ CLB_Retake_The_Traitors:0 "Retake The Traitors"
+ CLB_Retake_The_Traitors_desc:0 "The Filipinos declared independance at our weakest times. They forget how important we are to them... what a foolish mistake... like Ronnie once said "We will be back""
+ CLB_Reclaim_The_Lost_Hoffs:0 "Reclaim The Lost Hoffs"
+ CLB_Reclaim_The_Lost_Hoffs_desc:0 "The Asatru have brought up a new plan to our table. They truly think we can retake all this land. Well we will try the smaller of the two plans first. May the Gods be on our side. We will never forget the help they have given us hopefully this will sufice."
+
+
+###Country Names
+
 CLB_vanguardist: "People's Republic of Columbia"
 CLB_vanguardist_ADJ: "Columbian"
 CLB_vanguardist_DEF: "The People's Republic of Columbia"
@@ -31,9 +66,9 @@ CLB_paternal_autocrat_DEF: "The Commonwealth of Columbia"
 CLB_national_populist: "Commonwealth of Columbia"
 CLB_national_populist_ADJ: "Columbian"
 CLB_national_populist_DEF: "The Commonwealth of Columbia"
-CLB_valkist: "Commonwealth of Columbia"
+CLB_valkist: "American Folk Assembly"
 CLB_valkist_ADJ: "Columbian"
-CLB_valkist_DEF: "The State of Columbia"
+CLB_valkist_DEF: "American Folk Assembly"
 
 ### Cosmetic
 # Balkanized
@@ -69,7 +104,7 @@ CLB_midwest_national_populist_ADJ: "Midwestern"
 CLB_midwest_national_populist_DEF: "The Midwest Union"
 CLB_midwest_valkist: "Midwest Union"
 CLB_midwest_valkist_ADJ: "Midwestern"
-CLB_midwest_valkist_DEF: "The Midwest Union"
+CLB_midwest_valkist_DEF: "American Folk Assembly"
 
 ### Parties
 CLB_vanguardist_party: "CPUSA"
@@ -92,8 +127,8 @@ CLB_paternal_autocrat_party: "AFP(Moderates)"
 CLB_paternal_autocrat_party_long: "America First Party(Moderate Faction)"
 CLB_national_populist_party: "AFP(Hardliners)"
 CLB_national_populist_party_long: "America First Party(Hardliner Faction)"
-CLB_valkist_party: "CP(Allenites)"
-CLB_valkist_party_long: "Christian Party(Allenite Faction)"
+CLB_valkist_party: "Folk Assembly"
+CLB_valkist_party_long: "Folkisch Party of America"
 
 ### Decisions
 CLB_whitepeace_nid: "Propose Peace to @SNR §Y[SNR.GetNameDef]§!"
@@ -112,3 +147,4 @@ CLB_spliting_at_seems_desc: "Be it Norris' Progressives, Coughlin and Townsend's
 
 ### leader bios
 POLITICS_WILLLIAM_DUDLEY_PELLEY_DESC: "At age thirty-nine William Pelley was a rather unimaginative Hollywood screenwriter and journalist. His past adventures mostly consisting of visiting Russia and absorbing anti-Semitic pamphlets. By the time of his founding the Silver Legion in 1933, Pelley had cultivated his unique ideology, combining spiritualism, democracy, and faith. With Pelley's more eccentric views being reserved for trusted allies only. As America surrendered nearly a third of her land to the Mexican menace, Pelley knew the time had finally come to bring his own brand of revival to the United States. Using his connections in various Midwestern populist and progressive moments as well as keen use of the Sliver Legion, Pelley was able to carve out a sizable chunk of America for himself and his allies. Now in power, Pelley has begun at last to implement his vision for a holy and truly free America, however his rule is still far from stable. Be it his radical allies in the Allenite faction of the Christian Party, the various other populist and progressive parties within the Midwest, Pelley has his work cut out for him. If he is able to remain at the head of the Columbia or if he fails to keep the disparaging factions united remains to be seen."
+CLB_RONNIE_MATSDOTTER_DESC: "Before Matsdotter seat in office he was serving in the US army. Inevitably this lead to him being a Veteran of the 3rd Mexican American war. Matsdotter was noted for his heroic bravery and his will to live on. Matsdotter during the battle of the Alamo killed upwards of 47 advancing Mexican units. He did this while providing medical assistance to his fellow soilder. Shortly after returning to cover he was struck by a artillery shelling. Matsdotter after his evactuation was put on medical leave until the end of the war. Due to this he grew very bitter especially with how undemocratic the U.S government became. During his time as a civilian once more he met a very Christian man who he soon became good friends with. With an unlikely alliance they set out to rally the fragmented united states. With his newfound seat in the AFA and his vice president he beleives he can retake the American homeland."

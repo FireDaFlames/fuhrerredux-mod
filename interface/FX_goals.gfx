@@ -1981,4 +1981,145 @@ spriteTypes = {
 		name = "GFX_goal_MAC_to_west"
 		textureFile = "gfx/interface/goals/MAC_to_west.png"
 	}
+		
+	spriteType = {
+		name = "GFX_CLB_Seize_Pacific_Assets"
+		textureFile = "gfx/interface/goals/CLB_Seize_Pacific_Assets.png"
+	}
+		
+	spriteType = {
+		name = "GFX_CLB_A_Pagan_Paradise"
+		textureFile = "gfx/interface/goals/CLB_A_Pagan_Paradise.png"
+	}
+	
+	spriteType = {
+		name = "GFX_CLB_Retake_The_traitors"
+		textureFile = "gfx/interface/goals/CLB_Retake_The_traitors.png"
+	}
+	
+	spriteType = {
+		name = "GFX_CLB_ANTI_MARXIST_CRUSADE"
+		textureFile = "gfx/interface/goals/CLB_ANTI_MARXIST_CRUSADE.png"
+	}
+	
+	spriteType = {
+		name = "GFX_CLB_Reclaim_The_Lost_Hoffs"
+		textureFile = "gfx/interface/goals/CLB_Reclaim_The_Lost_Hoffs.png"
+	}
+	
+	spriteType = {
+		name = "GFX_CLB_Seize_Alantic_Assets"
+		textureFile = "gfx/interface/goals/CLB_Seize_Alantic_Assets.png"
+	}
+	
+	spriteType = {
+		name = "GFX_CLB_FrostBlitz"
+		textureFile = "gfx/interface/goals/CLB_CLB_FrostBlitz.png"
+	}
+	spriteType = {
+		name = "GFX_CLB_FrostBlitz"
+		textureFile = "gfx/interface/goals/CLB_The_Final_Drug_War.png"
+	}
+	
+	spriteType = {
+		name = "GFX_CLB_Sea_To_Sea"
+		textureFile = "gfx/interface/goals/CLB_Sea_To_Sea.png"
+	}
+	
+	spriteType = {
+		name = "GFX_CLB_Taxless_Cigars"
+		textureFile = "gfx/interface/goals/CLB_Taxless_Cigars.png"
+	}
+    
+	spriteType = {
+		name = "GFX_CLB_ENDSIEG"
+		textureFile = "gfx/interface/goals/CLB_ENDSIEG.png"
+	}
+    
+	spriteType = {
+		name = "GFX_CLB_Reclaim_The_Eastern_lands"
+		textureFile = "gfx/interface/goals/CLB_Reclaim_The_Eastern_lands.png"
+	}
+	
+	spriteType = {
+		name = "GFX_CLB_Back_Into_The_Fold"
+		textureFile = "gfx/interface/goals/CLB_Back_Into_The_Fold.png"
+	}
+	spriteType = {
+		name = "GFX_CLB_Back_Into_The_Fold"
+		textureFile = "gfx/interface/goals/CLB_Back_Into_The_Fold.png"
+	}
+	spriteType = {
+		name = "GFX_CLB_Crush_The_Fake_Republic"
+		textureFile = "gfx/interface/goals/CLB_Crush_The_Fake_Republic.png"
+	}
+	spriteType = {
+		name = "GFX_CLB_A_Final_Call"
+		textureFile = "gfx/interface/goals/CLB_A_Final_Call.png"
+	}
+	spriteType = {
+		name = "GFX_CLB_Eliminate_Degeneracy"
+		textureFile = "gfx/interface/goals/CLB_Eliminate_Degeneracy.png"
+	}
+	spriteType = {
+		name = "GFX_CLB_Bastion_of_Democracy"
+		textureFile = "gfx/interface/goals/CLB_Bastion_of_Democracy.png"
+	}
+	spriteType = {
+		name = "GFX_CLB_Operation_Folkstrum"
+		textureFile = "gfx/interface/goals/CLB_Opertaion_Folkstrum.png"
+	}
+	spriteType = {
+		name = "GFX_CLB_Brazilian_Intervention"
+		textureFile = "gfx/interface/goals/CLB_Brazilian_Intervention.png"
+	}
+	spriteType = {
+		name = "GFX_CLB_Free_The_Central_Americans"
+		textureFile = "gfx/interface/goals/CLB_Brazilian_Intervention.png"
+	}
+	spriteType = {
+		name = "GFX_CLB_The_Folk_Awakens"
+		textureFile = "gfx/interface/goals/CLB_The_Folk_Awakens.png"
+	}
+	spriteType = {
+		name = "GFX_CLB_East_Wind_Rains"
+		textureFile = "gfx/interface/goals/CLB_East_Wind_Rains.png"
+	}
+	spriteType = {
+		name = "GFX_CLB_Matsdotters_Dog"
+		textureFile = "gfx/interface/goals/CLB_Matsdotters_Dog.png"
+	}
+	spriteType = {
+		name = "GFX_CLB_The_Final_Drug_War"
+		textureFile = "gfx/interface/goals/CLB_The_Final_Drug_War.png"
+	}
+	spriteType = {
+		name = "GFX_CLB_Unstoppable_War_Machine"
+		textureFile = "gfx/interface/goals/CLB_Unstoppable_War_Machine.png"
+	}
+	spriteType = {
+		name = "GFX_CLB_Breakthrough_In_Scientology"
+		textureFile = "gfx/interface/goals/CLB_Breakthrough_In_Scientology.png"
+	}
+	spriteType = {
+		name = "GFX_CLB_Matsdotter_A_National_Hero"
+		textureFile = "gfx/interface/goals/CLB_Matsdotter_A_National_Hero.png"
+	}
+	spriteType = {
+		name = "GFX_CLB_Destroy_Liberal_Economic_Policies"
+		textureFile = "gfx/interface/goals/CLB_Destroy_Liberal_Economic_Policies.png"
+	}
+	spriteType = {
+		name = "GFX_CLB_Unstoppable_War_Machine_Left"
+		textureFile = "gfx/interface/goals/CLB_Unstoppable_War_Machine_Left.png"
+	}
+	spriteType = {
+		name = "GFX_CLB_A_New_United_and_Prosperous_State"
+		textureFile = "gfx/interface/goals/CLB_A_New_United_and_Prosperous_State.png"
+	}
+	spriteType = {
+		name = "GFX_CLB_Christian_Pagan_Cooperation"
+		textureFile = "gfx/interface/goals/CLB_Christian_Pagan_Cooperation.png"
+	}
+
 }

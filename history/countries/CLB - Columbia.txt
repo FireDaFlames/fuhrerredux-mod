@@ -2,29 +2,29 @@ capital = 373
 
 # Starting tech
 set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	tech_recon = 1
-	tech_support = 1
-	tech_engineers = 1
-	gw_artillery = 1
-	fuel_silos = 1
-  basic_train = 1
+	infantry_weapons = 3
+	infantry_weapons1 = 2
+	tech_recon = 3
+	tech_support = 2
+	tech_engineers = 3
+	gw_artillery = 3
+	fuel_silos = 3
+        basic_train = 2
 }
 
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 	set_technology = {
-		iw_small_airframe = 1
+		iw_small_airframe = 2
 		aa_lmg = 1
 		engines_1 = 1
-		early_bombs = 1
+		early_bombs = 2
 	}
 	else = {
 		set_technology = {
-			early_fighter = 1
+			early_fighter = 2
 			cv_early_fighter = 1
-			cv_naval_bomber1 = 1
+			cv_naval_bomber1 = 2
 			cv_CAS1 = 1
 			CAS1 = 1
 			naval_bomber1 = 1
@@ -33,25 +33,25 @@ if = {
 	}
 }
 
-set_convoys = 300
-set_stability = 0.56
-set_war_support = 0.34
+set_convoys = 500
+set_stability = 0.5
+set_war_support = 0.47
 
 set_politics = {
-	ruling_party = authoritarian_democrat
+	ruling_party = valkist
 	last_election = "1932.11.15"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	social_democrat = 17
-	market_liberal = 13
-	social_conservative = 15
-	authoritarian_democrat = 24
-	paternal_autocrat = 14
-	national_populist = 7
-	valkist = 10
+	social_democrat = 0
+	market_liberal = 0
+	social_conservative = 0
+	authoritarian_democrat = 10
+	paternal_autocrat = 5
+	national_populist = 10
+	valkist = 75
 }
 
 add_ideas = {
@@ -65,13 +65,13 @@ add_ideas = {
 	CLB_democracy_in_limbo
 	CLB_spliting_at_seems
 }
-
+recruit_character = CLB_Drake_Jensen
+recruit_character = CLB_Ronnie_Matsdotter
 recruit_character = CLB_George_W_Norris
 recruit_character = CLB_Francis_Townsend
 recruit_character = CLB_Charles_Coughlin
 recruit_character = CLB_William_Dudley_Pelley
 recruit_character = CLB_Gerald_LK_Smith
-recruit_character = CLB_Henry_Allen
 recruit_character = CLB_Joseph_T_McNarney
 recruit_character = CLB_Claire_Lee_Chennault
 recruit_character = CLB_Walton_Walker
