@@ -652,6 +652,10 @@ guiTypes = {
 			slotsize = { width = 80 height = 64 }
 			max_slots = { x = 7 y = 1 }
 			format = "UPPER_LEFT"
+			padding = {
+				top = 6
+				bottom = 15
+			}
 		}
 	}
 
@@ -702,7 +706,6 @@ guiTypes = {
 				scroll_wheel_factor = 37
 				smooth_scrolling = yes
 				margin = { top = 4 bottom = 12}
-
 				background = {
 					name = "Background"
 					quadTextureSprite ="GFX_tiled_window2_1b_border"
@@ -722,6 +725,10 @@ guiTypes = {
 					max_slots_horizontal = 2
 					add_horizontal = yes
 					format = "UPPER_LEFT"
+					padding = {
+						top = 10
+						bottom = 15
+					}
 				}
 
 				gridBoxType = {
@@ -731,6 +738,10 @@ guiTypes = {
 					slotsize = { width = 462 height = 95 }
 					add_horizontal = no
 					format = "UPPER_LEFT"
+					padding = {
+						top = 10
+						bottom = 15
+					}
 				}
 			}
 		}
