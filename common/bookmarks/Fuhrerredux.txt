@@ -154,20 +154,20 @@ bookmarks = {
     effect = {
       randomize_weather = 12345
     }
-    "HUN" = {
-      history = "HUN_FUHRERREDUX_DESC"
-      ideology = national_populist
-      minor = yes
-      ideas = {
-        hun_trianon
-        hun_economic_ruin
-      }
-      focuses = {
-        hun_mil_start
-        hun_venge
-        hun_demand_transylvania
-      }
-    }
+    # "HUN" = {
+    #   history = "HUN_FUHRERREDUX_DESC"
+    #   ideology = national_populist
+    #   minor = yes
+    #   ideas = {
+    #     hun_trianon
+    #     hun_economic_ruin
+    #   }
+    #   focuses = {
+    #     hun_mil_start
+    #     hun_venge
+    #     hun_demand_transylvania
+    #   }
+    # }
     "ROM" = {
       history = "ROM_FUHRERREDUX_DESC"
       ideology = authoritarian_democrat
@@ -183,19 +183,19 @@ bookmarks = {
         ROM_preservation_of_greater_romania
       }
     }
-    "GRE" = {
-      history = "GRE_FUHRERREDUX_DESC"
-      ideology = social_liberal
-      minor = yes
-      ideas = {
-        GRE_abysmal_economy
-        GRE_minority_unrests
-        GRE_anathema
-      }
-      focuses = {
+    # "GRE" = {
+    #   history = "GRE_FUHRERREDUX_DESC"
+    #   ideology = social_liberal
+    #   minor = yes
+    #   ideas = {
+    #     GRE_abysmal_economy
+    #     GRE_minority_unrests
+    #     GRE_anathema
+    #   }
+    #   focuses = {
 
-      }
-    }
+    #   }
+    # }
 		"CRU" = {
       history = "CRU_FUHRERREDUX_DESC"
       ideology = valkist
@@ -239,6 +239,33 @@ bookmarks = {
         FIN_finlands_bold_opportunity
         FIN_for_victory
         FIN_declare_our_claims
+      }
+    }
+    "ISC" = {
+      history = "ISC_FUHRERREDUX_DESC"
+      ideology = authoritarian_democrat
+      minor = yes
+      ideas = {
+        ISC_the_patriarchate
+        ISC_free_zone
+      }
+      focuses = {
+        ISC_THIS_FOCUS_EXISTS_SO_ISC_IS_IN_BOOKMARKS
+      }
+    }
+    "TUR" = {
+      history = "TUR_FUHRERREDUX_DESC"
+      ideology = social_liberal
+      minor = yes
+      ideas = {
+        TUR_sick_man_of_europe
+        TUR_opda_idea
+        TUR_ottoman_constitution_idea
+      }
+      focuses = {
+        TUR_emergency_session
+        TUR_death_of_an_empire
+        TUR_foreign_policy
       }
     }
   }

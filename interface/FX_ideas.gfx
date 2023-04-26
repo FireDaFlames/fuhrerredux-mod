@@ -332,4 +332,13 @@ spriteTypes = {
     name = "GFX_idea_MAC_macedonian_undefeatable_legions"
     textureFile = "gfx/interface/ideas/MAC/MAC_idea_macedonian_legions.png"
   }
+  #ISC SPIRITS
+  spriteType = {
+    name = "GFX_idea_ISC_free_zone"
+    textureFile = "gfx/interface/ideas/ISC/ISC_free_zone.png"
+  }
+  spriteType = {
+    name = "GFX_idea_ISC_the_patriarchate"
+    textureFile = "gfx/interface/ideas/ISC/ISC_the_patriarchate.png"
+  }
 }

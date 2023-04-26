@@ -80,7 +80,7 @@ units = {
 	}
 	division = {
 		name = "17. Piyade Tümeni"
-		location = 947
+		location = 785
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
 	}

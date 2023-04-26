@@ -1,0 +1,32 @@
+focus_tree = {
+	id = straits_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 69420
+			tag = ISC
+		}
+	}
+	continuous_focus_position = {
+		x = 0
+		y = 5
+	}
+	focus = {
+		id = ISC_THIS_FOCUS_EXISTS_SO_ISC_IS_IN_BOOKMARKS
+		icon = none
+		cost = 5
+		x = 10
+		y = 1
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = -10
+				always = yes 
+			}
+		}
+		completion_reward = { }
+	}
+	#epic right?
+	#let's give ai smh to do tho
+	# later tho :checkmark:
+}
