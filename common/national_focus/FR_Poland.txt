@@ -3942,7 +3942,7 @@ focus = {
 	available_if_capitulated = no  
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_against_red_menace"
-		92 = {
+		1044 = {
 			add_building_construction = {
 				type = bunker
 				level = 2
@@ -4152,6 +4152,8 @@ focus = {
 			limit = {
 				owns_state = 73
 				owns_state = 71
+				owns_state = 1042
+				owns_state = 1043
 			}
 			THIS = { 
 				country_event = poland.52 

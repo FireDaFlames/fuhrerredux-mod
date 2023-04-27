@@ -1,5 +1,9 @@
 opinion_modifiers = {
 	
+	FX_returned_land = {
+		value = 15
+	}
+
 	faction_traitor = {
 		value = -75
 	}

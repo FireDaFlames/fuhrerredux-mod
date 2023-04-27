@@ -1,10 +1,12 @@
+#New frontendgamesetupview gui by thanasislanaras
+
 bookmarks = {
   bookmark = {
     name = "FUHRERREDUX_NAME"
     desc = "FUHRERREDUX_DESC"
     date = 1936.1.1
     picture = GFX_select_date_1936
-    default_country = "PHI"
+    default_country = "BLR"
     default = yes
     #### Majors
     # "MAC" = {
@@ -239,6 +241,171 @@ bookmarks = {
         FIN_finlands_bold_opportunity
         FIN_for_victory
         FIN_declare_our_claims
+      }
+    }
+    "PER" = {
+      history = "PER_FUHRERREDUX_DESC"
+      ideology = paternal_autocrat
+      minor = yes
+      ideas = {
+        PER_british_influence_iran_idea
+        PER_underground_revolutionaries_idea
+        PER_primitive_military_idea
+      }
+      focuses = {
+        PER_react_economic_crisis
+        PER_reform_army
+        PER_open_foreign_office
+      }
+    }
+    "ARG" = {
+      history = "ARG_FUHRERREDUX_DESC"
+      ideology = social_liberal
+      minor = yes
+      ideas = {
+        ARG_british_companies
+        ARG_memories_of_the_chaco_war
+        ARG_labour_strikes
+      }
+      focuses = {
+        ARG_sunrise_in_argentina
+        ARG_rebuilding_the_army
+        ARG_master_of_the_south_atlantic
+      }
+    }
+    "BLR" = {
+      history = "BLR_FUHRERREDUX_DESC"
+      ideology = valkist
+      minor = yes
+      ideas = {
+        BLR_question_of_legitimacy
+        BLR_can_you_read_my_son
+        BLR_diarchy_stable
+      }
+      focuses = {
+        BLR_half_mast
+        BLR_formalize_the_belarusian_armed_forces
+        BLR_konigsberg_conference
+      }
+    }
+    "AFG" = {
+      history = "AFG_FUHRERREDUX_DESC"
+      ideology = authoritarian_democrat
+      minor = yes
+      ideas = {
+        AFG_tribal_influences_afghanistan_idea
+        AFG_afghan_nationalism_idea
+        AFG_backward_army_and_economy_idea
+      }
+      focuses = {
+        AFG_develop_nation
+        AFG_kalakanis_return
+        AFG_king_is_dead_long_live_king
+      }
+    }
+    "ARB" = {
+      history = "ARB_FUHRERREDUX_DESC"
+      ideology = paternal_autocrat
+      minor = yes
+      ideas = {
+        ARB_ikhwan_raids
+        ARB_the_liquid_black_gold
+        ARB_british_influence
+      }
+      focuses = {
+        ARB_hashemite_hegemony
+        ARB_obdience_to_westminster
+        ARB_state_of_the_kingdom
+      }
+    }
+    "CAN" = {
+      history = "CAN_FUHRERREDUX_DESC"
+      ideology = social_conservative
+      minor = yes
+      ideas = {
+        CAN_red_tories
+        CAN_anglo_french_tension
+        CAN_east_west_divide
+      }
+      focuses = {
+        CAN_fund_oil_exploitation
+        CAN_spearhead_of_the_empire
+        CAN_elections_1938
+      }
+    }
+    "CHL" = {
+      history = "CHL_FUHRERREDUX_DESC"
+      ideology = social_liberal
+      minor = yes
+      ideas = {
+        CHL_crumbling_government
+        CHL_collapsed_economy
+        CHL_political_polarization
+      }
+      focuses = {
+        CHL_path_of_nation
+        CHL_elections_forty
+        CHL_road_to_conflict
+      }
+    }
+    "MEX" = {
+      history = "MEX_FUHRERREDUX_DESC"
+      ideology = national_populist
+      minor = yes
+      ideas = {
+        MEX_basta
+        MEX_nationalist_strife
+        MEX_military_corruption
+      }
+      focuses = {
+        MEX_final_election
+        MEX_ejercito_mexicano
+        MEX_armada_de_mexico
+      }
+    }
+    "CZE" = {
+      history = "CZE_FUHRERREDUX_DESC"
+      ideology = paternal_autocrat
+      minor = yes
+      ideas = {
+        CZE_suspended_democracy
+        CZE_memories_of_the_revolution
+        CZE_ethnic_tensions
+      }
+      focuses = {
+        CZE_state_of_the_czechs
+        CZE_czech_revolution
+        CZE_the_new_czechoslovakia
+      }
+    }
+    "TUR" = {
+      history = "TUR_FUHRERREDUX_DESC"
+      ideology = social_liberal
+      minor = yes
+      ideas = {
+        TUR_sick_man_of_europe
+        TUR_opda_idea
+        TUR_ottoman_constitution_idea
+      }
+      focuses = {
+        TUR_emergency_session
+        TUR_death_of_an_empire
+        TUR_foreign_policy
+      }
+    }
+    "SAF" = {
+      history = "SAF_FUHRERREDUX_DESC"
+      ideology = authoritarian_democrat
+      minor = yes
+      ideas = {
+        SAF_Rhodesia_Unrest
+        SAF_Boer_Legacy
+        SAF_Anti_British_Sentiment
+      }
+      focuses = {
+        SAF_1937_Election
+        SAF_United_Victory
+        SAF_Imperial_Concerns
       }
     }
   }

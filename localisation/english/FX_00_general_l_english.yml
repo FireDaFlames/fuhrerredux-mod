@@ -101,6 +101,10 @@ national_populist_subtype_desc: "Encompassing a variety of ultra-nationalist and
 valkist_subtype_desc: "Named after the Germanic symbol that German Valkists wear, Valkism is an extreme nationalist and militaristic ideology, that proposes a system where the political power is centralized under a strong leadership, that through the state controls and guides the nation to its national rebirth. Nonetheless, Valkists fundamentally defend socially progressive ideals and the leader grants liberties to the people. Valkists are characterized by adopting conceptual and aesthetical aspects from ancient, pagan, mystical and esoterical traditions, generally relevant to the nation in question. There are many schools of thought in Valkist economics, but the state supremacy and control over it is undisputed."
 internationalist_subtype_desc: "Developed from particularly interventionist branches of collectivism and marxism overall, Internationalist Socialism, as it calls itself, or more commonly known as Internationalism,  is a socialist ideology that proposes the workers, once in power, must organize to enact a perpetual revolution, and to continue proactively in their struggle to bring socialism to the world. While most socialist strains are of international nature, the proactive spirit of Internationalism has given it a more militant nature, and Internationalist ideologues are known advocates of increased militarization of the workers in name of the revolution, as well as establishing a strong state that is able to defend the workers’ interests and protect the revolution from reactionary forces that may oppose it, as the revolution is never supposed to stop spreading."
 
+NO_SUBIDEOLOGY_ACTIVE: ""
+RulingIdeologySubtype_Text: "§Y([GetRulingIdeologySubtype])§!"
+RulingIdeologySubtype_diplo_tt: "Ideological Subtype: §Y[GetDiploRulingPartySubtype]§!\n--------------------\n[GetDiploPopularityTooltipDesc]"
+
 ### Ideology Acceptance
 vanguardist_acceptance: "Acceptance of National Collectivism"
 collectivist_acceptance: "Acceptance of Socialism"
@@ -224,3 +228,12 @@ camel_corps_tech: "Camel Corps"
 camel_corps_tech_effect: "Enables §H$camel_corps_tech$§!\n§HCamelry\n    Desert§!\n      Attack: §G+15%§!\n      Defence: §G+5%§!\n      Movement: §G+3%§!"
 desert_warfare: "Desert Combat Training"
 desert_warfare_effect: "Enables §H$desert_warfare$§!\n§HLeg Infantry\n    Deserts§!\n      Attack: §G+10%§!\n      Defence: §G+5%§!\n      Movement: §G+5%§!"
+
+
+# Unit Leader Events
+unit_leader.1.t: "[From.From.GetName] Falls Ill"
+unit_leader.1.d: "In [From.From.GetHerHis] service to the nation, it seems [From.From.GetRank] [From.From.GetName] has pushed [From.From.GetHerselfHimself] too far. As a result of the bad climate in [From.From.GetHerHis] operational area, the [From.From.GetRank] has now fallen ill, and will likely need some time to recover. Until [From.From.GetSheHe] gets well, [From.From.GetSheHe] will not be performing at [From.From.GetHerHis] usual level."
+unit_leader.1.a: "Unfortunate."
+unit_leader.2.t: "[From.From.GetName] Wounded"
+unit_leader.2.d: "In bringing the battle to a successful conclusion, it seems [From.From.GetRank] [From.From.GetName] put [From.From.GetHerselfHimself] at a bit too much risk while leading [From.From.GetHerHis] men. [From.From.GetSheHeCap] has been wounded, and it will likely take some time for the wounds to fully heal, until which time the [From.From.GetRank] will not be performing at [From.From.GetHerHis] usual level."
+unit_leader.2.a: "Unfortunate."
